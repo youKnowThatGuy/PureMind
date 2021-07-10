@@ -16,9 +16,9 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var checkBox: CheckBox!
-    
-    
     var presenter: RegistrationPresenterProtocol!
+    var passwordHidden = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nicknameField.delegate = self
@@ -27,14 +27,26 @@ class RegistrationViewController: UIViewController {
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     @IBAction func passwordVisiblePressed(_ sender: Any) {
+        if passwordHidden == true{
+            passwordField.isSecureTextEntry = false
+        }
+        else{
+            passwordField.isSecureTextEntry = true
+        }
+        passwordHidden = !passwordHidden
     }
     
     @IBAction func registerButtonPressed(_ sender: Any) {
         let message = presenter.infoValidation(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
         if message == "pass"{
             if checkBox.isChecked == true{
-                print("Test completed")
+                validationAlert(message: "Проверка завершена успешно!")
             }
             else{
               validationAlert(message: "Вы не согласились с условиями пользования")

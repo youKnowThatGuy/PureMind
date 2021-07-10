@@ -21,6 +21,11 @@ class DescriptionViewController: UIViewController {
         setupCardView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     func setupCardView(){
         cardView.delegate = self
         cardView.dataSource = self
