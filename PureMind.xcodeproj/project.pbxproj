@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69357BB52698658C00831004 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BB42698658C00831004 /* NetworkService.swift */; };
+		69357BBA269865A000831004 /* CachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BB9269865A000831004 /* CachingService.swift */; };
+		69357BC02698660700831004 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BBF2698660700831004 /* RegistrationViewController.swift */; };
+		69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BC72698661A00831004 /* RegistrationPresenter.swift */; };
 		698D74E32694A9AC00C66C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D74E22694A9AC00C66C11 /* AppDelegate.swift */; };
 		698D74E52694A9AC00C66C11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D74E42694A9AC00C66C11 /* SceneDelegate.swift */; };
-		698D74E72694A9AC00C66C11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D74E62694A9AC00C66C11 /* ViewController.swift */; };
 		698D74EA2694A9AC00C66C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D74E82694A9AC00C66C11 /* Main.storyboard */; };
 		698D74EC2694A9AC00C66C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698D74EB2694A9AC00C66C11 /* Assets.xcassets */; };
 		698D74EF2694A9AC00C66C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D74ED2694A9AC00C66C11 /* LaunchScreen.storyboard */; };
 		698D74FA2694A9AC00C66C11 /* PureMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D74F92694A9AC00C66C11 /* PureMindTests.swift */; };
 		698D75052694A9AC00C66C11 /* PureMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D75042694A9AC00C66C11 /* PureMindUITests.swift */; };
+		698D751F2694AAD900C66C11 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D751E2694AAD900C66C11 /* ModuleBuilder.swift */; };
+		698D75282694AC6200C66C11 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D75272694AC6200C66C11 /* WelcomeViewController.swift */; };
+		698D75432695E2F600C66C11 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D75422695E2F600C66C11 /* DescriptionViewController.swift */; };
+		698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D754A2695E32C00C66C11 /* DescriptionPresenter.swift */; };
+		698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D754F2695F0A500C66C11 /* CardViewCell.swift */; };
+		69ABE40726987919001FBB4E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE40626987919001FBB4E /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69357BB42698658C00831004 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		69357BB9269865A000831004 /* CachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingService.swift; sourceTree = "<group>"; };
+		69357BBF2698660700831004 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		69357BC72698661A00831004 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
 		698D74DF2694A9AC00C66C11 /* PureMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PureMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		698D74E22694A9AC00C66C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698D74E42694A9AC00C66C11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		698D74E62694A9AC00C66C11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		698D74E92694A9AC00C66C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		698D74EB2694A9AC00C66C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		698D74EE2694A9AC00C66C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,12 @@
 		698D75002694A9AC00C66C11 /* PureMindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PureMindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		698D75042694A9AC00C66C11 /* PureMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureMindUITests.swift; sourceTree = "<group>"; };
 		698D75062694A9AC00C66C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		698D751E2694AAD900C66C11 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		698D75272694AC6200C66C11 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		698D75422695E2F600C66C11 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		698D754A2695E32C00C66C11 /* DescriptionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPresenter.swift; sourceTree = "<group>"; };
+		698D754F2695F0A500C66C11 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		69ABE40626987919001FBB4E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69357BBE269865D800831004 /* RegistrationModule */ = {
+			isa = PBXGroup;
+			children = (
+				69357BBF2698660700831004 /* RegistrationViewController.swift */,
+				69357BC72698661A00831004 /* RegistrationPresenter.swift */,
+				69ABE40626987919001FBB4E /* CheckBox.swift */,
+			);
+			path = RegistrationModule;
+			sourceTree = "<group>";
+		};
 		698D74D62694A9AC00C66C11 = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +127,14 @@
 		698D74E12694A9AC00C66C11 /* PureMind */ = {
 			isa = PBXGroup;
 			children = (
-				698D74E22694A9AC00C66C11 /* AppDelegate.swift */,
-				698D74E42694A9AC00C66C11 /* SceneDelegate.swift */,
-				698D74E62694A9AC00C66C11 /* ViewController.swift */,
+				698D751C2694AA4500C66C11 /* Model */,
+				698D751B2694AA3C00C66C11 /* View */,
+				698D751A2694A9F800C66C11 /* ServiceLayer */,
+				698D75182694A9DA00C66C11 /* Delegates */,
 				698D74E82694A9AC00C66C11 /* Main.storyboard */,
 				698D74EB2694A9AC00C66C11 /* Assets.xcassets */,
+				698D751E2694AAD900C66C11 /* ModuleBuilder.swift */,
+				698D751D2694AA4D00C66C11 /* Modules */,
 				698D74ED2694A9AC00C66C11 /* LaunchScreen.storyboard */,
 				698D74F02694A9AC00C66C11 /* Info.plist */,
 			);
@@ -126,6 +157,74 @@
 				698D75062694A9AC00C66C11 /* Info.plist */,
 			);
 			path = PureMindUITests;
+			sourceTree = "<group>";
+		};
+		698D75182694A9DA00C66C11 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				698D74E22694A9AC00C66C11 /* AppDelegate.swift */,
+				698D74E42694A9AC00C66C11 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		698D751A2694A9F800C66C11 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				69357BB42698658C00831004 /* NetworkService.swift */,
+				69357BB9269865A000831004 /* CachingService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		698D751B2694AA3C00C66C11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		698D751C2694AA4500C66C11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		698D751D2694AA4D00C66C11 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				69357BBE269865D800831004 /* RegistrationModule */,
+				698D75412695E2DC00C66C11 /* DescriptionModule */,
+				698D75262694AC2F00C66C11 /* WelcomeModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		698D75262694AC2F00C66C11 /* WelcomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				698D75272694AC6200C66C11 /* WelcomeViewController.swift */,
+			);
+			path = WelcomeModule;
+			sourceTree = "<group>";
+		};
+		698D75412695E2DC00C66C11 /* DescriptionModule */ = {
+			isa = PBXGroup;
+			children = (
+				698D75542695F0A900C66C11 /* View */,
+				698D754A2695E32C00C66C11 /* DescriptionPresenter.swift */,
+			);
+			path = DescriptionModule;
+			sourceTree = "<group>";
+		};
+		698D75542695F0A900C66C11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				698D75422695E2F600C66C11 /* DescriptionViewController.swift */,
+				698D754F2695F0A500C66C11 /* CardViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +357,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				698D74E72694A9AC00C66C11 /* ViewController.swift in Sources */,
+				698D75282694AC6200C66C11 /* WelcomeViewController.swift in Sources */,
+				698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */,
+				69357BB52698658C00831004 /* NetworkService.swift in Sources */,
+				69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */,
 				698D74E32694A9AC00C66C11 /* AppDelegate.swift in Sources */,
+				69357BC02698660700831004 /* RegistrationViewController.swift in Sources */,
 				698D74E52694A9AC00C66C11 /* SceneDelegate.swift in Sources */,
+				698D75432695E2F600C66C11 /* DescriptionViewController.swift in Sources */,
+				69ABE40726987919001FBB4E /* CheckBox.swift in Sources */,
+				69357BBA269865A000831004 /* CachingService.swift in Sources */,
+				698D751F2694AAD900C66C11 /* ModuleBuilder.swift in Sources */,
+				698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9U7X5634U9;
 				INFOPLIST_FILE = PureMind/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +567,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9U7X5634U9;
 				INFOPLIST_FILE = PureMind/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
