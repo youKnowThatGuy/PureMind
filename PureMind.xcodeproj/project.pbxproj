@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654E28D05E042970750BB00E /* Pods_PureMind_PureMindUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BE82F1BE3E1BBBCB5FDA18 /* Pods_PureMind_PureMindUITests.framework */; };
 		69357BB52698658C00831004 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BB42698658C00831004 /* NetworkService.swift */; };
 		69357BBA269865A000831004 /* CachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BB9269865A000831004 /* CachingService.swift */; };
 		69357BC02698660700831004 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BBF2698660700831004 /* RegistrationViewController.swift */; };
@@ -24,6 +25,20 @@
 		698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D754A2695E32C00C66C11 /* DescriptionPresenter.swift */; };
 		698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D754F2695F0A500C66C11 /* CardViewCell.swift */; };
 		69ABE40726987919001FBB4E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE40626987919001FBB4E /* CheckBox.swift */; };
+		69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE40C2699D695001FBB4E /* LoginViewController.swift */; };
+		69ABE4152699D6A3001FBB4E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE4142699D6A3001FBB4E /* LoginPresenter.swift */; };
+		69ABE41A269AFBF1001FBB4E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE419269AFBF1001FBB4E /* StringExtensions.swift */; };
+		69ABE427269B2962001FBB4E /* PoliciesShortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE426269B2962001FBB4E /* PoliciesShortViewController.swift */; };
+		69ABE42F269B2972001FBB4E /* PoliciesShortPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE42E269B2972001FBB4E /* PoliciesShortPresenter.swift */; };
+		69ABE435269B2E08001FBB4E /* ExpTitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE434269B2E08001FBB4E /* ExpTitleViewCell.swift */; };
+		69ABE43D269B2E67001FBB4E /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE43C269B2E67001FBB4E /* UITableViewCellExtensions.swift */; };
+		69ABE442269B3101001FBB4E /* ShortPolicyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE441269B3101001FBB4E /* ShortPolicyViewCell.swift */; };
+		69ABE44B269C56C1001FBB4E /* PoliciesFullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE44A269C56C1001FBB4E /* PoliciesFullViewController.swift */; };
+		69ABE453269C56D9001FBB4E /* PoliciesFullPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE452269C56D9001FBB4E /* PoliciesFullPresenter.swift */; };
+		69ABE459269C5D5E001FBB4E /* PolicyFullViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE458269C5D5E001FBB4E /* PolicyFullViewCell.swift */; };
+		69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE45D269C8512001FBB4E /* ExpTitleRightCell.swift */; };
+		DA12F3192DF1CB76C43F120F /* Pods_PureMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EAE2D345787B1A2710F770 /* Pods_PureMind.framework */; };
+		DCA617E89129C993441F0979 /* Pods_PureMindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20C02C7830DFA80FD8A7A37A /* Pods-PureMind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind.release.xcconfig"; path = "Target Support Files/Pods-PureMind/Pods-PureMind.release.xcconfig"; sourceTree = "<group>"; };
+		215068B54D9507DC31E6B494 /* Pods-PureMindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMindTests.debug.xcconfig"; path = "Target Support Files/Pods-PureMindTests/Pods-PureMindTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26CA7566137612DB13C8CE85 /* Pods-PureMind-PureMindUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind-PureMindUITests.release.xcconfig"; path = "Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45BE82F1BE3E1BBBCB5FDA18 /* Pods_PureMind_PureMindUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMind_PureMindUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F9A13B0548FE79ACF05780 /* Pods-PureMindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMindTests.release.xcconfig"; path = "Target Support Files/Pods-PureMindTests/Pods-PureMindTests.release.xcconfig"; sourceTree = "<group>"; };
 		69357BB42698658C00831004 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		69357BB9269865A000831004 /* CachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingService.swift; sourceTree = "<group>"; };
 		69357BBF2698660700831004 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +87,22 @@
 		698D754A2695E32C00C66C11 /* DescriptionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPresenter.swift; sourceTree = "<group>"; };
 		698D754F2695F0A500C66C11 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
 		69ABE40626987919001FBB4E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		69ABE40C2699D695001FBB4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		69ABE4142699D6A3001FBB4E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		69ABE419269AFBF1001FBB4E /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		69ABE426269B2962001FBB4E /* PoliciesShortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliciesShortViewController.swift; sourceTree = "<group>"; };
+		69ABE42E269B2972001FBB4E /* PoliciesShortPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliciesShortPresenter.swift; sourceTree = "<group>"; };
+		69ABE434269B2E08001FBB4E /* ExpTitleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpTitleViewCell.swift; sourceTree = "<group>"; };
+		69ABE43C269B2E67001FBB4E /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		69ABE441269B3101001FBB4E /* ShortPolicyViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortPolicyViewCell.swift; sourceTree = "<group>"; };
+		69ABE44A269C56C1001FBB4E /* PoliciesFullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliciesFullViewController.swift; sourceTree = "<group>"; };
+		69ABE452269C56D9001FBB4E /* PoliciesFullPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliciesFullPresenter.swift; sourceTree = "<group>"; };
+		69ABE458269C5D5E001FBB4E /* PolicyFullViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyFullViewCell.swift; sourceTree = "<group>"; };
+		69ABE45D269C8512001FBB4E /* ExpTitleRightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpTitleRightCell.swift; sourceTree = "<group>"; };
+		C645ECD700F3EA9117461534 /* Pods-PureMind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind.debug.xcconfig"; path = "Target Support Files/Pods-PureMind/Pods-PureMind.debug.xcconfig"; sourceTree = "<group>"; };
+		D0CE98E0FB35A5168AFF95DC /* Pods-PureMind-PureMindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind-PureMindUITests.debug.xcconfig"; path = "Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0EAE2D345787B1A2710F770 /* Pods_PureMind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA12F3192DF1CB76C43F120F /* Pods_PureMind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA617E89129C993441F0979 /* Pods_PureMindTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,18 +126,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654E28D05E042970750BB00E /* Pods_PureMind_PureMindUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4768A3C7675A687A746537BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0EAE2D345787B1A2710F770 /* Pods_PureMind.framework */,
+				45BE82F1BE3E1BBBCB5FDA18 /* Pods_PureMind_PureMindUITests.framework */,
+				E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69357BBE269865D800831004 /* RegistrationModule */ = {
 			isa = PBXGroup;
 			children = (
-				69357BBF2698660700831004 /* RegistrationViewController.swift */,
+				69ABE447269C5648001FBB4E /* View */,
 				69357BC72698661A00831004 /* RegistrationPresenter.swift */,
-				69ABE40626987919001FBB4E /* CheckBox.swift */,
 			);
 			path = RegistrationModule;
 			sourceTree = "<group>";
@@ -111,6 +159,8 @@
 				698D74F82694A9AC00C66C11 /* PureMindTests */,
 				698D75032694A9AC00C66C11 /* PureMindUITests */,
 				698D74E02694A9AC00C66C11 /* Products */,
+				87214CFFEA24E9114539F2CC /* Pods */,
+				4768A3C7675A687A746537BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,15 +177,14 @@
 		698D74E12694A9AC00C66C11 /* PureMind */ = {
 			isa = PBXGroup;
 			children = (
+				698D751E2694AAD900C66C11 /* ModuleBuilder.swift */,
 				698D751C2694AA4500C66C11 /* Model */,
 				698D751B2694AA3C00C66C11 /* View */,
 				698D751A2694A9F800C66C11 /* ServiceLayer */,
 				698D75182694A9DA00C66C11 /* Delegates */,
-				698D74E82694A9AC00C66C11 /* Main.storyboard */,
 				698D74EB2694A9AC00C66C11 /* Assets.xcassets */,
-				698D751E2694AAD900C66C11 /* ModuleBuilder.swift */,
+				69ABE448269C566A001FBB4E /* Storyboards */,
 				698D751D2694AA4D00C66C11 /* Modules */,
-				698D74ED2694A9AC00C66C11 /* LaunchScreen.storyboard */,
 				698D74F02694A9AC00C66C11 /* Info.plist */,
 			);
 			path = PureMind;
@@ -180,6 +229,8 @@
 		698D751B2694AA3C00C66C11 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				69ABE434269B2E08001FBB4E /* ExpTitleViewCell.swift */,
+				69ABE45D269C8512001FBB4E /* ExpTitleRightCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +238,8 @@
 		698D751C2694AA4500C66C11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				69ABE419269AFBF1001FBB4E /* StringExtensions.swift */,
+				69ABE43C269B2E67001FBB4E /* UITableViewCellExtensions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +247,9 @@
 		698D751D2694AA4D00C66C11 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				69ABE449269C5690001FBB4E /* PoliciesFullModule */,
+				69ABE425269B2947001FBB4E /* PoliciesShortModule */,
+				69ABE40B2699D674001FBB4E /* LoginModule */,
 				69357BBE269865D800831004 /* RegistrationModule */,
 				698D75412695E2DC00C66C11 /* DescriptionModule */,
 				698D75262694AC2F00C66C11 /* WelcomeModule */,
@@ -227,6 +283,82 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		69ABE40B2699D674001FBB4E /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				69ABE40C2699D695001FBB4E /* LoginViewController.swift */,
+				69ABE4142699D6A3001FBB4E /* LoginPresenter.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		69ABE425269B2947001FBB4E /* PoliciesShortModule */ = {
+			isa = PBXGroup;
+			children = (
+				69ABE446269C5634001FBB4E /* View */,
+				69ABE42E269B2972001FBB4E /* PoliciesShortPresenter.swift */,
+			);
+			path = PoliciesShortModule;
+			sourceTree = "<group>";
+		};
+		69ABE446269C5634001FBB4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69ABE426269B2962001FBB4E /* PoliciesShortViewController.swift */,
+				69ABE441269B3101001FBB4E /* ShortPolicyViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ABE447269C5648001FBB4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69ABE40626987919001FBB4E /* CheckBox.swift */,
+				69357BBF2698660700831004 /* RegistrationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69ABE448269C566A001FBB4E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				698D74ED2694A9AC00C66C11 /* LaunchScreen.storyboard */,
+				698D74E82694A9AC00C66C11 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		69ABE449269C5690001FBB4E /* PoliciesFullModule */ = {
+			isa = PBXGroup;
+			children = (
+				69ABE457269C5D0E001FBB4E /* View */,
+				69ABE452269C56D9001FBB4E /* PoliciesFullPresenter.swift */,
+			);
+			path = PoliciesFullModule;
+			sourceTree = "<group>";
+		};
+		69ABE457269C5D0E001FBB4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69ABE44A269C56C1001FBB4E /* PoliciesFullViewController.swift */,
+				69ABE458269C5D5E001FBB4E /* PolicyFullViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87214CFFEA24E9114539F2CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C645ECD700F3EA9117461534 /* Pods-PureMind.debug.xcconfig */,
+				20C02C7830DFA80FD8A7A37A /* Pods-PureMind.release.xcconfig */,
+				D0CE98E0FB35A5168AFF95DC /* Pods-PureMind-PureMindUITests.debug.xcconfig */,
+				26CA7566137612DB13C8CE85 /* Pods-PureMind-PureMindUITests.release.xcconfig */,
+				215068B54D9507DC31E6B494 /* Pods-PureMindTests.debug.xcconfig */,
+				50F9A13B0548FE79ACF05780 /* Pods-PureMindTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,9 +366,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 698D75092694A9AC00C66C11 /* Build configuration list for PBXNativeTarget "PureMind" */;
 			buildPhases = (
+				93BE2CF5E47D1CB54BDED887 /* [CP] Check Pods Manifest.lock */,
 				698D74DB2694A9AC00C66C11 /* Sources */,
 				698D74DC2694A9AC00C66C11 /* Frameworks */,
 				698D74DD2694A9AC00C66C11 /* Resources */,
+				332B91B8029B044457DE3B66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +385,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 698D750C2694A9AC00C66C11 /* Build configuration list for PBXNativeTarget "PureMindTests" */;
 			buildPhases = (
+				F9148D30D80C0A6728D68BAB /* [CP] Check Pods Manifest.lock */,
 				698D74F12694A9AC00C66C11 /* Sources */,
 				698D74F22694A9AC00C66C11 /* Frameworks */,
 				698D74F32694A9AC00C66C11 /* Resources */,
@@ -269,9 +404,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 698D750F2694A9AC00C66C11 /* Build configuration list for PBXNativeTarget "PureMindUITests" */;
 			buildPhases = (
+				F40674EA6B189AFF9E778140 /* [CP] Check Pods Manifest.lock */,
 				698D74FC2694A9AC00C66C11 /* Sources */,
 				698D74FD2694A9AC00C66C11 /* Frameworks */,
 				698D74FE2694A9AC00C66C11 /* Resources */,
+				99B9F5191CF0AD8A14DB30ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,23 +489,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		332B91B8029B044457DE3B66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PureMind/Pods-PureMind-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PureMind/Pods-PureMind-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PureMind/Pods-PureMind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93BE2CF5E47D1CB54BDED887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PureMind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B9F5191CF0AD8A14DB30ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F40674EA6B189AFF9E778140 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PureMind-PureMindUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9148D30D80C0A6728D68BAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PureMindTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		698D74DB2694A9AC00C66C11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69ABE459269C5D5E001FBB4E /* PolicyFullViewCell.swift in Sources */,
 				698D75282694AC6200C66C11 /* WelcomeViewController.swift in Sources */,
 				698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */,
+				69ABE4152699D6A3001FBB4E /* LoginPresenter.swift in Sources */,
 				69357BB52698658C00831004 /* NetworkService.swift in Sources */,
 				69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */,
+				69ABE44B269C56C1001FBB4E /* PoliciesFullViewController.swift in Sources */,
 				698D74E32694A9AC00C66C11 /* AppDelegate.swift in Sources */,
 				69357BC02698660700831004 /* RegistrationViewController.swift in Sources */,
+				69ABE442269B3101001FBB4E /* ShortPolicyViewCell.swift in Sources */,
 				698D74E52694A9AC00C66C11 /* SceneDelegate.swift in Sources */,
 				698D75432695E2F600C66C11 /* DescriptionViewController.swift in Sources */,
+				69ABE427269B2962001FBB4E /* PoliciesShortViewController.swift in Sources */,
 				69ABE40726987919001FBB4E /* CheckBox.swift in Sources */,
+				69ABE42F269B2972001FBB4E /* PoliciesShortPresenter.swift in Sources */,
+				69ABE43D269B2E67001FBB4E /* UITableViewCellExtensions.swift in Sources */,
 				69357BBA269865A000831004 /* CachingService.swift in Sources */,
+				69ABE435269B2E08001FBB4E /* ExpTitleViewCell.swift in Sources */,
+				69ABE453269C56D9001FBB4E /* PoliciesFullPresenter.swift in Sources */,
 				698D751F2694AAD900C66C11 /* ModuleBuilder.swift in Sources */,
+				69ABE41A269AFBF1001FBB4E /* StringExtensions.swift in Sources */,
+				69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */,
 				698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */,
+				69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +793,7 @@
 		};
 		698D750A2694A9AC00C66C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C645ECD700F3EA9117461534 /* Pods-PureMind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -561,6 +814,7 @@
 		};
 		698D750B2694A9AC00C66C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C02C7830DFA80FD8A7A37A /* Pods-PureMind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -581,6 +835,7 @@
 		};
 		698D750D2694A9AC00C66C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 215068B54D9507DC31E6B494 /* Pods-PureMindTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,6 +858,7 @@
 		};
 		698D750E2694A9AC00C66C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50F9A13B0548FE79ACF05780 /* Pods-PureMindTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -625,6 +881,7 @@
 		};
 		698D75102694A9AC00C66C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0CE98E0FB35A5168AFF95DC /* Pods-PureMind-PureMindUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -645,6 +902,7 @@
 		};
 		698D75112694A9AC00C66C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CA7566137612DB13C8CE85 /* Pods-PureMind-PureMindUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

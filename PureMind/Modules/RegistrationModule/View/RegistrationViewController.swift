@@ -24,7 +24,6 @@ class RegistrationViewController: UIViewController {
         nicknameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +54,6 @@ class RegistrationViewController: UIViewController {
         else{
             validationAlert(message: message)
         }
-        
     }
     
     func validationAlert(message: String){
@@ -71,9 +69,16 @@ class RegistrationViewController: UIViewController {
     }
     
     @IBAction func policiesButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "policiesShortSegue", sender: nil)
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "loginSegue", sender: nil)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        presenter.prepare(for: segue, sender: sender)
     }
     
     

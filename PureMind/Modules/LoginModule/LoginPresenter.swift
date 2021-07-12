@@ -1,29 +1,40 @@
 //
-//  RegistrationPresenter.swift
+//  LoginPresenter.swift
 //  PureMind
 //
-//  Created by Клим on 09.07.2021.
+//  Created by Клим on 10.07.2021.
 //
 
 import UIKit
 
-
-protocol RegistrationPresenterProtocol{
-    init(view: RegistrationViewProtocol)
-    func infoValidation(nickname: String, email: String, password: String) -> String
+protocol LoginPresenterProtocol{
+    init(view: LoginViewProtocol)
     func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    func infoValidation(email: String, password: String) -> String
 }
 
-class RegistrationPresenter: RegistrationPresenterProtocol{
+class LoginPresenter: LoginPresenterProtocol{
+    weak var view: LoginViewProtocol?
     
-    weak var view: RegistrationViewProtocol?
-    
-    required init(view: RegistrationViewProtocol) {
+    required init(view: LoginViewProtocol) {
         self.view = view
     }
     
-    func infoValidation(nickname: String, email: String, password: String) -> String{
-        if email == "" || nickname == "" || password == ""{
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "Segue":
+            guard let vc = segue.destination as? RegistrationViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = RegistrationPresenter(view: vc)
+            
+        default:
+            break
+        }
+    }
+    
+    func infoValidation(email: String, password: String) -> String {
+        if email == "" || password == ""{
             return "Вы не заполнили все поля"
         }
         let clearEmail = stringClear(str: email)
@@ -52,7 +63,6 @@ class RegistrationPresenter: RegistrationPresenterProtocol{
         return "pass"
     }
     
-    
     func stringClear(str: String) -> String{
         var newStr = ""
         for char in str{
@@ -61,23 +71,6 @@ class RegistrationPresenter: RegistrationPresenterProtocol{
             }
         }
         return newStr
-    }
-    
-    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier{
-        case "loginSegue":
-            guard let vc = segue.destination as? LoginViewController
-            else {fatalError("invalid data passed")}
-            vc.presenter = LoginPresenter(view: vc)
-            
-        case "policiesShortSegue":
-            guard let vc = segue.destination as? PoliciesShortViewController
-            else {fatalError("invalid data passed")}
-            vc.presenter = PoliciesShortPresenter(view: vc)
-            
-        default:
-            break
-        }
     }
     
 }
