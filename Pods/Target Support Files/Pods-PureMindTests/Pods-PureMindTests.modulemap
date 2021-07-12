@@ -1,0 +1,6 @@
+framework module Pods_PureMindTests {
+  umbrella header "Pods-PureMindTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
