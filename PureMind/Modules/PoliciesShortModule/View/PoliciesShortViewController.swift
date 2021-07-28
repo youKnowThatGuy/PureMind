@@ -14,14 +14,31 @@ protocol PoliciesShortViewProtocol: UIViewController{
 
 class PoliciesShortViewController: UIViewController {
     var presenter: PoliciesShortPresenterProtocol!
-    @IBOutlet weak var policiesImageView: UIImageView!
     @IBOutlet weak var policiesShortTable: ExpyTableView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var acceptButtonShell: UIButton!
+    @IBOutlet weak var showFullButtonShell: UIButton!
+    @IBOutlet weak var backButtonShell: UIButton!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        policiesImageView.image = UIImage(named: "noImage")
         setupTable()
+        prepareViews()
+    }
+    
+    func prepareViews(){
+        titleLabel.textColor = grayTextColor
+        backButtonShell.tintColor = lightYellowColor
+        
+        acceptButtonShell.tintColor = grayButtonColor
+        acceptButtonShell.layer.cornerRadius = 15
+        acceptButtonShell.backgroundColor = .clear
+        acceptButtonShell.layer.borderWidth = 2
+        //acceptButtonShell.setTitleColor(grayButtonColor, for: .normal)
+        acceptButtonShell.layer.borderColor = lightYellowColor.cgColor
+        showFullButtonShell.tintColor = policiesButtonColor
     }
     
     func setupTable(){
@@ -44,6 +61,11 @@ class PoliciesShortViewController: UIViewController {
     @IBAction func showFullButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "policiesFullSegue", sender: nil)
     }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         presenter.prepare(for: segue, sender: sender)

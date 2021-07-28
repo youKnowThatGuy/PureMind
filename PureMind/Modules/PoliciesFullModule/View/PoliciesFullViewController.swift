@@ -16,9 +16,12 @@ protocol PoliciesFullViewProtocol: UIViewController{
 class PoliciesFullViewController: UIViewController {
     var presenter: PoliciesFullPresenterProtocol!
     @IBOutlet weak var policiesTable: ExpyTableView!
+    @IBOutlet weak var returnButtonShell: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        returnButtonShell.tintColor = lightYellowColor
         setupTable()
     }
     
@@ -63,6 +66,7 @@ extension PoliciesFullViewController: ExpyTableViewDataSource {
     func tableView(_ tableView: ExpyTableView, expandableCellForSection section: Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExpTitleRightCell.identifier) as! ExpTitleRightCell
         cell.titleLabel.text = presenter.getTitleText(index: section)
+        cell.titleLabel.textColor = grayTextColor
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell

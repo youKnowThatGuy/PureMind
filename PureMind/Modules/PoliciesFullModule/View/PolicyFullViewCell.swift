@@ -12,11 +12,13 @@ class PolicyFullViewCell: UITableViewCell {
     static let identifier = "policyFullCell"
     
     @IBOutlet weak var policyTitleLabel: UILabel!
-    @IBOutlet weak var policyImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        policyTitleLabel.textColor = grayTextColor
+        descriptionLabel.textColor = grayTextColor
+        self.contentView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -15,6 +15,13 @@ class ExpTitleViewCell: UITableViewCell, ExpyTableViewHeaderCell {
     
     static let identifier = "ExpTitleViewCell"
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.backgroundColor = UIColor(red: 204, green: 212, blue: 251)
+        layer.cornerRadius = 15
+        contentView.layer.cornerRadius = 15
+    }
+    
     func changeState(_ state: ExpyState, cellReuseStatus cellReuse: Bool) {
             
         switch state {

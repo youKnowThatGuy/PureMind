@@ -15,6 +15,11 @@ class ExpTitleRightCell: UITableViewCell, ExpyTableViewHeaderCell {
     
     static let identifier = "ExpTitleRightCell"
     
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
     func changeState(_ state: ExpyState, cellReuseStatus cellReuse: Bool) {
             
         switch state {

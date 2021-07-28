@@ -16,8 +16,13 @@ class DescriptionViewController: UIViewController {
     var presenter: DescriptionPresenterProtocol!
     @IBOutlet weak var cardView: UICollectionView!
     
+    @IBOutlet weak var skipButtonOutlet: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = blueBackgorundColor
+        skipButtonOutlet.setTitleColor(darkGrayTextColor, for: .normal)
         setupCardView()
     }
     
@@ -29,6 +34,7 @@ class DescriptionViewController: UIViewController {
     func setupCardView(){
         cardView.delegate = self
         cardView.dataSource = self
+        cardView.backgroundColor = blueBackgorundColor
         cardView.collectionViewLayout = customLayout()
     }
     

@@ -16,30 +16,99 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var checkBox: CheckBox!
+    
+    @IBOutlet weak var policiesButtonOutlet: UIButton!
+    @IBOutlet weak var loginButtonOutlet: UIButton!
+    @IBOutlet weak var registrationButtonOutlet: UIButton!
+    @IBOutlet weak var googleButtonOutlet: UIButton!
+    @IBOutlet weak var backButtonOutlet: UIButton!
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var policyLabel: UILabel!
+    @IBOutlet weak var loginLabel: UILabel!
+    
+    
     var presenter: RegistrationPresenterProtocol!
     var passwordHidden = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        prepareButtons()
+        prepareTextFields()
+        prepareLabels()
+    }
+    
+    func prepareButtons(){
+        backButtonOutlet.tintColor = lightYellowColor
+        policiesButtonOutlet.setTitleColor(policiesButtonColor, for: .normal)
+        loginButtonOutlet.setTitleColor(lightYellowColor, for: .normal)
+        
+        registrationButtonOutlet.backgroundColor = lightYellowColor
+        registrationButtonOutlet.layer.cornerRadius = 15
+        
+        googleButtonOutlet.layer.cornerRadius = 15
+        googleButtonOutlet.backgroundColor = .clear
+        googleButtonOutlet.layer.borderWidth = 2
+        googleButtonOutlet.setTitleColor(grayButtonColor, for: .normal)
+        googleButtonOutlet.layer.borderColor = lightYellowColor.cgColor
+    }
+    
+    func transformTextField(myTextField: UITextField){
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 300, height: 1.0)
+        bottomLine.backgroundColor = blueBackgorundColor.cgColor
+        myTextField.borderStyle = UITextField.BorderStyle.none
+        myTextField.layer.addSublayer(bottomLine)
+    }
+    
+    func prepareLabels(){
+        titleLabel.textColor = grayTextColor
+        nameLabel.textColor = grayTextColor
+        emailLabel.textColor = grayTextColor
+        passwordLabel.textColor = grayTextColor
+        policyLabel.textColor = grayTextColor
+        loginLabel.textColor = textFieldColor
+    }
+    
+    func prepareTextFields(){
         nicknameField.delegate = self
+        nicknameField.textColor = textFieldColor
+        transformTextField(myTextField: nicknameField)
         emailField.delegate = self
+        emailField.textColor = textFieldColor
+        transformTextField(myTextField: emailField)
         passwordField.delegate = self
+        passwordField.textColor = textFieldColor
+        transformTextField(myTextField: passwordField)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
+        //navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    @IBAction func passwordVisiblePressed(_ sender: Any) {
+    @IBAction func passwordVisiblePressed(_ sender: UIButton) {
         if passwordHidden == true{
             passwordField.isSecureTextEntry = false
+            sender.setImage(UIImage(named: "eye_closed"), for: .normal)
         }
         else{
             passwordField.isSecureTextEntry = true
+            sender.setImage(UIImage(named: "custom_eye"), for: .normal)
         }
         passwordHidden = !passwordHidden
     }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     @IBAction func registerButtonPressed(_ sender: Any) {
         let message = presenter.infoValidation(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)

@@ -12,9 +12,18 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var logoView: UIImageView!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var textLabel: UILabel!
+    
+    @IBOutlet weak var buttonOutlet: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        logoView.image = UIImage(named: "noImage")
+        titleLabel.textColor = darkGrayTextColor
+        buttonOutlet.tintColor = lightYellowColor
+        textLabel.textColor = grayTextColor
     }
     
     override func viewWillAppear(_ animated: Bool) {

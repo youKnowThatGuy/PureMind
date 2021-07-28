@@ -14,14 +14,68 @@ protocol LoginViewProtocol: UIViewController{
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var forgotPasswordLabel: UILabel!
+    
+    @IBOutlet weak var assistButtonOutlet: UIButton!
+    @IBOutlet weak var backButtonOutlet: UIButton!
+    @IBOutlet weak var loginButtonOutlet: UIButton!
+    @IBOutlet weak var loginGoogleButtonOutlet: UIButton!
+    
+    var passwordHidden = true
     
     var presenter: LoginPresenterProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        prepareLabels()
+        prepareButtons()
+        prepareTextFields()
+    }
+    
+    func transformTextField(myTextField: UITextField){
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 300, height: 1.0)
+        bottomLine.backgroundColor = blueBackgorundColor.cgColor
+        myTextField.borderStyle = UITextField.BorderStyle.none
+        myTextField.layer.addSublayer(bottomLine)
+    }
+    
+    func prepareButtons(){
+        backButtonOutlet.tintColor = lightYellowColor
+        assistButtonOutlet.setTitleColor(policiesButtonColor, for: .normal)
+        //loginButtonOutlet.setTitleColor(lightYellowColor, for: .normal)
+        
+        loginButtonOutlet.backgroundColor = lightYellowColor
+        loginButtonOutlet.layer.cornerRadius = 15
+        
+        loginGoogleButtonOutlet.layer.cornerRadius = 15
+        loginGoogleButtonOutlet.backgroundColor = .clear
+        loginGoogleButtonOutlet.layer.borderWidth = 2
+        loginGoogleButtonOutlet.setTitleColor(grayButtonColor, for: .normal)
+        loginGoogleButtonOutlet.layer.borderColor = lightYellowColor.cgColor
+        
+    }
+    
+    func prepareLabels(){
+        titleLabel.textColor = grayTextColor
+        emailLabel.textColor = grayTextColor
+        passwordLabel.textColor = grayTextColor
+        forgotPasswordLabel.textColor = textFieldColor
+    }
+    
+    func prepareTextFields(){
         emailTextField.delegate = self
+        emailTextField.textColor = textFieldColor
+        transformTextField(myTextField: emailTextField)
         passwordTextField.delegate = self
+        passwordTextField.textColor = textFieldColor
+        transformTextField(myTextField: passwordTextField)
+        
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
@@ -34,11 +88,30 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func passwordVisiblePressed(_ sender: UIButton) {
+        if passwordHidden == true{
+            passwordTextField.isSecureTextEntry = false
+            sender.setImage(UIImage(named: "eye_closed"), for: .normal)
+        }
+        else{
+            passwordTextField.isSecureTextEntry = true
+            sender.setImage(UIImage(named: "custom_eye"), for: .normal)
+        }
+        passwordHidden = !passwordHidden
+    }
+    
+    
+    
     @IBAction func googleButtonPressed(_ sender: Any) {
     }
     
     @IBAction func assistButtonPressed(_ sender: Any) {
     }
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     func validationAlert(message: String){
         let alert = UIAlertController(title: "Ошибка", message: message, preferredStyle: .alert)
