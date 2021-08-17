@@ -31,6 +31,12 @@
 		69A1C6CF26B169D000216B2C /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6CE26B169CD00216B2C /* Montserrat-Medium.ttf */; };
 		69A1C6D426B16E1000216B2C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6D326B16E0E00216B2C /* Montserrat-SemiBold.ttf */; };
 		69A1C6D926B16E5900216B2C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6D826B16E5600216B2C /* Montserrat-Regular.ttf */; };
+		69A1C6E226B3FA6B00216B2C /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6E126B3FA6B00216B2C /* ThemesViewController.swift */; };
+		69A1C6EA26B3FA7700216B2C /* ThemesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6E926B3FA7700216B2C /* ThemesPresenter.swift */; };
+		69A1C6EF26B43F3F00216B2C /* ThemeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6EE26B43F3F00216B2C /* ThemeViewCell.swift */; };
+		69A1C6F526B48DE600216B2C /* TherapistChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6F426B48DE600216B2C /* TherapistChoiceViewController.swift */; };
+		69A1C6FD26B48E0800216B2C /* TherapistChoicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6FC26B48E0800216B2C /* TherapistChoicePresenter.swift */; };
+		69A1C70326B49B3900216B2C /* TherapistSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C70226B49B3900216B2C /* TherapistSubViewController.swift */; };
 		69ABE40726987919001FBB4E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE40626987919001FBB4E /* CheckBox.swift */; };
 		69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE40C2699D695001FBB4E /* LoginViewController.swift */; };
 		69ABE4152699D6A3001FBB4E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE4142699D6A3001FBB4E /* LoginPresenter.swift */; };
@@ -44,6 +50,26 @@
 		69ABE453269C56D9001FBB4E /* PoliciesFullPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE452269C56D9001FBB4E /* PoliciesFullPresenter.swift */; };
 		69ABE459269C5D5E001FBB4E /* PolicyFullViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE458269C5D5E001FBB4E /* PolicyFullViewCell.swift */; };
 		69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE45D269C8512001FBB4E /* ExpTitleRightCell.swift */; };
+		69B3AE8026BC14A200BA8F89 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */; };
+		69B3AE8B26BC165000BA8F89 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */; };
+		69B3AE9026BC165E00BA8F89 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE8F26BC165E00BA8F89 /* MenuPresenter.swift */; };
+		69B3AE9626BC214100BA8F89 /* PracticViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE9526BC214100BA8F89 /* PracticViewCell.swift */; };
+		69B3AE9E26BC21C400BA8F89 /* PlanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE9D26BC21C400BA8F89 /* PlanViewCell.swift */; };
+		69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEA226BC22BD00BA8F89 /* CourseViewCell.swift */; };
+		69B3AEB926BC744700BA8F89 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEB726BC744700BA8F89 /* MenuCell.swift */; };
+		69B3AEBA26BC744700BA8F89 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B3AEB826BC744700BA8F89 /* MenuCell.xib */; };
+		69B3AEC026BC7CCC00BA8F89 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */; };
+		69B3AEC826BC7CD900BA8F89 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */; };
+		69C79D3526CABC13008B024A /* FirstQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D3426CABC13008B024A /* FirstQuestionsViewController.swift */; };
+		69C79D3D26CABC24008B024A /* FirstQuestionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D3C26CABC24008B024A /* FirstQuestionsPresenter.swift */; };
+		69C79D4226CAC112008B024A /* AnswerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D4126CAC112008B024A /* AnswerViewCell.swift */; };
+		69C79D4C26CAC974008B024A /* CollectionViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D4B26CAC974008B024A /* CollectionViewTitle.swift */; };
+		69C79D5126CBA221008B024A /* QuestionsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D5026CBA221008B024A /* QuestionsNavigationController.swift */; };
+		69C79D5726CBC2B3008B024A /* SecondQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D5626CBC2B3008B024A /* SecondQuestionsViewController.swift */; };
+		69C79D5F26CBC2C7008B024A /* SecondQuestionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D5E26CBC2C7008B024A /* SecondQuestionsPresenter.swift */; };
+		69C79D6526CBF3E4008B024A /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D6426CBF3E4008B024A /* MoodViewController.swift */; };
+		69C79D6D26CBF3F2008B024A /* MoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D6C26CBF3F2008B024A /* MoodPresenter.swift */; };
+		69C79D7D26CC1060008B024A /* DateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D7C26CC1060008B024A /* DateValueFormatter.swift */; };
 		DA12F3192DF1CB76C43F120F /* Pods_PureMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EAE2D345787B1A2710F770 /* Pods_PureMind.framework */; };
 		DCA617E89129C993441F0979 /* Pods_PureMindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +126,12 @@
 		69A1C6CE26B169CD00216B2C /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		69A1C6D326B16E0E00216B2C /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		69A1C6D826B16E5600216B2C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		69A1C6E126B3FA6B00216B2C /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
+		69A1C6E926B3FA7700216B2C /* ThemesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesPresenter.swift; sourceTree = "<group>"; };
+		69A1C6EE26B43F3F00216B2C /* ThemeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewCell.swift; sourceTree = "<group>"; };
+		69A1C6F426B48DE600216B2C /* TherapistChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistChoiceViewController.swift; sourceTree = "<group>"; };
+		69A1C6FC26B48E0800216B2C /* TherapistChoicePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistChoicePresenter.swift; sourceTree = "<group>"; };
+		69A1C70226B49B3900216B2C /* TherapistSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistSubViewController.swift; sourceTree = "<group>"; };
 		69ABE40626987919001FBB4E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		69ABE40C2699D695001FBB4E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		69ABE4142699D6A3001FBB4E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -113,6 +145,26 @@
 		69ABE452269C56D9001FBB4E /* PoliciesFullPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliciesFullPresenter.swift; sourceTree = "<group>"; };
 		69ABE458269C5D5E001FBB4E /* PolicyFullViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyFullViewCell.swift; sourceTree = "<group>"; };
 		69ABE45D269C8512001FBB4E /* ExpTitleRightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpTitleRightCell.swift; sourceTree = "<group>"; };
+		69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		69B3AE8F26BC165E00BA8F89 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		69B3AE9526BC214100BA8F89 /* PracticViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticViewCell.swift; sourceTree = "<group>"; };
+		69B3AE9D26BC21C400BA8F89 /* PlanViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewCell.swift; sourceTree = "<group>"; };
+		69B3AEA226BC22BD00BA8F89 /* CourseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewCell.swift; sourceTree = "<group>"; };
+		69B3AEB726BC744700BA8F89 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		69B3AEB826BC744700BA8F89 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		69C79D3426CABC13008B024A /* FirstQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionsViewController.swift; sourceTree = "<group>"; };
+		69C79D3C26CABC24008B024A /* FirstQuestionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionsPresenter.swift; sourceTree = "<group>"; };
+		69C79D4126CAC112008B024A /* AnswerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewCell.swift; sourceTree = "<group>"; };
+		69C79D4B26CAC974008B024A /* CollectionViewTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTitle.swift; sourceTree = "<group>"; };
+		69C79D5026CBA221008B024A /* QuestionsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsNavigationController.swift; sourceTree = "<group>"; };
+		69C79D5626CBC2B3008B024A /* SecondQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionsViewController.swift; sourceTree = "<group>"; };
+		69C79D5E26CBC2C7008B024A /* SecondQuestionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionsPresenter.swift; sourceTree = "<group>"; };
+		69C79D6426CBF3E4008B024A /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
+		69C79D6C26CBF3F2008B024A /* MoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPresenter.swift; sourceTree = "<group>"; };
+		69C79D7C26CC1060008B024A /* DateValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValueFormatter.swift; sourceTree = "<group>"; };
 		C645ECD700F3EA9117461534 /* Pods-PureMind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind.debug.xcconfig"; path = "Target Support Files/Pods-PureMind/Pods-PureMind.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CE98E0FB35A5168AFF95DC /* Pods-PureMind-PureMindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind-PureMindUITests.debug.xcconfig"; path = "Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +313,7 @@
 			children = (
 				69ABE419269AFBF1001FBB4E /* StringExtensions.swift */,
 				69ABE43C269B2E67001FBB4E /* UITableViewCellExtensions.swift */,
+				69C79D7C26CC1060008B024A /* DateValueFormatter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,12 +321,9 @@
 		698D751D2694AA4D00C66C11 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				69ABE449269C5690001FBB4E /* PoliciesFullModule */,
-				69ABE425269B2947001FBB4E /* PoliciesShortModule */,
-				69ABE40B2699D674001FBB4E /* LoginModule */,
-				69357BBE269865D800831004 /* RegistrationModule */,
-				698D75412695E2DC00C66C11 /* DescriptionModule */,
-				698D75262694AC2F00C66C11 /* WelcomeModule */,
+				69B3AE8626BC158200BA8F89 /* WelcomeGroup */,
+				69B3AE8526BC155A00BA8F89 /* MenuGroup */,
+				69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -310,6 +360,33 @@
 				69A1C6BF26B165A100216B2C /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		69A1C6DD26B3FA4900216B2C /* ThemesModule */ = {
+			isa = PBXGroup;
+			children = (
+				69A1C6E126B3FA6B00216B2C /* ThemesViewController.swift */,
+				69A1C6E926B3FA7700216B2C /* ThemesPresenter.swift */,
+				69A1C6EE26B43F3F00216B2C /* ThemeViewCell.swift */,
+			);
+			path = ThemesModule;
+			sourceTree = "<group>";
+		};
+		69A1C6F326B48D9B00216B2C /* TherapistChoiceModule */ = {
+			isa = PBXGroup;
+			children = (
+				69A1C6F426B48DE600216B2C /* TherapistChoiceViewController.swift */,
+				69A1C6FC26B48E0800216B2C /* TherapistChoicePresenter.swift */,
+			);
+			path = TherapistChoiceModule;
+			sourceTree = "<group>";
+		};
+		69A1C70126B49B1B00216B2C /* TherapistSubModule */ = {
+			isa = PBXGroup;
+			children = (
+				69A1C70226B49B3900216B2C /* TherapistSubViewController.swift */,
+			);
+			path = TherapistSubModule;
 			sourceTree = "<group>";
 		};
 		69ABE40B2699D674001FBB4E /* LoginModule */ = {
@@ -373,6 +450,95 @@
 				69ABE458269C5D5E001FBB4E /* PolicyFullViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		69B3AE8426BC154E00BA8F89 /* MenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				69B3AE9426BC211A00BA8F89 /* View */,
+				69B3AE8F26BC165E00BA8F89 /* MenuPresenter.swift */,
+			);
+			path = MenuModule;
+			sourceTree = "<group>";
+		};
+		69B3AE8526BC155A00BA8F89 /* MenuGroup */ = {
+			isa = PBXGroup;
+			children = (
+				69C79D6326CBF3CF008B024A /* MoodModule */,
+				69C79D5526CBC28F008B024A /* SecondQuestionsModule */,
+				69C79D3326CABBF7008B024A /* FirstQuestionsModule */,
+				69B3AEBE26BC7CB600BA8F89 /* ChatModule */,
+				69A1C6DD26B3FA4900216B2C /* ThemesModule */,
+				69A1C6F326B48D9B00216B2C /* TherapistChoiceModule */,
+				69A1C70126B49B1B00216B2C /* TherapistSubModule */,
+				69B3AE8426BC154E00BA8F89 /* MenuModule */,
+			);
+			path = MenuGroup;
+			sourceTree = "<group>";
+		};
+		69B3AE8626BC158200BA8F89 /* WelcomeGroup */ = {
+			isa = PBXGroup;
+			children = (
+				698D75262694AC2F00C66C11 /* WelcomeModule */,
+				698D75412695E2DC00C66C11 /* DescriptionModule */,
+				69357BBE269865D800831004 /* RegistrationModule */,
+				69ABE40B2699D674001FBB4E /* LoginModule */,
+				69ABE425269B2947001FBB4E /* PoliciesShortModule */,
+				69ABE449269C5690001FBB4E /* PoliciesFullModule */,
+			);
+			path = WelcomeGroup;
+			sourceTree = "<group>";
+		};
+		69B3AE9426BC211A00BA8F89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */,
+				69B3AE9526BC214100BA8F89 /* PracticViewCell.swift */,
+				69B3AE9D26BC21C400BA8F89 /* PlanViewCell.swift */,
+				69B3AEA226BC22BD00BA8F89 /* CourseViewCell.swift */,
+				69B3AEB726BC744700BA8F89 /* MenuCell.swift */,
+				69B3AEB826BC744700BA8F89 /* MenuCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69B3AEBE26BC7CB600BA8F89 /* ChatModule */ = {
+			isa = PBXGroup;
+			children = (
+				69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */,
+				69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */,
+			);
+			path = ChatModule;
+			sourceTree = "<group>";
+		};
+		69C79D3326CABBF7008B024A /* FirstQuestionsModule */ = {
+			isa = PBXGroup;
+			children = (
+				69C79D3426CABC13008B024A /* FirstQuestionsViewController.swift */,
+				69C79D3C26CABC24008B024A /* FirstQuestionsPresenter.swift */,
+				69C79D4126CAC112008B024A /* AnswerViewCell.swift */,
+				69C79D4B26CAC974008B024A /* CollectionViewTitle.swift */,
+				69C79D5026CBA221008B024A /* QuestionsNavigationController.swift */,
+			);
+			path = FirstQuestionsModule;
+			sourceTree = "<group>";
+		};
+		69C79D5526CBC28F008B024A /* SecondQuestionsModule */ = {
+			isa = PBXGroup;
+			children = (
+				69C79D5626CBC2B3008B024A /* SecondQuestionsViewController.swift */,
+				69C79D5E26CBC2C7008B024A /* SecondQuestionsPresenter.swift */,
+			);
+			path = SecondQuestionsModule;
+			sourceTree = "<group>";
+		};
+		69C79D6326CBF3CF008B024A /* MoodModule */ = {
+			isa = PBXGroup;
+			children = (
+				69C79D6426CBF3E4008B024A /* MoodViewController.swift */,
+				69C79D6C26CBF3F2008B024A /* MoodPresenter.swift */,
+			);
+			path = MoodModule;
 			sourceTree = "<group>";
 		};
 		87214CFFEA24E9114539F2CC /* Pods */ = {
@@ -498,6 +664,7 @@
 			files = (
 				69A1C6D926B16E5900216B2C /* Montserrat-Regular.ttf in Resources */,
 				69A1C6C526B1695600216B2C /* Montserrat-Bold.ttf in Resources */,
+				69B3AEBA26BC744700BA8F89 /* MenuCell.xib in Resources */,
 				69A1C6CA26B1698B00216B2C /* Montserrat-ExtraBold.ttf in Resources */,
 				698D74EF2694A9AC00C66C11 /* LaunchScreen.storyboard in Resources */,
 				69A1C6CF26B169D000216B2C /* Montserrat-Medium.ttf in Resources */,
@@ -634,28 +801,53 @@
 			files = (
 				69ABE459269C5D5E001FBB4E /* PolicyFullViewCell.swift in Sources */,
 				698D75282694AC6200C66C11 /* WelcomeViewController.swift in Sources */,
+				69C79D3526CABC13008B024A /* FirstQuestionsViewController.swift in Sources */,
+				69A1C70326B49B3900216B2C /* TherapistSubViewController.swift in Sources */,
 				698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */,
+				69C79D4C26CAC974008B024A /* CollectionViewTitle.swift in Sources */,
+				69B3AE8B26BC165000BA8F89 /* MenuViewController.swift in Sources */,
 				69ABE4152699D6A3001FBB4E /* LoginPresenter.swift in Sources */,
+				69B3AEB926BC744700BA8F89 /* MenuCell.swift in Sources */,
+				69A1C6F526B48DE600216B2C /* TherapistChoiceViewController.swift in Sources */,
+				69C79D5726CBC2B3008B024A /* SecondQuestionsViewController.swift in Sources */,
 				69357BB52698658C00831004 /* NetworkService.swift in Sources */,
+				69C79D5126CBA221008B024A /* QuestionsNavigationController.swift in Sources */,
 				69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */,
 				69ABE44B269C56C1001FBB4E /* PoliciesFullViewController.swift in Sources */,
+				69C79D4226CAC112008B024A /* AnswerViewCell.swift in Sources */,
+				69C79D7D26CC1060008B024A /* DateValueFormatter.swift in Sources */,
 				698D74E32694A9AC00C66C11 /* AppDelegate.swift in Sources */,
+				69C79D6526CBF3E4008B024A /* MoodViewController.swift in Sources */,
+				69B3AE8026BC14A200BA8F89 /* MainTabBarController.swift in Sources */,
 				69357BC02698660700831004 /* RegistrationViewController.swift in Sources */,
 				69A1C6C026B165A100216B2C /* UIColorExtensions.swift in Sources */,
+				69A1C6EA26B3FA7700216B2C /* ThemesPresenter.swift in Sources */,
+				69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */,
+				69C79D6D26CBF3F2008B024A /* MoodPresenter.swift in Sources */,
 				69ABE442269B3101001FBB4E /* ShortPolicyViewCell.swift in Sources */,
 				698D74E52694A9AC00C66C11 /* SceneDelegate.swift in Sources */,
+				69A1C6FD26B48E0800216B2C /* TherapistChoicePresenter.swift in Sources */,
+				69C79D3D26CABC24008B024A /* FirstQuestionsPresenter.swift in Sources */,
 				698D75432695E2F600C66C11 /* DescriptionViewController.swift in Sources */,
 				69ABE427269B2962001FBB4E /* PoliciesShortViewController.swift in Sources */,
+				69B3AEC026BC7CCC00BA8F89 /* ChatViewController.swift in Sources */,
 				69ABE40726987919001FBB4E /* CheckBox.swift in Sources */,
 				69ABE42F269B2972001FBB4E /* PoliciesShortPresenter.swift in Sources */,
+				69A1C6E226B3FA6B00216B2C /* ThemesViewController.swift in Sources */,
 				69ABE43D269B2E67001FBB4E /* UITableViewCellExtensions.swift in Sources */,
+				69C79D5F26CBC2C7008B024A /* SecondQuestionsPresenter.swift in Sources */,
 				69357BBA269865A000831004 /* CachingService.swift in Sources */,
+				69B3AE9026BC165E00BA8F89 /* MenuPresenter.swift in Sources */,
 				69ABE435269B2E08001FBB4E /* ExpTitleViewCell.swift in Sources */,
 				69ABE453269C56D9001FBB4E /* PoliciesFullPresenter.swift in Sources */,
 				698D751F2694AAD900C66C11 /* ModuleBuilder.swift in Sources */,
 				69ABE41A269AFBF1001FBB4E /* StringExtensions.swift in Sources */,
+				69A1C6EF26B43F3F00216B2C /* ThemeViewCell.swift in Sources */,
+				69B3AE9E26BC21C400BA8F89 /* PlanViewCell.swift in Sources */,
 				69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */,
+				69B3AE9626BC214100BA8F89 /* PracticViewCell.swift in Sources */,
 				698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */,
+				69B3AEC826BC7CD900BA8F89 /* ChatPresenter.swift in Sources */,
 				69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

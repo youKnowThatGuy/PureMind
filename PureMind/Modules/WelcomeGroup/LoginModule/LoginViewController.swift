@@ -79,6 +79,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        /*
         let message = presenter.infoValidation(email: emailTextField.text!, password: passwordTextField.text!)
         if message == "pass"{
             validationAlert(message: "Проверка завершена успешно!")
@@ -86,6 +87,8 @@ class LoginViewController: UIViewController {
         else{
             validationAlert(message: message)
         }
+ */
+        performSegue(withIdentifier: "loginToMenuSegue", sender: nil)
     }
     
     @IBAction func passwordVisiblePressed(_ sender: UIButton) {

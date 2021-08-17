@@ -1,16 +1,36 @@
 PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - DropDown (2.3.13)
   - ExpyTableView (1.2.1)
+  - InputBarAccessoryView (5.3.1):
+    - InputBarAccessoryView/Core (= 5.3.1)
+  - InputBarAccessoryView/Core (5.3.1)
+  - MessageKit (3.6.1):
+    - InputBarAccessoryView (~> 5.3.1)
 
 DEPENDENCIES:
+  - Charts
+  - DropDown
   - ExpyTableView
+  - MessageKit
 
 SPEC REPOS:
   trunk:
+    - Charts
+    - DropDown
     - ExpyTableView
+    - InputBarAccessoryView
+    - MessageKit
 
 SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   ExpyTableView: 19cf224c2ff04b1ec215ec52bc4ba6f81fa809ed
+  InputBarAccessoryView: 1f75d8c9f75e5e57f3ffac36ed58635a8005e0bc
+  MessageKit: d153fbbbcb12f3f4045a1ba8874298924dacfb62
 
-PODFILE CHECKSUM: 8b8ae90c22bf3fa10a62a7e7e9096574e69a99a3
+PODFILE CHECKSUM: 2af576772cb85e3df69ca1edd5e4650b091e839d
 
 COCOAPODS: 1.10.1

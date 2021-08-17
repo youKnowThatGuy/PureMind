@@ -23,10 +23,9 @@ class LoginPresenter: LoginPresenterProtocol{
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier{
-        case "Segue":
-            guard let vc = segue.destination as? RegistrationViewController
+        case "loginToMenuSegue":
+            guard segue.destination is MainTabBarController 
             else {fatalError("invalid data passed")}
-            vc.presenter = RegistrationPresenter(view: vc)
             
         default:
             break

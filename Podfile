@@ -7,6 +7,12 @@ target 'PureMind' do
 
   pod 'ExpyTableView'
 
+  pod 'DropDown'
+
+  pod 'MessageKit'
+
+  pod 'Charts'
+
   target 'PureMindTests' do
     inherit! :search_paths
     # Pods for testing

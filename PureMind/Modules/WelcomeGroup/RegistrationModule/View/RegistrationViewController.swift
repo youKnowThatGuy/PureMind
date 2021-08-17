@@ -111,10 +111,12 @@ class RegistrationViewController: UIViewController {
     
     
     @IBAction func registerButtonPressed(_ sender: Any) {
+        /*
         let message = presenter.infoValidation(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
         if message == "pass"{
             if checkBox.isChecked == true{
                 validationAlert(message: "Проверка завершена успешно!")
+                performSegue(withIdentifier: "themesSegue", sender: nil)
             }
             else{
               validationAlert(message: "Вы не согласились с условиями пользования")
@@ -123,6 +125,8 @@ class RegistrationViewController: UIViewController {
         else{
             validationAlert(message: message)
         }
+ */
+        performSegue(withIdentifier: "themesSegue", sender: nil)
     }
     
     func validationAlert(message: String){
