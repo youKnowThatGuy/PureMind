@@ -8,12 +8,16 @@
 import UIKit
 
 let blueBackgorundColor = UIColor(red: 226, green: 233, blue: 252)
+let lightBlueColor = UIColor(red: 176, green: 188, blue: 246)
 let grayTextColor = UIColor(red: 103, green: 103, blue: 130) //676767
 let grayButtonColor = UIColor(red: 196, green: 196, blue: 196) //C4C4C4
 let darkGrayTextColor = UIColor(red: 175, green: 175, blue: 175) //AFAFAF
 let textFieldColor = UIColor(red: 98, green: 98, blue: 98) //626262
 let policiesButtonColor = UIColor(red: 78, green: 107, blue: 243)
 let lightYellowColor = UIColor(red: 249, green: 207, blue: 136) //F9CF88
+
+let toxicYellow = UIColor(red: 251, green: 255, blue: 203) //FBFFCB
+let toxicYellowSelected = UIColor(red: 249, green: 255, blue: 184) //F9FFB8
 
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {

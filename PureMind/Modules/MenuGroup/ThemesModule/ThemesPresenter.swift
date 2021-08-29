@@ -57,14 +57,13 @@ class ThemesPresenter: ThemesPresenterProtocol{
     func prepareCell(cell: ThemeViewCell, index: Int) {
         let check = selectedCells.firstIndex(of: index)
         if check == nil{
-            cell.checkBoxLabel.isHidden = true
+            cell.backgroundColor = toxicYellow
         }
         else{
-            cell.checkBoxLabel.isHidden = false
+            cell.backgroundColor = toxicYellowSelected
         }
         cell.themeNameLabel.text = "Тема №\(index + 1)"
         cell.layer.cornerRadius = 15
-        cell.backgroundColor = blueBackgorundColor
     }
     
     func selectedThemesCount() -> Int {

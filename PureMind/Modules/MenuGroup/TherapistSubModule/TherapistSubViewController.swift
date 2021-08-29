@@ -8,25 +8,57 @@
 import UIKit
 
 class TherapistSubViewController: UIViewController {
-
+    
+    @IBOutlet weak var backButtonShell: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descLabel1: UILabel!
+    @IBOutlet weak var descLabel2: UILabel!
+    @IBOutlet weak var descLabel3: UILabel!
+    @IBOutlet weak var continueButtonShell: UIButton!
+    
+    @IBOutlet weak var therapistView: UIView!
+    @IBOutlet weak var therapistTitle: UILabel!
+    @IBOutlet weak var therapistPriceLabel: UILabel!
+    @IBOutlet weak var therapistButtonShell: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        prepareViews()
+    }
+    
+    func prepareViews(){
+        therapistView.layer.cornerRadius = 15
+        therapistView.layer.borderWidth = 2
+        therapistView.layer.borderColor = lightBlueColor.cgColor
+        
+        let labels = [titleLabel, descLabel1, descLabel2, descLabel3, therapistTitle]
+        backButtonShell.tintColor = lightYellowColor
+        for label in labels{
+            label?.textColor = grayTextColor
+        }
+        therapistPriceLabel.textColor = lightBlueColor
+        
+        therapistButtonShell.layer.backgroundColor = lightYellowColor.cgColor
+        therapistButtonShell.setTitleColor(.white, for: .normal)
+        therapistButtonShell.setTitle("Подтвердить", for: .normal)
+        therapistButtonShell.layer.cornerRadius = 15
+        
+        continueButtonShell.layer.borderWidth = 2
+        continueButtonShell.layer.cornerRadius = 15
+        continueButtonShell.layer.borderColor = lightYellowColor.cgColor
+        continueButtonShell.setTitleColor(grayButtonColor, for: .normal)
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+ 
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func continueButtonPressed(_ sender: Any) {
+        
     }
-    */
-
+    
+    @IBAction func therpistButtonPressed(_ sender: Any) {
+    }
 }

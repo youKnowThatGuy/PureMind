@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
     var presenter: LoginPresenterProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         prepareLabels()
         prepareButtons()
         prepareTextFields()

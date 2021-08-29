@@ -10,7 +10,9 @@ import UIKit
 protocol AssemblyBuilderProtocol {
     func createWelcomeModule() -> UIViewController
     func createMenuModule() -> UIViewController
+    func createProfileModule() -> UIViewController
     func createMoodModuleOne(mood: String, vcIndex: Int) -> UIViewController
+    func createMoodModuleTwo(mood: String, vcIndex: Int) -> UIViewController
 }
 
 class ModuleBuilder: AssemblyBuilderProtocol{
@@ -24,6 +26,13 @@ class ModuleBuilder: AssemblyBuilderProtocol{
         let menuVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MenuVC") as MenuViewController
         menuVC.presenter = MenuPresenter(view: menuVC)
         let navC = UINavigationController(rootViewController: menuVC)
+        return navC
+    }
+    
+    func createProfileModule() -> UIViewController {
+        let profileVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ProfileVC") as ProfileViewController
+        profileVC.presenter = ProfilePresenter(view: profileVC)
+        let navC = UINavigationController(rootViewController: profileVC)
         return navC
     }
     

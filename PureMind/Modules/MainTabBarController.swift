@@ -19,7 +19,13 @@ class MainTabBarController: UITabBarController {
         item1.title = "Меню"
         item1.image = UIImage(systemName: "house.fill")
         menuVC.tabBarItem = item1
-        self.viewControllers = [menuVC]
+        
+        let profileVC = mod.createProfileModule()
+        let item2 = UITabBarItem()
+        item2.title = "Личный кабинет"
+        item2.image = UIImage(systemName: "person.crop.circle.fill")
+        profileVC.tabBarItem = item2
+        self.viewControllers = [menuVC, profileVC]
         
     }
     

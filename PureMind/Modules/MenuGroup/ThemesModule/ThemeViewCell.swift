@@ -15,6 +15,4 @@ class ThemeViewCell: UICollectionViewCell {
     
     @IBOutlet weak var themeNameLabel: UILabel!
     
-    @IBOutlet weak var checkBoxLabel: UIImageView!
-    
 }

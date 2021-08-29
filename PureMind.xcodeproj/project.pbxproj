@@ -70,6 +70,9 @@
 		69C79D6526CBF3E4008B024A /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D6426CBF3E4008B024A /* MoodViewController.swift */; };
 		69C79D6D26CBF3F2008B024A /* MoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D6C26CBF3F2008B024A /* MoodPresenter.swift */; };
 		69C79D7D26CC1060008B024A /* DateValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D7C26CC1060008B024A /* DateValueFormatter.swift */; };
+		69C79D8626CC1741008B024A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D8526CC1741008B024A /* ProfileViewController.swift */; };
+		69C79D8E26CC1751008B024A /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D8D26CC1751008B024A /* ProfilePresenter.swift */; };
+		69C79D9326CC241A008B024A /* ProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D9226CC241A008B024A /* ProfileViewCell.swift */; };
 		DA12F3192DF1CB76C43F120F /* Pods_PureMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EAE2D345787B1A2710F770 /* Pods_PureMind.framework */; };
 		DCA617E89129C993441F0979 /* Pods_PureMindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */; };
 /* End PBXBuildFile section */
@@ -165,6 +168,9 @@
 		69C79D6426CBF3E4008B024A /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		69C79D6C26CBF3F2008B024A /* MoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPresenter.swift; sourceTree = "<group>"; };
 		69C79D7C26CC1060008B024A /* DateValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValueFormatter.swift; sourceTree = "<group>"; };
+		69C79D8526CC1741008B024A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		69C79D8D26CC1751008B024A /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		69C79D9226CC241A008B024A /* ProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCell.swift; sourceTree = "<group>"; };
 		C645ECD700F3EA9117461534 /* Pods-PureMind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind.debug.xcconfig"; path = "Target Support Files/Pods-PureMind/Pods-PureMind.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CE98E0FB35A5168AFF95DC /* Pods-PureMind-PureMindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind-PureMindUITests.debug.xcconfig"; path = "Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -321,6 +327,7 @@
 		698D751D2694AA4D00C66C11 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				69C79D8126CC16E4008B024A /* ProfileGroup */,
 				69B3AE8626BC158200BA8F89 /* WelcomeGroup */,
 				69B3AE8526BC155A00BA8F89 /* MenuGroup */,
 				69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */,
@@ -539,6 +546,16 @@
 				69C79D6C26CBF3F2008B024A /* MoodPresenter.swift */,
 			);
 			path = MoodModule;
+			sourceTree = "<group>";
+		};
+		69C79D8126CC16E4008B024A /* ProfileGroup */ = {
+			isa = PBXGroup;
+			children = (
+				69C79D8526CC1741008B024A /* ProfileViewController.swift */,
+				69C79D8D26CC1751008B024A /* ProfilePresenter.swift */,
+				69C79D9226CC241A008B024A /* ProfileViewCell.swift */,
+			);
+			path = ProfileGroup;
 			sourceTree = "<group>";
 		};
 		87214CFFEA24E9114539F2CC /* Pods */ = {
@@ -823,6 +840,7 @@
 				69A1C6C026B165A100216B2C /* UIColorExtensions.swift in Sources */,
 				69A1C6EA26B3FA7700216B2C /* ThemesPresenter.swift in Sources */,
 				69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */,
+				69C79D8626CC1741008B024A /* ProfileViewController.swift in Sources */,
 				69C79D6D26CBF3F2008B024A /* MoodPresenter.swift in Sources */,
 				69ABE442269B3101001FBB4E /* ShortPolicyViewCell.swift in Sources */,
 				698D74E52694A9AC00C66C11 /* SceneDelegate.swift in Sources */,
@@ -836,6 +854,7 @@
 				69A1C6E226B3FA6B00216B2C /* ThemesViewController.swift in Sources */,
 				69ABE43D269B2E67001FBB4E /* UITableViewCellExtensions.swift in Sources */,
 				69C79D5F26CBC2C7008B024A /* SecondQuestionsPresenter.swift in Sources */,
+				69C79D8E26CC1751008B024A /* ProfilePresenter.swift in Sources */,
 				69357BBA269865A000831004 /* CachingService.swift in Sources */,
 				69B3AE9026BC165E00BA8F89 /* MenuPresenter.swift in Sources */,
 				69ABE435269B2E08001FBB4E /* ExpTitleViewCell.swift in Sources */,
@@ -847,6 +866,7 @@
 				69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */,
 				69B3AE9626BC214100BA8F89 /* PracticViewCell.swift in Sources */,
 				698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */,
+				69C79D9326CC241A008B024A /* ProfileViewCell.swift in Sources */,
 				69B3AEC826BC7CD900BA8F89 /* ChatPresenter.swift in Sources */,
 				69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */,
 			);
