@@ -50,6 +50,13 @@
 		69ABE453269C56D9001FBB4E /* PoliciesFullPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE452269C56D9001FBB4E /* PoliciesFullPresenter.swift */; };
 		69ABE459269C5D5E001FBB4E /* PolicyFullViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE458269C5D5E001FBB4E /* PolicyFullViewCell.swift */; };
 		69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABE45D269C8512001FBB4E /* ExpTitleRightCell.swift */; };
+		69AD34BB26ED32A000CB7581 /* ChatBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34BA26ED32A000CB7581 /* ChatBot.swift */; };
+		69AD34CB26ED559700CB7581 /* TherapistPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34CA26ED559700CB7581 /* TherapistPriceViewController.swift */; };
+		69AD34D326ED55C100CB7581 /* TherapistPricePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34D226ED55C100CB7581 /* TherapistPricePresenter.swift */; };
+		69AD34D826ED5C3100CB7581 /* TariffViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34D726ED5C3100CB7581 /* TariffViewCell.swift */; };
+		69B1F5312704D73500BEC38F /* ChatButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */; };
+		69B1F53F2705D87100BEC38F /* ButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1F53D2705D87100BEC38F /* ButtonViewCell.swift */; };
+		69B1F5402705D87100BEC38F /* ButtonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B1F53E2705D87100BEC38F /* ButtonViewCell.xib */; };
 		69B3AE8026BC14A200BA8F89 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */; };
 		69B3AE8B26BC165000BA8F89 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */; };
 		69B3AE9026BC165E00BA8F89 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE8F26BC165E00BA8F89 /* MenuPresenter.swift */; };
@@ -148,6 +155,13 @@
 		69ABE452269C56D9001FBB4E /* PoliciesFullPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliciesFullPresenter.swift; sourceTree = "<group>"; };
 		69ABE458269C5D5E001FBB4E /* PolicyFullViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyFullViewCell.swift; sourceTree = "<group>"; };
 		69ABE45D269C8512001FBB4E /* ExpTitleRightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpTitleRightCell.swift; sourceTree = "<group>"; };
+		69AD34BA26ED32A000CB7581 /* ChatBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBot.swift; sourceTree = "<group>"; };
+		69AD34CA26ED559700CB7581 /* TherapistPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistPriceViewController.swift; sourceTree = "<group>"; };
+		69AD34D226ED55C100CB7581 /* TherapistPricePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistPricePresenter.swift; sourceTree = "<group>"; };
+		69AD34D726ED5C3100CB7581 /* TariffViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffViewCell.swift; sourceTree = "<group>"; };
+		69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButtonViewCell.swift; sourceTree = "<group>"; };
+		69B1F53D2705D87100BEC38F /* ButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewCell.swift; sourceTree = "<group>"; };
+		69B1F53E2705D87100BEC38F /* ButtonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewCell.xib; sourceTree = "<group>"; };
 		69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		69B3AE8F26BC165E00BA8F89 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -459,6 +473,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		69AD34C926ED556F00CB7581 /* TherapistPriceModule */ = {
+			isa = PBXGroup;
+			children = (
+				69AD34CA26ED559700CB7581 /* TherapistPriceViewController.swift */,
+				69AD34D226ED55C100CB7581 /* TherapistPricePresenter.swift */,
+				69AD34D726ED5C3100CB7581 /* TariffViewCell.swift */,
+			);
+			path = TherapistPriceModule;
+			sourceTree = "<group>";
+		};
 		69B3AE8426BC154E00BA8F89 /* MenuModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,6 +495,7 @@
 		69B3AE8526BC155A00BA8F89 /* MenuGroup */ = {
 			isa = PBXGroup;
 			children = (
+				69AD34C926ED556F00CB7581 /* TherapistPriceModule */,
 				69C79D6326CBF3CF008B024A /* MoodModule */,
 				69C79D5526CBC28F008B024A /* SecondQuestionsModule */,
 				69C79D3326CABBF7008B024A /* FirstQuestionsModule */,
@@ -514,6 +539,10 @@
 			children = (
 				69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */,
 				69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */,
+				69AD34BA26ED32A000CB7581 /* ChatBot.swift */,
+				69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */,
+				69B1F53D2705D87100BEC38F /* ButtonViewCell.swift */,
+				69B1F53E2705D87100BEC38F /* ButtonViewCell.xib */,
 			);
 			path = ChatModule;
 			sourceTree = "<group>";
@@ -687,6 +716,7 @@
 				69A1C6CF26B169D000216B2C /* Montserrat-Medium.ttf in Resources */,
 				69A1C6B726B161BF00216B2C /* Montserrat in Resources */,
 				698D74EC2694A9AC00C66C11 /* Assets.xcassets in Resources */,
+				69B1F5402705D87100BEC38F /* ButtonViewCell.xib in Resources */,
 				69A1C6D426B16E1000216B2C /* Montserrat-SemiBold.ttf in Resources */,
 				698D74EA2694A9AC00C66C11 /* Main.storyboard in Resources */,
 			);
@@ -816,6 +846,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AD34D826ED5C3100CB7581 /* TariffViewCell.swift in Sources */,
 				69ABE459269C5D5E001FBB4E /* PolicyFullViewCell.swift in Sources */,
 				698D75282694AC6200C66C11 /* WelcomeViewController.swift in Sources */,
 				69C79D3526CABC13008B024A /* FirstQuestionsViewController.swift in Sources */,
@@ -830,6 +861,7 @@
 				69357BB52698658C00831004 /* NetworkService.swift in Sources */,
 				69C79D5126CBA221008B024A /* QuestionsNavigationController.swift in Sources */,
 				69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */,
+				69AD34CB26ED559700CB7581 /* TherapistPriceViewController.swift in Sources */,
 				69ABE44B269C56C1001FBB4E /* PoliciesFullViewController.swift in Sources */,
 				69C79D4226CAC112008B024A /* AnswerViewCell.swift in Sources */,
 				69C79D7D26CC1060008B024A /* DateValueFormatter.swift in Sources */,
@@ -840,6 +872,7 @@
 				69A1C6C026B165A100216B2C /* UIColorExtensions.swift in Sources */,
 				69A1C6EA26B3FA7700216B2C /* ThemesPresenter.swift in Sources */,
 				69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */,
+				69B1F53F2705D87100BEC38F /* ButtonViewCell.swift in Sources */,
 				69C79D8626CC1741008B024A /* ProfileViewController.swift in Sources */,
 				69C79D6D26CBF3F2008B024A /* MoodPresenter.swift in Sources */,
 				69ABE442269B3101001FBB4E /* ShortPolicyViewCell.swift in Sources */,
@@ -857,18 +890,21 @@
 				69C79D8E26CC1751008B024A /* ProfilePresenter.swift in Sources */,
 				69357BBA269865A000831004 /* CachingService.swift in Sources */,
 				69B3AE9026BC165E00BA8F89 /* MenuPresenter.swift in Sources */,
+				69AD34BB26ED32A000CB7581 /* ChatBot.swift in Sources */,
 				69ABE435269B2E08001FBB4E /* ExpTitleViewCell.swift in Sources */,
 				69ABE453269C56D9001FBB4E /* PoliciesFullPresenter.swift in Sources */,
 				698D751F2694AAD900C66C11 /* ModuleBuilder.swift in Sources */,
 				69ABE41A269AFBF1001FBB4E /* StringExtensions.swift in Sources */,
 				69A1C6EF26B43F3F00216B2C /* ThemeViewCell.swift in Sources */,
 				69B3AE9E26BC21C400BA8F89 /* PlanViewCell.swift in Sources */,
+				69B1F5312704D73500BEC38F /* ChatButtonViewCell.swift in Sources */,
 				69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */,
 				69B3AE9626BC214100BA8F89 /* PracticViewCell.swift in Sources */,
 				698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */,
 				69C79D9326CC241A008B024A /* ProfileViewCell.swift in Sources */,
 				69B3AEC826BC7CD900BA8F89 /* ChatPresenter.swift in Sources */,
 				69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */,
+				69AD34D326ED55C100CB7581 /* TherapistPricePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1056,7 +1092,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = strangeGuy.PureMind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1077,7 +1113,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = strangeGuy.PureMind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

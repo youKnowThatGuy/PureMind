@@ -244,5 +244,626 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A26E572-23B6-4D69-9D44-5C6E955F5C86"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatMessageViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "configure(with:at:and:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "701208DF-6F44-4900-A83F-1270D9B68F65"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57B5E63E-E311-4BAD-A1C8-9251114D5DB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/DescriptionModule/View/DescriptionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D7529A8-6D72-4833-BA6C-9D50C1D39C37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/DescriptionModule/View/DescriptionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "622E226F-45D9-4686-96B2-5179971FC972"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "botSays()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDB149E4-5ABF-4A2D-9193-4ADB4F820F25"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "routeOneChoiceZero(cases:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52F77006-2319-4B24-8BE6-BCCDF7179FBD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "routeOneChoiceZero(cases:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E1D5563-0CA3-4299-AAEE-EBED56F1EFA8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "routeOneChoiceZero(cases:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E1D5563-0CA3-4299-AAEE-EBED56F1EFA8 - 27f46a16bf2be39f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "928">
+               </Location>
+               <Location
+                  uuid = "2E1D5563-0CA3-4299-AAEE-EBED56F1EFA8 - 27f46a16bf2be39f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "1035">
+               </Location>
+               <Location
+                  uuid = "2E1D5563-0CA3-4299-AAEE-EBED56F1EFA8 - 27f46a16bf2be39f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "1804">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3AE6E78-E651-4F84-82EC-5E5E0C8730DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "routeOneChoiceZero(cases:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C3AE6E78-E651-4F84-82EC-5E5E0C8730DD - 27f46a16bf2be4e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "134">
+               </Location>
+               <Location
+                  uuid = "C3AE6E78-E651-4F84-82EC-5E5E0C8730DD - 27f46a16bf2be4e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "197">
+               </Location>
+               <Location
+                  uuid = "C3AE6E78-E651-4F84-82EC-5E5E0C8730DD - 27f46a16bf2be4e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "831">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48978A59-0B26-4AA6-A4B1-A8094C998A9F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "bigRouteOne()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CDC176DD-BF22-4644-9B2E-1721A6B72025"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "bigRouteOne()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBD5FE7E-6BBD-437F-AE02-37F94DD8296A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "multiChoice1(botMessage:cases:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FBD5FE7E-6BBD-437F-AE02-37F94DD8296A - eb2f9053b7b4e2b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(multiChoice1 in _D5C7E2E61ACF60E88120113E6B7A6FE7)(botMessage: Swift.String, cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "198">
+               </Location>
+               <Location
+                  uuid = "FBD5FE7E-6BBD-437F-AE02-37F94DD8296A - eb2f9053b7b4e2b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(multiChoice1 in _D5C7E2E61ACF60E88120113E6B7A6FE7)(botMessage: Swift.String, cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "262">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D714BD94-81B4-4ED5-B33B-DAD407291194"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67B5FD8E-1621-434F-A55B-AA69587E318D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6AA1000-AF51-4208-902A-81BC8B691B56"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D31D206B-04DA-490E-85AC-3000540D9DEA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "routeOneChoiceZero(cases:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02F65AE0-0B50-409A-A01C-870D3DB40B6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBA0A009-C983-4475-9CA0-79C4E6AFED51"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "routeOneChoiceOne(cases:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9366D96E-A519-4734-B8E3-DCA0D77AFA6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "routeOneChoiceOne(cases:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9366D96E-A519-4734-B8E3-DCA0D77AFA6C - 5ae0260bf0ceed6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(routeOneChoiceOne in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "9366D96E-A519-4734-B8E3-DCA0D77AFA6C - 5ae0260bf0ceed6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(routeOneChoiceOne in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "199">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EB7EBB1-092C-403C-AB25-131B78DC636D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "situationResponse()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0EB7EBB1-092C-403C-AB25-131B78DC636D - 303096191274c5bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "0EB7EBB1-092C-403C-AB25-131B78DC636D - 303096191274c5bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "143">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08D7885E-3491-40C7-8186-73CF76D7142D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "situationResponse()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDDEF00C-B3B4-406B-86AD-4207A8443050"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "situationResponse()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E641667-E616-437C-BD4C-7F704FE15C35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "situationResponse()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09C6411F-7F89-4B25-B731-5017E3749D43"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "situationResponse()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "09C6411F-7F89-4B25-B731-5017E3749D43 - 303096191274c53f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "697">
+               </Location>
+               <Location
+                  uuid = "09C6411F-7F89-4B25-B731-5017E3749D43 - 303096191274c53f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "754">
+               </Location>
+               <Location
+                  uuid = "09C6411F-7F89-4B25-B731-5017E3749D43 - 303096191274c53f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "870">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

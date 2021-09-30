@@ -56,9 +56,27 @@ class TherapistSubViewController: UIViewController {
  
     
     @IBAction func continueButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "registrationToMenuSegue2", sender: nil)
         
     }
     
     @IBAction func therpistButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "therapistPricesSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "therapistPricesSegue":
+            guard let vc = segue.destination as? TherapistPriceViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = TherapistPricePresenter(view: vc)
+        
+        case "registrationToMenuSegue2":
+            guard segue.destination is MainTabBarController
+            else {fatalError("invalid data passed")}
+            
+        default:
+            break
+        }
     }
 }

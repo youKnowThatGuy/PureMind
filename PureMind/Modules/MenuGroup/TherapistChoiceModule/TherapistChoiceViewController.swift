@@ -31,6 +31,7 @@ class TherapistChoiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background2")!)
         soloChoiceView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(firstViewPressed)))
         therapistChoiceView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(secondViewPressed)))
         prepareViews()
