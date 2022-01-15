@@ -11,10 +11,13 @@ protocol LoginPresenterProtocol{
     init(view: LoginViewProtocol)
     func prepare(for segue: UIStoryboardSegue, sender: Any?)
     func infoValidation(email: String, password: String) -> String
+    func performLogin(email: String, password: String)
 }
 
 class LoginPresenter: LoginPresenterProtocol{
     weak var view: LoginViewProtocol?
+    let networkService = NetworkService.shared
+    let cacheService = CachingService.shared
     
     required init(view: LoginViewProtocol) {
         self.view = view
@@ -62,6 +65,20 @@ class LoginPresenter: LoginPresenterProtocol{
         return "pass"
     }
     
+    func performLogin(email: String, password: String) {
+        networkService.logIN(login: email, password: password) { (result) in
+            switch result{
+            case let .success(token):
+                self.networkService.apiKey = token
+                self.cacheService.cacheInfo(UserInfo(login: email, password: password, token: token))
+                self.view?.loginSuccess()
+                
+            case .failure(_):
+                self.view?.loginAlert(text: "Войти в систему не удалось. Пожалуйста, проверьте логин и пароль и попробуйте снова")
+            }
+        }
+    }
+    
     func stringClear(str: String) -> String{
         var newStr = ""
         for char in str{
@@ -71,5 +88,6 @@ class LoginPresenter: LoginPresenterProtocol{
         }
         return newStr
     }
+    
     
 }

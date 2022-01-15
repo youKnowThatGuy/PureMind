@@ -19,15 +19,27 @@ class ThemesViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var descriptionLabel: UILabel!
+    var imageView: UIImageView = {
+            let imageView = UIImageView(frame: .zero)
+            imageView.image = UIImage(named: "background2")
+            imageView.contentMode = .scaleAspectFill
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            return imageView
+        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background2")!)
-        
         prepareViews()
     }
     
     func prepareViews(){
+        view.insertSubview(imageView, at: 0)
+                NSLayoutConstraint.activate([
+                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
+                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
         themesCollectionView.delegate = self
         themesCollectionView.dataSource = self
         //themesCollectionView.backgroundColor = UIColor(patternImage: UIImage(named: "background2")!)

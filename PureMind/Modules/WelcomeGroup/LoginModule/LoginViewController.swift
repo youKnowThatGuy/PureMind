@@ -9,6 +9,8 @@ import UIKit
 
 protocol LoginViewProtocol: UIViewController{
     func updateUI()
+    func loginAlert(text: String)
+    func loginSuccess()
 }
 
 class LoginViewController: UIViewController {
@@ -79,16 +81,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-        /*
         let message = presenter.infoValidation(email: emailTextField.text!, password: passwordTextField.text!)
         if message == "pass"{
-            validationAlert(message: "Проверка завершена успешно!")
+            presenter.performLogin(email: emailTextField.text!, password: passwordTextField.text!)
+            
         }
         else{
-            validationAlert(message: message)
+            //validationAlert(message: message)
         }
- */
-        performSegue(withIdentifier: "loginToMenuSegue", sender: nil)
+        presenter.performLogin(email: emailTextField.text!, password: passwordTextField.text!)
+
     }
     
     @IBAction func passwordVisiblePressed(_ sender: UIButton) {
@@ -130,6 +132,14 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginViewProtocol{
     func updateUI() {
         print("Good!")
+    }
+    
+    func loginAlert(text: String){
+        validationAlert(message: text)
+    }
+    
+    func loginSuccess(){
+        performSegue(withIdentifier: "loginToMenuSegue", sender: nil)
     }
 }
 

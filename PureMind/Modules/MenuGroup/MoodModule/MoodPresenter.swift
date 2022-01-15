@@ -20,6 +20,7 @@ protocol MoodPresenterProtocol{
 class MoodPresenter: MoodPresenterProtocol{
     weak var view: MoodViewProtocol?
     var currMood: String?
+    var practics = ["Страх", "Стыд", "Обида", "Уверенность", "Апатия", "Вина", "Злость", "Стресс", "Все темы"]
     
     required init(view: MoodViewProtocol, currMood: String) {
         self.view = view
@@ -43,15 +44,20 @@ class MoodPresenter: MoodPresenterProtocol{
     }
     
     func prepareCell(cell: PracticViewCell, index: Int) {
-        cell.practicImageView.image = UIImage(named: "noImage")
-        cell.practicLabel.text = "Тема №\(index + 1)"
-        
-        cell.layer.borderWidth = 2
-        cell.layer.borderColor = blueBackgorundColor.cgColor
-        
-        if index == 4{
-            cell.practicLabel.text = "Все темы"
+        var color = UIColor(red: 254, green: 227, blue: 180)
+        if (index + 1) % 3 == 0 {
+            color = UIColor(red: 255, green: 228, blue: 197)
         }
+        else if (index + 1) % 4 == 0 {
+            color = UIColor(red: 253, green: 214, blue: 201)
+        }
+        else if (index + 1) % 2 == 0 && (index + 1) % 3 != 0{
+            color = UIColor(red: 251, green: 210, blue: 174)
+        }
+        cell.practicLabel.text = practics[index]
+        cell.backgroundColor = color
+        cell.excerciseCount.text = "\(index + 1) техник"
+        cell.layer.cornerRadius = 14
     }
     
     func setDataCount(_ count: Int, range: UInt32) -> ChartData {

@@ -11,7 +11,11 @@ target 'PureMind' do
 
   pod 'MessageKit'
 
+  pod 'Alamofire', '~> 5.4'
+	
   pod 'Charts'
+
+  pod 'BEKCurveTabbar', :git => 'https://github.com/behrad-kzm/BEKCurveTabbar.git'
 
   target 'PureMindTests' do
     inherit! :search_paths

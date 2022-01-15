@@ -18,6 +18,13 @@ let lightYellowColor = UIColor(red: 249, green: 207, blue: 136) //F9CF88
 
 let toxicYellow = UIColor(red: 251, green: 255, blue: 203) //FBFFCB
 let toxicYellowSelected = UIColor(red: 249, green: 255, blue: 184) //F9FFB8
+let titleYellow = UIColor(red: 255, green: 141, blue: 54)
+
+let perfectMood = UIColor(red: 144, green: 191, blue: 255)
+let goodMood = UIColor(red: 199, green: 225, blue: 179)
+let normalMood = UIColor(red: 254, green: 235, blue: 138)
+let badMood = UIColor(red: 252, green: 177, blue: 120)
+let awfulMood = UIColor(red: 249, green: 117, blue: 96)
 
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {

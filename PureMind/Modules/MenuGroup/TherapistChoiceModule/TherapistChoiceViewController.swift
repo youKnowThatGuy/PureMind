@@ -24,20 +24,31 @@ class TherapistChoiceViewController: UIViewController {
     @IBOutlet weak var cardTitleLabel2: UILabel!
     @IBOutlet weak var cardDescLabel1: UILabel!
     @IBOutlet weak var cardDescLabel2: UILabel!
-    
-    
+    var imageView: UIImageView = {
+            let imageView = UIImageView(frame: .zero)
+            imageView.image = UIImage(named: "background2")
+            imageView.contentMode = .scaleAspectFill
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            return imageView
+        }()
     
     var viewPressed = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background2")!)
         soloChoiceView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(firstViewPressed)))
         therapistChoiceView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(secondViewPressed)))
         prepareViews()
     }
     
     func prepareViews(){
+        view.insertSubview(imageView, at: 0)
+                NSLayoutConstraint.activate([
+                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
+                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
         prepareLabels()
         soloChoiceView.backgroundColor = toxicYellow
         therapistChoiceView.backgroundColor = toxicYellow

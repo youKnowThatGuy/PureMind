@@ -19,8 +19,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         let mod = ModuleBuilder()
-        window?.rootViewController = mod.createWelcomeModule()
-        window?.makeKeyAndVisible()
+        if CachingService.shared.checkUserInfo() == false{
+            window?.rootViewController = mod.createWelcomeModule()
+            //window?.rootViewController = mod.createTabModule()
+            window?.makeKeyAndVisible()
+            
+        }
+        else{
+            CachingService.shared.getInfo {[weak self] (result) in
+                NetworkService.shared.logIN(login: result!.login, password: result!.password) { result in
+                    switch result{
+                    case let .success(token):
+                        NetworkService.shared.apiKey = token
+                        self?.window?.rootViewController = mod.createTabModule()
+                        self?.window?.makeKeyAndVisible()
+                        
+                    case .failure(_):
+                        self?.window?.rootViewController = mod.createWelcomeModule()
+                        self?.window?.makeKeyAndVisible()
+                    }
+            }
+            }
         
     }
 
@@ -55,3 +74,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+}

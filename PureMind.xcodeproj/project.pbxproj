@@ -8,10 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		654E28D05E042970750BB00E /* Pods_PureMind_PureMindUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BE82F1BE3E1BBBCB5FDA18 /* Pods_PureMind_PureMindUITests.framework */; };
+		69009EC8270F92A100D18BEA /* ExcerciseChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EC7270F92A100D18BEA /* ExcerciseChoiceViewController.swift */; };
+		69009ECE270F92DE00D18BEA /* ExcerciseChoicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009ECD270F92DE00D18BEA /* ExcerciseChoicePresenter.swift */; };
+		69009EDB270F96CF00D18BEA /* PracticsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EDA270F96CF00D18BEA /* PracticsViewCell.swift */; };
+		69009EE227160B9000D18BEA /* TextExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EE127160B9000D18BEA /* TextExcerciseViewController.swift */; };
+		69009EE727160C0700D18BEA /* TextExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EE627160C0700D18BEA /* TextExcercisePresenter.swift */; };
+		69009EEC27160DCA00D18BEA /* PageExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EEB27160DCA00D18BEA /* PageExcerciseViewController.swift */; };
+		69009EF227162B8700D18BEA /* RateExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EF127162B8700D18BEA /* RateExcerciseViewController.swift */; };
+		69009EFA2716385800D18BEA /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69009EF92716385400D18BEA /* Montserrat-Regular.ttf */; };
+		69009F152716EB9E00D18BEA /* YesNoExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F142716EB9E00D18BEA /* YesNoExcerciseViewController.swift */; };
+		69009F1E2716EE5200D18BEA /* PictureExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F1D2716EE5200D18BEA /* PictureExcerciseViewController.swift */; };
+		69009F2727171D4900D18BEA /* TextPictureExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F2627171D4900D18BEA /* TextPictureExcerciseViewController.swift */; };
+		69009F2E2717208700D18BEA /* InsertImageExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F2D2717208700D18BEA /* InsertImageExcerciseViewController.swift */; };
+		69009F36271721FB00D18BEA /* InsertImageExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F35271721FB00D18BEA /* InsertImageExcercisePresenter.swift */; };
+		69009F3C2717294700D18BEA /* GapsExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F3B2717294700D18BEA /* GapsExcerciseViewController.swift */; };
+		69009F442717295B00D18BEA /* GapsExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F432717295B00D18BEA /* GapsExcercisePresenter.swift */; };
+		69009F4927172AAC00D18BEA /* GapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F4827172AAC00D18BEA /* GapTableViewCell.swift */; };
 		69357BB52698658C00831004 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BB42698658C00831004 /* NetworkService.swift */; };
 		69357BBA269865A000831004 /* CachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BB9269865A000831004 /* CachingService.swift */; };
 		69357BC02698660700831004 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BBF2698660700831004 /* RegistrationViewController.swift */; };
 		69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BC72698661A00831004 /* RegistrationPresenter.swift */; };
+		694F9AD627931E1300E4F0A0 /* SingleExcerciseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F9AD527931E1300E4F0A0 /* SingleExcerciseViewCell.swift */; };
+		69856A4D2736621C0081A14C /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69856A4C2736621C0081A14C /* UIView+Snapshot.swift */; };
+		69856A58273663980081A14C /* ReactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69856A57273663980081A14C /* ReactionViewController.swift */; };
+		69856A632736B3CE0081A14C /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69856A622736B3CE0081A14C /* MenuCell.swift */; };
+		69856A682736B3DC0081A14C /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69856A672736B3DC0081A14C /* MenuCell.xib */; };
+		69856A6D2736B4860081A14C /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69856A6C2736B4860081A14C /* ButtonCollectionViewCell.swift */; };
 		698D74E32694A9AC00C66C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D74E22694A9AC00C66C11 /* AppDelegate.swift */; };
 		698D74E52694A9AC00C66C11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D74E42694A9AC00C66C11 /* SceneDelegate.swift */; };
 		698D74EA2694A9AC00C66C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698D74E82694A9AC00C66C11 /* Main.storyboard */; };
@@ -30,7 +52,6 @@
 		69A1C6CA26B1698B00216B2C /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6C926B1698800216B2C /* Montserrat-ExtraBold.ttf */; };
 		69A1C6CF26B169D000216B2C /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6CE26B169CD00216B2C /* Montserrat-Medium.ttf */; };
 		69A1C6D426B16E1000216B2C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6D326B16E0E00216B2C /* Montserrat-SemiBold.ttf */; };
-		69A1C6D926B16E5900216B2C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6D826B16E5600216B2C /* Montserrat-Regular.ttf */; };
 		69A1C6E226B3FA6B00216B2C /* ThemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6E126B3FA6B00216B2C /* ThemesViewController.swift */; };
 		69A1C6EA26B3FA7700216B2C /* ThemesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6E926B3FA7700216B2C /* ThemesPresenter.swift */; };
 		69A1C6EF26B43F3F00216B2C /* ThemeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6EE26B43F3F00216B2C /* ThemeViewCell.swift */; };
@@ -55,18 +76,26 @@
 		69AD34D326ED55C100CB7581 /* TherapistPricePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34D226ED55C100CB7581 /* TherapistPricePresenter.swift */; };
 		69AD34D826ED5C3100CB7581 /* TariffViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34D726ED5C3100CB7581 /* TariffViewCell.swift */; };
 		69B1F5312704D73500BEC38F /* ChatButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */; };
-		69B1F53F2705D87100BEC38F /* ButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1F53D2705D87100BEC38F /* ButtonViewCell.swift */; };
-		69B1F5402705D87100BEC38F /* ButtonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B1F53E2705D87100BEC38F /* ButtonViewCell.xib */; };
 		69B3AE8026BC14A200BA8F89 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */; };
 		69B3AE8B26BC165000BA8F89 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */; };
 		69B3AE9026BC165E00BA8F89 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE8F26BC165E00BA8F89 /* MenuPresenter.swift */; };
 		69B3AE9626BC214100BA8F89 /* PracticViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE9526BC214100BA8F89 /* PracticViewCell.swift */; };
-		69B3AE9E26BC21C400BA8F89 /* PlanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE9D26BC21C400BA8F89 /* PlanViewCell.swift */; };
 		69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEA226BC22BD00BA8F89 /* CourseViewCell.swift */; };
-		69B3AEB926BC744700BA8F89 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEB726BC744700BA8F89 /* MenuCell.swift */; };
-		69B3AEBA26BC744700BA8F89 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B3AEB826BC744700BA8F89 /* MenuCell.xib */; };
 		69B3AEC026BC7CCC00BA8F89 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */; };
 		69B3AEC826BC7CD900BA8F89 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */; };
+		69BC722A274FEA4B00774A0F /* SessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC7229274FEA4B00774A0F /* SessionError.swift */; };
+		69BC723B27502B6100774A0F /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC723A27502B6100774A0F /* ServerResponse.swift */; };
+		69BC724027502BCE00774A0F /* PracticesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC723F27502BCE00774A0F /* PracticesInfo.swift */; };
+		69BC724527502EA100774A0F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC724427502EA100774A0F /* UserInfo.swift */; };
+		69BDBF7F2793767E0029575C /* ExpCourseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDBF7E2793767E0029575C /* ExpCourseViewCell.swift */; };
+		69BDBF8427937A8E0029575C /* SingleCourseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDBF8327937A8E0029575C /* SingleCourseViewCell.swift */; };
+		69BDBF892793806B0029575C /* AllCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDBF882793806B0029575C /* AllCoursesViewController.swift */; };
+		69BDBF8E2793807F0029575C /* AllCoursesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDBF8D2793807F0029575C /* AllCoursesPresenter.swift */; };
+		69BDBF93279384950029575C /* CoursesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDBF92279384950029575C /* CoursesInfo.swift */; };
+		69C3279E27837B5F00F1394E /* ExpPracticViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C3279D27837B5F00F1394E /* ExpPracticViewCell.swift */; };
+		69C327A6278380C500F1394E /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C327A5278380C500F1394E /* CALayerExtension.swift */; };
+		69C327AB278389E700F1394E /* ExcercisesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C327AA278389E700F1394E /* ExcercisesViewCell.swift */; };
+		69C327B027838C7E00F1394E /* ExcerciseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C327AF27838C7E00F1394E /* ExcerciseViewCell.swift */; };
 		69C79D3526CABC13008B024A /* FirstQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D3426CABC13008B024A /* FirstQuestionsViewController.swift */; };
 		69C79D3D26CABC24008B024A /* FirstQuestionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D3C26CABC24008B024A /* FirstQuestionsPresenter.swift */; };
 		69C79D4226CAC112008B024A /* AnswerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D4126CAC112008B024A /* AnswerViewCell.swift */; };
@@ -80,6 +109,8 @@
 		69C79D8626CC1741008B024A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D8526CC1741008B024A /* ProfileViewController.swift */; };
 		69C79D8E26CC1751008B024A /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D8D26CC1751008B024A /* ProfilePresenter.swift */; };
 		69C79D9326CC241A008B024A /* ProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D9226CC241A008B024A /* ProfileViewCell.swift */; };
+		69CA8C76278360BF00549176 /* AllExcercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8C75278360BF00549176 /* AllExcercisesViewController.swift */; };
+		69CA8C7E278360D200549176 /* AllExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8C7D278360D200549176 /* AllExcercisePresenter.swift */; };
 		DA12F3192DF1CB76C43F120F /* Pods_PureMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EAE2D345787B1A2710F770 /* Pods_PureMind.framework */; };
 		DCA617E89129C993441F0979 /* Pods_PureMindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */; };
 /* End PBXBuildFile section */
@@ -107,10 +138,32 @@
 		26CA7566137612DB13C8CE85 /* Pods-PureMind-PureMindUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind-PureMindUITests.release.xcconfig"; path = "Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests.release.xcconfig"; sourceTree = "<group>"; };
 		45BE82F1BE3E1BBBCB5FDA18 /* Pods_PureMind_PureMindUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMind_PureMindUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F9A13B0548FE79ACF05780 /* Pods-PureMindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMindTests.release.xcconfig"; path = "Target Support Files/Pods-PureMindTests/Pods-PureMindTests.release.xcconfig"; sourceTree = "<group>"; };
+		69009EC7270F92A100D18BEA /* ExcerciseChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseChoiceViewController.swift; sourceTree = "<group>"; };
+		69009ECD270F92DE00D18BEA /* ExcerciseChoicePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseChoicePresenter.swift; sourceTree = "<group>"; };
+		69009EDA270F96CF00D18BEA /* PracticsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticsViewCell.swift; sourceTree = "<group>"; };
+		69009EE127160B9000D18BEA /* TextExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExcerciseViewController.swift; sourceTree = "<group>"; };
+		69009EE627160C0700D18BEA /* TextExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExcercisePresenter.swift; sourceTree = "<group>"; };
+		69009EEB27160DCA00D18BEA /* PageExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageExcerciseViewController.swift; sourceTree = "<group>"; };
+		69009EF127162B8700D18BEA /* RateExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateExcerciseViewController.swift; sourceTree = "<group>"; };
+		69009EF92716385400D18BEA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		69009F142716EB9E00D18BEA /* YesNoExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoExcerciseViewController.swift; sourceTree = "<group>"; };
+		69009F1D2716EE5200D18BEA /* PictureExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureExcerciseViewController.swift; sourceTree = "<group>"; };
+		69009F2627171D4900D18BEA /* TextPictureExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPictureExcerciseViewController.swift; sourceTree = "<group>"; };
+		69009F2D2717208700D18BEA /* InsertImageExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertImageExcerciseViewController.swift; sourceTree = "<group>"; };
+		69009F35271721FB00D18BEA /* InsertImageExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertImageExcercisePresenter.swift; sourceTree = "<group>"; };
+		69009F3B2717294700D18BEA /* GapsExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapsExcerciseViewController.swift; sourceTree = "<group>"; };
+		69009F432717295B00D18BEA /* GapsExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapsExcercisePresenter.swift; sourceTree = "<group>"; };
+		69009F4827172AAC00D18BEA /* GapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapTableViewCell.swift; sourceTree = "<group>"; };
 		69357BB42698658C00831004 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		69357BB9269865A000831004 /* CachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingService.swift; sourceTree = "<group>"; };
 		69357BBF2698660700831004 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		69357BC72698661A00831004 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		694F9AD527931E1300E4F0A0 /* SingleExcerciseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleExcerciseViewCell.swift; sourceTree = "<group>"; };
+		69856A4C2736621C0081A14C /* UIView+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		69856A57273663980081A14C /* ReactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionViewController.swift; sourceTree = "<group>"; };
+		69856A622736B3CE0081A14C /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		69856A672736B3DC0081A14C /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		69856A6C2736B4860081A14C /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		698D74DF2694A9AC00C66C11 /* PureMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PureMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		698D74E22694A9AC00C66C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698D74E42694A9AC00C66C11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +188,6 @@
 		69A1C6C926B1698800216B2C /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		69A1C6CE26B169CD00216B2C /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		69A1C6D326B16E0E00216B2C /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		69A1C6D826B16E5600216B2C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		69A1C6E126B3FA6B00216B2C /* ThemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesViewController.swift; sourceTree = "<group>"; };
 		69A1C6E926B3FA7700216B2C /* ThemesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesPresenter.swift; sourceTree = "<group>"; };
 		69A1C6EE26B43F3F00216B2C /* ThemeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewCell.swift; sourceTree = "<group>"; };
@@ -160,18 +212,26 @@
 		69AD34D226ED55C100CB7581 /* TherapistPricePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistPricePresenter.swift; sourceTree = "<group>"; };
 		69AD34D726ED5C3100CB7581 /* TariffViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffViewCell.swift; sourceTree = "<group>"; };
 		69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButtonViewCell.swift; sourceTree = "<group>"; };
-		69B1F53D2705D87100BEC38F /* ButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewCell.swift; sourceTree = "<group>"; };
-		69B1F53E2705D87100BEC38F /* ButtonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonViewCell.xib; sourceTree = "<group>"; };
 		69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		69B3AE8F26BC165E00BA8F89 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		69B3AE9526BC214100BA8F89 /* PracticViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticViewCell.swift; sourceTree = "<group>"; };
-		69B3AE9D26BC21C400BA8F89 /* PlanViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewCell.swift; sourceTree = "<group>"; };
 		69B3AEA226BC22BD00BA8F89 /* CourseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewCell.swift; sourceTree = "<group>"; };
-		69B3AEB726BC744700BA8F89 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		69B3AEB826BC744700BA8F89 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		69BC7229274FEA4B00774A0F /* SessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionError.swift; sourceTree = "<group>"; };
+		69BC723A27502B6100774A0F /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		69BC723F27502BCE00774A0F /* PracticesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticesInfo.swift; sourceTree = "<group>"; };
+		69BC724427502EA100774A0F /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		69BDBF7E2793767E0029575C /* ExpCourseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpCourseViewCell.swift; sourceTree = "<group>"; };
+		69BDBF8327937A8E0029575C /* SingleCourseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCourseViewCell.swift; sourceTree = "<group>"; };
+		69BDBF882793806B0029575C /* AllCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoursesViewController.swift; sourceTree = "<group>"; };
+		69BDBF8D2793807F0029575C /* AllCoursesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoursesPresenter.swift; sourceTree = "<group>"; };
+		69BDBF92279384950029575C /* CoursesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesInfo.swift; sourceTree = "<group>"; };
+		69C3279D27837B5F00F1394E /* ExpPracticViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpPracticViewCell.swift; sourceTree = "<group>"; };
+		69C327A5278380C500F1394E /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		69C327AA278389E700F1394E /* ExcercisesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcercisesViewCell.swift; sourceTree = "<group>"; };
+		69C327AF27838C7E00F1394E /* ExcerciseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseViewCell.swift; sourceTree = "<group>"; };
 		69C79D3426CABC13008B024A /* FirstQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionsViewController.swift; sourceTree = "<group>"; };
 		69C79D3C26CABC24008B024A /* FirstQuestionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionsPresenter.swift; sourceTree = "<group>"; };
 		69C79D4126CAC112008B024A /* AnswerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewCell.swift; sourceTree = "<group>"; };
@@ -185,6 +245,8 @@
 		69C79D8526CC1741008B024A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		69C79D8D26CC1751008B024A /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		69C79D9226CC241A008B024A /* ProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCell.swift; sourceTree = "<group>"; };
+		69CA8C75278360BF00549176 /* AllExcercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExcercisesViewController.swift; sourceTree = "<group>"; };
+		69CA8C7D278360D200549176 /* AllExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExcercisePresenter.swift; sourceTree = "<group>"; };
 		C645ECD700F3EA9117461534 /* Pods-PureMind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind.debug.xcconfig"; path = "Target Support Files/Pods-PureMind/Pods-PureMind.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CE98E0FB35A5168AFF95DC /* Pods-PureMind-PureMindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind-PureMindUITests.debug.xcconfig"; path = "Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +291,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		69009ECC270F92AF00D18BEA /* ExcerciseChoiceGroup */ = {
+			isa = PBXGroup;
+			children = (
+				69009EC7270F92A100D18BEA /* ExcerciseChoiceViewController.swift */,
+				69009ECD270F92DE00D18BEA /* ExcerciseChoicePresenter.swift */,
+				69009EDA270F96CF00D18BEA /* PracticsViewCell.swift */,
+				694F9AD527931E1300E4F0A0 /* SingleExcerciseViewCell.swift */,
+			);
+			path = ExcerciseChoiceGroup;
+			sourceTree = "<group>";
+		};
+		69009EDF27160B4700D18BEA /* Excercises */ = {
+			isa = PBXGroup;
+			children = (
+				69CA8C742783609200549176 /* AllExcercises */,
+				69009ECC270F92AF00D18BEA /* ExcerciseChoiceGroup */,
+				69009F3A2717292F00D18BEA /* GapsExcercise */,
+				69009F2C2717203C00D18BEA /* InsertImageExcercise */,
+				69009F2527171D3200D18BEA /* TextPictureExcercise */,
+				69009F1C2716EE3F00D18BEA /* PictureExcercise */,
+				69009F132716EB7F00D18BEA /* YesNoExcercise */,
+				69009EF027162B4E00D18BEA /* RateExcercise */,
+				69009EE027160B5400D18BEA /* TextExcercise */,
+				69009EEB27160DCA00D18BEA /* PageExcerciseViewController.swift */,
+			);
+			path = Excercises;
+			sourceTree = "<group>";
+		};
+		69009EE027160B5400D18BEA /* TextExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				69009EE127160B9000D18BEA /* TextExcerciseViewController.swift */,
+				69009EE627160C0700D18BEA /* TextExcercisePresenter.swift */,
+			);
+			path = TextExcercise;
+			sourceTree = "<group>";
+		};
+		69009EF027162B4E00D18BEA /* RateExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				69009EF127162B8700D18BEA /* RateExcerciseViewController.swift */,
+			);
+			path = RateExcercise;
+			sourceTree = "<group>";
+		};
+		69009F132716EB7F00D18BEA /* YesNoExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				69009F142716EB9E00D18BEA /* YesNoExcerciseViewController.swift */,
+			);
+			path = YesNoExcercise;
+			sourceTree = "<group>";
+		};
+		69009F1C2716EE3F00D18BEA /* PictureExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				69009F1D2716EE5200D18BEA /* PictureExcerciseViewController.swift */,
+			);
+			path = PictureExcercise;
+			sourceTree = "<group>";
+		};
+		69009F2527171D3200D18BEA /* TextPictureExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				69009F2627171D4900D18BEA /* TextPictureExcerciseViewController.swift */,
+			);
+			path = TextPictureExcercise;
+			sourceTree = "<group>";
+		};
+		69009F2C2717203C00D18BEA /* InsertImageExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				69009F2D2717208700D18BEA /* InsertImageExcerciseViewController.swift */,
+				69009F35271721FB00D18BEA /* InsertImageExcercisePresenter.swift */,
+			);
+			path = InsertImageExcercise;
+			sourceTree = "<group>";
+		};
+		69009F3A2717292F00D18BEA /* GapsExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				69009F3B2717294700D18BEA /* GapsExcerciseViewController.swift */,
+				69009F432717295B00D18BEA /* GapsExcercisePresenter.swift */,
+				69009F4827172AAC00D18BEA /* GapTableViewCell.swift */,
+			);
+			path = GapsExcercise;
+			sourceTree = "<group>";
+		};
 		69357BBE269865D800831004 /* RegistrationModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +386,17 @@
 				69357BC72698661A00831004 /* RegistrationPresenter.swift */,
 			);
 			path = RegistrationModule;
+			sourceTree = "<group>";
+		};
+		69856A43273594650081A14C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */,
+				69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */,
+				69856A57273663980081A14C /* ReactionViewController.swift */,
+				69856A6C2736B4860081A14C /* ButtonCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		698D74D62694A9AC00C66C11 = {
@@ -263,6 +424,7 @@
 		698D74E12694A9AC00C66C11 /* PureMind */ = {
 			isa = PBXGroup;
 			children = (
+				69BC7220274FE78400774A0F /* Services */,
 				69A1C6BE26B1658F00216B2C /* Extensions */,
 				698D751E2694AAD900C66C11 /* ModuleBuilder.swift */,
 				698D751C2694AA4500C66C11 /* Model */,
@@ -270,11 +432,11 @@
 				698D751A2694A9F800C66C11 /* ServiceLayer */,
 				698D75182694A9DA00C66C11 /* Delegates */,
 				698D74EB2694A9AC00C66C11 /* Assets.xcassets */,
-				69A1C6D826B16E5600216B2C /* Montserrat-Regular.ttf */,
 				69A1C6D326B16E0E00216B2C /* Montserrat-SemiBold.ttf */,
 				69A1C6CE26B169CD00216B2C /* Montserrat-Medium.ttf */,
 				69A1C6C426B1695400216B2C /* Montserrat-Bold.ttf */,
 				69A1C6C926B1698800216B2C /* Montserrat-ExtraBold.ttf */,
+				69009EF92716385400D18BEA /* Montserrat-Regular.ttf */,
 				69A1C6B626B161BF00216B2C /* Montserrat */,
 				69ABE448269C566A001FBB4E /* Storyboards */,
 				698D751D2694AA4D00C66C11 /* Modules */,
@@ -324,6 +486,7 @@
 			children = (
 				69ABE434269B2E08001FBB4E /* ExpTitleViewCell.swift */,
 				69ABE45D269C8512001FBB4E /* ExpTitleRightCell.swift */,
+				69856A4C2736621C0081A14C /* UIView+Snapshot.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,6 +497,11 @@
 				69ABE419269AFBF1001FBB4E /* StringExtensions.swift */,
 				69ABE43C269B2E67001FBB4E /* UITableViewCellExtensions.swift */,
 				69C79D7C26CC1060008B024A /* DateValueFormatter.swift */,
+				69BC7229274FEA4B00774A0F /* SessionError.swift */,
+				69BC723A27502B6100774A0F /* ServerResponse.swift */,
+				69BC723F27502BCE00774A0F /* PracticesInfo.swift */,
+				69BC724427502EA100774A0F /* UserInfo.swift */,
+				69BDBF92279384950029575C /* CoursesInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,6 +509,8 @@
 		698D751D2694AA4D00C66C11 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				69BDBF7C279376540029575C /* Courses */,
+				69009EDF27160B4700D18BEA /* Excercises */,
 				69C79D8126CC16E4008B024A /* ProfileGroup */,
 				69B3AE8626BC158200BA8F89 /* WelcomeGroup */,
 				69B3AE8526BC155A00BA8F89 /* MenuGroup */,
@@ -379,6 +549,7 @@
 			isa = PBXGroup;
 			children = (
 				69A1C6BF26B165A100216B2C /* UIColorExtensions.swift */,
+				69C327A5278380C500F1394E /* CALayerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -526,10 +697,9 @@
 			children = (
 				69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */,
 				69B3AE9526BC214100BA8F89 /* PracticViewCell.swift */,
-				69B3AE9D26BC21C400BA8F89 /* PlanViewCell.swift */,
 				69B3AEA226BC22BD00BA8F89 /* CourseViewCell.swift */,
-				69B3AEB726BC744700BA8F89 /* MenuCell.swift */,
-				69B3AEB826BC744700BA8F89 /* MenuCell.xib */,
+				69856A622736B3CE0081A14C /* MenuCell.swift */,
+				69856A672736B3DC0081A14C /* MenuCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -537,14 +707,37 @@
 		69B3AEBE26BC7CB600BA8F89 /* ChatModule */ = {
 			isa = PBXGroup;
 			children = (
-				69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */,
+				69856A43273594650081A14C /* View */,
 				69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */,
 				69AD34BA26ED32A000CB7581 /* ChatBot.swift */,
-				69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */,
-				69B1F53D2705D87100BEC38F /* ButtonViewCell.swift */,
-				69B1F53E2705D87100BEC38F /* ButtonViewCell.xib */,
 			);
 			path = ChatModule;
+			sourceTree = "<group>";
+		};
+		69BC7220274FE78400774A0F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		69BDBF7C279376540029575C /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				69BDBF7D279376600029575C /* AllCourses */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		69BDBF7D279376600029575C /* AllCourses */ = {
+			isa = PBXGroup;
+			children = (
+				69BDBF7E2793767E0029575C /* ExpCourseViewCell.swift */,
+				69BDBF8327937A8E0029575C /* SingleCourseViewCell.swift */,
+				69BDBF882793806B0029575C /* AllCoursesViewController.swift */,
+				69BDBF8D2793807F0029575C /* AllCoursesPresenter.swift */,
+			);
+			path = AllCourses;
 			sourceTree = "<group>";
 		};
 		69C79D3326CABBF7008B024A /* FirstQuestionsModule */ = {
@@ -585,6 +778,18 @@
 				69C79D9226CC241A008B024A /* ProfileViewCell.swift */,
 			);
 			path = ProfileGroup;
+			sourceTree = "<group>";
+		};
+		69CA8C742783609200549176 /* AllExcercises */ = {
+			isa = PBXGroup;
+			children = (
+				69C3279D27837B5F00F1394E /* ExpPracticViewCell.swift */,
+				69CA8C75278360BF00549176 /* AllExcercisesViewController.swift */,
+				69CA8C7D278360D200549176 /* AllExcercisePresenter.swift */,
+				69C327AA278389E700F1394E /* ExcercisesViewCell.swift */,
+				69C327AF27838C7E00F1394E /* ExcerciseViewCell.swift */,
+			);
+			path = AllExcercises;
 			sourceTree = "<group>";
 		};
 		87214CFFEA24E9114539F2CC /* Pods */ = {
@@ -708,15 +913,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A1C6D926B16E5900216B2C /* Montserrat-Regular.ttf in Resources */,
 				69A1C6C526B1695600216B2C /* Montserrat-Bold.ttf in Resources */,
-				69B3AEBA26BC744700BA8F89 /* MenuCell.xib in Resources */,
+				69856A682736B3DC0081A14C /* MenuCell.xib in Resources */,
+				69009EFA2716385800D18BEA /* Montserrat-Regular.ttf in Resources */,
 				69A1C6CA26B1698B00216B2C /* Montserrat-ExtraBold.ttf in Resources */,
 				698D74EF2694A9AC00C66C11 /* LaunchScreen.storyboard in Resources */,
 				69A1C6CF26B169D000216B2C /* Montserrat-Medium.ttf in Resources */,
 				69A1C6B726B161BF00216B2C /* Montserrat in Resources */,
 				698D74EC2694A9AC00C66C11 /* Assets.xcassets in Resources */,
-				69B1F5402705D87100BEC38F /* ButtonViewCell.xib in Resources */,
 				69A1C6D426B16E1000216B2C /* Montserrat-SemiBold.ttf in Resources */,
 				698D74EA2694A9AC00C66C11 /* Main.storyboard in Resources */,
 			);
@@ -848,59 +1052,91 @@
 			files = (
 				69AD34D826ED5C3100CB7581 /* TariffViewCell.swift in Sources */,
 				69ABE459269C5D5E001FBB4E /* PolicyFullViewCell.swift in Sources */,
+				69009F2727171D4900D18BEA /* TextPictureExcerciseViewController.swift in Sources */,
 				698D75282694AC6200C66C11 /* WelcomeViewController.swift in Sources */,
+				69C327A6278380C500F1394E /* CALayerExtension.swift in Sources */,
 				69C79D3526CABC13008B024A /* FirstQuestionsViewController.swift in Sources */,
 				69A1C70326B49B3900216B2C /* TherapistSubViewController.swift in Sources */,
+				69BDBF892793806B0029575C /* AllCoursesViewController.swift in Sources */,
+				69856A632736B3CE0081A14C /* MenuCell.swift in Sources */,
 				698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */,
 				69C79D4C26CAC974008B024A /* CollectionViewTitle.swift in Sources */,
+				69856A4D2736621C0081A14C /* UIView+Snapshot.swift in Sources */,
 				69B3AE8B26BC165000BA8F89 /* MenuViewController.swift in Sources */,
 				69ABE4152699D6A3001FBB4E /* LoginPresenter.swift in Sources */,
-				69B3AEB926BC744700BA8F89 /* MenuCell.swift in Sources */,
+				69856A58273663980081A14C /* ReactionViewController.swift in Sources */,
 				69A1C6F526B48DE600216B2C /* TherapistChoiceViewController.swift in Sources */,
+				69009F4927172AAC00D18BEA /* GapTableViewCell.swift in Sources */,
 				69C79D5726CBC2B3008B024A /* SecondQuestionsViewController.swift in Sources */,
 				69357BB52698658C00831004 /* NetworkService.swift in Sources */,
+				69009F36271721FB00D18BEA /* InsertImageExcercisePresenter.swift in Sources */,
+				69BDBF8427937A8E0029575C /* SingleCourseViewCell.swift in Sources */,
+				69BDBF93279384950029575C /* CoursesInfo.swift in Sources */,
 				69C79D5126CBA221008B024A /* QuestionsNavigationController.swift in Sources */,
 				69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */,
 				69AD34CB26ED559700CB7581 /* TherapistPriceViewController.swift in Sources */,
 				69ABE44B269C56C1001FBB4E /* PoliciesFullViewController.swift in Sources */,
+				69CA8C76278360BF00549176 /* AllExcercisesViewController.swift in Sources */,
 				69C79D4226CAC112008B024A /* AnswerViewCell.swift in Sources */,
 				69C79D7D26CC1060008B024A /* DateValueFormatter.swift in Sources */,
 				698D74E32694A9AC00C66C11 /* AppDelegate.swift in Sources */,
+				69CA8C7E278360D200549176 /* AllExcercisePresenter.swift in Sources */,
 				69C79D6526CBF3E4008B024A /* MoodViewController.swift in Sources */,
 				69B3AE8026BC14A200BA8F89 /* MainTabBarController.swift in Sources */,
 				69357BC02698660700831004 /* RegistrationViewController.swift in Sources */,
 				69A1C6C026B165A100216B2C /* UIColorExtensions.swift in Sources */,
+				69C3279E27837B5F00F1394E /* ExpPracticViewCell.swift in Sources */,
 				69A1C6EA26B3FA7700216B2C /* ThemesPresenter.swift in Sources */,
 				69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */,
-				69B1F53F2705D87100BEC38F /* ButtonViewCell.swift in Sources */,
+				69BDBF7F2793767E0029575C /* ExpCourseViewCell.swift in Sources */,
 				69C79D8626CC1741008B024A /* ProfileViewController.swift in Sources */,
 				69C79D6D26CBF3F2008B024A /* MoodPresenter.swift in Sources */,
 				69ABE442269B3101001FBB4E /* ShortPolicyViewCell.swift in Sources */,
 				698D74E52694A9AC00C66C11 /* SceneDelegate.swift in Sources */,
 				69A1C6FD26B48E0800216B2C /* TherapistChoicePresenter.swift in Sources */,
+				69C327AB278389E700F1394E /* ExcercisesViewCell.swift in Sources */,
+				69009F442717295B00D18BEA /* GapsExcercisePresenter.swift in Sources */,
 				69C79D3D26CABC24008B024A /* FirstQuestionsPresenter.swift in Sources */,
+				69BC724027502BCE00774A0F /* PracticesInfo.swift in Sources */,
 				698D75432695E2F600C66C11 /* DescriptionViewController.swift in Sources */,
 				69ABE427269B2962001FBB4E /* PoliciesShortViewController.swift in Sources */,
 				69B3AEC026BC7CCC00BA8F89 /* ChatViewController.swift in Sources */,
+				69009ECE270F92DE00D18BEA /* ExcerciseChoicePresenter.swift in Sources */,
+				69C327B027838C7E00F1394E /* ExcerciseViewCell.swift in Sources */,
 				69ABE40726987919001FBB4E /* CheckBox.swift in Sources */,
+				69BDBF8E2793807F0029575C /* AllCoursesPresenter.swift in Sources */,
+				69009EF227162B8700D18BEA /* RateExcerciseViewController.swift in Sources */,
 				69ABE42F269B2972001FBB4E /* PoliciesShortPresenter.swift in Sources */,
+				69009EDB270F96CF00D18BEA /* PracticsViewCell.swift in Sources */,
+				69009F1E2716EE5200D18BEA /* PictureExcerciseViewController.swift in Sources */,
+				694F9AD627931E1300E4F0A0 /* SingleExcerciseViewCell.swift in Sources */,
 				69A1C6E226B3FA6B00216B2C /* ThemesViewController.swift in Sources */,
 				69ABE43D269B2E67001FBB4E /* UITableViewCellExtensions.swift in Sources */,
 				69C79D5F26CBC2C7008B024A /* SecondQuestionsPresenter.swift in Sources */,
+				69009EEC27160DCA00D18BEA /* PageExcerciseViewController.swift in Sources */,
 				69C79D8E26CC1751008B024A /* ProfilePresenter.swift in Sources */,
 				69357BBA269865A000831004 /* CachingService.swift in Sources */,
+				69856A6D2736B4860081A14C /* ButtonCollectionViewCell.swift in Sources */,
+				69009F152716EB9E00D18BEA /* YesNoExcerciseViewController.swift in Sources */,
+				69BC723B27502B6100774A0F /* ServerResponse.swift in Sources */,
+				69009F3C2717294700D18BEA /* GapsExcerciseViewController.swift in Sources */,
 				69B3AE9026BC165E00BA8F89 /* MenuPresenter.swift in Sources */,
+				69BC722A274FEA4B00774A0F /* SessionError.swift in Sources */,
 				69AD34BB26ED32A000CB7581 /* ChatBot.swift in Sources */,
+				69009EE727160C0700D18BEA /* TextExcercisePresenter.swift in Sources */,
 				69ABE435269B2E08001FBB4E /* ExpTitleViewCell.swift in Sources */,
 				69ABE453269C56D9001FBB4E /* PoliciesFullPresenter.swift in Sources */,
+				69009F2E2717208700D18BEA /* InsertImageExcerciseViewController.swift in Sources */,
 				698D751F2694AAD900C66C11 /* ModuleBuilder.swift in Sources */,
 				69ABE41A269AFBF1001FBB4E /* StringExtensions.swift in Sources */,
 				69A1C6EF26B43F3F00216B2C /* ThemeViewCell.swift in Sources */,
-				69B3AE9E26BC21C400BA8F89 /* PlanViewCell.swift in Sources */,
+				69BC724527502EA100774A0F /* UserInfo.swift in Sources */,
 				69B1F5312704D73500BEC38F /* ChatButtonViewCell.swift in Sources */,
 				69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */,
 				69B3AE9626BC214100BA8F89 /* PracticViewCell.swift in Sources */,
 				698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */,
+				69009EC8270F92A100D18BEA /* ExcerciseChoiceViewController.swift in Sources */,
+				69009EE227160B9000D18BEA /* TextExcerciseViewController.swift in Sources */,
 				69C79D9326CC241A008B024A /* ProfileViewCell.swift in Sources */,
 				69B3AEC826BC7CD900BA8F89 /* ChatPresenter.swift in Sources */,
 				69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */,

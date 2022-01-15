@@ -9,6 +9,8 @@ import UIKit
 
 protocol RegistrationViewProtocol: UIViewController{
     func updateUI()
+    func registerAlert(text: String)
+    func registerSuccess()
 }
 
 class RegistrationViewController: UIViewController {
@@ -111,7 +113,6 @@ class RegistrationViewController: UIViewController {
     
     
     @IBAction func registerButtonPressed(_ sender: Any) {
-        /*
         let message = presenter.infoValidation(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
         if message == "pass"{
             if checkBox.isChecked == true{
@@ -119,14 +120,14 @@ class RegistrationViewController: UIViewController {
                 performSegue(withIdentifier: "themesSegue", sender: nil)
             }
             else{
-              validationAlert(message: "Вы не согласились с условиями пользования")
+              //validationAlert(message: "Вы не согласились с условиями пользования")
             }
         }
         else{
-            validationAlert(message: message)
+            //validationAlert(message: message)
         }
- */
         performSegue(withIdentifier: "themesSegue", sender: nil)
+        //presenter.performRegistration(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
     }
     
     func validationAlert(message: String){
@@ -160,6 +161,14 @@ class RegistrationViewController: UIViewController {
 extension RegistrationViewController: RegistrationViewProtocol{
     func updateUI() {
         print("Good!")
+    }
+    
+    func registerSuccess(){
+        performSegue(withIdentifier: "themesSegue", sender: nil)
+    }
+    
+    func registerAlert(text: String){
+        validationAlert(message: text)
     }
 }
 

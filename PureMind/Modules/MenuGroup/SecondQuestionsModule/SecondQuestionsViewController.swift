@@ -7,8 +7,8 @@
 
 import UIKit
 
-protocol SecondQuestionsViewProtocol: UIViewController{
-    func updateUI()
+protocol SecondQuestionsViewProtocol: UIViewController, UITextFieldDelegate{
+    func updateUI(mood: String)
     
     func loadQuestion(questionTitle: String)
     
@@ -18,16 +18,31 @@ class SecondQuestionsViewController: UIViewController {
     var presenter: SecondQuestionsPresenterProtocol!
     var vcIndex = 3
     
+    @IBOutlet weak var moodTitleLabel: UILabel!
     @IBOutlet weak var questionTitleLabel: UILabel!
     @IBOutlet weak var continueButtonShell: UIButton!
-    @IBOutlet weak var answerTextField: UITextField!
+    @IBOutlet weak var answerTextField: UITextView!
     @IBOutlet weak var backButtonShell: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 254, green: 235, blue: 138)
         checkIndex()
-        
+        prepareViews()
+        updateUI(mood: presenter.currMood!)
+    }
+    
+    func prepareViews(){
+        moodTitleLabel.textColor = .white
+        questionTitleLabel.textColor = grayTextColor
+        backButtonShell.tintColor = .white
+        answerTextField.backgroundColor = .white
+        answerTextField.layer.borderWidth = 0
+        answerTextField.layer.borderColor = UIColor(red: 255, green: 255, blue: 255).cgColor
+        answerTextField.layer.cornerRadius = 20
+        continueButtonShell.backgroundColor = lightYellowColor
+        continueButtonShell.layer.cornerRadius = 15
     }
     
     func checkIndex(){
@@ -35,6 +50,10 @@ class SecondQuestionsViewController: UIViewController {
             continueButtonShell.setTitle("Завершить", for: .normal)
         }
         
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        continueButtonShell.isHidden = false
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
@@ -64,8 +83,22 @@ extension SecondQuestionsViewController: SecondQuestionsViewProtocol{
         questionTitleLabel.text = questionTitle
     }
     
-    func updateUI() {
-        print("Good!")
+    func updateUI(mood: String) {
+        moodTitleLabel.text = mood
+        switch mood {
+        case "Отлично":
+            self.view.backgroundColor = perfectMood
+        case "Хорошо":
+            self.view.backgroundColor = goodMood
+        case "Нормально":
+            self.view.backgroundColor = normalMood
+        case "Плохо":
+            self.view.backgroundColor = badMood
+        case "Ужасно":
+            self.view.backgroundColor = awfulMood
+        default:
+            self.view.backgroundColor = .white
+        }
     }
     
     

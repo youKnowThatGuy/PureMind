@@ -25,7 +25,7 @@ class FirstQuestionsPresenter: FirstQuestionsPresenterProtocol{
     var currMood: String?
     var selectedCells = [IndexPath]()
     var selectedAnswers = [String]()
-    var phonyData = [["good", "awesome", "mediocre"], ["bad", "gruesome", "sad", "complexed"]]
+    var phonyData = [["good", "awesome", "mediocre", "bad", "gruesome", "sad", "complexed"]]
     
     required init(view: FirstQuestionsViewProtocol, currMood: String) {
         self.view = view
@@ -34,6 +34,21 @@ class FirstQuestionsPresenter: FirstQuestionsPresenterProtocol{
     
     func prepareView(){
         view?.loadQuestion(mood: currMood!, questionTitle: "", questionDesc: "")
+        view?.loadMood(mood: currMood!)
+        switch currMood {
+        case "Отлично":
+            view?.setBackgroundColor(color: perfectMood)
+        case "Хорошо":
+            view?.setBackgroundColor(color: goodMood)
+        case "Нормально":
+            view?.setBackgroundColor(color: normalMood)
+        case "Плохо":
+            view?.setBackgroundColor(color: badMood)
+        case "Ужасно":
+            view?.setBackgroundColor(color: awfulMood)
+        default:
+            view?.setBackgroundColor(color: .white)
+        }
     }
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -83,22 +98,21 @@ class FirstQuestionsPresenter: FirstQuestionsPresenterProtocol{
     }
     
     func prepareCell(cell: AnswerViewCell, index: IndexPath) {
-        cell.layer.cornerRadius = 15
+        cell.textLabel.textColor = grayTextColor
+        cell.layer.borderColor = grayButtonColor.cgColor
+        cell.layer.borderWidth = 1
         if index.row > phonyData[index.section].count - 1{
             cell.textLabel.text = "+"
-            cell.backgroundColor = blueBackgorundColor
         }
         else{
             let check = selectedCells.firstIndex(of: index)
             if check == nil{
-                cell.backgroundColor = blueBackgorundColor
-                
+                cell.backgroundColor = .white
             }
             else{
                 cell.backgroundColor = lightYellowColor
             }
             cell.textLabel.text = phonyData[index.section][index.row]
-            cell.layer.cornerRadius = 15
         }
     }
 }

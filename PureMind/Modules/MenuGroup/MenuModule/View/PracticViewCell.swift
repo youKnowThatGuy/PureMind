@@ -13,7 +13,7 @@ class PracticViewCell: UICollectionViewCell {
     
     var parentView: MenuViewProtocol!
     
-    @IBOutlet weak var practicImageView: UIImageView!
     @IBOutlet weak var practicLabel: UILabel!
+    @IBOutlet weak var excerciseCount: UILabel!
     
 }

@@ -12,12 +12,14 @@ protocol RegistrationPresenterProtocol{
     init(view: RegistrationViewProtocol)
     func infoValidation(nickname: String, email: String, password: String) -> String
     func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    func performRegistration(nickname: String, email: String, password: String) 
 }
 
 class RegistrationPresenter: RegistrationPresenterProtocol{
     
     weak var view: RegistrationViewProtocol?
-    
+    let networkService = NetworkService.shared
+    let cacheService = CachingService.shared
     required init(view: RegistrationViewProtocol) {
         self.view = view
     }
@@ -50,6 +52,20 @@ class RegistrationPresenter: RegistrationPresenterProtocol{
             return "Пароль должен содержать хотя бы одну цифру или букву"
         }
         return "pass"
+    }
+    
+    func performRegistration(nickname: String, email: String, password: String) {
+        networkService.registerUser(nickname: nickname, email: email, password: password) { (result) in
+            switch result{
+            case let .success(token):
+                self.networkService.apiKey = token
+                self.cacheService.cacheInfo(UserInfo(login: email, password: password, token: token))
+                self.view?.registerSuccess()
+                
+            case .failure(_):
+                self.view?.registerAlert(text: "Зарегестрироваться не удалось. Пожалуйста, проверьте ваши данные и попробуйте снова")
+            }
+        }
     }
     
     

@@ -18,17 +18,24 @@ class DescriptionViewController: UIViewController {
     
     @IBOutlet weak var skipButtonOutlet: UIButton!
     
+    @IBOutlet weak var scrollIndicator: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = blueBackgorundColor
         skipButtonOutlet.setTitleColor(darkGrayTextColor, for: .normal)
         setupCardView()
+        setupIndicator()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    func setupIndicator(){
+        scrollIndicator.pageIndicatorTintColor = UIColor(red: 254, green: 227, blue: 180)
+        scrollIndicator.currentPageIndicatorTintColor = lightYellowColor
     }
     
     func setupCardView(){
@@ -67,7 +74,8 @@ extension DescriptionViewController: DescriptionViewProtocol{
 
 extension DescriptionViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        presenter.cardCount()
+        scrollIndicator.numberOfPages = presenter.cardCount()
+        return presenter.cardCount()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -77,4 +85,9 @@ extension DescriptionViewController: UICollectionViewDataSource, UICollectionVie
         presenter.prepareCell(cell: cell, index: indexPath.row)
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        scrollIndicator.currentPage = indexPath.row
+    }
+    
 }

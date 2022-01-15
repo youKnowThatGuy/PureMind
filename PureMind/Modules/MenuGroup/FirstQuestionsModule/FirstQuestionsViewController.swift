@@ -9,7 +9,8 @@ import UIKit
 
 protocol FirstQuestionsViewProtocol: UIViewController{
     func updateUI()
-    
+    func setBackgroundColor(color: UIColor)
+    func loadMood(mood: String)
     func loadQuestion(mood: String, questionTitle: String, questionDesc: String)
 }
 
@@ -17,24 +18,31 @@ class FirstQuestionsViewController: UIViewController {
     var presenter: FirstQuestionsPresenterProtocol!
     var vcIndex: Int!
     
-    @IBOutlet weak var moodImageView: UIImageView!
     @IBOutlet weak var moodTitleLabel: UILabel!
     @IBOutlet weak var questionTitleLabel: UILabel!
     @IBOutlet weak var questionDescLabel: UILabel!
     @IBOutlet weak var answersCollectionView: UICollectionView!
-    @IBOutlet weak var continueButtonShell: UIButton!
     @IBOutlet weak var backButtonShell: UIButton!
+    var moodColor = UIColor(red: 0, green: 0, blue: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareCollectionView()
         checkVCindex()
+        prepareLabels()
         presenter.prepareView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    func prepareLabels(){
+        moodTitleLabel.textColor = .white
+        questionTitleLabel.textColor = .white
+        questionDescLabel.textColor = .white
+        backButtonShell.tintColor = titleYellow
     }
     
     func checkVCindex(){
@@ -47,17 +55,6 @@ class FirstQuestionsViewController: UIViewController {
     func prepareCollectionView(){
         answersCollectionView.delegate = self
         answersCollectionView.dataSource = self
-    }
-    
-    @IBAction func continueButtonPressed(_ sender: Any) {
-        if vcIndex < 2 {
-            let vc = ModuleBuilder().createMoodModuleOne(mood: presenter.currMood!, vcIndex: vcIndex + 1)
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-        
-        else{
-            performSegue(withIdentifier: "moodSecondSegue", sender: presenter.currMood)
-        }
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
@@ -94,21 +91,21 @@ extension FirstQuestionsViewController: FirstQuestionsViewProtocol{
         self.questionTitleLabel.text = "Вопрос №\(vcIndex + 1)"
     }
     
+    func loadMood(mood: String){
+        moodTitleLabel.text = mood
+    }
+    
+    func setBackgroundColor(color: UIColor){
+        self.moodColor = color
+        self.view.backgroundColor = moodColor
+    }
+    
     func updateUI() {
         answersCollectionView.reloadData()
-        if presenter.getSelectedAnswersCount() > 0{
-            continueButtonShell.isUserInteractionEnabled = true
-            continueButtonShell.backgroundColor = lightYellowColor
-        }
-        else{
-            continueButtonShell.isUserInteractionEnabled = false
-            continueButtonShell.backgroundColor = .none
-        }
     }
 }
 
 extension FirstQuestionsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row >= presenter.getNumberOfItems(section: indexPath.section) - 1{
             inputOwnAnswer(index: indexPath)
@@ -117,14 +114,22 @@ extension FirstQuestionsViewController: UICollectionViewDelegate, UICollectionVi
         guard let cell = answersCollectionView.dequeueReusableCell(withReuseIdentifier: AnswerViewCell.identifier, for: indexPath) as? AnswerViewCell
         else {fatalError("Invalid Cell kind")}
         cell.answerNotChosen = !cell.answerNotChosen
-        cell.backgroundColor = lightYellowColor
+        cell.backgroundColor = moodColor
         presenter.manageAnswer(index: indexPath)
+            if vcIndex < 2 {
+                let vc = ModuleBuilder().createMoodModuleOne(mood: presenter.currMood!, vcIndex: vcIndex + 1)
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            
+            else{
+                performSegue(withIdentifier: "moodSecondSegue", sender: presenter.currMood)
+            }
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CollectionViewTitle.identifier, for: indexPath) as? CollectionViewTitle{
-            sectionHeader.titleLabel.text = "Секция № \(indexPath.section + 1)"
+            sectionHeader.titleLabel.text = ""
             return sectionHeader
         }
         return UICollectionReusableView()
