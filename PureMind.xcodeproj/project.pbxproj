@@ -14,7 +14,6 @@
 		69009EE227160B9000D18BEA /* TextExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EE127160B9000D18BEA /* TextExcerciseViewController.swift */; };
 		69009EE727160C0700D18BEA /* TextExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EE627160C0700D18BEA /* TextExcercisePresenter.swift */; };
 		69009EEC27160DCA00D18BEA /* PageExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EEB27160DCA00D18BEA /* PageExcerciseViewController.swift */; };
-		69009EF227162B8700D18BEA /* RateExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EF127162B8700D18BEA /* RateExcerciseViewController.swift */; };
 		69009EFA2716385800D18BEA /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69009EF92716385400D18BEA /* Montserrat-Regular.ttf */; };
 		69009F152716EB9E00D18BEA /* YesNoExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F142716EB9E00D18BEA /* YesNoExcerciseViewController.swift */; };
 		69009F1E2716EE5200D18BEA /* PictureExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F1D2716EE5200D18BEA /* PictureExcerciseViewController.swift */; };
@@ -83,6 +82,15 @@
 		69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEA226BC22BD00BA8F89 /* CourseViewCell.swift */; };
 		69B3AEC026BC7CCC00BA8F89 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */; };
 		69B3AEC826BC7CD900BA8F89 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */; };
+		69BB2AC4279E0D860048C747 /* MoodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2AC3279E0D860048C747 /* MoodInfo.swift */; };
+		69BB2ACD27A579830048C747 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2ACC27A579830048C747 /* ShareViewController.swift */; };
+		69BB2AE127A5FDDF0048C747 /* CreatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2AE027A5FDDF0048C747 /* CreatorsViewController.swift */; };
+		69BB2AE727AA77330048C747 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2AE627AA77330048C747 /* ContactsViewController.swift */; };
+		69BB2AF027AAA6120048C747 /* AlertContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2AEF27AAA6120048C747 /* AlertContactsViewController.swift */; };
+		69BB2AF927AAAFBF0048C747 /* PortraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2AF827AAAFBF0048C747 /* PortraitViewController.swift */; };
+		69BB2B0127AAB0AF0048C747 /* PortraitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2B0027AAB0AF0048C747 /* PortraitPresenter.swift */; };
+		69BB2B0E27AAB44E0048C747 /* ExpPortraitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2B0D27AAB44E0048C747 /* ExpPortraitViewCell.swift */; };
+		69BB2B1327AAB6DD0048C747 /* SingleTestViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB2B1227AAB6DD0048C747 /* SingleTestViewCell.swift */; };
 		69BC722A274FEA4B00774A0F /* SessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC7229274FEA4B00774A0F /* SessionError.swift */; };
 		69BC723B27502B6100774A0F /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC723A27502B6100774A0F /* ServerResponse.swift */; };
 		69BC724027502BCE00774A0F /* PracticesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC723F27502BCE00774A0F /* PracticesInfo.swift */; };
@@ -111,6 +119,19 @@
 		69C79D9326CC241A008B024A /* ProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C79D9226CC241A008B024A /* ProfileViewCell.swift */; };
 		69CA8C76278360BF00549176 /* AllExcercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8C75278360BF00549176 /* AllExcercisesViewController.swift */; };
 		69CA8C7E278360D200549176 /* AllExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8C7D278360D200549176 /* AllExcercisePresenter.swift */; };
+		69CBB0B127BAFD0F005D7B5F /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBB0B027BAFD0F005D7B5F /* UIImageExtension.swift */; };
+		69CC6B95279B2B740051013E /* NoPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC6B94279B2B740051013E /* NoPasswordPresenter.swift */; };
+		69CC6B9D279B2B7F0051013E /* NoPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC6B9C279B2B7F0051013E /* NoPasswordViewController.swift */; };
+		69CC6BA6279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC6BA5279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift */; };
+		69CC6BAE279B36290051013E /* AnswerChoiceExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC6BAD279B36290051013E /* AnswerChoiceExcercisePresenter.swift */; };
+		69CC6BB3279B67210051013E /* ExcerciseAnswerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC6BB2279B67210051013E /* ExcerciseAnswerViewCell.swift */; };
+		69F6AB9327AFD2F900D4A5D4 /* CourseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6AB9227AFD2F900D4A5D4 /* CourseTabBarViewController.swift */; };
+		69F6AB9827AFD30E00D4A5D4 /* SecondaryTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6AB9727AFD30E00D4A5D4 /* SecondaryTabBarViewController.swift */; };
+		69F6AB9E27AFD39700D4A5D4 /* CourseInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6AB9D27AFD39700D4A5D4 /* CourseInfoViewController.swift */; };
+		69F6ABA427AFD56500D4A5D4 /* LessonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6ABA327AFD56500D4A5D4 /* LessonsTableViewController.swift */; };
+		69F6ABAA27AFD6C900D4A5D4 /* ReflexiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6ABA927AFD6C900D4A5D4 /* ReflexiveViewController.swift */; };
+		69F6ABB327AFDEE200D4A5D4 /* LessonElementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6ABB227AFDEE200D4A5D4 /* LessonElementTableViewCell.swift */; };
+		69F6ABBB27AFDFC400D4A5D4 /* LessonsTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6ABBA27AFDFC400D4A5D4 /* LessonsTablePresenter.swift */; };
 		DA12F3192DF1CB76C43F120F /* Pods_PureMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EAE2D345787B1A2710F770 /* Pods_PureMind.framework */; };
 		DCA617E89129C993441F0979 /* Pods_PureMindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */; };
 /* End PBXBuildFile section */
@@ -144,7 +165,6 @@
 		69009EE127160B9000D18BEA /* TextExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExcerciseViewController.swift; sourceTree = "<group>"; };
 		69009EE627160C0700D18BEA /* TextExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExcercisePresenter.swift; sourceTree = "<group>"; };
 		69009EEB27160DCA00D18BEA /* PageExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageExcerciseViewController.swift; sourceTree = "<group>"; };
-		69009EF127162B8700D18BEA /* RateExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateExcerciseViewController.swift; sourceTree = "<group>"; };
 		69009EF92716385400D18BEA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		69009F142716EB9E00D18BEA /* YesNoExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoExcerciseViewController.swift; sourceTree = "<group>"; };
 		69009F1D2716EE5200D18BEA /* PictureExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureExcerciseViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +239,15 @@
 		69B3AEA226BC22BD00BA8F89 /* CourseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewCell.swift; sourceTree = "<group>"; };
 		69B3AEBF26BC7CCC00BA8F89 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		69B3AEC726BC7CD900BA8F89 /* ChatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		69BB2AC3279E0D860048C747 /* MoodInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodInfo.swift; sourceTree = "<group>"; };
+		69BB2ACC27A579830048C747 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		69BB2AE027A5FDDF0048C747 /* CreatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsViewController.swift; sourceTree = "<group>"; };
+		69BB2AE627AA77330048C747 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		69BB2AEF27AAA6120048C747 /* AlertContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContactsViewController.swift; sourceTree = "<group>"; };
+		69BB2AF827AAAFBF0048C747 /* PortraitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewController.swift; sourceTree = "<group>"; };
+		69BB2B0027AAB0AF0048C747 /* PortraitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitPresenter.swift; sourceTree = "<group>"; };
+		69BB2B0D27AAB44E0048C747 /* ExpPortraitViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpPortraitViewCell.swift; sourceTree = "<group>"; };
+		69BB2B1227AAB6DD0048C747 /* SingleTestViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTestViewCell.swift; sourceTree = "<group>"; };
 		69BC7229274FEA4B00774A0F /* SessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionError.swift; sourceTree = "<group>"; };
 		69BC723A27502B6100774A0F /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
 		69BC723F27502BCE00774A0F /* PracticesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticesInfo.swift; sourceTree = "<group>"; };
@@ -247,6 +276,19 @@
 		69C79D9226CC241A008B024A /* ProfileViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewCell.swift; sourceTree = "<group>"; };
 		69CA8C75278360BF00549176 /* AllExcercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExcercisesViewController.swift; sourceTree = "<group>"; };
 		69CA8C7D278360D200549176 /* AllExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExcercisePresenter.swift; sourceTree = "<group>"; };
+		69CBB0B027BAFD0F005D7B5F /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		69CC6B94279B2B740051013E /* NoPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPasswordPresenter.swift; sourceTree = "<group>"; };
+		69CC6B9C279B2B7F0051013E /* NoPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPasswordViewController.swift; sourceTree = "<group>"; };
+		69CC6BA5279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChoiceExcerciseViewController.swift; sourceTree = "<group>"; };
+		69CC6BAD279B36290051013E /* AnswerChoiceExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChoiceExcercisePresenter.swift; sourceTree = "<group>"; };
+		69CC6BB2279B67210051013E /* ExcerciseAnswerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseAnswerViewCell.swift; sourceTree = "<group>"; };
+		69F6AB9227AFD2F900D4A5D4 /* CourseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTabBarViewController.swift; sourceTree = "<group>"; };
+		69F6AB9727AFD30E00D4A5D4 /* SecondaryTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryTabBarViewController.swift; sourceTree = "<group>"; };
+		69F6AB9D27AFD39700D4A5D4 /* CourseInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoViewController.swift; sourceTree = "<group>"; };
+		69F6ABA327AFD56500D4A5D4 /* LessonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewController.swift; sourceTree = "<group>"; };
+		69F6ABA927AFD6C900D4A5D4 /* ReflexiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexiveViewController.swift; sourceTree = "<group>"; };
+		69F6ABB227AFDEE200D4A5D4 /* LessonElementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonElementTableViewCell.swift; sourceTree = "<group>"; };
+		69F6ABBA27AFDFC400D4A5D4 /* LessonsTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTablePresenter.swift; sourceTree = "<group>"; };
 		C645ECD700F3EA9117461534 /* Pods-PureMind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind.debug.xcconfig"; path = "Target Support Files/Pods-PureMind/Pods-PureMind.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CE98E0FB35A5168AFF95DC /* Pods-PureMind-PureMindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind-PureMindUITests.debug.xcconfig"; path = "Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -305,6 +347,7 @@
 		69009EDF27160B4700D18BEA /* Excercises */ = {
 			isa = PBXGroup;
 			children = (
+				69CC6BA4279B34CC0051013E /* AnswerChoiceExcercise */,
 				69CA8C742783609200549176 /* AllExcercises */,
 				69009ECC270F92AF00D18BEA /* ExcerciseChoiceGroup */,
 				69009F3A2717292F00D18BEA /* GapsExcercise */,
@@ -312,7 +355,6 @@
 				69009F2527171D3200D18BEA /* TextPictureExcercise */,
 				69009F1C2716EE3F00D18BEA /* PictureExcercise */,
 				69009F132716EB7F00D18BEA /* YesNoExcercise */,
-				69009EF027162B4E00D18BEA /* RateExcercise */,
 				69009EE027160B5400D18BEA /* TextExcercise */,
 				69009EEB27160DCA00D18BEA /* PageExcerciseViewController.swift */,
 			);
@@ -326,14 +368,6 @@
 				69009EE627160C0700D18BEA /* TextExcercisePresenter.swift */,
 			);
 			path = TextExcercise;
-			sourceTree = "<group>";
-		};
-		69009EF027162B4E00D18BEA /* RateExcercise */ = {
-			isa = PBXGroup;
-			children = (
-				69009EF127162B8700D18BEA /* RateExcerciseViewController.swift */,
-			);
-			path = RateExcercise;
 			sourceTree = "<group>";
 		};
 		69009F132716EB7F00D18BEA /* YesNoExcercise */ = {
@@ -502,6 +536,7 @@
 				69BC723F27502BCE00774A0F /* PracticesInfo.swift */,
 				69BC724427502EA100774A0F /* UserInfo.swift */,
 				69BDBF92279384950029575C /* CoursesInfo.swift */,
+				69BB2AC3279E0D860048C747 /* MoodInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -550,6 +585,7 @@
 			children = (
 				69A1C6BF26B165A100216B2C /* UIColorExtensions.swift */,
 				69C327A5278380C500F1394E /* CALayerExtension.swift */,
+				69CBB0B027BAFD0F005D7B5F /* UIImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -682,6 +718,7 @@
 		69B3AE8626BC158200BA8F89 /* WelcomeGroup */ = {
 			isa = PBXGroup;
 			children = (
+				69CC6B93279B2B4D0051013E /* NoPasswordGroup */,
 				698D75262694AC2F00C66C11 /* WelcomeModule */,
 				698D75412695E2DC00C66C11 /* DescriptionModule */,
 				69357BBE269865D800831004 /* RegistrationModule */,
@@ -714,6 +751,49 @@
 			path = ChatModule;
 			sourceTree = "<group>";
 		};
+		69BB2ACB27A5795A0048C747 /* ShareModule */ = {
+			isa = PBXGroup;
+			children = (
+				69BB2ACC27A579830048C747 /* ShareViewController.swift */,
+			);
+			path = ShareModule;
+			sourceTree = "<group>";
+		};
+		69BB2ADC27A5FDC00048C747 /* CreatorsGroup */ = {
+			isa = PBXGroup;
+			children = (
+				69BB2AE027A5FDDF0048C747 /* CreatorsViewController.swift */,
+			);
+			path = CreatorsGroup;
+			sourceTree = "<group>";
+		};
+		69BB2AE527AA76890048C747 /* ContactsModule */ = {
+			isa = PBXGroup;
+			children = (
+				69BB2AE627AA77330048C747 /* ContactsViewController.swift */,
+			);
+			path = ContactsModule;
+			sourceTree = "<group>";
+		};
+		69BB2AEE27AAA5F60048C747 /* AlertContactsModule */ = {
+			isa = PBXGroup;
+			children = (
+				69BB2AEF27AAA6120048C747 /* AlertContactsViewController.swift */,
+			);
+			path = AlertContactsModule;
+			sourceTree = "<group>";
+		};
+		69BB2AF727AAAF990048C747 /* PortraitGroup */ = {
+			isa = PBXGroup;
+			children = (
+				69BB2AF827AAAFBF0048C747 /* PortraitViewController.swift */,
+				69BB2B0027AAB0AF0048C747 /* PortraitPresenter.swift */,
+				69BB2B0D27AAB44E0048C747 /* ExpPortraitViewCell.swift */,
+				69BB2B1227AAB6DD0048C747 /* SingleTestViewCell.swift */,
+			);
+			path = PortraitGroup;
+			sourceTree = "<group>";
+		};
 		69BC7220274FE78400774A0F /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -724,6 +804,11 @@
 		69BDBF7C279376540029575C /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				69F6ABA827AFD6B300D4A5D4 /* ReflexiveMoudle */,
+				69F6ABA227AFD54600D4A5D4 /* LessonsTableModule */,
+				69F6AB9C27AFD38500D4A5D4 /* CourseInfoModule */,
+				69F6AB9127AFD2B000D4A5D4 /* SecondaryTabBarModule */,
+				69F6AB9027AFD2A300D4A5D4 /* CourseTabBarModule */,
 				69BDBF7D279376600029575C /* AllCourses */,
 			);
 			path = Courses;
@@ -773,6 +858,11 @@
 		69C79D8126CC16E4008B024A /* ProfileGroup */ = {
 			isa = PBXGroup;
 			children = (
+				69BB2AF727AAAF990048C747 /* PortraitGroup */,
+				69BB2AEE27AAA5F60048C747 /* AlertContactsModule */,
+				69BB2AE527AA76890048C747 /* ContactsModule */,
+				69BB2ADC27A5FDC00048C747 /* CreatorsGroup */,
+				69BB2ACB27A5795A0048C747 /* ShareModule */,
 				69C79D8526CC1741008B024A /* ProfileViewController.swift */,
 				69C79D8D26CC1751008B024A /* ProfilePresenter.swift */,
 				69C79D9226CC241A008B024A /* ProfileViewCell.swift */,
@@ -790,6 +880,67 @@
 				69C327AF27838C7E00F1394E /* ExcerciseViewCell.swift */,
 			);
 			path = AllExcercises;
+			sourceTree = "<group>";
+		};
+		69CC6B93279B2B4D0051013E /* NoPasswordGroup */ = {
+			isa = PBXGroup;
+			children = (
+				69CC6B94279B2B740051013E /* NoPasswordPresenter.swift */,
+				69CC6B9C279B2B7F0051013E /* NoPasswordViewController.swift */,
+			);
+			path = NoPasswordGroup;
+			sourceTree = "<group>";
+		};
+		69CC6BA4279B34CC0051013E /* AnswerChoiceExcercise */ = {
+			isa = PBXGroup;
+			children = (
+				69CC6BA5279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift */,
+				69CC6BAD279B36290051013E /* AnswerChoiceExcercisePresenter.swift */,
+				69CC6BB2279B67210051013E /* ExcerciseAnswerViewCell.swift */,
+			);
+			path = AnswerChoiceExcercise;
+			sourceTree = "<group>";
+		};
+		69F6AB9027AFD2A300D4A5D4 /* CourseTabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				69F6AB9227AFD2F900D4A5D4 /* CourseTabBarViewController.swift */,
+			);
+			path = CourseTabBarModule;
+			sourceTree = "<group>";
+		};
+		69F6AB9127AFD2B000D4A5D4 /* SecondaryTabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				69F6AB9727AFD30E00D4A5D4 /* SecondaryTabBarViewController.swift */,
+			);
+			path = SecondaryTabBarModule;
+			sourceTree = "<group>";
+		};
+		69F6AB9C27AFD38500D4A5D4 /* CourseInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				69F6AB9D27AFD39700D4A5D4 /* CourseInfoViewController.swift */,
+			);
+			path = CourseInfoModule;
+			sourceTree = "<group>";
+		};
+		69F6ABA227AFD54600D4A5D4 /* LessonsTableModule */ = {
+			isa = PBXGroup;
+			children = (
+				69F6ABA327AFD56500D4A5D4 /* LessonsTableViewController.swift */,
+				69F6ABB227AFDEE200D4A5D4 /* LessonElementTableViewCell.swift */,
+				69F6ABBA27AFDFC400D4A5D4 /* LessonsTablePresenter.swift */,
+			);
+			path = LessonsTableModule;
+			sourceTree = "<group>";
+		};
+		69F6ABA827AFD6B300D4A5D4 /* ReflexiveMoudle */ = {
+			isa = PBXGroup;
+			children = (
+				69F6ABA927AFD6C900D4A5D4 /* ReflexiveViewController.swift */,
+			);
+			path = ReflexiveMoudle;
 			sourceTree = "<group>";
 		};
 		87214CFFEA24E9114539F2CC /* Pods */ = {
@@ -823,6 +974,8 @@
 			dependencies = (
 			);
 			name = PureMind;
+			packageProductDependencies = (
+			);
 			productName = PureMind;
 			productReference = 698D74DF2694A9AC00C66C11 /* PureMind.app */;
 			productType = "com.apple.product-type.application";
@@ -897,6 +1050,8 @@
 				Base,
 			);
 			mainGroup = 698D74D62694A9AC00C66C11;
+			packageReferences = (
+			);
 			productRefGroup = 698D74E02694A9AC00C66C11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1050,8 +1205,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69BB2B1327AAB6DD0048C747 /* SingleTestViewCell.swift in Sources */,
 				69AD34D826ED5C3100CB7581 /* TariffViewCell.swift in Sources */,
 				69ABE459269C5D5E001FBB4E /* PolicyFullViewCell.swift in Sources */,
+				69CC6BB3279B67210051013E /* ExcerciseAnswerViewCell.swift in Sources */,
+				69BB2AE127A5FDDF0048C747 /* CreatorsViewController.swift in Sources */,
 				69009F2727171D4900D18BEA /* TextPictureExcerciseViewController.swift in Sources */,
 				698D75282694AC6200C66C11 /* WelcomeViewController.swift in Sources */,
 				69C327A6278380C500F1394E /* CALayerExtension.swift in Sources */,
@@ -1059,32 +1217,44 @@
 				69A1C70326B49B3900216B2C /* TherapistSubViewController.swift in Sources */,
 				69BDBF892793806B0029575C /* AllCoursesViewController.swift in Sources */,
 				69856A632736B3CE0081A14C /* MenuCell.swift in Sources */,
+				69CC6BAE279B36290051013E /* AnswerChoiceExcercisePresenter.swift in Sources */,
 				698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */,
 				69C79D4C26CAC974008B024A /* CollectionViewTitle.swift in Sources */,
 				69856A4D2736621C0081A14C /* UIView+Snapshot.swift in Sources */,
+				69F6AB9327AFD2F900D4A5D4 /* CourseTabBarViewController.swift in Sources */,
 				69B3AE8B26BC165000BA8F89 /* MenuViewController.swift in Sources */,
+				69F6ABB327AFDEE200D4A5D4 /* LessonElementTableViewCell.swift in Sources */,
 				69ABE4152699D6A3001FBB4E /* LoginPresenter.swift in Sources */,
 				69856A58273663980081A14C /* ReactionViewController.swift in Sources */,
 				69A1C6F526B48DE600216B2C /* TherapistChoiceViewController.swift in Sources */,
+				69BB2B0127AAB0AF0048C747 /* PortraitPresenter.swift in Sources */,
 				69009F4927172AAC00D18BEA /* GapTableViewCell.swift in Sources */,
 				69C79D5726CBC2B3008B024A /* SecondQuestionsViewController.swift in Sources */,
 				69357BB52698658C00831004 /* NetworkService.swift in Sources */,
 				69009F36271721FB00D18BEA /* InsertImageExcercisePresenter.swift in Sources */,
+				69BB2AE727AA77330048C747 /* ContactsViewController.swift in Sources */,
 				69BDBF8427937A8E0029575C /* SingleCourseViewCell.swift in Sources */,
 				69BDBF93279384950029575C /* CoursesInfo.swift in Sources */,
 				69C79D5126CBA221008B024A /* QuestionsNavigationController.swift in Sources */,
 				69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */,
+				69F6ABBB27AFDFC400D4A5D4 /* LessonsTablePresenter.swift in Sources */,
+				69CC6B95279B2B740051013E /* NoPasswordPresenter.swift in Sources */,
 				69AD34CB26ED559700CB7581 /* TherapistPriceViewController.swift in Sources */,
+				69F6ABAA27AFD6C900D4A5D4 /* ReflexiveViewController.swift in Sources */,
 				69ABE44B269C56C1001FBB4E /* PoliciesFullViewController.swift in Sources */,
 				69CA8C76278360BF00549176 /* AllExcercisesViewController.swift in Sources */,
 				69C79D4226CAC112008B024A /* AnswerViewCell.swift in Sources */,
 				69C79D7D26CC1060008B024A /* DateValueFormatter.swift in Sources */,
+				69BB2AF927AAAFBF0048C747 /* PortraitViewController.swift in Sources */,
 				698D74E32694A9AC00C66C11 /* AppDelegate.swift in Sources */,
 				69CA8C7E278360D200549176 /* AllExcercisePresenter.swift in Sources */,
 				69C79D6526CBF3E4008B024A /* MoodViewController.swift in Sources */,
 				69B3AE8026BC14A200BA8F89 /* MainTabBarController.swift in Sources */,
 				69357BC02698660700831004 /* RegistrationViewController.swift in Sources */,
+				69F6AB9E27AFD39700D4A5D4 /* CourseInfoViewController.swift in Sources */,
+				69BB2ACD27A579830048C747 /* ShareViewController.swift in Sources */,
 				69A1C6C026B165A100216B2C /* UIColorExtensions.swift in Sources */,
+				69CC6BA6279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift in Sources */,
 				69C3279E27837B5F00F1394E /* ExpPracticViewCell.swift in Sources */,
 				69A1C6EA26B3FA7700216B2C /* ThemesPresenter.swift in Sources */,
 				69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */,
@@ -1092,7 +1262,10 @@
 				69C79D8626CC1741008B024A /* ProfileViewController.swift in Sources */,
 				69C79D6D26CBF3F2008B024A /* MoodPresenter.swift in Sources */,
 				69ABE442269B3101001FBB4E /* ShortPolicyViewCell.swift in Sources */,
+				69F6ABA427AFD56500D4A5D4 /* LessonsTableViewController.swift in Sources */,
 				698D74E52694A9AC00C66C11 /* SceneDelegate.swift in Sources */,
+				69BB2B0E27AAB44E0048C747 /* ExpPortraitViewCell.swift in Sources */,
+				69BB2AF027AAA6120048C747 /* AlertContactsViewController.swift in Sources */,
 				69A1C6FD26B48E0800216B2C /* TherapistChoicePresenter.swift in Sources */,
 				69C327AB278389E700F1394E /* ExcercisesViewCell.swift in Sources */,
 				69009F442717295B00D18BEA /* GapsExcercisePresenter.swift in Sources */,
@@ -1105,16 +1278,17 @@
 				69C327B027838C7E00F1394E /* ExcerciseViewCell.swift in Sources */,
 				69ABE40726987919001FBB4E /* CheckBox.swift in Sources */,
 				69BDBF8E2793807F0029575C /* AllCoursesPresenter.swift in Sources */,
-				69009EF227162B8700D18BEA /* RateExcerciseViewController.swift in Sources */,
 				69ABE42F269B2972001FBB4E /* PoliciesShortPresenter.swift in Sources */,
 				69009EDB270F96CF00D18BEA /* PracticsViewCell.swift in Sources */,
 				69009F1E2716EE5200D18BEA /* PictureExcerciseViewController.swift in Sources */,
 				694F9AD627931E1300E4F0A0 /* SingleExcerciseViewCell.swift in Sources */,
 				69A1C6E226B3FA6B00216B2C /* ThemesViewController.swift in Sources */,
 				69ABE43D269B2E67001FBB4E /* UITableViewCellExtensions.swift in Sources */,
+				69CBB0B127BAFD0F005D7B5F /* UIImageExtension.swift in Sources */,
 				69C79D5F26CBC2C7008B024A /* SecondQuestionsPresenter.swift in Sources */,
 				69009EEC27160DCA00D18BEA /* PageExcerciseViewController.swift in Sources */,
 				69C79D8E26CC1751008B024A /* ProfilePresenter.swift in Sources */,
+				69BB2AC4279E0D860048C747 /* MoodInfo.swift in Sources */,
 				69357BBA269865A000831004 /* CachingService.swift in Sources */,
 				69856A6D2736B4860081A14C /* ButtonCollectionViewCell.swift in Sources */,
 				69009F152716EB9E00D18BEA /* YesNoExcerciseViewController.swift in Sources */,
@@ -1126,10 +1300,12 @@
 				69009EE727160C0700D18BEA /* TextExcercisePresenter.swift in Sources */,
 				69ABE435269B2E08001FBB4E /* ExpTitleViewCell.swift in Sources */,
 				69ABE453269C56D9001FBB4E /* PoliciesFullPresenter.swift in Sources */,
+				69F6AB9827AFD30E00D4A5D4 /* SecondaryTabBarViewController.swift in Sources */,
 				69009F2E2717208700D18BEA /* InsertImageExcerciseViewController.swift in Sources */,
 				698D751F2694AAD900C66C11 /* ModuleBuilder.swift in Sources */,
 				69ABE41A269AFBF1001FBB4E /* StringExtensions.swift in Sources */,
 				69A1C6EF26B43F3F00216B2C /* ThemeViewCell.swift in Sources */,
+				69CC6B9D279B2B7F0051013E /* NoPasswordViewController.swift in Sources */,
 				69BC724527502EA100774A0F /* UserInfo.swift in Sources */,
 				69B1F5312704D73500BEC38F /* ChatButtonViewCell.swift in Sources */,
 				69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */,
@@ -1317,16 +1493,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9U7X5634U9;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = J4PD2Z5B5W;
 				INFOPLIST_FILE = PureMind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = strangeGuy.PureMind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1338,16 +1518,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9U7X5634U9;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = J4PD2Z5B5W;
 				INFOPLIST_FILE = PureMind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = strangeGuy.PureMind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

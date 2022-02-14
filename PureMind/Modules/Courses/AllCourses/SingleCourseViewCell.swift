@@ -12,7 +12,8 @@ class SingleCourseViewCell: UITableViewCell {
     
     @IBOutlet weak var lessonsTableView: UITableView!
     
-    var excercises = [PracticesInfo]()
+    var lessons = [ShortLessonInfo]()
+    var courseIndex: Int!
     weak var parentVC: AllCoursesViewProtocol?
     
     override func awakeFromNib() {
@@ -22,7 +23,7 @@ class SingleCourseViewCell: UITableViewCell {
         lessonsTableView.separatorStyle = .none
         self.layer.cornerRadius = 15
         self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor(red: 251, green: 210, blue: 174).cgColor
+        self.layer.borderColor = UIColor(red: 253, green: 247, blue: 221).cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,12 +33,12 @@ class SingleCourseViewCell: UITableViewCell {
 
 extension SingleCourseViewCell: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        excercises.count
+        lessons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExcerciseViewCell.identifier) as! ExcerciseViewCell
-        cell.excerciseNameLabel.text = excercises[indexPath.row].name
+        cell.excerciseNameLabel.text = lessons[indexPath.row].name
         cell.backgroundImageView.image = UIImage(named: "Rectangle 61")
         cell.emblemView.image = UIImage(named: "тик2")
         cell.layoutMargins = UIEdgeInsets.zero
@@ -46,8 +47,7 @@ extension SingleCourseViewCell: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let excercise = excercises[indexPath.row]
-        parentVC?.courseChosen(id: excercise.id, title: excercise.category, name: excercise.name)
+        parentVC?.lessonChosen(index: indexPath.row, courseIndex: courseIndex)
     }
 }
 

@@ -11,7 +11,8 @@ let blueBackgorundColor = UIColor(red: 226, green: 233, blue: 252)
 let lightBlueColor = UIColor(red: 176, green: 188, blue: 246)
 let grayTextColor = UIColor(red: 103, green: 103, blue: 130) //676767
 let grayButtonColor = UIColor(red: 196, green: 196, blue: 196) //C4C4C4
-let darkGrayTextColor = UIColor(red: 175, green: 175, blue: 175) //AFAFAF
+let darkGrayTextColor = UIColor(red: 175, green: 175, blue: 175)
+let titleBlueColor = UIColor(red: 198, green: 222, blue: 255)
 let textFieldColor = UIColor(red: 98, green: 98, blue: 98) //626262
 let policiesButtonColor = UIColor(red: 78, green: 107, blue: 243)
 let lightYellowColor = UIColor(red: 249, green: 207, blue: 136) //F9CF88
@@ -25,6 +26,7 @@ let goodMood = UIColor(red: 199, green: 225, blue: 179)
 let normalMood = UIColor(red: 254, green: 235, blue: 138)
 let badMood = UIColor(red: 252, green: 177, blue: 120)
 let awfulMood = UIColor(red: 249, green: 117, blue: 96)
+
 
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {

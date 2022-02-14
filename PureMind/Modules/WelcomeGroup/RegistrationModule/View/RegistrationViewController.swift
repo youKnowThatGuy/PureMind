@@ -32,6 +32,13 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var policyLabel: UILabel!
     @IBOutlet weak var loginLabel: UILabel!
+    var imageView: UIImageView = {
+            let imageView = UIImageView(frame: .zero)
+            imageView.image = UIImage(named: "background")
+            imageView.contentMode = .scaleAspectFill
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            return imageView
+        }()
     
     
     var presenter: RegistrationPresenterProtocol!
@@ -39,7 +46,15 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+        view.insertSubview(imageView, at: 0)
+                NSLayoutConstraint.activate([
+                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
+                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
         prepareButtons()
         prepareTextFields()
         prepareLabels()
@@ -116,22 +131,20 @@ class RegistrationViewController: UIViewController {
         let message = presenter.infoValidation(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
         if message == "pass"{
             if checkBox.isChecked == true{
-                validationAlert(message: "Проверка завершена успешно!")
-                performSegue(withIdentifier: "themesSegue", sender: nil)
+                validationAlert(title: "Успешно!", message: "Сейчас произойдет вход в сеть!")
+                presenter.performRegistration(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
             }
             else{
-              //validationAlert(message: "Вы не согласились с условиями пользования")
+                validationAlert(title: "Внимание!", message: "Вы не согласились с условиями пользования")
             }
         }
         else{
-            //validationAlert(message: message)
+            validationAlert(title: "Ошибка", message: message)
         }
-        performSegue(withIdentifier: "themesSegue", sender: nil)
-        //presenter.performRegistration(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
     }
     
-    func validationAlert(message: String){
-        let alert = UIAlertController(title: "Ошибка", message: message, preferredStyle: .alert)
+    func validationAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
         alert.addAction(okButton)
@@ -168,7 +181,7 @@ extension RegistrationViewController: RegistrationViewProtocol{
     }
     
     func registerAlert(text: String){
-        validationAlert(message: text)
+        validationAlert(title: "Ошибка", message: text)
     }
 }
 

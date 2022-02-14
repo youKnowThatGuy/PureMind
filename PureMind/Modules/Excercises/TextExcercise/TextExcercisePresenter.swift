@@ -49,7 +49,7 @@ class TextExcercisePresenter: TextExcercisePresenterProtocol{
             case .failure(_):
                 self?.view?.sendAlert(text: "Не удалось отправить ответ")
             case .success(_):
-                self?.view?.sendAlert(text: "Успешно!")
+                self?.view?.sendAlert(text: "Ваш ответ записан.")
             }
         }
     }

@@ -46,6 +46,11 @@ class MenuViewController: UIViewController {
         presenter.loadData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     func prepareDesign(){
         holderNameLabel.backgroundColor = lightYellowColor
         holderNameLabel.layer.masksToBounds = true
@@ -199,6 +204,12 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDataSour
             }
         }
         else{
+            if indexPath.row == collectionView.numberOfItems(inSection: 0) - 1{
+                performSegue(withIdentifier: "allCoursesSegue", sender: nil)
+            }
+            else{
+            performSegue(withIdentifier: "courseChosenSegue", sender: indexPath.row)
+            }
           
         }
     }

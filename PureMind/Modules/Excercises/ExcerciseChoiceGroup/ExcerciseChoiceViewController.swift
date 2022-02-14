@@ -33,6 +33,11 @@ class ExcerciseChoiceViewController: UIViewController {
         prepareViews()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     func prepareViews(){
         view.insertSubview(imageView, at: 0)
                 NSLayoutConstraint.activate([

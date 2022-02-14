@@ -47,11 +47,6 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         self.tabBarController?.tabBar.isHidden = true
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.tabBarController?.tabBar.isHidden = false
-    }
-    
     func prepareMessagesView(){
         if let layout = messagesCollectionView.collectionViewLayout as? MessagesCollectionViewFlowLayout {
             layout.textMessageSizeCalculator.outgoingAvatarSize = .zero
@@ -126,11 +121,10 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         topView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true //right
         topView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true //left
         
-        let backButton = UIButton(frame: CGRect(x: 8, y: 8.5, width: 39, height: 36))
+        let backButton = UIButton(frame: CGRect(x: 20, y: 8.5, width: 35, height: 35))
         backButton.setTitle("", for: .normal)
-        backButton.setBackgroundImage(UIImage(systemName: "chevron.left.circle"), for: .normal)
+        backButton.setBackgroundImage(UIImage(named: "backButtonYellow"), for: .normal)
         backButton.addTarget(self, action: #selector(backButtonPressed), for: .touchUpInside)
-        backButton.tintColor = lightYellowColor
         topView.addSubview(backButton)
         
         let therapistButton = UIButton(frame: CGRect(x: 109, y: 13, width: 161, height: 29))
@@ -140,14 +134,14 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         therapistButton.layer.cornerRadius = 15
         therapistButton.backgroundColor = UIColor(red: 198, green: 222, blue: 255)
         therapistButton.addTarget(self, action: #selector(addTherapistPressed), for: .touchUpInside)
-        topView.addSubview(therapistButton)
+        //topView.addSubview(therapistButton)
         
         let historyButton = UIButton(frame: CGRect(x: 292, y: 13, width: 80, height: 29))
         historyButton.setTitle("История", for: .normal)
         historyButton.backgroundColor = .gray
         historyButton.titleLabel?.font = .systemFont(ofSize: 14)
         historyButton.addTarget(self, action: #selector(chatHistoryPressed), for: .touchUpInside)
-        topView.addSubview(historyButton)
+        //topView.addSubview(historyButton)
         
         let openButtonViewButton = UIButton(frame: CGRect(x: 330, y: 683, width: 50, height: 50))
         openButtonViewButton.setBackgroundImage(UIImage(systemName: "message.circle"), for: .normal)

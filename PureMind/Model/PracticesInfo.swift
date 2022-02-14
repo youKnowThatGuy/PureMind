@@ -25,5 +25,10 @@ struct ExcerciseInfo: Decodable{
     var type: String
     var audio: String?
     var image: String?
-    var answers: [String]?
+    var answers: [ExcerciseAnswer]?
+}
+
+struct ExcerciseAnswer: Decodable{
+    var id: String
+    var text: String
 }

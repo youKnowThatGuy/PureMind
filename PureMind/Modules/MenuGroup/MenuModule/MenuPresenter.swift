@@ -26,6 +26,7 @@ class MenuPresenter: MenuPresenterProtocol{
     var excerciseCounts = [Int]()
     var courses = [String]()
     var coursesId = [String]()
+    var coursesDesc = [String]()
     
     required init(view: MenuViewProtocol) {
         self.view = view
@@ -55,6 +56,7 @@ class MenuPresenter: MenuPresenterProtocol{
                         for token in tokens {
                             self?.courses.append(token.name)
                             self?.coursesId.append(token.id)
+                            self?.coursesDesc.append(token.description)
                         }
                         self?.courses.append("Все курсы")
                         self?.practics.append("Все темы")
@@ -70,6 +72,28 @@ class MenuPresenter: MenuPresenterProtocol{
                 
             }
         }
+    }
+    
+    func conv(n: Int) -> String{
+        let mas = ["а", "и", ""]
+        let n = n % 100
+        var str = ""
+        if n >= 11 && n <= 19{
+            str = mas[2]
+        }
+        else{
+            let i = n % 10
+            if i == 1{
+                str = mas[0]
+            }
+            else if [2,3,4].contains(i){
+                str = mas[1]
+            }
+            else{
+                str = mas[2]
+            }
+        }
+        return str
     }
     
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -89,11 +113,23 @@ class MenuPresenter: MenuPresenterProtocol{
             else {fatalError("invalid data passed")}
             let string = practics[index]
             vc.presenter = ExcerciseChoicePresenter(view: vc, currPractic: string)
+        
+        case "courseChosenSegue":
+            guard let vc = segue.destination as? CourseTabBarViewController, let index = sender as? Int
+            else {fatalError("invalid data passed")}
+            vc.id = coursesId[index]
+            vc.name = courses[index]
+            vc.courseDescription = coursesDesc[index]
             
         case "allPracticsSegue":
             guard let vc = segue.destination as? AllExcercisesViewController
             else {fatalError("invalid data passed")}
             vc.presenter = AllExcercisePresenter(view: vc)
+            
+        case "allCoursesSegue":
+            guard let vc = segue.destination as? AllCoursesViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = AllCoursesPresenter(view: vc)
             
         default:
             break
@@ -151,7 +187,7 @@ class MenuPresenter: MenuPresenterProtocol{
             cell.excerciseCount.text = ""
         }
         else{
-            cell.excerciseCount.text = "\(excerciseCounts[index]) техник"
+            cell.excerciseCount.text = "\(excerciseCounts[index]) техник\(conv(n: excerciseCounts[index]))"
         }
         cell.layer.cornerRadius = 14
         cell.parentView = view

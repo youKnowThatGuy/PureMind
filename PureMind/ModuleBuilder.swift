@@ -22,6 +22,19 @@ class ModuleBuilder: AssemblyBuilderProtocol{
         return navC
     }
     
+    func createLessonModule(data: LessonInfo, index: Int) -> UIViewController{
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LessonsVC") as LessonsTableViewController
+        vc.presenter = LessonsTablePresenter(view: vc, data: data)
+        vc.title = "Урок №\(index + 1)"
+        let navC = UINavigationController(rootViewController: vc)
+        return navC
+    }
+    
+    func createWelcomeModuleReturnee() -> UIViewController {
+        let welcomeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "WelcomeVC") as WelcomeViewController
+        return welcomeVC
+    }
+    
     func createMenuModule() -> UIViewController {
         let menuVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MenuVC") as MenuViewController
         menuVC.presenter = MenuPresenter(view: menuVC)
@@ -36,12 +49,21 @@ class ModuleBuilder: AssemblyBuilderProtocol{
     
     func createTherapistModule() -> UIViewController{
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TherapistVC") as TherapistSubViewController
+        vc.backButtonHidden = true
         return vc
     }
     
     func createPracticModule() -> UIViewController{
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "AllExcVC") as AllExcercisesViewController
         vc.presenter = AllExcercisePresenter(view: vc)
+        vc.backHidden = true
+        let navC = UINavigationController(rootViewController: vc)
+        return navC
+    }
+    
+    func createCoursesModule() -> UIViewController{
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "AllCoursesVC") as AllCoursesViewController
+        vc.presenter = AllCoursesPresenter(view: vc)
         vc.backHidden = true
         let navC = UINavigationController(rootViewController: vc)
         return navC
@@ -109,7 +131,7 @@ class ModuleBuilder: AssemblyBuilderProtocol{
                 vc.excerciseName = practicName
                 vc.excerciseDescription = token.description
                 //
-                vc.image = UIImage(named: "noImage")
+                vc.imageId = token.image
                 //
                 controllers.append(vc)
             
@@ -146,7 +168,22 @@ class ModuleBuilder: AssemblyBuilderProtocol{
                 vc.excerciseName = practicName
                 vc.excerciseDescription = token.description
                 //
-                vc.image = UIImage(named: "noImage")
+                vc.imageId = token.image
+                //
+                controllers.append(vc)
+                
+            case "selection_single":
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ChoiceExcVC") as AnswerChoiceExcerciseViewController
+                //
+                vc.presenter = AnswerChoiceExcercisePresenter(view: vc, currAudio: token.audio, id: token.id, roughAnswers: token.answers!)
+                //
+                vc.vcCount = vcCount
+                vc.vcIndex = Int(token.number)! - 1
+                vc.titleText = title
+                vc.excerciseName = practicName
+                vc.excerciseDescription = token.description
+                //
+
                 //
                 controllers.append(vc)
                 

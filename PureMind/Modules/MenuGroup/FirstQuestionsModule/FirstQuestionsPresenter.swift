@@ -17,6 +17,8 @@ protocol FirstQuestionsPresenterProtocol{
     func manageAnswer(index: IndexPath)
     func manageCustomAnswer(answer: String, index: IndexPath)
     func prepareView()
+    func calculateScore(index: IndexPath) -> Int
+    func cacheCurrMood(moodScore: Int)
     var currMood: String? {get}
 }
 
@@ -25,11 +27,36 @@ class FirstQuestionsPresenter: FirstQuestionsPresenterProtocol{
     var currMood: String?
     var selectedCells = [IndexPath]()
     var selectedAnswers = [String]()
-    var phonyData = [["good", "awesome", "mediocre", "bad", "gruesome", "sad", "complexed"]]
+    var phonyData = [["Гордость", "Спокойствие", "Уверенность", "Радость", "Счастье", "Возбуждение", "Благодарность", "Мотивация", "Вдохновение", "Облегчение", "Безопасность", "Печаль", "Злость", "Скука", "Стыд", "Разочарование", "Одиночество", "Вина", "Усталость", "Тревога"]]
     
     required init(view: FirstQuestionsViewProtocol, currMood: String) {
         self.view = view
         self.currMood = currMood
+    }
+    
+    func calculateScore(index: IndexPath) -> Int{
+        let mood = phonyData[index.section][index.row]
+        switch mood {
+        case "Злость", "Разочарование", "Одиночество", "Тревога" :
+            return 1
+        case "Печаль", "Усталость", "Скука", "Стыд", "Вина" :
+            return 2
+        case "Облегчение", "Спокойствие", "Безопасность" :
+            return 3
+        case "Радость", "Гордость", "Балгодарность", "Уверенность" :
+            return 4
+        case "Вдохновение", "Мотивация", "Счастье" :
+            return 5
+        
+        default:
+            return 0
+        }
+    }
+    
+    func cacheCurrMood(moodScore: Int) {
+        let score = Double(moodScore / 3)
+        let info = MoodInfo(score: Double(score), date: Int(Date().timeIntervalSince1970))
+        CachingService.shared.cacheMoodData(info, currDate: Date())
     }
     
     func prepareView(){

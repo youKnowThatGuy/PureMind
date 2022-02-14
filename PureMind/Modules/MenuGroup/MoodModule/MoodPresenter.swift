@@ -13,11 +13,13 @@ protocol MoodPresenterProtocol{
     func prepare(for segue: UIStoryboardSegue, sender: Any?)
     func prepareCell(cell: PracticViewCell, index: Int)
     func practicsCount() -> Int
-    func setDataCount(_ count: Int, range: UInt32) -> ChartData
+    func getData()
     var currMood: String? {get}
+    var moodChartData: ChartData! {get}
 }
 
 class MoodPresenter: MoodPresenterProtocol{
+    var moodChartData: ChartData!
     weak var view: MoodViewProtocol?
     var currMood: String?
     var practics = ["Страх", "Стыд", "Обида", "Уверенность", "Апатия", "Вина", "Злость", "Стресс", "Все темы"]
@@ -60,23 +62,22 @@ class MoodPresenter: MoodPresenterProtocol{
         cell.layer.cornerRadius = 14
     }
     
-    func setDataCount(_ count: Int, range: UInt32) -> ChartData {
-            let now = Date().timeIntervalSince1970
-            let hourSeconds: TimeInterval = 3600
-            
-            let from = now - (Double(count) / 2) * hourSeconds
-            let to = now + (Double(count) / 2) * hourSeconds
-            
-            let values = stride(from: from, to: to, by: hourSeconds).map { (x) -> ChartDataEntry in
-                let y = arc4random_uniform(range) + 50
-                return ChartDataEntry(x: x, y: Double(y))
+    func getData() {
+        CachingService.shared.getAllMoodData {[weak self] (result) in
+            var raw = [ChartDataEntry]()
+            for data in result{
+                let date = Double(data.date) + 0.970471
+                raw.append(ChartDataEntry(x: date, y: Double(data.score)))
             }
-            
-            let set1 = LineChartDataSet(entries: values, label: "DataSet 1")
+            //raw.append(ChartDataEntry(x: 1644133135.970471, y: 5.0))
+            //raw.append(ChartDataEntry(x: 1644135135.970471, y: 3.0))
+            let set1 = LineChartDataSet(entries: raw, label: "DataSet 1")
             set1.axisDependency = .left
-            set1.setColor(UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1))
+            set1.setColor(UIColor(red: 144, green: 191, blue: 255))
             set1.lineWidth = 1.5
-            set1.drawCirclesEnabled = false
+            set1.drawCirclesEnabled = true
+            set1.circleRadius = 3
+            set1.circleColors = [UIColor(red: 144, green: 191, blue: 255)]
             set1.drawValuesEnabled = false
             set1.fillAlpha = 0.26
             set1.fillColor = UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)
@@ -86,7 +87,10 @@ class MoodPresenter: MoodPresenterProtocol{
             let data = LineChartData(dataSet: set1)
             data.setValueTextColor(.white)
             data.setValueFont(.systemFont(ofSize: 9, weight: .light))
+            self?.moodChartData = data
             
-            return data
+            self?.view?.updateChart()
         }
+    }
 }
+

@@ -40,8 +40,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     }
             }
             }
-        
+        }
     }
+    
+    func switchControllers(viewControllerToBeDismissed:UIViewController, controllerToBePresented:UIViewController) {
+            if (viewControllerToBeDismissed.isViewLoaded && (viewControllerToBeDismissed.view.window != nil)) {
+                // viewControllerToBeDismissed is visible
+                //First dismiss and then load your new presented controller
+                viewControllerToBeDismissed.dismiss(animated: false, completion: {
+                    self.window?.rootViewController?.present(controllerToBePresented, animated: true, completion: nil)
+                })
+            } else {
+            }
+        }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
@@ -74,4 +85,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
-}

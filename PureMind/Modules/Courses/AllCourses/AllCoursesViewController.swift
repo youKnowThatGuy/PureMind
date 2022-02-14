@@ -11,7 +11,7 @@ import ExpyTableView
 protocol AllCoursesViewProtocol: UIViewController{
     func updateUI()
     func failedToLoad()
-    func courseChosen(id: String, title: String, name: String)
+    func lessonChosen(index: Int, courseIndex: Int)
 }
 
 class AllCoursesViewController: UIViewController {
@@ -41,6 +41,7 @@ class AllCoursesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        tabBarController?.tabBar.isHidden = false
         coursesTableView.reloadData()
     }
     
@@ -52,11 +53,6 @@ class AllCoursesViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
-        let attributedString = NSMutableAttributedString(string: "Your text Your text Your text Your text Your text Your text Your text Your text Your text")
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
-        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-        descriptionLabel.attributedText = attributedString
         descriptionLabel.textColor = grayTextColor
         descriptionTitle.textColor = grayTextColor
         prepareTableView()
@@ -99,8 +95,8 @@ extension AllCoursesViewController: AllCoursesViewProtocol{
         navigationController?.popViewController(animated: true)
     }
     
-    func courseChosen(id: String, title: String, name: String){
-        //performSegue(withIdentifier: "practicChosenSegue", sender: [id, title, name])
+    func lessonChosen(index: Int, courseIndex: Int){
+        performSegue(withIdentifier: "lessonChosenSegue", sender: [index, courseIndex])
     }
 }
 
@@ -137,8 +133,9 @@ extension AllCoursesViewController: ExpyTableViewDataSource {
     }
     
     func tableView(_ tableView: ExpyTableView, expandableCellForSection section: Int) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ExpPracticViewCell.identifier) as! ExpPracticViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ExpCourseViewCell.identifier) as! ExpCourseViewCell
         cell.titleLabel.text = presenter.getTitleText(index: section)
+        cell.descriptionLabel.text = presenter.getDescriptionText(index: section)
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell

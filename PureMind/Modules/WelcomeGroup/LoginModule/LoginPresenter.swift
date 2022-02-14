@@ -30,6 +30,12 @@ class LoginPresenter: LoginPresenterProtocol{
             guard segue.destination is MainTabBarController 
             else {fatalError("invalid data passed")}
             
+        case "restorePasswordSegue":
+            guard let vc = segue.destination as? NoPasswordViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = NoPasswordPresenter(view: vc)
+
+            
         default:
             break
         }

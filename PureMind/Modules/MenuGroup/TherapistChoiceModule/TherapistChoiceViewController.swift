@@ -78,6 +78,15 @@ class TherapistChoiceViewController: UIViewController {
         continueButtonShell.layer.borderColor = lightYellowColor.cgColor
     }
     
+    func alert(){
+        let alert = UIAlertController(title: "Ждите этого в следующих обновлениях!", message: "", preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
+        alert.addAction(okButton)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
     @objc func firstViewPressed(){
         switch viewPressed {
         case 0:
@@ -102,7 +111,8 @@ class TherapistChoiceViewController: UIViewController {
         case 1:
             performSegue(withIdentifier: "registrationToMenuSeuge", sender: nil)
         case 2:
-            performSegue(withIdentifier: "therapistSubSegue", sender: nil)
+            alert()
+            //performSegue(withIdentifier: "therapistSubSegue", sender: nil)
         default:
             break
         }

@@ -187,6 +187,141 @@ class NetworkService{
        }.resume()
    }
     
+    func getLessons(courseId: String,completion: @escaping (Result<[ShortLessonInfo], SessionError>) -> Void){
+        var urlComps = baseUrlComponent
+        urlComps.path = "/api/courses/\(courseId)/lessons"
+        
+        guard let url = urlComps.url else {
+            DispatchQueue.main.async {
+                completion(.failure(.invalidUrl))
+            }
+            return
+        }
+        
+        var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+        
+        let text = apiKey.replacingOccurrences(of: "\"", with: "")
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue(text, forHTTPHeaderField: "Token")
+       
+       URLSession.shared.dataTask(with: request) { (data, response, error) in
+           if let error = error {
+               DispatchQueue.main.async {
+                   completion(.failure(.other(error)))
+               }
+               return
+           }
+           let response = response as! HTTPURLResponse
+           
+           guard let data = data, response.statusCode == 200 else {
+               DispatchQueue.main.async {
+                   completion(.failure(.serverError(response.statusCode)))
+               }
+               return
+           }
+        do {
+            let serverResponse = try JSONDecoder().decode([ShortLessonInfo].self, from: data)
+            DispatchQueue.main.async {
+                completion(.success(serverResponse))
+            }
+        }
+        catch let decodingError{
+            DispatchQueue.main.async {
+                completion(.failure(.decodingError(decodingError)))
+            }
+            
+        }
+       }.resume()
+   }
+    
+    private func getLesson(lessonId: String, completion: @escaping (Result<LessonInfo, SessionError>) -> Void){
+        var urlComps = baseUrlComponent
+        urlComps.path = "/api/lessons/\(lessonId)"
+        
+        guard let url = urlComps.url else {
+            DispatchQueue.main.async {
+                completion(.failure(.invalidUrl))
+            }
+            return
+        }
+        
+        var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+        
+        let text = apiKey.replacingOccurrences(of: "\"", with: "")
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue(text, forHTTPHeaderField: "Token")
+       
+       URLSession.shared.dataTask(with: request) { (data, response, error) in
+           if let error = error {
+               DispatchQueue.main.async {
+                   completion(.failure(.other(error)))
+               }
+               return
+           }
+           let response = response as! HTTPURLResponse
+           
+           guard let data = data, response.statusCode == 200 else {
+               DispatchQueue.main.async {
+                   completion(.failure(.serverError(response.statusCode)))
+               }
+               return
+           }
+        do {
+            let serverResponse = try JSONDecoder().decode(LessonInfo.self, from: data)
+            DispatchQueue.main.async {
+                completion(.success(serverResponse))
+            }
+        }
+        catch let decodingError{
+            DispatchQueue.main.async {
+                completion(.failure(.decodingError(decodingError)))
+            }
+            
+        }
+       }.resume()
+   }
+    
+    
+    func getAllLessonsData(courseId: String, completion: @escaping (Result<[LessonInfo], SessionError>) -> Void){
+        var results = [LessonInfo]()
+        getLessons(courseId: courseId) {[weak self] (result) in
+            switch result{
+            case let .failure(error):
+                completion(.failure(error))
+            
+            case let .success(shortInfo):
+                var sort = shortInfo
+                sort = sort.sorted{$1.name > $0.name}
+                let d = DispatchGroup()
+                for info in sort{
+                    d.enter()
+                    DispatchQueue.global().sync{
+                        self?.getLesson(lessonId: info.id) {(fullInfo) in
+                            switch fullInfo{
+                            case let .failure(error):
+                                completion(.failure(error))
+                            case let .success(exc):
+                                results.append(exc)
+                            }
+                            d.leave()
+                        }
+                    }
+                }
+                d.notify(queue: .main){
+                    DispatchQueue.main.async {
+                        completion(.success(results))
+                    }
+                }
+            }
+        }
+    }
+    
     func getAllExcerciseData(practicId: String, completion: @escaping (Result<[ExcerciseInfo], SessionError>) -> Void){
         var results = [ExcerciseInfo]()
         getExcercises(practicId: practicId) {[weak self] (result) in
@@ -377,7 +512,7 @@ class NetworkService{
        var request = URLRequest(url: url)
            request.httpMethod = "PUT"
            do {
-               request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted) // pass dictionary to nsdata object and set it as request body
+               request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
            } catch let error {
             DispatchQueue.main.async {
                 completion(.failure(.decodingError(error)))
@@ -397,6 +532,7 @@ class NetworkService{
            
            guard let data = data, response.statusCode == 200 else {
                DispatchQueue.main.async {
+                print(response.statusCode)
                    completion(.failure(.serverError(response.statusCode)))
                }
                return
@@ -429,7 +565,7 @@ class NetworkService{
        var request = URLRequest(url: url)
            request.httpMethod = "POST"
            do {
-               request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted) // pass dictionary to nsdata object and set it as request body
+               request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
            } catch let error {
             DispatchQueue.main.async {
                 completion(.failure(.decodingError(error)))
@@ -469,6 +605,39 @@ class NetworkService{
            }
        }.resume()
    }
+    
+    func loadImage(from id: String, completion: @escaping (UIImage?) -> Void){
+        var urlComps = baseUrlComponent
+        urlComps.path = "/api/images/\(id)"
+        
+        guard let url = urlComps.url else {
+            DispatchQueue.main.async {
+                completion(nil)
+            }
+            return
+        }
+        
+        var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+        
+        let text = apiKey.replacingOccurrences(of: "\"", with: "")
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue(text, forHTTPHeaderField: "Token")
+        
+        URLSession.shared.dataTask(with: request) { (data, _, _) in
+            DispatchQueue.main.async {
+                if let data = data{
+                    completion(UIImage(data: data))
+                }
+                else{
+                    completion(nil)
+                }
+            }
+        }.resume()
+    }
+
     
 }
 

@@ -21,13 +21,14 @@ class TherapistSubViewController: UIViewController {
     @IBOutlet weak var therapistPriceLabel: UILabel!
     @IBOutlet weak var therapistButtonShell: UIButton!
     
-    
+    var backButtonHidden = false
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareViews()
     }
     
     func prepareViews(){
+        backButtonShell.isHidden = backButtonHidden
         therapistView.layer.cornerRadius = 15
         therapistView.layer.borderWidth = 2
         therapistView.layer.borderColor = lightBlueColor.cgColor

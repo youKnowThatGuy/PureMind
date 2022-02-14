@@ -13,6 +13,7 @@ public class DateValueFormatter: NSObject, IAxisValueFormatter {
     
     override init() {
         super.init()
+        dateFormatter.locale = Locale(identifier: "ru_RU")
         //dateFormatter.dateFormat = "dd MMM HH:mm"
         dateFormatter.dateFormat = "EEE"
     }

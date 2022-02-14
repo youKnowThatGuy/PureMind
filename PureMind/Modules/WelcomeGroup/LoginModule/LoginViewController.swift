@@ -27,14 +27,19 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var backButtonOutlet: UIButton!
     @IBOutlet weak var loginButtonOutlet: UIButton!
     @IBOutlet weak var loginGoogleButtonOutlet: UIButton!
-    
+    var imageView: UIImageView = {
+            let imageView = UIImageView(frame: .zero)
+            imageView.image = UIImage(named: "background")
+            imageView.contentMode = .scaleAspectFill
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            return imageView
+        }()
     var passwordHidden = true
-    
     var presenter: LoginPresenterProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
-        prepareLabels()
+        prepareViews()
         prepareButtons()
         prepareTextFields()
     }
@@ -63,7 +68,16 @@ class LoginViewController: UIViewController {
         
     }
     
-    func prepareLabels(){
+    func prepareViews(){
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+        view.insertSubview(imageView, at: 0)
+                NSLayoutConstraint.activate([
+                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
+                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
         titleLabel.textColor = grayTextColor
         emailLabel.textColor = grayTextColor
         passwordLabel.textColor = grayTextColor
@@ -111,6 +125,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func assistButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "restorePasswordSegue", sender: nil)
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {

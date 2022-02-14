@@ -31,7 +31,7 @@ class TextPictureExcerciseViewController: UIViewController {
     var titleText: String?
     var excerciseName: String?
     var excerciseDescription: String?
-    var image: UIImage?
+    var imageId: String?
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
             imageView.image = UIImage(named: "background3")
@@ -45,9 +45,12 @@ class TextPictureExcerciseViewController: UIViewController {
         setupView()
         presenter.loadAudio()
         setupScrollIndicator()
+        setupImage()
     }
     
     func setupView(){
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
         view.insertSubview(imageView, at: 0)
                 NSLayoutConstraint.activate([
                     imageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -56,9 +59,12 @@ class TextPictureExcerciseViewController: UIViewController {
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
         titleLabel.text = titleText
+        titleLabel.textColor = titleYellow
+        backButtonShell.tintColor = titleYellow
         excerciseNameLabel.text = excerciseName
+        excerciseNameLabel.textColor = grayTextColor
         excerciseDescriptionLabel.text = excerciseDescription
-        excerciseImage.image = image
+        excerciseDescriptionLabel.textColor = grayTextColor
         saveButtonShell.setTitleColor(.white, for: .normal)
         saveButtonShell.layer.backgroundColor = lightYellowColor.cgColor
         saveButtonShell.layer.cornerRadius = 15
@@ -66,7 +72,21 @@ class TextPictureExcerciseViewController: UIViewController {
         noteTextView.layer.borderWidth = 2
         noteTextView.layer.borderColor = lightYellowColor.cgColor
         noteTextView.layer.cornerRadius = 10
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background3")!)
+    }
+    
+    func setupImage(){
+        if imageId == "" {
+            excerciseImage.image = UIImage(named: "noImage")
+        }
+        else{
+            NetworkService.shared.loadImage(from: imageId!) {[weak self] (result) in
+                guard let image = result
+                else {self?.excerciseImage.image = UIImage(named: "noImage")
+                    return
+                }
+                self?.excerciseImage.image = image
+            }
+        }
     }
     
     func setupScrollIndicator(){
@@ -86,7 +106,7 @@ class TextPictureExcerciseViewController: UIViewController {
                 audioPlayer = try AVAudioPlayer(data: audioData!)
             }
             catch{
-                alert(text: "Не удалось загрузить аудио")
+                alert(title: "Ошибка", text: "Не удалось загрузить аудио")
                 playButtonShell.isUserInteractionEnabled = false
                 backButtonShell.isUserInteractionEnabled = false
                 forwardButtonShell.isUserInteractionEnabled = false
@@ -94,7 +114,7 @@ class TextPictureExcerciseViewController: UIViewController {
             }
         }
         else {
-            alert(text: "Не удалось загрузить аудио")
+            alert(title: "Ошибка", text: "Не удалось загрузить аудио")
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
@@ -110,7 +130,7 @@ class TextPictureExcerciseViewController: UIViewController {
             }
             else{
                 audioPlayer?.play()
-                playButtonShell.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+                playButtonShell.setBackgroundImage(UIImage(named: "pauseButton"), for: .normal)
                 isPlaying = true
             }
         
@@ -147,8 +167,8 @@ class TextPictureExcerciseViewController: UIViewController {
         }
     }
     
-    func alert(text: String){
-        let alert = UIAlertController(title: "Ошибка", message: "Не удалось загрузить аудио", preferredStyle: .alert)
+    func alert(title: String,text: String){
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
         alert.addAction(okButton)
@@ -163,7 +183,7 @@ extension TextPictureExcerciseViewController: TextExcerciseViewProtocol{
     }
     
     func sendAlert(text: String){
-        alert(text: text)
+        alert(title: "Спасибо!", text: text)
         if text != "Успешно!"{
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false

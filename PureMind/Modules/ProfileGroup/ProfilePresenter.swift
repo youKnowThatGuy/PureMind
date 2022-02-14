@@ -16,8 +16,8 @@ protocol ProfilePresenterProtocol{
 class ProfilePresenter: ProfilePresenterProtocol{
     weak var view: ProfileViewProtocol?
     
-    var imagesNames = ["person.crop.circle.fill", "book.fill", "phone.circle", "message.fill", "book", "questionmark.circle.fill", "arrowshape.turn.up.backward.circle.fill"]
-    var optionsNames = ["Психологический портрет", "Мои курсы", "Ресурсы чрезвычайной помощи", "Наши соцсети", "Политика конфиденциальности", "Популярные вопросы", "Выйти"]
+    var imagesNames = ["portraitImage", "helpImage", "contactsImage", "policyImage", "aboutUsImage", "shareImage", "exitImage"]
+    var optionsNames = ["Психологический портрет", "Ресурсы чрезвычайной помощи", "Контакты", "Политика конфиденциальности", "О нас", "Поделиться", "Выйти"]
     
     required init(view: ProfileViewProtocol) {
         self.view = view
@@ -29,6 +29,11 @@ class ProfilePresenter: ProfilePresenterProtocol{
             guard let vc = segue.destination as? PoliciesShortViewController
             else {fatalError("invalid data passed")}
             vc.presenter = PoliciesShortPresenter(view: vc)
+        
+        case "showPortraitSegue":
+            guard let vc = segue.destination as? PortraitViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = PortraitPresenter(view: vc)
             
         default:
             break
@@ -36,12 +41,13 @@ class ProfilePresenter: ProfilePresenterProtocol{
     }
     
     func optionsCount() -> Int {
-        return 5
+        return optionsNames.count
     }
     
     func prepareCell(cell: ProfileViewCell, index: Int) {
-        cell.optionImageView.image = UIImage(systemName: imagesNames[index])
+        cell.optionImageView.image = UIImage(named: imagesNames[index])
         cell.optionTitleLabel.text = optionsNames[index]
+        cell.optionTitleLabel.textColor = grayTextColor
     }
     
 }

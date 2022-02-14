@@ -41,6 +41,7 @@ class AllExcercisesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        tabBarController?.tabBar.isHidden = false
         practicsTableView.reloadData()
     }
     
@@ -52,11 +53,6 @@ class AllExcercisesViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
-        let attributedString = NSMutableAttributedString(string: "Your text Your text Your text Your text Your text Your text Your text Your text Your text")
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
-        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-        descriptionLabel.attributedText = attributedString
         descriptionLabel.textColor = grayTextColor
         descriptionTitle.textColor = grayTextColor
         prepareTableView()

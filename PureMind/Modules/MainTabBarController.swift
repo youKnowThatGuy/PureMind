@@ -25,13 +25,15 @@ class MainTabBarController: UITabBarController {
         item1.image = UIImage(named: "tabBar1")
         menuVC.tabBarItem = item1
         
+        /*
         let therapistVC = mod.createTherapistModule()
         let item2 = UITabBarItem()
         item2.title = "Терапевт"
         item2.image = UIImage(named: "tabBar2")
         therapistVC.tabBarItem = item2
+ */
         
-        let coursesVC = mod.createWelcomeModule()
+        let coursesVC = mod.createCoursesModule()
         let item3 = UITabBarItem()
         item3.title = "Курсы"
         item3.image = UIImage(named: "tabBar3")
@@ -49,7 +51,7 @@ class MainTabBarController: UITabBarController {
         item5.image = UIImage(named: "tabBar5")
         profileVC.tabBarItem = item5
         
-        self.viewControllers = [menuVC, therapistVC, coursesVC, practicsVC, profileVC]
+        self.viewControllers = [menuVC, coursesVC, practicsVC, profileVC]
         
     }
     

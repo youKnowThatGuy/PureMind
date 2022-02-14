@@ -19,7 +19,7 @@ protocol ThemesPresenterProtocol{
 class ThemesPresenter: ThemesPresenterProtocol{
     weak var view: ThemesViewProtocol?
     
-    var themes = ["Тема №1", "Тема №2", "Тема №3", "Тема №4"]
+    var themes = ["Тема №1", "Тема №2", "Тема №3", "Тема №4", "Тема №1", "Тема №2", "Тема №3", "Тема №4", "Тема №1", "Тема №2", "Тема №3", "Тема №4"]
     
     var selectedCells = [Int]()
     var selectedThemes = [String]()

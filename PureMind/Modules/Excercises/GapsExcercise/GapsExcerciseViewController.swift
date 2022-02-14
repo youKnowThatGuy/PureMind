@@ -64,8 +64,11 @@ class GapsExcerciseViewController: UIViewController {
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
         titleLabel.text = titleText
+        titleLabel.textColor = .white
         excerciseNameLabel.text = excerciseName
+        excerciseNameLabel.textColor = grayTextColor
         excerciseDescriptionLabel.text = excerciseDescription
+        excerciseDescriptionLabel.textColor = grayTextColor
     }
     
     func setupScrollIndicator(){
@@ -85,7 +88,7 @@ class GapsExcerciseViewController: UIViewController {
                 audioPlayer = try AVAudioPlayer(data: audioData!)
             }
             catch{
-                alert(text: "Не удалось загрузить аудио")
+                alert(title: "Ошибка", text: "Не удалось загрузить аудио")
                 playButtonShell.isUserInteractionEnabled = false
                 backButtonShell.isUserInteractionEnabled = false
                 forwardButtonShell.isUserInteractionEnabled = false
@@ -93,7 +96,7 @@ class GapsExcerciseViewController: UIViewController {
             }
         }
         else {
-            alert(text: "Не удалось загрузить аудио")
+            alert(title: "Ошибка", text: "Не удалось загрузить аудио")
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
@@ -109,7 +112,7 @@ class GapsExcerciseViewController: UIViewController {
             }
             else{
                 audioPlayer?.play()
-                playButtonShell.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+                playButtonShell.setBackgroundImage(UIImage(named: "pauseButton"), for: .normal)
                 isPlaying = true
             }
         
@@ -139,8 +142,8 @@ class GapsExcerciseViewController: UIViewController {
                 }
     }
     
-    func alert(text: String){
-        let alert = UIAlertController(title: "Ошибка", message: "Не удалось загрузить аудио", preferredStyle: .alert)
+    func alert(title: String,text: String){
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
         alert.addAction(okButton)
@@ -156,7 +159,7 @@ extension GapsExcerciseViewController: GapsExcerciseViewProtocol{
     }
     
     func sendAlert(text: String){
-        alert(text: text)
+        alert(title: "Спасибо!", text: text)
         if text != "Успешно!"{
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false

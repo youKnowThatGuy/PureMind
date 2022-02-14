@@ -28,10 +28,11 @@ class RegistrationPresenter: RegistrationPresenterProtocol{
         if email == "" || nickname == "" || password == ""{
             return "Вы не заполнили все поля"
         }
-        let clearEmail = stringClear(str: email)
-        if clearEmail.latinCharactersOnly == false {
-            return "Адрес почты должен быть на латинице»"
-        }
+        //var clearEmail = stringClear(str: email)
+        //clearEmail = clearEmail.replacingOccurrences(of: "-", with: "")
+        //if clearEmail.latinCharactersOnly == false {
+          //  return "Адрес почты должен быть на латинице»"
+        //}
         if email.contains("@") == false || email.contains(".") == false {
             return "Некорректный формат почты"
         }
@@ -55,15 +56,15 @@ class RegistrationPresenter: RegistrationPresenterProtocol{
     }
     
     func performRegistration(nickname: String, email: String, password: String) {
-        networkService.registerUser(nickname: nickname, email: email, password: password) { (result) in
+        networkService.registerUser(nickname: nickname, email: email, password: password) {[weak self] (result) in
             switch result{
             case let .success(token):
-                self.networkService.apiKey = token
-                self.cacheService.cacheInfo(UserInfo(login: email, password: password, token: token))
-                self.view?.registerSuccess()
+                self?.networkService.apiKey = token
+                self?.cacheService.cacheInfo(UserInfo(login: email, password: password, token: token))
+                self?.view?.registerSuccess()
                 
             case .failure(_):
-                self.view?.registerAlert(text: "Зарегестрироваться не удалось. Пожалуйста, проверьте ваши данные и попробуйте снова")
+                self?.view?.registerAlert(text: "Зарегестрироваться не удалось. Пожалуйста, проверьте ваши данные и попробуйте снова")
             }
         }
     }

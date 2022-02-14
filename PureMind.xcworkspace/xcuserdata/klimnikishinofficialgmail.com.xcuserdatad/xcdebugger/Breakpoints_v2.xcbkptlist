@@ -126,8 +126,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "manageCustomAnswer(answer:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "manageCustomAnswer(answer:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -215,24 +215,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "00A39E57-E3EA-48ED-AB69-0E6657222A8B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PureMind/Modules/MenuGroup/MoodModule/MoodViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "moveToChat()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6A26E572-23B6-4D69-9D44-5C6E955F5C86"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatMessageViewCell.swift"
@@ -272,8 +256,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
             endingLineNumber = "55"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "botSays()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -325,7 +309,7 @@
             <Locations>
                <Location
                   uuid = "2E1D5563-0CA3-4299-AAEE-EBED56F1EFA8 - 27f46a16bf2be39f"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -340,7 +324,7 @@
                </Location>
                <Location
                   uuid = "2E1D5563-0CA3-4299-AAEE-EBED56F1EFA8 - 27f46a16bf2be39f"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -355,7 +339,7 @@
                </Location>
                <Location
                   uuid = "2E1D5563-0CA3-4299-AAEE-EBED56F1EFA8 - 27f46a16bf2be39f"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -388,7 +372,7 @@
             <Locations>
                <Location
                   uuid = "C3AE6E78-E651-4F84-82EC-5E5E0C8730DD - 27f46a16bf2be4e0"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -403,7 +387,7 @@
                </Location>
                <Location
                   uuid = "C3AE6E78-E651-4F84-82EC-5E5E0C8730DD - 27f46a16bf2be4e0"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -418,7 +402,7 @@
                </Location>
                <Location
                   uuid = "C3AE6E78-E651-4F84-82EC-5E5E0C8730DD - 27f46a16bf2be4e0"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(routeOneChoiceZero in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -483,7 +467,7 @@
             <Locations>
                <Location
                   uuid = "FBD5FE7E-6BBD-437F-AE02-37F94DD8296A - eb2f9053b7b4e2b1"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(multiChoice1 in _D5C7E2E61ACF60E88120113E6B7A6FE7)(botMessage: Swift.String, cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -498,7 +482,7 @@
                </Location>
                <Location
                   uuid = "FBD5FE7E-6BBD-437F-AE02-37F94DD8296A - eb2f9053b7b4e2b1"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(multiChoice1 in _D5C7E2E61ACF60E88120113E6B7A6FE7)(botMessage: Swift.String, cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -542,8 +526,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "127"
             endingLineNumber = "127"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -558,8 +542,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"
             endingLineNumber = "126"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -590,8 +574,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
             endingLineNumber = "156"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -627,7 +611,7 @@
             <Locations>
                <Location
                   uuid = "9366D96E-A519-4734-B8E3-DCA0D77AFA6C - 5ae0260bf0ceed6e"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(routeOneChoiceOne in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -642,7 +626,7 @@
                </Location>
                <Location
                   uuid = "9366D96E-A519-4734-B8E3-DCA0D77AFA6C - 5ae0260bf0ceed6e"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(routeOneChoiceOne in _D5C7E2E61ACF60E88120113E6B7A6FE7)(cases: Swift.Array&lt;Swift.Int&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -675,7 +659,7 @@
             <Locations>
                <Location
                   uuid = "0EB7EBB1-092C-403C-AB25-131B78DC636D - 303096191274c5bb"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -690,7 +674,7 @@
                </Location>
                <Location
                   uuid = "0EB7EBB1-092C-403C-AB25-131B78DC636D - 303096191274c5bb"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -771,7 +755,7 @@
             <Locations>
                <Location
                   uuid = "09C6411F-7F89-4B25-B731-5017E3749D43 - 303096191274c53f"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -786,7 +770,7 @@
                </Location>
                <Location
                   uuid = "09C6411F-7F89-4B25-B731-5017E3749D43 - 303096191274c53f"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -801,7 +785,7 @@
                </Location>
                <Location
                   uuid = "09C6411F-7F89-4B25-B731-5017E3749D43 - 303096191274c53f"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ChatBot.(situationResponse in _D5C7E2E61ACF60E88120113E6B7A6FE7)() -&gt; Swift.Array&lt;Swift.String&gt;"
@@ -875,8 +859,8 @@
             filePath = "PureMind/Modules/Excercises/GapsExcercise/GapsExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -885,7 +869,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E54B6296-A9C1-42CE-95CB-7139219B4066"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/Excercises/GapsExcercise/GapTableViewCell.swift"
@@ -907,8 +891,8 @@
             filePath = "PureMind/Modules/Excercises/GapsExcercise/GapsExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -923,8 +907,8 @@
             filePath = "PureMind/Modules/Excercises/TextExcercise/TextExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "forwardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -939,8 +923,8 @@
             filePath = "PureMind/Modules/Excercises/TextExcercise/TextExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "forwardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -955,8 +939,8 @@
             filePath = "PureMind/Modules/Excercises/TextExcercise/TextExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "forwardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -971,8 +955,8 @@
             filePath = "PureMind/Modules/Excercises/TextExcercise/TextExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "forwardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -990,38 +974,6 @@
             startingLineNumber = "115"
             endingLineNumber = "115"
             landmarkName = "hideCardAndGoBack()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0B9D09E8-5EF2-459B-ACC6-61AE4981F87F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PureMind/Modules/MenuGroup/ChatModule/View/ReactionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "collectionView(_:numberOfItemsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D27EFEED-2CE0-431F-B51A-3883C8AD2B27"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PureMind/Modules/WelcomeGroup/LoginModule/LoginPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "performLogin(email:password:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1186,7 +1138,7 @@
             <Locations>
                <Location
                   uuid = "1E3CC015-C306-4279-997B-1EEB663E307A - e5f21a2bba12b863"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.NetworkService.getPractices(completion: (Swift.Result&lt;Swift.String, PureMind.SessionError&gt;) -&gt; ()) -&gt; ()"
@@ -1201,7 +1153,7 @@
                </Location>
                <Location
                   uuid = "1E3CC015-C306-4279-997B-1EEB663E307A - 854dd6f2a97449e0"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PureMind.NetworkService.getPractices(completion: (Swift.Result&lt;Swift.String, PureMind.SessionError&gt;) -&gt; ()) -&gt; ()"
@@ -1284,22 +1236,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "806B84F0-330A-46F9-9D1D-72D5BA8ECE56"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PureMind/Modules/WelcomeGroup/LoginModule/LoginPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "performLogin(email:password:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5C86917E-3FEF-47D7-A47C-3A04173F8619"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1314,7 +1250,7 @@
             <Locations>
                <Location
                   uuid = "5C86917E-3FEF-47D7-A47C-3A04173F8619 - 2d7fd510151cf7f5"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.SceneDelegate.scene(_: __C.UIScene, willConnectTo: __C.UISceneSession, options: __C.UISceneConnectionOptions) -&gt; ()"
@@ -1329,7 +1265,7 @@
                </Location>
                <Location
                   uuid = "5C86917E-3FEF-47D7-A47C-3A04173F8619 - 2e75e3ed7939b1cd"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;PureMind.UserInfo&gt;) -&gt; () in PureMind.SceneDelegate.scene(_: __C.UIScene, willConnectTo: __C.UISceneSession, options: __C.UISceneConnectionOptions) -&gt; ()"
@@ -1344,7 +1280,7 @@
                </Location>
                <Location
                   uuid = "5C86917E-3FEF-47D7-A47C-3A04173F8619 - 247759963fffcd52"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Swift.String, PureMind.SessionError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;PureMind.UserInfo&gt;) -&gt; () in PureMind.SceneDelegate.scene(_: __C.UIScene, willConnectTo: __C.UISceneSession, options: __C.UISceneConnectionOptions) -&gt; ()"
@@ -1418,8 +1354,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1434,8 +1370,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1450,8 +1386,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1466,8 +1402,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1482,8 +1418,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1498,8 +1434,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1514,8 +1450,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1530,8 +1466,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1553,7 +1489,7 @@
             <Locations>
                <Location
                   uuid = "FBD0A3B5-83B3-4E72-BB71-959EA66A80EF - 2e75e3ed7939b1f2"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;PureMind.UserInfo&gt;) -&gt; () in PureMind.SceneDelegate.scene(_: __C.UIScene, willConnectTo: __C.UISceneSession, options: __C.UISceneConnectionOptions) -&gt; ()"
@@ -1568,7 +1504,7 @@
                </Location>
                <Location
                   uuid = "FBD0A3B5-83B3-4E72-BB71-959EA66A80EF - 247759963fffcd52"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Swift.String, PureMind.SessionError&gt;) -&gt; () in closure #1 (Swift.Optional&lt;PureMind.UserInfo&gt;) -&gt; () in PureMind.SceneDelegate.scene(_: __C.UIScene, willConnectTo: __C.UISceneSession, options: __C.UISceneConnectionOptions) -&gt; ()"
@@ -1617,7 +1553,7 @@
             <Locations>
                <Location
                   uuid = "907F8113-6D22-4D2A-8E4F-E8736B99833F - 2d7fd510151cf7f5"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.SceneDelegate.scene(_: __C.UIScene, willConnectTo: __C.UISceneSession, options: __C.UISceneConnectionOptions) -&gt; ()"
@@ -1632,7 +1568,7 @@
                </Location>
                <Location
                   uuid = "907F8113-6D22-4D2A-8E4F-E8736B99833F - 2e75e3ed7939b1cd"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;PureMind.UserInfo&gt;) -&gt; () in PureMind.SceneDelegate.scene(_: __C.UIScene, willConnectTo: __C.UISceneSession, options: __C.UISceneConnectionOptions) -&gt; ()"
@@ -1658,8 +1594,8 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "prepareCourseCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1713,7 +1649,7 @@
             <Locations>
                <Location
                   uuid = "1260EB5D-9A87-4524-B09A-A894354102C4 - 6bf8cd7412b989b7"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.ExcerciseChoicePresenter.init(view: PureMind.ExcerciseChoiceViewProtocol, currPractic: Swift.String) -&gt; PureMind.ExcerciseChoicePresenter"
@@ -1728,7 +1664,7 @@
                </Location>
                <Location
                   uuid = "1260EB5D-9A87-4524-B09A-A894354102C4 - f55a910d0cc973d9"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;PureMind.PracticesInfo&gt;, PureMind.SessionError&gt;) -&gt; () in PureMind.ExcerciseChoicePresenter.init(view: PureMind.ExcerciseChoiceViewProtocol, currPractic: Swift.String) -&gt; PureMind.ExcerciseChoicePresenter"
@@ -1761,7 +1697,7 @@
             <Locations>
                <Location
                   uuid = "6CC8F2D9-38C8-4FAA-AFCB-F6D88611F34B - f55a910d0cc97cc1"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;PureMind.PracticesInfo&gt;, PureMind.SessionError&gt;) -&gt; () in PureMind.ExcerciseChoicePresenter.init(view: PureMind.ExcerciseChoiceViewProtocol, currPractic: Swift.String) -&gt; PureMind.ExcerciseChoicePresenter"
@@ -1776,7 +1712,7 @@
                </Location>
                <Location
                   uuid = "6CC8F2D9-38C8-4FAA-AFCB-F6D88611F34B - f55a910d0cc97cc1"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;PureMind.PracticesInfo&gt;, PureMind.SessionError&gt;) -&gt; () in PureMind.ExcerciseChoicePresenter.init(view: PureMind.ExcerciseChoiceViewProtocol, currPractic: Swift.String) -&gt; PureMind.ExcerciseChoicePresenter"
@@ -1850,8 +1786,8 @@
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1866,8 +1802,8 @@
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1876,14 +1812,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "42C82470-EC9C-4114-A208-57CA0B081094"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1898,8 +1834,8 @@
             filePath = "PureMind/ServiceLayer/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "435"
-            endingLineNumber = "435"
+            startingLineNumber = "571"
+            endingLineNumber = "571"
             landmarkName = "sendExcerciseAnswer(excerciseId:selectionAnswers:customAnswer:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1914,8 +1850,8 @@
             filePath = "PureMind/ServiceLayer/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "447"
-            endingLineNumber = "447"
+            startingLineNumber = "583"
+            endingLineNumber = "583"
             landmarkName = "sendExcerciseAnswer(excerciseId:selectionAnswers:customAnswer:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1924,14 +1860,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FDFBF897-5705-4510-83B0-F5391D53F4C4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/ServiceLayer/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "456"
-            endingLineNumber = "456"
+            startingLineNumber = "592"
+            endingLineNumber = "592"
             landmarkName = "sendExcerciseAnswer(excerciseId:selectionAnswers:customAnswer:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1946,14 +1882,14 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "loadData()"
             landmarkType = "7">
             <Locations>
                <Location
                   uuid = "597DCD87-B73C-4779-90E4-16BB33D14136 - cbac55b053a43d92"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;PureMind.PracticesInfo&gt;, PureMind.SessionError&gt;) -&gt; () in PureMind.MenuPresenter.loadData() -&gt; ()"
@@ -1968,7 +1904,7 @@
                </Location>
                <Location
                   uuid = "597DCD87-B73C-4779-90E4-16BB33D14136 - cbac55b053a43d92"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;PureMind.PracticesInfo&gt;, PureMind.SessionError&gt;) -&gt; () in PureMind.MenuPresenter.loadData() -&gt; ()"
@@ -1994,8 +1930,8 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2010,8 +1946,8 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2020,6 +1956,22 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "71828BBD-806B-43D4-82F6-55E966BD0EE3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9922484-F105-456D-9A5B-41310CFBF619"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -2035,22 +1987,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C9922484-F105-456D-9A5B-41310CFBF619"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "CB1C70EE-D31F-4A1D-91AD-FBEB44822270"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -2058,8 +1994,8 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2074,14 +2010,14 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "loadData()"
             landmarkType = "7">
             <Locations>
                <Location
                   uuid = "745CFE5B-2FE7-4436-9E43-8EA590BC4877 - cd13d2c65cb3e22a"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "PureMind.MenuPresenter.loadData() -&gt; ()"
@@ -2096,7 +2032,7 @@
                </Location>
                <Location
                   uuid = "745CFE5B-2FE7-4436-9E43-8EA590BC4877 - cbac55b053a43c2e"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;PureMind.PracticesInfo&gt;, PureMind.SessionError&gt;) -&gt; () in PureMind.MenuPresenter.loadData() -&gt; ()"
@@ -2110,6 +2046,614 @@
                   offsetFromSymbolStart = "311">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18099940-6371-4F03-8720-7C917FB566C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ServiceLayer/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "555"
+            endingLineNumber = "555"
+            landmarkName = "sendExcerciseAnswer(excerciseId:selectionAnswers:customAnswer:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FBF708C-6A96-4F97-9DA6-C046A0F77B41"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/View/ReactionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "336E8473-DE72-4136-890E-8C4A3ADB06F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/View/ReactionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF9DA833-B410-44B8-8110-756E0265F6CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/View/ReactionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B40A9921-BCFE-4E23-90D7-1F8C7BCF3BF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ModuleBuilder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "createAnyPractic(info:title:practicName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DC7E833-2A26-4967-84A0-C89677142843"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/Excercises/PageExcerciseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "setViewControllers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8517F346-9109-4633-8B2E-CED1CEB23D5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFABEF22-1A9E-4CF5-BE38-6389997A4278"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AFA276E-98EE-40DC-9D8D-3558543ABA09"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35A37E30-5940-4236-A310-6F0502B5F676"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ServiceLayer/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "564"
+            endingLineNumber = "564"
+            landmarkName = "sendExcerciseAnswer(excerciseId:selectionAnswers:customAnswer:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C5CD15F-BE8C-4240-B39A-D4A6F414A570"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ServiceLayer/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "565"
+            endingLineNumber = "565"
+            landmarkName = "sendExcerciseAnswer(excerciseId:selectionAnswers:customAnswer:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC725ED2-6781-460C-A66B-F1D898159496"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "cacheCurrMood(moodScore:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "673C5F8C-4C0D-4B51-B09D-B152FDE114EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "calculateScore(index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D53D258B-EBCC-4C1D-BA50-EB1819B15924"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A426343-AA2B-4ECE-B475-E8DD6153C296"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C13A66D7-736E-4EFF-BF12-746E3A06A88D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/MoodModule/MoodPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "getData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACF80D37-7242-4F1C-8612-D941D5BA7731"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/View/RegistrationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "registerSuccess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46783C21-9A9C-4698-A510-EE29133BEF14"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "performRegistration(nickname:email:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87094EF7-4BC0-4B73-B1D1-53CB067E7C6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/View/RegistrationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "registerButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0171A6C9-8B12-4F6A-81F9-F5C6D83D60E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "performRegistration(nickname:email:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0171A6C9-8B12-4F6A-81F9-F5C6D83D60E0 - bf26e2a43894617"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.RegistrationPresenter.performRegistration(nickname: Swift.String, email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "0171A6C9-8B12-4F6A-81F9-F5C6D83D60E0 - c685ccf7f727ea97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, PureMind.SessionError&gt;) -&gt; () in PureMind.RegistrationPresenter.performRegistration(nickname: Swift.String, email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "283">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95AA41F3-D20F-4E49-87BB-947C615C2704"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "performRegistration(nickname:email:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "95AA41F3-D20F-4E49-87BB-947C615C2704 - c685ccf7f727ead5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, PureMind.SessionError&gt;) -&gt; () in PureMind.RegistrationPresenter.performRegistration(nickname: Swift.String, email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "401">
+               </Location>
+               <Location
+                  uuid = "95AA41F3-D20F-4E49-87BB-947C615C2704 - c685ccf7f727ead5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, PureMind.SessionError&gt;) -&gt; () in PureMind.RegistrationPresenter.performRegistration(nickname: Swift.String, email: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "429">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6060A5CA-BB52-43B3-91F0-126CDC895505"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "performRegistration(nickname:email:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3523630-D38B-42F4-8CA8-EC677581D40C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ServiceLayer/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "527"
+            endingLineNumber = "527"
+            landmarkName = "registerUser(nickname:email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACE82954-A0E3-4D99-8162-16F69B9D3664"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ServiceLayer/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "536"
+            endingLineNumber = "536"
+            landmarkName = "registerUser(nickname:email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "948EDD27-DE68-4A2A-823F-702AFBC260DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ServiceLayer/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "547"
+            endingLineNumber = "547"
+            landmarkName = "registerUser(nickname:email:password:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EE52696-4480-418F-B2AA-47876F3EF714"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/LoginModule/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "loginButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2E36BF7-C67B-4EEE-884E-834F1596D228"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/ProfileGroup/ShareModule/ShareViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "prepareViews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2AB05C86-2118-4455-942B-22B90828B6F5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ServiceLayer/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
+            landmarkName = "getAllLessonsData(courseId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4CAE534-3837-41B6-BAD9-7AEF72A70C92"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/ServiceLayer/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
+            landmarkName = "getAllLessonsData(courseId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48B73DD8-CF80-4036-8260-30595EC2F43B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/Courses/LessonsTableModule/LessonsTablePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDFD1AD6-6778-48C1-9E50-5DE03BA67799"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/Courses/LessonsTableModule/LessonsTablePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getVideoLink(index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FCC56CAD-361C-4AB2-8E7E-EA90FAFB22BB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/Courses/SecondaryTabBarModule/SecondaryTabBarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "setFirstVC()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E9F9C27-BF70-4C41-A25A-018D5190AAE9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "infoValidation(nickname:email:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7378D7E-FBCD-43CB-875C-67F510272A67"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/ProfileGroup/ContactsModule/ContactsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "callbackButtonPressed(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -18,20 +18,26 @@ class MoodViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var practicsCollectionView: UICollectionView!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var practicesLabel: UILabel!
+    
     @IBOutlet weak var contentView: UIView!
     var chart = LineChartView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareCollectionView()
-        prepareChart()
+        prepareViews()
+        presenter.getData()
+        //prepareChart()
     }
     
     
     
-    func prepareCollectionView(){
+    func prepareViews(){
         practicsCollectionView.delegate = self
         practicsCollectionView.dataSource = self
+        titleLabel.textColor = grayTextColor
+        practicesLabel.textColor = grayTextColor
     }
     
     func prepareChart(){
@@ -50,33 +56,32 @@ class MoodViewController: UIViewController, ChartViewDelegate {
         chart.layer.cornerRadius = 15
         let xAxis = chart.xAxis
         xAxis.labelPosition = .bottomInside
-                xAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
-                xAxis.labelTextColor = UIColor(red: 255/255, green: 192/255, blue: 56/255, alpha: 1)
-                xAxis.drawAxisLineEnabled = false
-                //xAxis.drawGridLinesEnabled = true
+        xAxis.labelFont = UIFont(name: "Montserrat-Regular", size: 10)!
+                xAxis.labelTextColor = lightBlueColor
                 xAxis.centerAxisLabelsEnabled = true
                 xAxis.granularity = 3600
                 xAxis.valueFormatter = DateValueFormatter()
-        xAxis.drawAxisLineEnabled = false
-        xAxis.axisLineColor = UIColor(red: 198, green: 222, blue: 255, alpha: 1)
+        xAxis.drawAxisLineEnabled = true
+        xAxis.drawGridLinesEnabled = false
+        xAxis.axisLineColor = blueBackgorundColor
                 
-                let leftAxis = chart.leftAxis
-                leftAxis.labelPosition = .insideChart
-                leftAxis.labelFont = .systemFont(ofSize: 12, weight: .light)
-                //leftAxis.drawGridLinesEnabled = true
-                leftAxis.granularityEnabled = true
-                leftAxis.axisMinimum = 0
-                leftAxis.axisMaximum = 170
-                leftAxis.yOffset = -9
-        leftAxis.drawAxisLineEnabled = false
-                leftAxis.labelTextColor = UIColor(red: 255/255, green: 192/255, blue: 56/255, alpha: 1)
-        leftAxis.axisLineColor = UIColor(red: 198, green: 222, blue: 255, alpha: 1)
-                chart.rightAxis.enabled = false
-                //chart.legend.form = .line
-                chart.animate(xAxisDuration: 2.5)
+        let leftAxis = chart.leftAxis
+        leftAxis.labelPosition = .insideChart
+        leftAxis.labelFont = UIFont(name: "Montserrat-Regular", size: 10)!
+        leftAxis.drawGridLinesEnabled = false
+        leftAxis.granularityEnabled = true
+        leftAxis.axisMinimum = 0
+        leftAxis.axisMaximum = 5
+        leftAxis.yOffset = -9
+        leftAxis.drawAxisLineEnabled = true
+        leftAxis.labelTextColor = lightBlueColor
+        leftAxis.axisLineColor = blueBackgorundColor
+        chart.rightAxis.enabled = false
+        //chart.legend.form = .line
+        chart.animate(xAxisDuration: 2.5)
         view.addSubview(chart)
         setupChartLayout()
-        chart.data = presenter.setDataCount(30, range: 90)
+        chart.data = presenter.moodChartData
     }
     
     func setupChartLayout(){
@@ -94,14 +99,6 @@ class MoodViewController: UIViewController, ChartViewDelegate {
         chart.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true //left
     }
     
-    @objc func moveToDiary(){
-        print("Coming soon!")
-    }
-    
-    @objc func moveToChat(){
-        performSegue(withIdentifier: "chatMoodSegue", sender: nil)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         presenter.prepare(for: segue, sender: nil)
     }
@@ -112,9 +109,8 @@ extension MoodViewController: MoodViewProtocol{
     func updateUI() {
         practicsCollectionView.reloadData()
     }
-    
-    func updateChart() {
-        print("o")
+    func updateChart(){
+        prepareChart()
     }
 }
 

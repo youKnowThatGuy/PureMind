@@ -17,7 +17,7 @@ class PictureExcerciseViewController: UIViewController {
     @IBOutlet weak var forwardButtonShell: UIButton!
     @IBOutlet weak var scrollIndicator: UIPageControl!
     @IBOutlet weak var excerciseNameLabel: UILabel!
-    @IBOutlet weak var excerciseDescriptionLabel: UILabel!
+    @IBOutlet weak var excerciseDescriptionLabel: UITextView!
     @IBOutlet weak var excercisePicture: UIImageView!
     
     var presenter: TextExcercisePresenterProtocol!
@@ -28,7 +28,7 @@ class PictureExcerciseViewController: UIViewController {
     var titleText: String?
     var excerciseName: String?
     var excerciseDescription: String?
-    var image: UIImage!
+    var imageId: String?
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
             imageView.image = UIImage(named: "background3")
@@ -42,6 +42,7 @@ class PictureExcerciseViewController: UIViewController {
         setupView()
         presenter.loadAudio()
         setupScrollIndicator()
+        setupImage()
     }
     
     func setupView(){
@@ -59,7 +60,6 @@ class PictureExcerciseViewController: UIViewController {
         excerciseNameLabel.textColor = grayTextColor
         excerciseDescriptionLabel.text = excerciseDescription
         excerciseDescriptionLabel.textColor = grayTextColor
-        excercisePicture.image = image
     }
     
     func setupScrollIndicator(){
@@ -68,8 +68,8 @@ class PictureExcerciseViewController: UIViewController {
         scrollIndicator.currentPage = vcIndex!
     }
     
-    func alert(text: String){
-        let alert = UIAlertController(title: "Ошибка", message: "Не удалось загрузить аудио", preferredStyle: .alert)
+    func alert(title: String,text: String){
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
         alert.addAction(okButton)
@@ -88,7 +88,7 @@ class PictureExcerciseViewController: UIViewController {
                 audioPlayer = try AVAudioPlayer(data: audioData!)
             }
             catch{
-                alert(text: "Не удалось загрузить аудио")
+                alert(title: "Ошибка", text: "Не удалось загрузить аудио")
                 playButtonShell.isUserInteractionEnabled = false
                 backButtonShell.isUserInteractionEnabled = false
                 forwardButtonShell.isUserInteractionEnabled = false
@@ -96,11 +96,26 @@ class PictureExcerciseViewController: UIViewController {
             }
         }
         else {
-            alert(text: "Не удалось загрузить аудио")
+            alert(title: "Ошибка", text: "Не удалось загрузить аудио")
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
             backwardsButtonShell.isUserInteractionEnabled = false
+        }
+    }
+    
+    func setupImage(){
+        if imageId == "" {
+            excercisePicture.image = UIImage(named: "noImage")
+        }
+        else{
+            NetworkService.shared.loadImage(from: imageId!) {[weak self] (result) in
+                guard let image = result
+                else {self?.excercisePicture.image = UIImage(named: "noImage")
+                    return
+                }
+                self?.excercisePicture.image = image
+            }
         }
     }
     
@@ -112,7 +127,7 @@ class PictureExcerciseViewController: UIViewController {
             }
             else{
                 audioPlayer?.play()
-                playButtonShell.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+                playButtonShell.setBackgroundImage(UIImage(named: "pauseButton"), for: .normal)
                 isPlaying = true
             }
         
@@ -151,7 +166,7 @@ extension PictureExcerciseViewController: TextExcerciseViewProtocol{
     }
     
     func sendAlert(text: String){
-        alert(text: text)
+        alert(title: "Спасибо!", text: text)
         if text != "Успешно!"{
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false

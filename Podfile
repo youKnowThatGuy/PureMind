@@ -16,6 +16,7 @@ target 'PureMind' do
   pod 'Charts'
 
   pod 'BEKCurveTabbar', :git => 'https://github.com/behrad-kzm/BEKCurveTabbar.git'
+  pod 'Parchment', '~> 3.2'
 
   target 'PureMindTests' do
     inherit! :search_paths

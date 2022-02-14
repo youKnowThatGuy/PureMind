@@ -52,6 +52,8 @@ class TextExcerciseViewController: UIViewController {
     }
     
     func setupView(){
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
         view.insertSubview(imageView, at: 0)
                 NSLayoutConstraint.activate([
                     imageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -75,6 +77,32 @@ class TextExcerciseViewController: UIViewController {
         noteTextView.layer.cornerRadius = 10
     }
     
+    func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
+       let size = image.size
+       
+       let widthRatio  = targetSize.width  / size.width
+       let heightRatio = targetSize.height / size.height
+       
+       // Figure out what our orientation is, and use that to form the rectangle
+       var newSize: CGSize
+       if(widthRatio > heightRatio) {
+           newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
+       } else {
+           newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
+       }
+       
+       // This is the rect that we've calculated out and this is what is actually used below
+       let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+       
+       // Actually do the resizing to the rect using the ImageContext stuff
+       UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+       image.draw(in: rect)
+       let newImage = UIGraphicsGetImageFromCurrentImageContext()
+       UIGraphicsEndImageContext()
+       
+       return newImage!
+   }
+    
     func setupScrollIndicator(){
         scrollIndicator.isUserInteractionEnabled = false
         scrollIndicator.numberOfPages = vcCount!
@@ -92,7 +120,7 @@ class TextExcerciseViewController: UIViewController {
                 audioPlayer = try AVAudioPlayer(data: audioData!)
             }
             catch{
-                alert(text: "Не удалось загрузить аудио")
+                alert(title: "Ошибка", text: "Не удалось загрузить аудио")
                 playButtonShell.isUserInteractionEnabled = false
                 backButtonShell.isUserInteractionEnabled = false
                 forwardButtonShell.isUserInteractionEnabled = false
@@ -100,7 +128,7 @@ class TextExcerciseViewController: UIViewController {
             }
         }
         else {
-            alert(text: "Не удалось загрузить аудио")
+            alert(title: "Ошибка", text: "Не удалось загрузить аудио")
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
@@ -122,8 +150,8 @@ class TextExcerciseViewController: UIViewController {
         
     }
     
-    func alert(text: String){
-        let alert = UIAlertController(title: "Ошибка", message: text, preferredStyle: .alert)
+    func alert(title: String,text: String){
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
         alert.addAction(okButton)
@@ -170,7 +198,7 @@ extension TextExcerciseViewController: TextExcerciseViewProtocol{
     }
     
     func sendAlert(text: String){
-        alert(text: text)
+        alert(title: "Спасибо!", text: text)
         if text != "Успешно!"{
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false

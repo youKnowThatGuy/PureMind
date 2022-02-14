@@ -24,6 +24,7 @@ class FirstQuestionsViewController: UIViewController {
     @IBOutlet weak var answersCollectionView: UICollectionView!
     @IBOutlet weak var backButtonShell: UIButton!
     var moodColor = UIColor(red: 0, green: 0, blue: 0)
+    var totalScore = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,9 +69,12 @@ class FirstQuestionsViewController: UIViewController {
     func inputOwnAnswer(index: IndexPath){
         let alert = UIAlertController(title: "Ваш ответ:", message: "", preferredStyle: .alert)
         
-        let addlButton = UIAlertAction(title: "Добавить", style: .default){ (action) in
+        let addlButton = UIAlertAction(title: "Добавить", style: .default){[weak self] (action) in
             let answer = alert.textFields![0].text!
-            self.presenter.manageCustomAnswer(answer: answer, index: index)
+            self?.presenter.manageCustomAnswer(answer: answer, index: index)
+            let vc = ModuleBuilder().createMoodModuleOne(mood: (self?.presenter.currMood!)!, vcIndex: (self?.vcIndex)! + 1) as? FirstQuestionsViewController
+            vc!.totalScore += 3
+            self?.navigationController?.pushViewController(vc!, animated: true)
         }
         
         let cancelButton = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
@@ -87,7 +91,6 @@ class FirstQuestionsViewController: UIViewController {
 extension FirstQuestionsViewController: FirstQuestionsViewProtocol{
     func loadQuestion(mood: String, questionTitle: String, questionDesc: String) {
         self.moodTitleLabel.text = mood
-        self.questionDescLabel.text = "Описание вопроса №\(vcIndex + 1)"
         self.questionTitleLabel.text = "Вопрос №\(vcIndex + 1)"
     }
     
@@ -117,11 +120,13 @@ extension FirstQuestionsViewController: UICollectionViewDelegate, UICollectionVi
         cell.backgroundColor = moodColor
         presenter.manageAnswer(index: indexPath)
             if vcIndex < 2 {
-                let vc = ModuleBuilder().createMoodModuleOne(mood: presenter.currMood!, vcIndex: vcIndex + 1)
-                self.navigationController?.pushViewController(vc, animated: true)
+                let vc = ModuleBuilder().createMoodModuleOne(mood: presenter.currMood!, vcIndex: vcIndex + 1) as? FirstQuestionsViewController
+                vc?.totalScore = self.totalScore + presenter.calculateScore(index: indexPath)
+                self.navigationController?.pushViewController(vc!, animated: true)
             }
             
             else{
+                presenter.cacheCurrMood(moodScore: totalScore + presenter.calculateScore(index: indexPath))
                 performSegue(withIdentifier: "moodSecondSegue", sender: presenter.currMood)
             }
         }

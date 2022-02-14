@@ -16,6 +16,7 @@ class PageExcerciseViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBar.isHidden = true
         dataSource = self
         setViewControllers()
     }
@@ -44,7 +45,8 @@ class PageExcerciseViewController: UIPageViewController {
                 self?.excerciseControllers = (self?.mod.createAnyPractic(info: tokens, title: (self?.info[1])!, practicName: (self?.info[2])!))!
                 self?.start()
                 
-            case .failure(_):
+            case let .failure(error):
+                print(error)
                 self?.alert()
                 self?.navigationController?.popViewController(animated: true)
             }

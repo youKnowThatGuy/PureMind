@@ -51,9 +51,12 @@ class YesNoExcerciseViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
+        backButtonShell.tintColor = lightBlueColor
         titleLabel.text = titleText
+        excerciseNameLabel.textColor = grayTextColor
         excerciseNameLabel.text = excerciseName
         excerciseDescriptionLabel.text = excerciseDescription
+        excerciseDescriptionLabel.textColor = grayTextColor
         yesButtonShell.setBackgroundImage(UIImage(named: "excButton"), for: .normal)
         noButtonShell.setBackgroundImage(UIImage(named: "excButton"), for: .normal)
     }
@@ -75,7 +78,7 @@ class YesNoExcerciseViewController: UIViewController {
                 audioPlayer = try AVAudioPlayer(data: audioData!)
             }
             catch{
-                alert(text: "Не удалось загрузить аудио")
+                alert(title: "Ошибка", text: "Не удалось загрузить аудио")
                 playButtonShell.isUserInteractionEnabled = false
                 backButtonShell.isUserInteractionEnabled = false
                 forwardButtonShell.isUserInteractionEnabled = false
@@ -83,7 +86,7 @@ class YesNoExcerciseViewController: UIViewController {
             }
         }
         else {
-            alert(text: "Не удалось загрузить аудио")
+            alert(title: "Ошибка", text: "Не удалось загрузить аудио")
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
@@ -99,7 +102,7 @@ class YesNoExcerciseViewController: UIViewController {
             }
             else{
                 audioPlayer?.play()
-                playButtonShell.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+                playButtonShell.setBackgroundImage(UIImage(named: "pauseButton"), for: .normal)
                 isPlaying = true
             }
         
@@ -140,8 +143,8 @@ class YesNoExcerciseViewController: UIViewController {
         noButtonShell.setBackgroundImage(UIImage(named: "excButton_highlited"), for: .normal)
     }
     
-    func alert(text: String){
-        let alert = UIAlertController(title: "Ошибка", message: text, preferredStyle: .alert)
+    func alert(title: String,text: String){
+        let alert = UIAlertController(title: title, message: text, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
         alert.addAction(okButton)
@@ -157,7 +160,7 @@ extension YesNoExcerciseViewController: TextExcerciseViewProtocol{
     }
     
     func sendAlert(text: String){
-        alert(text: text)
+        alert(title: "Спасибо!", text: text)
         if text != "Успешно!"{
             playButtonShell.isUserInteractionEnabled = false
             backButtonShell.isUserInteractionEnabled = false

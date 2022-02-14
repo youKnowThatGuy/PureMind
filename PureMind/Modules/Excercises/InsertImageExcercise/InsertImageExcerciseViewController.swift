@@ -66,8 +66,9 @@ class InsertImageExcerciseViewController: UIViewController {
         insertButtonShell.layer.borderWidth = 2
         insertButtonShell.layer.cornerRadius = 15
         backButtonShell.tintColor = lightYellowColor
-        titleLabel.textColor = lightYellowColor
-        excerciseNameLabel.textColor = lightYellowColor
+        titleLabel.textColor = titleYellow
+        backButtonShell.tintColor = titleYellow
+        excerciseNameLabel.textColor = grayTextColor
         titleLabel.text = titleText
         excerciseNameLabel.text = excerciseName
         excerciseDescriptionLabel.text = excerciseDescription
@@ -127,7 +128,7 @@ class InsertImageExcerciseViewController: UIViewController {
             }
             else{
                 audioPlayer?.play()
-                playButtonShell.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+                playButtonShell.setBackgroundImage(UIImage(named: "pauseButton"), for: .normal)
                 isPlaying = true
             }
         

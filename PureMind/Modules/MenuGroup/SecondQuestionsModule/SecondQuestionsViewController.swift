@@ -34,8 +34,10 @@ class SecondQuestionsViewController: UIViewController {
     }
     
     func prepareViews(){
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
         moodTitleLabel.textColor = .white
-        questionTitleLabel.textColor = grayTextColor
+        questionTitleLabel.textColor = .white
         backButtonShell.tintColor = .white
         answerTextField.backgroundColor = .white
         answerTextField.layer.borderWidth = 0
@@ -46,8 +48,14 @@ class SecondQuestionsViewController: UIViewController {
     }
     
     func checkIndex(){
-        if vcIndex == 4{
+        switch vcIndex {
+        case 3:
+            questionTitleLabel.text = "Какие позитивные моменты произошли за сегодня?"
+        case 4:
+            questionTitleLabel.text = "Над чем сегодня удалось поработать? Возможно, были какие-то инсайты? Поделись ими здесь"
             continueButtonShell.setTitle("Завершить", for: .normal)
+        default:
+            print("error")
         }
         
     }
