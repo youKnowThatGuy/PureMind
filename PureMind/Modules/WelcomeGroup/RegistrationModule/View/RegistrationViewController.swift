@@ -47,6 +47,9 @@ class RegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
         view.addGestureRecognizer(tap)
         view.insertSubview(imageView, at: 0)
                 NSLayoutConstraint.activate([
@@ -58,6 +61,14 @@ class RegistrationViewController: UIViewController {
         prepareButtons()
         prepareTextFields()
         prepareLabels()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
     }
     
     func prepareButtons(){
@@ -198,5 +209,10 @@ extension RegistrationViewController: UITextFieldDelegate{
 
         // make sure the result is under 16 characters
         return updatedText.count <= 35
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 }

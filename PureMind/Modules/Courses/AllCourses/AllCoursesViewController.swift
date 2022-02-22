@@ -32,14 +32,26 @@ class AllCoursesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
         prepareViews()
         if backHidden == true{
             backButtonShell.isHidden = true
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        imageView.isHidden = false
         navigationController?.navigationBar.isHidden = true
         tabBarController?.tabBar.isHidden = false
         coursesTableView.reloadData()

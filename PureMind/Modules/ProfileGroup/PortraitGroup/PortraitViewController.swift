@@ -22,6 +22,9 @@ class PortraitViewController: UIViewController, SFSafariViewControllerDelegate{
     @IBOutlet weak var testsTableView: ExpyTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
         prepareViews()
     }
     
@@ -31,6 +34,10 @@ class PortraitViewController: UIViewController, SFSafariViewControllerDelegate{
         testsTableView.dataSource = self
         titleLabel.textColor = grayTextColor
         descriptionLabel.textColor = textFieldColor
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {

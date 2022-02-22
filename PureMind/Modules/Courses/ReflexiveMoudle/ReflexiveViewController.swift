@@ -18,7 +18,12 @@ class ReflexiveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionTextView.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
         prepareViews()
+    }
+    
+    @objc func tapDone(sender: Any) {
+        self.view.endEditing(true)
     }
     
     func prepareViews(){

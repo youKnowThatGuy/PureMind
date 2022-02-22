@@ -51,6 +51,18 @@ class AnswerChoiceExcerciseViewController: UIViewController {
         presenter.loadAudio()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        imageView.isHidden = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+        audioPlayer?.pause()
+        playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
+        isPlaying = false
+    }
+    
     func setupCollectionView(){
         answersCollectionView.delegate = self
         answersCollectionView.dataSource = self

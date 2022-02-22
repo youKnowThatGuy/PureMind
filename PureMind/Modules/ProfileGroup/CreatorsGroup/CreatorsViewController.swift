@@ -21,7 +21,14 @@ class CreatorsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
         prepareViews()
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
     }
     
     func prepareViews(){

@@ -18,12 +18,12 @@ class ChatBot{
         switch path[0] {
         case 0: //Анализ состояния
             return pickScenario()
-        case 1: // Упражнения
+        case 2: // Упражнения
             let str1 = String(":ымет еынзар ан мытибзар ,мяиненжарпу к еинечюлкереП".reversed())
             return ["1", str1, "Эмоции", "Тело", "Медитации"]
             
-        case 2: //Специалист
-            return ["specialist", "Переключение на специалиста"]
+        case 1: //Специалист
+            return ["specialist", "К сожалению, данная функция пока недоступна."]
         default:
             return ["error"]
         }
@@ -32,7 +32,7 @@ class ChatBot{
     private func pickScenario() -> [String]{
         switch path.count {
         case 1:
-            return ["2", String("!меиняотсос миовт с ясмеребзар йаваД !ошороХ".reversed()), String("?ьшеувтсвуч сачйес ябес ыт каК".reversed()), String("!яинещущо итэ ьтинмопаз учоХ !ончилто ябес юувтсвуч Я".reversed()), String("меиняотсос миовс дан ясьтарбозар ыб летох ,он онтрофмок юувтсвуч ябес Я".reversed()), String("меиняотсос миовс ос ясьтиварпс угом еН .юувтсвуч ябес охолП".reversed()), String("еиняотсос еовс ьтатобарорп учох ,онтрофмокен ябес юувтсвуч Я".reversed()), "Назад" ]
+            return ["2", String("!меиняотсос миовт с ясмеребзар йаваД !ошороХ".reversed()), String("?ьшеувтсвуч сачйес ябес ыт каК".reversed()), String("!яинещущо итэ ьтинмопаз учоХ !ончилто ябес юувтсвуч Я".reversed()), String("меиняотсос миовс дан ясьтарбозар ыб летох ,он онтрофмок юувтсвуч ябес Я".reversed()), String("меиняотсос миовс ос ясьтиварпс угом еН .юувтсвуч ябес охолП".reversed()), String("еиняотсос еовс ьтатобарорп учох ,онтрофмокен ябес юувтсвуч Я".reversed())]
         case let x where x >= 2:
             switch path[1] {
             case 0: //00
@@ -44,10 +44,6 @@ class ChatBot{
                return bigRouteTwo()
             case 3:  //03
                 return bigRouteThree()
-                
-            case 4: //04
-                path = []
-                return ["1", "Назад"]
                 
             default:
                 return ["error"]
@@ -70,7 +66,7 @@ class ChatBot{
             case 1: //011
                 return routeOneChoiceOne(cases: [3, 4])
             case 2: //012
-                return ["1", String("йинещущО екинвенД в елифорп в или ьседз яинещущо иовс ьтасипаз ьшежом ыТ".reversed()), "Перейти в Дневник Ощущений" ]
+                return ["1", String("йинещущО екинвенД в елифорп в или ьседз яинещущо иовс ьтасипаз ьшежом ыТ".reversed()) ]
                 
             default:
                 return ["error"]

@@ -19,6 +19,9 @@ class AlertContactsViewController: UIViewController, SFSafariViewControllerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
         prepareViews()
     }
     
@@ -40,6 +43,10 @@ class AlertContactsViewController: UIViewController, SFSafariViewControllerDeleg
         internetButtonShell.layer.borderColor = titleBlueColor.cgColor
         internetButtonShell.backgroundColor = titleBlueColor.withAlphaComponent(0.24)
         internetButtonShell.layer.cornerRadius = 15
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
     }
     
     func openSafari(link: String){

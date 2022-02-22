@@ -140,7 +140,7 @@ extension PoliciesShortViewController {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ShortPolicyViewCell.identifier) as! ShortPolicyViewCell
-        presenter.prepareCell(cell: cell)
+        presenter.prepareCell(cell: cell, index: indexPath.section)
         cell.layoutMargins = UIEdgeInsets.zero
         cell.hideSeparator()
         return cell

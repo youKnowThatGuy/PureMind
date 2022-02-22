@@ -110,7 +110,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unw-y1-JfI">
-                                <rect key="frame" x="133" y="681" width="153" height="26"/>
+                                <rect key="frame" x="133" y="681.5" width="153" height="25"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="11"/>
                                 <state key="normal" title="Пропустить">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hcy-Gf-soG">
-                                <rect key="frame" x="20" y="62" width="374" height="561"/>
+                                <rect key="frame" x="20" y="62" width="374" height="561.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r3Y-ZV-GcU">
                                     <size key="itemSize" width="374" height="498"/>
@@ -180,7 +180,7 @@
                                 </cells>
                             </collectionView>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="34g-c4-gCl">
-                                <rect key="frame" x="111" y="641" width="192" height="28"/>
+                                <rect key="frame" x="111" y="641.5" width="192" height="28"/>
                                 <color key="pageIndicatorTintColor" name="outgoingMessageBackground"/>
                                 <color key="currentPageIndicatorTintColor" name="incomingAudioMessageTint"/>
                             </pageControl>
@@ -229,7 +229,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_google" translatesAutoresizingMaskIntoConstraints="NO" id="3LL-0i-5uI">
-                                <rect key="frame" x="73" y="588" width="15" height="15"/>
+                                <rect key="frame" x="82" y="588" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="00c-7h-lyf"/>
                                     <constraint firstAttribute="width" constant="15" id="PPk-3f-1dd"/>
@@ -363,7 +363,7 @@
                         <viewLayoutGuide key="safeArea" id="Chr-Oa-1qM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3LL-0i-5uI" firstAttribute="leading" secondItem="Chr-Oa-1qM" secondAttribute="leading" constant="73" id="32w-t5-PmE"/>
+                            <constraint firstItem="3LL-0i-5uI" firstAttribute="leading" secondItem="Chr-Oa-1qM" secondAttribute="leading" constant="82" id="32w-t5-PmE"/>
                             <constraint firstItem="XNT-ta-Bg9" firstAttribute="leading" secondItem="8QE-rB-ltb" secondAttribute="leading" constant="1" id="3bT-JC-hMV"/>
                             <constraint firstItem="Chr-Oa-1qM" firstAttribute="trailing" secondItem="caD-JT-tsO" secondAttribute="trailing" constant="242" id="5aQ-12-JkB"/>
                             <constraint firstItem="uEh-wC-PHi" firstAttribute="leading" secondItem="iUy-Mu-Xad" secondAttribute="trailing" constant="15" id="9ya-Gu-CGt"/>
@@ -702,7 +702,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="649"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eig-pY-IpZ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eig-pY-IpZ">
                                                     <rect key="frame" x="20" y="69" width="374" height="569"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
                                                     <nil key="textColor"/>
@@ -1698,7 +1698,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Cоздатели" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06f-vm-wgY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Cоздатели" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06f-vm-wgY">
                                         <rect key="frame" x="30" y="301" width="196" height="20"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -1725,7 +1725,7 @@ Pure Mind - свобода сознания от навязанных устан
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-V5-5vN">
-                                        <rect key="frame" x="30" y="190" width="342" height="87"/>
+                                        <rect key="frame" x="30" y="190" width="342" height="103"/>
                                         <string key="text">Над приложением на протяжении полутора лет трудилась большая команда студентов и лицеистов Высшей Школы Экономики с разных направлений  и факультетов!
 Изначально, задумка принадлежит Дёминой Анастасии, именно с неё началась история проекта!</string>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
@@ -1751,10 +1751,10 @@ Pure Mind - свобода сознания от навязанных устан
                                     <constraint firstItem="PkB-xG-nWh" firstAttribute="top" secondItem="WJE-La-kEg" secondAttribute="bottom" constant="8" id="dC6-cM-Q6X"/>
                                     <constraint firstItem="mRF-s4-Tfb" firstAttribute="trailing" secondItem="WJE-La-kEg" secondAttribute="trailing" constant="-35" id="hzw-4Z-jqO"/>
                                     <constraint firstItem="PkB-xG-nWh" firstAttribute="leading" secondItem="WJE-La-kEg" secondAttribute="leading" id="pZc-8F-dMQ"/>
-                                    <constraint firstItem="Ka4-V5-5vN" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.13615" constant="-2.4505499999999927" id="rnt-ur-yvQ"/>
+                                    <constraint firstItem="Ka4-V5-5vN" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.13615" constant="13.549450000000007" id="rnt-ur-yvQ"/>
                                     <constraint firstItem="WJE-La-kEg" firstAttribute="top" secondItem="Wvg-BX-ZB7" secondAttribute="top" constant="31" id="w0X-ma-uXw"/>
                                     <constraint firstItem="PkB-xG-nWh" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.123631" constant="-2.2255669999999981" id="wub-cl-AEy"/>
-                                    <constraint firstItem="06f-vm-wgY" firstAttribute="top" secondItem="Ka4-V5-5vN" secondAttribute="bottom" constant="24" id="xQ7-3X-ZzI"/>
+                                    <constraint firstItem="06f-vm-wgY" firstAttribute="top" secondItem="Ka4-V5-5vN" secondAttribute="bottom" constant="8" id="xQ7-3X-ZzI"/>
                                     <constraint firstItem="WJE-La-kEg" firstAttribute="width" secondItem="Wvg-BX-ZB7" secondAttribute="width" multiplier="0.47343" constant="34.999979999999994" id="zGY-qi-E2G"/>
                                 </constraints>
                             </view>
@@ -2040,13 +2040,13 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Психологический портрет" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXx-1B-9PK">
-                                <rect key="frame" x="20" y="149" width="374" height="27"/>
+                                <rect key="frame" x="20" y="149" width="374" height="26"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUC-QS-wx0">
-                                <rect key="frame" x="90" y="224" width="234" height="48"/>
+                                <rect key="frame" x="90" y="223" width="234" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="SfM-v6-7Bj"/>
                                     <constraint firstAttribute="width" constant="234" id="owZ-ah-PHe"/>
@@ -2058,7 +2058,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5gU-6u-HEf" customClass="ExpyTableView" customModule="ExpyTableView">
-                                <rect key="frame" x="20" y="294" width="374" height="548"/>
+                                <rect key="frame" x="20" y="293" width="374" height="549"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="portraitTitleCell" rowHeight="94" id="wJL-4b-P8M" customClass="ExpPortraitViewCell" customModule="PureMind" customModuleProvider="target">
@@ -2167,7 +2167,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Если вам понравилось приложение - делитесь с друзьями, нам будет очень приятно!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qJ-78-7Lc">
-                                <rect key="frame" x="76" y="200" width="263" height="48"/>
+                                <rect key="frame" x="75.5" y="200" width="263" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="B9w-ur-6q3"/>
                                     <constraint firstAttribute="width" constant="263" id="G59-KW-zcB"/>
@@ -2248,17 +2248,6 @@ Pure Mind - свобода сознания от навязанных устан
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtT-XW-MSP">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше личное пространство " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wux-h1-oA8">
-                                                <rect key="frame" x="45" y="31" width="142" height="48"/>
-                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="142" id="6na-wP-EWl"/>
-                                                    <constraint firstAttribute="height" constant="48" id="b7O-gS-06s"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyv-aG-ayz">
                                                 <rect key="frame" x="7" y="304" width="398" height="144"/>
                                                 <subviews>
@@ -2472,10 +2461,10 @@ Pure Mind - свобода сознания от навязанных устан
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mv0-LS-sHb">
-                                                <rect key="frame" x="9" y="486" width="396" height="184"/>
+                                                <rect key="frame" x="14" y="486" width="391" height="184"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Dh-lC-mTK">
-                                                        <rect key="frame" x="41" y="33.5" width="347" height="130.5"/>
+                                                        <rect key="frame" x="8" y="32.5" width="397" height="132.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F5B-N1-ZCs">
                                                             <size key="itemSize" width="169" height="100"/>
@@ -2485,7 +2474,7 @@ Pure Mind - свобода сознания от навязанных устан
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CourseCell" id="t7W-kn-Tg1" customClass="CourseViewCell" customModule="PureMind" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="14.5" width="189" height="102"/>
+                                                                <rect key="frame" x="0.0" y="15.5" width="189" height="102"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9QH-TY-loe">
                                                                     <rect key="frame" x="0.0" y="0.0" width="189" height="102"/>
@@ -2524,7 +2513,7 @@ Pure Mind - свобода сознания от навязанных устан
                                                         </cells>
                                                     </collectionView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Курсы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wn-EV-57h">
-                                                        <rect key="frame" x="41" y="8" width="62" height="17.5"/>
+                                                        <rect key="frame" x="8" y="8" width="48" height="16.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2533,12 +2522,12 @@ Pure Mind - свобода сознания от навязанных устан
                                                 <constraints>
                                                     <constraint firstItem="7wn-EV-57h" firstAttribute="top" secondItem="mv0-LS-sHb" secondAttribute="top" constant="8" id="1bC-az-LMe"/>
                                                     <constraint firstItem="3Dh-lC-mTK" firstAttribute="top" secondItem="7wn-EV-57h" secondAttribute="bottom" constant="8" id="4iP-wT-iRV"/>
-                                                    <constraint firstAttribute="bottom" secondItem="3Dh-lC-mTK" secondAttribute="bottom" constant="20" id="77u-qg-3CC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3Dh-lC-mTK" secondAttribute="bottom" constant="19" id="77u-qg-3CC"/>
                                                     <constraint firstItem="7wn-EV-57h" firstAttribute="leading" secondItem="3Dh-lC-mTK" secondAttribute="leading" id="MK4-7q-CfF"/>
-                                                    <constraint firstAttribute="trailing" secondItem="3Dh-lC-mTK" secondAttribute="trailing" constant="8" id="dUx-c1-fDU"/>
-                                                    <constraint firstItem="7wn-EV-57h" firstAttribute="leading" secondItem="mv0-LS-sHb" secondAttribute="leading" constant="41" id="ks5-Bf-cvi"/>
-                                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7wn-EV-57h" secondAttribute="trailing" constant="293" id="mM0-hp-qwd"/>
-                                                    <constraint firstItem="3Dh-lC-mTK" firstAttribute="leading" secondItem="mv0-LS-sHb" secondAttribute="leading" constant="41" id="tVl-fw-UMx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3Dh-lC-mTK" secondAttribute="trailing" constant="-14" id="dUx-c1-fDU"/>
+                                                    <constraint firstItem="7wn-EV-57h" firstAttribute="leading" secondItem="mv0-LS-sHb" secondAttribute="leading" constant="8" id="ks5-Bf-cvi"/>
+                                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7wn-EV-57h" secondAttribute="trailing" constant="335" id="mM0-hp-qwd"/>
+                                                    <constraint firstItem="3Dh-lC-mTK" firstAttribute="leading" secondItem="mv0-LS-sHb" secondAttribute="leading" constant="8" id="tVl-fw-UMx"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bp-Sm-7d0">
@@ -2560,10 +2549,10 @@ Pure Mind - свобода сознания от навязанных устан
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cD-te-CvX">
-                                                <rect key="frame" x="52" y="126" width="354" height="153"/>
+                                                <rect key="frame" x="14" y="126" width="392" height="153"/>
                                                 <subviews>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0AO-Wh-Ir8">
-                                                        <rect key="frame" x="0.0" y="30" width="362" height="119"/>
+                                                        <rect key="frame" x="0.0" y="29" width="399" height="120"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sug-Eu-Her">
                                                             <size key="itemSize" width="70" height="70"/>
@@ -2573,7 +2562,7 @@ Pure Mind - свобода сознания от навязанных устан
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PracticCell" id="agN-Cb-Y3H" customClass="PracticViewCell" customModule="PureMind" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="12.5" width="93" height="94"/>
+                                                                <rect key="frame" x="0.0" y="13" width="93" height="94"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LiA-d9-wbC">
                                                                     <rect key="frame" x="0.0" y="0.0" width="93" height="94"/>
@@ -2612,38 +2601,49 @@ Pure Mind - свобода сознания от навязанных устан
                                                         </cells>
                                                     </collectionView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Практики:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he1-Bb-uUA">
-                                                        <rect key="frame" x="0.0" y="8" width="78.5" height="17.5"/>
+                                                        <rect key="frame" x="0.0" y="8" width="67" height="16.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstItem="0AO-Wh-Ir8" firstAttribute="leading" secondItem="5cD-te-CvX" secondAttribute="leading" id="5dV-PO-x3v"/>
                                                     <constraint firstItem="he1-Bb-uUA" firstAttribute="top" secondItem="5cD-te-CvX" secondAttribute="top" constant="8" id="7K6-nl-qNi"/>
                                                     <constraint firstItem="0AO-Wh-Ir8" firstAttribute="leading" secondItem="5cD-te-CvX" secondAttribute="leading" id="G9I-l9-be3"/>
                                                     <constraint firstItem="he1-Bb-uUA" firstAttribute="leading" secondItem="5cD-te-CvX" secondAttribute="leading" id="c0r-JB-ljP"/>
-                                                    <constraint firstItem="0AO-Wh-Ir8" firstAttribute="top" secondItem="he1-Bb-uUA" secondAttribute="bottom" constant="4.5" id="ciC-3M-day"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="he1-Bb-uUA" secondAttribute="trailing" constant="20" symbolic="YES" id="oHk-fo-Jjd"/>
                                                     <constraint firstItem="0AO-Wh-Ir8" firstAttribute="top" secondItem="he1-Bb-uUA" secondAttribute="bottom" constant="4.5" id="y18-oC-OWv"/>
                                                     <constraint firstAttribute="bottom" secondItem="0AO-Wh-Ir8" secondAttribute="bottom" constant="4" id="zGk-P2-EbF"/>
-                                                    <constraint firstAttribute="trailing" secondItem="0AO-Wh-Ir8" secondAttribute="trailing" constant="-8" id="zix-BE-ZbB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0AO-Wh-Ir8" secondAttribute="trailing" constant="-7" id="zix-BE-ZbB"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше личное пространство " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wux-h1-oA8">
+                                                <rect key="frame" x="14" y="31" width="142" height="48"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="142" id="6na-wP-EWl"/>
+                                                    <constraint firstAttribute="height" constant="48" id="b7O-gS-06s"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Oyv-aG-ayz" firstAttribute="top" secondItem="5cD-te-CvX" secondAttribute="bottom" constant="25" id="2cs-wS-D47"/>
                                             <constraint firstItem="Oyv-aG-ayz" firstAttribute="leading" secondItem="UtT-XW-MSP" secondAttribute="leading" constant="7" id="3g4-Oi-cMh"/>
                                             <constraint firstItem="5cD-te-CvX" firstAttribute="centerY" secondItem="UtT-XW-MSP" secondAttribute="centerY" constant="-218.5" id="4Ga-I5-Zss"/>
-                                            <constraint firstItem="mv0-LS-sHb" firstAttribute="leading" secondItem="UtT-XW-MSP" secondAttribute="leading" constant="9" id="6t4-6P-dhN"/>
+                                            <constraint firstItem="mv0-LS-sHb" firstAttribute="leading" secondItem="UtT-XW-MSP" secondAttribute="leading" constant="14" id="6t4-6P-dhN"/>
                                             <constraint firstItem="Oyv-aG-ayz" firstAttribute="centerX" secondItem="UtT-XW-MSP" secondAttribute="centerX" constant="-1" id="7kR-KT-dSB"/>
                                             <constraint firstItem="Wux-h1-oA8" firstAttribute="top" secondItem="UtT-XW-MSP" secondAttribute="top" constant="31" id="8iw-GR-tPn"/>
-                                            <constraint firstItem="Wux-h1-oA8" firstAttribute="leading" secondItem="Oyv-aG-ayz" secondAttribute="leading" constant="38" id="9MY-NW-OId"/>
+                                            <constraint firstItem="Wux-h1-oA8" firstAttribute="leading" secondItem="Oyv-aG-ayz" secondAttribute="leading" constant="7" id="9MY-NW-OId"/>
                                             <constraint firstItem="mv0-LS-sHb" firstAttribute="top" secondItem="Oyv-aG-ayz" secondAttribute="bottom" constant="38" id="Bmp-AY-BDY"/>
                                             <constraint firstItem="8bp-Sm-7d0" firstAttribute="height" secondItem="Wux-h1-oA8" secondAttribute="height" id="M4p-F1-MGv"/>
-                                            <constraint firstItem="Wux-h1-oA8" firstAttribute="leading" secondItem="5cD-te-CvX" secondAttribute="leading" constant="-7" id="Mby-LP-RRN"/>
+                                            <constraint firstItem="Wux-h1-oA8" firstAttribute="leading" secondItem="5cD-te-CvX" secondAttribute="leading" id="Mby-LP-RRN"/>
                                             <constraint firstItem="8bp-Sm-7d0" firstAttribute="top" secondItem="Wux-h1-oA8" secondAttribute="top" id="Mfv-ta-mcB"/>
-                                            <constraint firstItem="Wux-h1-oA8" firstAttribute="leading" secondItem="mv0-LS-sHb" secondAttribute="leading" constant="36" id="PNY-K1-95I"/>
+                                            <constraint firstItem="Wux-h1-oA8" firstAttribute="leading" secondItem="mv0-LS-sHb" secondAttribute="leading" id="PNY-K1-95I"/>
                                             <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="mv0-LS-sHb" secondAttribute="bottom" constant="252" id="PS6-YO-hKk"/>
                                             <constraint firstItem="8bp-Sm-7d0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wux-h1-oA8" secondAttribute="trailing" constant="8" symbolic="YES" id="UBa-Hf-uVw"/>
                                             <constraint firstItem="8bp-Sm-7d0" firstAttribute="trailing" secondItem="UtT-XW-MSP" secondAttribute="trailingMargin" constant="-50" id="Urd-cZ-4VL"/>
@@ -2655,7 +2655,7 @@ Pure Mind - свобода сознания от навязанных устан
                                             <constraint firstItem="5cD-te-CvX" firstAttribute="top" secondItem="Wux-h1-oA8" secondAttribute="bottom" constant="47" id="mq9-cb-aYa"/>
                                             <constraint firstAttribute="trailing" secondItem="mv0-LS-sHb" secondAttribute="trailing" constant="9" id="xfB-ot-uvO"/>
                                             <constraint firstItem="mv0-LS-sHb" firstAttribute="centerY" secondItem="UtT-XW-MSP" secondAttribute="centerY" constant="157" id="zAc-VE-zab"/>
-                                            <constraint firstItem="Wux-h1-oA8" firstAttribute="leading" secondItem="UtT-XW-MSP" secondAttribute="leadingMargin" constant="37" id="zod-K1-hFE"/>
+                                            <constraint firstItem="Wux-h1-oA8" firstAttribute="leading" secondItem="UtT-XW-MSP" secondAttribute="leadingMargin" constant="6" id="zod-K1-hFE"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -2782,7 +2782,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уверенность" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFH-v1-hms">
-                                <rect key="frame" x="129.5" y="39" width="155.5" height="27"/>
+                                <rect key="frame" x="140.5" y="39.5" width="133.5" height="26"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
                                 <color key="textColor" name="collectionViewBackground"/>
                                 <nil key="highlightedColor"/>
@@ -2846,7 +2846,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="УВЕРЕННОСТЬ. ТЕХНИКА 3-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2A-Wk-R6O">
-                                <rect key="frame" x="72" y="109" width="270" height="53"/>
+                                <rect key="frame" x="84" y="109" width="246" height="53"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2863,7 +2863,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <color key="currentPageIndicatorTintColor" name="collectionViewBackground"/>
                             </pageControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 ПИСЬМА" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqX-4Q-u0X">
-                                <rect key="frame" x="72" y="308" width="270" height="44"/>
+                                <rect key="frame" x="84" y="308" width="246" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="aoc-bq-UXS"/>
                                 </constraints>
@@ -2884,7 +2884,7 @@ Pure Mind - свобода сознания от навязанных устан
                                     <action selector="forwardButtonPressed:" destination="5gk-La-49H" eventType="touchUpInside" id="HTJ-Kr-TaE"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Поле для ввода текста..." translatesAutoresizingMaskIntoConstraints="NO" id="ier-Gl-4pn">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ier-Gl-4pn">
                                 <rect key="frame" x="57" y="506" width="301" height="169"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -3230,10 +3230,10 @@ Pure Mind - свобода сознания от навязанных устан
                                         <rect key="frame" x="0.0" y="61" width="414" height="890"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPz-IQ-UpV">
-                                                <rect key="frame" x="8" y="51" width="400" height="356"/>
+                                                <rect key="frame" x="8" y="50" width="400" height="357"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш график настроения:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J24-Cl-YLI">
-                                                <rect key="frame" x="18" y="16" width="299.5" height="27"/>
+                                                <rect key="frame" x="38.5" y="16" width="258.5" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="184" id="PcA-gh-0ry"/>
                                                 </constraints>
@@ -3242,16 +3242,16 @@ Pure Mind - свобода сознания от навязанных устан
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auk-td-SvJ">
-                                                <rect key="frame" x="8" y="454" width="400" height="149.5"/>
+                                                <rect key="frame" x="8" y="454" width="400" height="148.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Практики:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAK-66-7C0">
-                                                        <rect key="frame" x="8" y="8" width="78.5" height="17.5"/>
+                                                        <rect key="frame" x="8" y="8" width="67" height="16.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F4E-h2-7pd">
-                                                        <rect key="frame" x="4" y="27.5" width="388" height="114"/>
+                                                        <rect key="frame" x="4" y="26.5" width="388" height="114"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="114" id="OYo-MC-vDy"/>
@@ -3371,7 +3371,7 @@ Pure Mind - свобода сознания от навязанных устан
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2e-3g-IMM">
-                                <rect key="frame" x="20" y="33" width="35" height="37"/>
+                                <rect key="frame" x="20" y="33" width="35" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="CDq-JE-VLs"/>
                                 </constraints>
@@ -3387,7 +3387,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Эти упражнения помогут вам пережить эмоции в моменте" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqs-5U-ree">
-                                <rect key="frame" x="20" y="195" width="374" height="82"/>
+                                <rect key="frame" x="20" y="194" width="374" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="OgN-IH-ZWj"/>
                                 </constraints>
@@ -3396,7 +3396,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IK6-2e-irp" customClass="ExpyTableView" customModule="ExpyTableView">
-                                <rect key="frame" x="28" y="298" width="358" height="544"/>
+                                <rect key="frame" x="28" y="297" width="358" height="545"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="practicTitleCell" rowHeight="83" id="IED-xM-qo4" customClass="ExpPracticViewCell" customModule="PureMind" customModuleProvider="target">
@@ -3460,7 +3460,7 @@ Pure Mind - свобода сознания от навязанных устан
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc2-lj-MQ4">
-                                                                        <rect key="frame" x="32" y="16" width="285" height="16"/>
+                                                                        <rect key="frame" x="32" y="16" width="285" height="15.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="285" id="vod-E3-2p3"/>
                                                                         </constraints>
@@ -3512,7 +3512,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Практики" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-2h-XJp">
-                                <rect key="frame" x="20" y="162" width="220" height="25"/>
+                                <rect key="frame" x="20" y="161" width="220" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="pZI-hf-U1U"/>
                                 </constraints>
@@ -3521,7 +3521,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Практики" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7v-o3-Usa">
-                                <rect key="frame" x="148.5" y="38" width="117.5" height="27"/>
+                                <rect key="frame" x="157.5" y="38" width="99" height="26"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
                                 <color key="textColor" name="collectionViewBackground"/>
                                 <nil key="highlightedColor"/>
@@ -3614,7 +3614,7 @@ Pure Mind - свобода сознания от навязанных устан
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvT-dC-i5z">
                                                             <rect key="frame" x="8" y="8" width="154" height="69"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -3754,7 +3754,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="УВЕРЕННОСТЬ. ТЕХНИКА 3-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZJ-hh-Yeb">
-                                <rect key="frame" x="72" y="109" width="270" height="47"/>
+                                <rect key="frame" x="84" y="109" width="246" height="47"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                 <color key="textColor" name="collectionViewBackground"/>
                                 <nil key="highlightedColor"/>
@@ -3870,37 +3870,37 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGv-n3-7l3">
-                                <rect key="frame" x="91" y="184" width="35" height="35"/>
+                                <rect key="frame" x="91" y="183" width="35" height="35"/>
                                 <connections>
                                     <action selector="backwardsButtonPressed:" destination="xhe-Iy-mp4" eventType="touchUpInside" id="2To-un-IKJ"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RHf-M9-chw">
-                                <rect key="frame" x="146" y="248" width="122" height="27.5"/>
+                                <rect key="frame" x="146" y="247" width="122" height="27.5"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemYellowColor"/>
                                 <color key="currentPageIndicatorTintColor" name="collectionViewBackground"/>
                             </pageControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="УВЕРЕННОСТЬ. ТЕХНИКА 3-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="504-4U-mVh">
-                                <rect key="frame" x="72" y="118" width="270" height="22"/>
+                                <rect key="frame" x="72" y="118" width="270" height="21"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKJ-6D-ZaF">
-                                <rect key="frame" x="172.5" y="166.5" width="68" height="69"/>
+                                <rect key="frame" x="172.5" y="165.5" width="68" height="69"/>
                                 <state key="normal" backgroundImage="play"/>
                                 <connections>
                                     <action selector="playButtonPressed:" destination="xhe-Iy-mp4" eventType="touchUpInside" id="C46-KN-aZh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fU3-nQ-6qJ">
-                                <rect key="frame" x="288" y="184" width="35" height="35"/>
+                                <rect key="frame" x="288" y="183" width="35" height="35"/>
                                 <connections>
                                     <action selector="forwardButtonPressed:" destination="xhe-Iy-mp4" eventType="touchUpInside" id="1M1-61-p4X"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 ПИСЬМА" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPA-qq-8Kp">
-                                <rect key="frame" x="59" y="321" width="296" height="28"/>
+                                <rect key="frame" x="59" y="320" width="296" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="WdC-3X-w4h"/>
                                 </constraints>
@@ -3916,7 +3916,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A8H-Uk-y4a">
-                                <rect key="frame" x="27" y="367" width="358" height="210"/>
+                                <rect key="frame" x="27" y="366" width="358" height="210"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YkX-Pr-VfG"/>
@@ -4028,7 +4028,7 @@ Pure Mind - свобода сознания от навязанных устан
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Поле для ввода текста..." translatesAutoresizingMaskIntoConstraints="NO" id="VCz-7D-SPJ">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCz-7D-SPJ">
                                                 <rect key="frame" x="72" y="390.5" width="271" height="169"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -4105,7 +4105,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="УВЕРЕННОСТЬ. ТЕХНИКА 3-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKS-9T-jvN">
-                                <rect key="frame" x="74" y="59" width="267" height="47"/>
+                                <rect key="frame" x="84.5" y="59" width="246" height="47"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -4212,7 +4212,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <rect key="frame" x="34" y="353" width="347" height="190"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="УВЕРЕННОСТЬ. ТЕХНИКА 3-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2G-8T-c9Q">
-                                <rect key="frame" x="72" y="108" width="270" height="47"/>
+                                <rect key="frame" x="84" y="108" width="246" height="47"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -4248,7 +4248,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_img" translatesAutoresizingMaskIntoConstraints="NO" id="9tI-w3-Bmh">
-                                <rect key="frame" x="130" y="801" width="16" height="16"/>
+                                <rect key="frame" x="126" y="801" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="dXl-9X-GnO"/>
                                     <constraint firstAttribute="width" constant="16" id="o1a-oB-Uzk"/>
@@ -4276,7 +4276,7 @@ Pure Mind - свобода сознания от навязанных устан
                             <constraint firstItem="sqE-Qa-fKN" firstAttribute="trailing" secondItem="bcu-8E-arW" secondAttribute="trailing" constant="75" id="QGw-Wq-Ilx"/>
                             <constraint firstItem="mUC-gC-wUl" firstAttribute="top" secondItem="Y2G-8T-c9Q" secondAttribute="bottom" constant="18" id="REV-Bq-oyO"/>
                             <constraint firstItem="sqE-Qa-fKN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sWS-E6-zPw" secondAttribute="trailing" symbolic="YES" id="S40-OZ-on5"/>
-                            <constraint firstItem="9tI-w3-Bmh" firstAttribute="leading" secondItem="sqE-Qa-fKN" secondAttribute="leading" constant="130" id="SBL-AO-sJQ"/>
+                            <constraint firstItem="9tI-w3-Bmh" firstAttribute="leading" secondItem="sqE-Qa-fKN" secondAttribute="leading" constant="126" id="SBL-AO-sJQ"/>
                             <constraint firstItem="mUC-gC-wUl" firstAttribute="width" secondItem="p3E-V4-rOj" secondAttribute="width" multiplier="0.164251" id="SEz-6p-OVa"/>
                             <constraint firstItem="Y2G-8T-c9Q" firstAttribute="centerX" secondItem="gLq-oe-8iF" secondAttribute="centerX" id="Sft-mb-If8"/>
                             <constraint firstItem="9tI-w3-Bmh" firstAttribute="centerY" secondItem="o9L-WZ-3Xj" secondAttribute="centerY" id="TQe-xh-s3K"/>
@@ -4342,7 +4342,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="УВЕРЕННОСТЬ. ТЕХНИКА 3-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJg-r6-KWi">
-                                <rect key="frame" x="70.5" y="109" width="270" height="47"/>
+                                <rect key="frame" x="82.5" y="109" width="246" height="47"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -4659,7 +4659,7 @@ Pure Mind - свобода сознания от навязанных устан
                                     <action selector="backButtonPressed:" destination="pWk-sb-4F5" eventType="touchUpInside" id="xi3-wJ-NGF"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Поле для ввода текста..." translatesAutoresizingMaskIntoConstraints="NO" id="1Xm-NQ-Mhi">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Xm-NQ-Mhi">
                                 <rect key="frame" x="60.5" y="253" width="293" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -4739,7 +4739,7 @@ Pure Mind - свобода сознания от навязанных устан
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zd-ck-dX3">
-                                <rect key="frame" x="20" y="33" width="35" height="37"/>
+                                <rect key="frame" x="20" y="33" width="35" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="rFt-by-THy"/>
                                 </constraints>
@@ -4755,7 +4755,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Эти программы помогут Вам справиться с одной из обозначенных проблем. Присоединяйтесь!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE9-b2-AxT">
-                                <rect key="frame" x="20" y="195" width="374" height="82"/>
+                                <rect key="frame" x="20" y="194" width="374" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="F48-xg-0VR"/>
                                 </constraints>
@@ -4764,21 +4764,21 @@ Pure Mind - свобода сознания от навязанных устан
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hHy-IN-dcQ" customClass="ExpyTableView" customModule="ExpyTableView">
-                                <rect key="frame" x="28" y="298" width="358" height="544"/>
+                                <rect key="frame" x="28" y="297" width="358" height="545"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="courseTitleCell" rowHeight="181" id="y0j-Y7-hnJ" customClass="ExpCourseViewCell" customModule="PureMind" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="358" height="181"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="courseTitleCell" rowHeight="142" id="y0j-Y7-hnJ" customClass="ExpCourseViewCell" customModule="PureMind" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="358" height="142"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y0j-Y7-hnJ" id="mL3-2v-MGK">
-                                            <rect key="frame" x="0.0" y="0.0" width="358" height="181"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="142"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkG-hr-OuM">
                                                     <rect key="frame" x="-25" y="-9" width="41" height="199"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kt1-OX-Tfl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kt1-OX-Tfl">
                                                     <rect key="frame" x="42" y="17" width="296" height="51"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="Iow-44-Myg"/>
@@ -4788,11 +4788,10 @@ Pure Mind - свобода сознания от навязанных устан
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ew1-Qd-wQv">
-                                                    <rect key="frame" x="42" y="76" width="296" height="99"/>
+                                                <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ew1-Qd-wQv">
+                                                    <rect key="frame" x="42" y="76" width="296" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="296" id="3w3-Bc-dwl"/>
-                                                        <constraint firstAttribute="height" constant="98" id="R0z-tI-1fN"/>
                                                     </constraints>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <color key="textColor" systemColor="labelColor"/>
@@ -4807,7 +4806,7 @@ Pure Mind - свобода сознания от навязанных устан
                                                 <constraint firstItem="Kt1-OX-Tfl" firstAttribute="top" secondItem="mL3-2v-MGK" secondAttribute="topMargin" constant="6" id="QH4-oh-gJc"/>
                                                 <constraint firstItem="DkG-hr-OuM" firstAttribute="leading" secondItem="mL3-2v-MGK" secondAttribute="leadingMargin" constant="-45" id="d6p-3H-hHM"/>
                                                 <constraint firstItem="Ew1-Qd-wQv" firstAttribute="trailing" secondItem="Kt1-OX-Tfl" secondAttribute="trailing" id="qRe-lA-Cgo"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ew1-Qd-wQv" secondAttribute="bottom" constant="6" id="tja-Fs-Rvh"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ew1-Qd-wQv" secondAttribute="bottom" constant="22" id="tja-Fs-Rvh"/>
                                                 <constraint firstItem="DkG-hr-OuM" firstAttribute="top" secondItem="mL3-2v-MGK" secondAttribute="topMargin" constant="-20" id="uVk-yT-qxk"/>
                                                 <constraint firstItem="DkG-hr-OuM" firstAttribute="centerY" secondItem="Kt1-OX-Tfl" secondAttribute="centerY" constant="48" id="wVz-Nb-b6o"/>
                                                 <constraint firstItem="Kt1-OX-Tfl" firstAttribute="leading" secondItem="DkG-hr-OuM" secondAttribute="trailing" constant="26" id="xwS-hu-rbF"/>
@@ -4821,7 +4820,7 @@ Pure Mind - свобода сознания от навязанных устан
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="lessonsListCell" rowHeight="194" id="ED5-Lb-3wg" customClass="SingleCourseViewCell" customModule="PureMind" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="209" width="358" height="194"/>
+                                        <rect key="frame" x="0.0" y="170" width="358" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ED5-Lb-3wg" id="IrX-lb-DIc">
                                             <rect key="frame" x="0.0" y="0.0" width="358" height="194"/>
@@ -4843,7 +4842,7 @@ Pure Mind - свобода сознания от навязанных устан
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSU-0w-hKR">
-                                                                        <rect key="frame" x="32" y="16" width="285" height="16"/>
+                                                                        <rect key="frame" x="32" y="16" width="285" height="15.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="285" id="JhJ-y8-SLk"/>
                                                                         </constraints>
@@ -4895,7 +4894,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Курсы" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvI-Mu-6YI">
-                                <rect key="frame" x="20" y="162" width="220" height="25"/>
+                                <rect key="frame" x="20" y="161" width="220" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="xm5-OD-zTV"/>
                                 </constraints>
@@ -4904,7 +4903,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Курсы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyI-51-mkT">
-                                <rect key="frame" x="169" y="38" width="76.5" height="27"/>
+                                <rect key="frame" x="174" y="38" width="66.5" height="26"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
                                 <color key="textColor" name="collectionViewBackground"/>
                                 <nil key="highlightedColor"/>
@@ -4942,7 +4941,7 @@ Pure Mind - свобода сознания от навязанных устан
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdS-IE-ehg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7172" y="-604"/>
+            <point key="canvasLocation" x="7171.0144927536239" y="-604.01785714285711"/>
         </scene>
         <!--No Password View Controller-->
         <scene sceneID="lYh-g2-hzv">
@@ -5050,7 +5049,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="УВЕРЕННОСТЬ. ТЕХНИКА 3-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhn-ig-dnG">
-                                <rect key="frame" x="70.5" y="109" width="270" height="47"/>
+                                <rect key="frame" x="82.5" y="109" width="246" height="47"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -5216,10 +5215,10 @@ Pure Mind - свобода сознания от навязанных устан
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="PGy-Qg-fyS"/>
-        <segue reference="AlG-Z3-oZa"/>
+        <segue reference="Ihs-UU-kS0"/>
+        <segue reference="uSR-47-Tbx"/>
         <segue reference="Fhb-eS-2pl"/>
-        <segue reference="fxQ-wS-hKT"/>
+        <segue reference="Ygi-Td-gP8"/>
         <segue reference="xKt-LR-bYu"/>
     </inferredMetricsTieBreakers>
     <resources>

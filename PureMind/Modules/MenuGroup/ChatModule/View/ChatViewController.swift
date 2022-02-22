@@ -38,6 +38,9 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         configureMessageInputBar()
         view.addSubview(topView)
         setupTopViewLayout()
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
         //view.addSubview(buttonTableView)
         //setupButtonCollectionView()
     }
@@ -45,6 +48,10 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
     }
     
     func prepareMessagesView(){

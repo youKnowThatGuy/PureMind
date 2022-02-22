@@ -50,6 +50,18 @@ class GapsExcerciseViewController: UIViewController {
         presenter.loadAudio()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        imageView.isHidden = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+        audioPlayer?.pause()
+        playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
+        isPlaying = false
+    }
+    
     func setupTableView(){
         gapsTableView.delegate = self
         gapsTableView.dataSource = self

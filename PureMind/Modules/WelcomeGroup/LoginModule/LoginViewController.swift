@@ -39,9 +39,20 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
         prepareViews()
         prepareButtons()
         prepareTextFields()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
     }
     
     func transformTextField(myTextField: UITextField){
@@ -171,5 +182,10 @@ extension LoginViewController: UITextFieldDelegate{
 
         // make sure the result is under 16 characters
         return updatedText.count <= 35
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 }

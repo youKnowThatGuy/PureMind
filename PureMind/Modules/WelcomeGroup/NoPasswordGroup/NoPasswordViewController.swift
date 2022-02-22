@@ -115,5 +115,10 @@ extension NoPasswordViewController: UITextFieldDelegate{
         // make sure the result is under 16 characters
         return updatedText.count <= 35
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 }
 

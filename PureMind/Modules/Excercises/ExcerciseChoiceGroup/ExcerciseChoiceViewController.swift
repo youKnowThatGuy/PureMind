@@ -29,11 +29,23 @@ class ExcerciseChoiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
         prepareCollectionView()
         prepareViews()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
+        imageView.isHidden = false
         super.viewDidAppear(animated)
         self.tabBarController?.tabBar.isHidden = false
     }

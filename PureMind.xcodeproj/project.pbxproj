@@ -132,6 +132,7 @@
 		69F6ABAA27AFD6C900D4A5D4 /* ReflexiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6ABA927AFD6C900D4A5D4 /* ReflexiveViewController.swift */; };
 		69F6ABB327AFDEE200D4A5D4 /* LessonElementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6ABB227AFDEE200D4A5D4 /* LessonElementTableViewCell.swift */; };
 		69F6ABBB27AFDFC400D4A5D4 /* LessonsTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6ABBA27AFDFC400D4A5D4 /* LessonsTablePresenter.swift */; };
+		69F7780F27C551B5003A1F56 /* UITextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F7780E27C551B5003A1F56 /* UITextViewExtensions.swift */; };
 		DA12F3192DF1CB76C43F120F /* Pods_PureMind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EAE2D345787B1A2710F770 /* Pods_PureMind.framework */; };
 		DCA617E89129C993441F0979 /* Pods_PureMindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */; };
 /* End PBXBuildFile section */
@@ -289,6 +290,7 @@
 		69F6ABA927AFD6C900D4A5D4 /* ReflexiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexiveViewController.swift; sourceTree = "<group>"; };
 		69F6ABB227AFDEE200D4A5D4 /* LessonElementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonElementTableViewCell.swift; sourceTree = "<group>"; };
 		69F6ABBA27AFDFC400D4A5D4 /* LessonsTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTablePresenter.swift; sourceTree = "<group>"; };
+		69F7780E27C551B5003A1F56 /* UITextViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtensions.swift; sourceTree = "<group>"; };
 		C645ECD700F3EA9117461534 /* Pods-PureMind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind.debug.xcconfig"; path = "Target Support Files/Pods-PureMind/Pods-PureMind.debug.xcconfig"; sourceTree = "<group>"; };
 		D0CE98E0FB35A5168AFF95DC /* Pods-PureMind-PureMindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PureMind-PureMindUITests.debug.xcconfig"; path = "Target Support Files/Pods-PureMind-PureMindUITests/Pods-PureMind-PureMindUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C7E1AA7DF30BE9D41C1A75 /* Pods_PureMindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PureMindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -586,6 +588,7 @@
 				69A1C6BF26B165A100216B2C /* UIColorExtensions.swift */,
 				69C327A5278380C500F1394E /* CALayerExtension.swift */,
 				69CBB0B027BAFD0F005D7B5F /* UIImageExtension.swift */,
+				69F7780E27C551B5003A1F56 /* UITextViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1267,6 +1270,7 @@
 				69BB2B0E27AAB44E0048C747 /* ExpPortraitViewCell.swift in Sources */,
 				69BB2AF027AAA6120048C747 /* AlertContactsViewController.swift in Sources */,
 				69A1C6FD26B48E0800216B2C /* TherapistChoicePresenter.swift in Sources */,
+				69F7780F27C551B5003A1F56 /* UITextViewExtensions.swift in Sources */,
 				69C327AB278389E700F1394E /* ExcercisesViewCell.swift in Sources */,
 				69009F442717295B00D18BEA /* GapsExcercisePresenter.swift in Sources */,
 				69C79D3D26CABC24008B024A /* FirstQuestionsPresenter.swift in Sources */,

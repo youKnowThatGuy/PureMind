@@ -270,8 +270,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "routeOneChoiceZero(cases:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -286,8 +286,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "routeOneChoiceZero(cases:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -302,8 +302,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "routeOneChoiceZero(cases:)"
             landmarkType = "7">
             <Locations>
@@ -365,8 +365,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "routeOneChoiceZero(cases:)"
             landmarkType = "7">
             <Locations>
@@ -428,8 +428,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "bigRouteOne()"
             landmarkType = "7">
          </BreakpointContent>
@@ -444,8 +444,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "bigRouteOne()"
             landmarkType = "7">
          </BreakpointContent>
@@ -460,8 +460,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "multiChoice1(botMessage:cases:)"
             landmarkType = "7">
             <Locations>
@@ -556,8 +556,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "routeOneChoiceZero(cases:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -588,8 +588,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "routeOneChoiceOne(cases:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -604,8 +604,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "routeOneChoiceOne(cases:)"
             landmarkType = "7">
             <Locations>
@@ -652,8 +652,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "situationResponse()"
             landmarkType = "7">
             <Locations>
@@ -700,8 +700,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "situationResponse()"
             landmarkType = "7">
          </BreakpointContent>
@@ -716,8 +716,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "situationResponse()"
             landmarkType = "7">
          </BreakpointContent>
@@ -732,8 +732,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "situationResponse()"
             landmarkType = "7">
          </BreakpointContent>
@@ -748,8 +748,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "situationResponse()"
             landmarkType = "7">
             <Locations>
@@ -811,8 +811,8 @@
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatBot.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "routeOneChoiceOne(cases:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -859,9 +859,9 @@
             filePath = "PureMind/Modules/Excercises/GapsExcercise/GapsExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -891,10 +891,10 @@
             filePath = "PureMind/Modules/Excercises/GapsExcercise/GapsExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "GapsExcerciseViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -907,8 +907,8 @@
             filePath = "PureMind/Modules/Excercises/TextExcercise/TextExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "forwardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -923,8 +923,8 @@
             filePath = "PureMind/Modules/Excercises/TextExcercise/TextExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "forwardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -939,8 +939,8 @@
             filePath = "PureMind/Modules/Excercises/TextExcercise/TextExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "forwardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -955,8 +955,8 @@
             filePath = "PureMind/Modules/Excercises/TextExcercise/TextExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "forwardButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2154,8 +2154,8 @@
             filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2170,8 +2170,8 @@
             filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2186,8 +2186,8 @@
             filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2314,8 +2314,8 @@
             filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/View/RegistrationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "registerSuccess()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2346,8 +2346,8 @@
             filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/View/RegistrationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "registerButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2522,8 +2522,8 @@
             filePath = "PureMind/Modules/WelcomeGroup/LoginModule/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "loginButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2538,8 +2538,8 @@
             filePath = "PureMind/Modules/ProfileGroup/ShareModule/ShareViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "prepareViews()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2588,15 +2588,15 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EDFD1AD6-6778-48C1-9E50-5DE03BA67799"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/Courses/LessonsTableModule/LessonsTablePresenter.swift"
@@ -2604,8 +2604,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "getVideoLink(index:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2650,9 +2650,226 @@
             filePath = "PureMind/Modules/ProfileGroup/ContactsModule/ContactsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "callbackButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A11D34D9-D487-48F6-B765-F62939B38FA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7819D933-2F55-4A53-BBC8-4BFABE0CBEB7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5AE15F3-6318-4DAA-9681-90ED40118FE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "getResponse(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "956">
+               </Location>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "983">
+               </Location>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "2227">
+               </Location>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "3454">
+               </Location>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "4687">
+               </Location>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "5926">
+               </Location>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "6540">
+               </Location>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "7130">
+               </Location>
+               <Location
+                  uuid = "A218B6DF-EEAC-4018-AE8A-D95D4983191C - 9c23bf37eeb19fec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PureMind.ChatPresenter.getResponse(for: Swift.Int) -&gt; ()"
+                  moduleName = "PureMind"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "8372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC10CF13-60E1-4BD5-88BE-7ED4BACAD6F8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "getResponse(for:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

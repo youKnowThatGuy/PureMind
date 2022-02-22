@@ -24,7 +24,7 @@ class ChatPresenter: ChatPresenterProtocol{
     weak var view: ChatViewProtocol?
     
     var messages = [MessageType]()
-    var buttons = ["Хочу проанализировать своё состояние", "Упражнения", "Переключение на специалиста"]
+    var buttons = ["Хочу проанализировать своё состояние", "Переключение на специалиста"]  //Упражнения
     var currMessages = [String]()
     var currUserMessage = ""
     var textInputRequired = false
@@ -162,11 +162,8 @@ class ChatPresenter: ChatPresenterProtocol{
             view?.updateUI()
             multipleChoice = false
         case "specialist":
-            messages.append(Message(sender: chatBotProxy,
-                                messageId: "1",
-                                sentDate: Date().addingTimeInterval(-6400),
-                                kind: .text(response[1])))
-            buttons = []
+            insertNewResponses(responses: response, count: 1, for: "bot")
+            algorythm.path = []
             view?.updateUI()
             //view?.hideButtons()
         case "textRequiered":
@@ -191,6 +188,7 @@ class ChatPresenter: ChatPresenterProtocol{
             }
             multipleChoice = true
             view?.updateUI()
+            
         default:
             break
         }

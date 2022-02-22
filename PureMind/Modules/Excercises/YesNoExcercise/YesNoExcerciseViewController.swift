@@ -28,6 +28,8 @@ class YesNoExcerciseViewController: UIViewController {
     var titleText: String?
     var excerciseName: String?
     var excerciseDescription: String?
+    
+    var finishVC = false
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
             imageView.image = UIImage(named: "background4")
@@ -41,6 +43,11 @@ class YesNoExcerciseViewController: UIViewController {
         setupView()
         presenter.loadAudio()
         setupScrollIndicator()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        imageView.isHidden = false
     }
     
     func setupView(){
@@ -59,6 +66,13 @@ class YesNoExcerciseViewController: UIViewController {
         excerciseDescriptionLabel.textColor = grayTextColor
         yesButtonShell.setBackgroundImage(UIImage(named: "excButton"), for: .normal)
         noButtonShell.setBackgroundImage(UIImage(named: "excButton"), for: .normal)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+        audioPlayer?.pause()
+        playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
+        isPlaying = false
     }
     
     func setupScrollIndicator(){
@@ -97,7 +111,7 @@ class YesNoExcerciseViewController: UIViewController {
     @IBAction func playButtonPressed(_ sender: Any) {
             if isPlaying == true{
                 audioPlayer?.pause()
-                playButtonShell.setBackgroundImage(UIImage(named: "playButtonFancy"), for: .normal)
+                playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
                 isPlaying = false
             }
             else{
@@ -134,11 +148,17 @@ class YesNoExcerciseViewController: UIViewController {
     }
     
     @IBAction func yesButtonPressed(_ sender: Any) {
+        if finishVC == true {
+            navigationController?.popViewController(animated: true)
+        }
         yesButtonShell.setBackgroundImage(UIImage(named: "excButton_highlited"), for: .normal)
         noButtonShell.setBackgroundImage(UIImage(named: "excButton"), for: .normal)
     }
     
     @IBAction func noButtonPressed(_ sender: Any) {
+        if finishVC == true {
+            navigationController?.popViewController(animated: true)
+        }
         yesButtonShell.setBackgroundImage(UIImage(named: "excButton"), for: .normal)
         noButtonShell.setBackgroundImage(UIImage(named: "excButton_highlited"), for: .normal)
     }

@@ -53,6 +53,18 @@ class InsertImageExcerciseViewController: UIViewController {
         presenter.loadAudio()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+        audioPlayer?.pause()
+        playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
+        isPlaying = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        imageView.isHidden = false
+    }
+    
     func setupView(){
         view.insertSubview(imageView, at: 0)
                 NSLayoutConstraint.activate([

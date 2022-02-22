@@ -46,9 +46,26 @@ class TextExcerciseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        excerciseDescriptionLabel.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
         setupView()
         setupScrollIndicator()
         presenter.loadAudio()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        imageView.isHidden = false
+    }
+    
+    @objc func tapDone(sender: Any) {
+        self.view.endEditing(true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+        audioPlayer?.pause()
+        playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
+        isPlaying = false
     }
     
     func setupView(){

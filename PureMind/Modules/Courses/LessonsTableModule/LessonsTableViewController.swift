@@ -60,6 +60,7 @@ extension LessonsTableViewController: LessonsTableViewProtocol{
 
 extension LessonsTableViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.section {
         case 0:
             openSafari(link: presenter.getVideoLink(index: indexPath.row))

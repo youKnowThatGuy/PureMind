@@ -42,10 +42,27 @@ class TextPictureExcerciseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        noteTextView.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
         setupView()
         presenter.loadAudio()
         setupScrollIndicator()
         setupImage()
+    }
+    
+    @objc func tapDone(sender: Any) {
+        self.view.endEditing(true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        imageView.isHidden = true
+        audioPlayer?.pause()
+        playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
+        isPlaying = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        imageView.isHidden = false
     }
     
     func setupView(){

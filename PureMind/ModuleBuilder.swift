@@ -193,7 +193,8 @@ class ModuleBuilder: AssemblyBuilderProtocol{
             }
         }
         let finishVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "YesNoExcVC") as YesNoExcerciseViewController
-        finishVC.presenter = TextExcercisePresenter(view: finishVC, currAudio: sort.last?.audio, id: "")
+        finishVC.finishVC = true
+        finishVC.presenter = TextExcercisePresenter(view: finishVC, currAudio: "F724D03E-6748-46F4-B1F8-A5F242531DD0", id: "")
         finishVC.vcCount = vcCount
         finishVC.vcIndex = vcCount - 1
         finishVC.titleText = title
