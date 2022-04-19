@@ -11,6 +11,7 @@ import Parchment
 class SecondaryTabBarViewController: UIViewController {
     var id: String!
     var lessonChosen = 0
+    var courseInfo: CourseCompletionInfo!
     
     private var pagingViewController: PagingViewController!
     let mod = ModuleBuilder()
@@ -21,18 +22,30 @@ class SecondaryTabBarViewController: UIViewController {
         NetworkService.shared.getAllLessonsData(courseId: id) {[weak self] (result) in
             switch result{
             case let .success(tokens):
-                for i in 0..<tokens.count{
-                    viewControllers.append((self?.mod.createLessonModule(data: tokens[i], index: i))!)
+                CachingService.shared.getCourseInfo(id: (self?.id)!, lessonsCount: tokens.count) {[weak self] (courseInfo) in
+                    self?.courseInfo = courseInfo
+                    for i in 0..<tokens.count{
+                        var reflexCount = 0
+                        if i != 0{
+                            reflexCount = tokens[i - 1].reflexiveQuestions.count
+                        }
+                        viewControllers.append((self?.mod.createLessonModule(data: tokens[i], index: i, previousReflexCount: reflexCount, courseId: (self?.id)!))!)
+                    }
+                    self?.pagingViewController = PagingViewController(viewControllers: viewControllers)
+                    self?.setupParchment()
+                    self?.setFirstVC()
                 }
-                self?.pagingViewController = PagingViewController(viewControllers: viewControllers)
-                self?.setupParchment()
-                self?.setFirstVC()
                 
             case let .failure(error):
                 print(error)
                 self?.alert()
             }
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        //CachingService.shared.cacheCourseInfo(self.courseInfo, id: id)
     }
     
     func setFirstVC(){

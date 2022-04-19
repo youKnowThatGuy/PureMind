@@ -53,6 +53,114 @@ class CachingService{
         }
     }
     
+    func cachePlansInfo(_ dataForjson: SafePlanInfo?, completion: ((Bool)-> Void)? = nil){
+        DispatchQueue.global(qos: .utility).async { [self] in
+            
+            guard let data = dataForjson else{
+                completion?(false)
+                return
+            }
+          let jsonUrl = getServicesDirectory().appendingPathComponent("safePlansInfo.json")
+            do{
+                let codedData = try JSONEncoder().encode(data.self)
+                try codedData.write(to: jsonUrl)
+                completion?(true)
+            }
+            catch {
+                print(error)
+                completion?(false)
+            }
+        }
+    }
+    
+    func getPlansInfo(completion: @escaping (SafePlanInfo?) -> Void){
+        let jsonUrl = getServicesDirectory().appendingPathComponent("safePlansInfo.json")
+        DispatchQueue.global(qos: .userInteractive).async {
+            
+            if let data = self.fileManager.contents(atPath: jsonUrl.path){
+                do{
+                     let settings = try JSONDecoder().decode(SafePlanInfo.self, from: data)
+                        DispatchQueue.main.async {
+                           completion(settings)
+                         }
+                   }
+                
+                catch{
+                      print(error)
+                       completion(nil)
+                     }
+            }
+        }
+    }
+    
+    func cacheCourseInfo(_ dataForjson: CourseCompletionInfo?, id: String,  completion: ((Bool)-> Void)? = nil){
+        DispatchQueue.global(qos: .utility).async { [self] in
+            
+            guard let data = dataForjson else{
+                completion?(false)
+                return
+            }
+          let jsonUrl = getCoursesDirectory().appendingPathComponent("\(id)")
+            do{
+                let codedData = try JSONEncoder().encode(data.self)
+                try codedData.write(to: jsonUrl)
+                completion?(true)
+            }
+            catch {
+                print(error)
+                completion?(false)
+            }
+        }
+    }
+    
+    func cacheReflexAnswer(id: String, relfexId: Int, lessonId: Int){
+        getCourseInfo(id: id, lessonsCount: 0) { [weak self] (result) in
+            var info = result
+            info?.questionsFinished[lessonId][relfexId] = true
+            self?.cacheCourseInfo(info, id: id)
+        }
+    }
+    
+    func checkLessonCompletion(id: String, lessonId: Int, reflexCount: Int ,completion: @escaping (Bool?) -> Void){
+        getCourseInfo(id: id, lessonsCount: 0) { [weak self] (result) in
+            let info = result
+            if info?.questionsFinished[lessonId - 1].prefix(reflexCount).allSatisfy({$0 == true}) == true{
+                completion(true)
+            }
+            else{
+                completion(false)
+            }
+            self?.cacheCourseInfo(info, id: id)
+        }
+    }
+
+    
+    func getCourseInfo(id: String, lessonsCount: Int, completion: @escaping (CourseCompletionInfo?) -> Void){
+        let jsonUrl = getCoursesDirectory().appendingPathComponent("\(id)")
+        DispatchQueue.main.async {
+            
+            if let data = self.fileManager.contents(atPath: jsonUrl.path){
+                do{
+                     let info = try JSONDecoder().decode(CourseCompletionInfo.self, from: data)
+                        DispatchQueue.main.async {
+                           completion(info)
+                         }
+                   }
+                
+                catch{
+                    print(error)
+                    completion(nil)
+                }
+            }
+            else {
+                print("Creating new course data")
+                self.cacheCourseInfo(CourseCompletionInfo(id: id, questionsFinished: Array.init(repeating: Array.init(repeating: false, count: 12), count: lessonsCount)), id: id) { (_) in
+                }
+                completion(CourseCompletionInfo(id: id, questionsFinished: Array.init(repeating: Array.init(repeating: false, count: 12), count: lessonsCount)))
+            }
+        }
+    }
+    
     func checkUserInfo()-> Bool{
         let url = getServicesDirectory().appendingPathComponent("userInfo.json")
         
@@ -151,6 +259,15 @@ class CachingService{
     
     private func getServicesDirectory()-> URL{
         let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("PersonalData")
+        
+        if !fileManager.fileExists(atPath: url.path){
+            try! fileManager.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
+        }
+        return url
+    }
+    
+    private func getCoursesDirectory()-> URL{
+        let url = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("CourseData")
         
         if !fileManager.fileExists(atPath: url.path){
             try! fileManager.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)

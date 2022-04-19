@@ -13,6 +13,7 @@ protocol MoodPresenterProtocol{
     func prepare(for segue: UIStoryboardSegue, sender: Any?)
     func prepareCell(cell: PracticViewCell, index: Int)
     func practicsCount() -> Int
+    func loadPracticData()
     func getData()
     var currMood: String? {get}
     var moodChartData: ChartData! {get}
@@ -22,27 +23,82 @@ class MoodPresenter: MoodPresenterProtocol{
     var moodChartData: ChartData!
     weak var view: MoodViewProtocol?
     var currMood: String?
-    var practics = ["Страх", "Стыд", "Обида", "Уверенность", "Апатия", "Вина", "Злость", "Стресс", "Все темы"]
+    var practics = [String]()
+    var excerciseCounts = [Int]()
     
     required init(view: MoodViewProtocol, currMood: String) {
         self.view = view
         self.currMood = currMood
     }
-    
+
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier{
-        case "chatMoodSegue":
-            guard let vc = segue.destination as? ChatViewController
+        case "moodExcSegue":
+            guard let vc = segue.destination as? ExcerciseChoiceViewController, let index = sender as? Int
             else {fatalError("invalid data passed")}
-            vc.presenter = ChatPresenter(view: vc)
+            let string = practics[index]
+            vc.presenter = ExcerciseChoicePresenter(view: vc, currPractic: string)
+            
+        case "moodAllExcSegue":
+            guard let vc = segue.destination as? AllExcercisesViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = AllExcercisePresenter(view: vc)
             
         default:
             break
         }
     }
     
+    func loadPracticData(){
+        NetworkService.shared.getPractices {[weak self] (result) in
+            switch result{
+            case let .success(tokens):
+                var p = [String]()
+                var ec = [Int]()
+                for i in 0..<tokens.count {
+                    if !p.contains(tokens[i].category){
+                        p.append(tokens[i].category)
+                        ec.append(1)
+                    }
+                    else{
+                        let ind = p.lastIndex(of: tokens[i].category)
+                        ec[ind!] = ec[ind!] + 1
+                    }
+                }
+                self?.practics = p
+                self?.excerciseCounts = ec
+                self?.practics.append("Все темы")
+                self?.view?.updateUI()
+            case .failure(_):
+                fatalError("Data didnt load")
+            }
+        }
+    }
+    
     func practicsCount() -> Int {
-        return 5
+        return practics.count
+    }
+    
+    func conv(n: Int) -> String{
+        let mas = ["а", "и", ""]
+        let n = n % 100
+        var str = ""
+        if n >= 11 && n <= 19{
+            str = mas[2]
+        }
+        else{
+            let i = n % 10
+            if i == 1{
+                str = mas[0]
+            }
+            else if [2,3,4].contains(i){
+                str = mas[1]
+            }
+            else{
+                str = mas[2]
+            }
+        }
+        return str
     }
     
     func prepareCell(cell: PracticViewCell, index: Int) {
@@ -58,7 +114,12 @@ class MoodPresenter: MoodPresenterProtocol{
         }
         cell.practicLabel.text = practics[index]
         cell.backgroundColor = color
-        cell.excerciseCount.text = "\(index + 1) техник"
+        if index == practicsCount() - 1{
+            cell.excerciseCount.text = ""
+        }
+        else{
+            cell.excerciseCount.text = "\(excerciseCounts[index]) техник\(conv(n: excerciseCounts[index]))"
+        }
         cell.layer.cornerRadius = 14
     }
     

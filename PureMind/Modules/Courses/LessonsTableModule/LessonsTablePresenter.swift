@@ -36,15 +36,18 @@ class LessonsTablePresenter: LessonsTablePresenterProtocol{
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier{
         case "showReflexQuestion":
-            guard let vc = segue.destination as? ReflexiveViewController, let index = sender as? IndexPath
+            guard let vc = segue.destination as? ReflexiveViewController, let info = sender as? LessonsTableInfo
             else {fatalError("invalid data passed")}
-            switch index.section {
+            switch info.vcIndex.section {
             case 1:
-                vc.titleText = "Рефлексивный вопрос №\(data!.reflexiveQuestions[index.row].name!)"
-                vc.descText = (data?.reflexiveQuestions[index.row].text)!
+                vc.titleText = "Рефлексивный вопрос №\(data!.reflexiveQuestions[info.vcIndex.row].name!)"
+                vc.descText = (data?.reflexiveQuestions[info.vcIndex.row].text)!
+                vc.courseId = info.courseId
+                vc.vcIndex = info.vcIndex.row
+                vc.lessonIndex = info.lessonIndex
             case 2:
-                vc.titleText = (data?.practices[index.row].name)!
-                vc.descText = (data?.practices[index.row].text)!
+                vc.titleText = (data?.practices[info.vcIndex.row].name)!
+                vc.descText = (data?.practices[info.vcIndex.row].text)!
             default:
                 vc.titleText = ""
                 vc.descText = ""

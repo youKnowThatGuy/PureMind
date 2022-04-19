@@ -142,7 +142,7 @@ class RegistrationViewController: UIViewController {
         let message = presenter.infoValidation(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
         if message == "pass"{
             if checkBox.isChecked == true{
-                validationAlert(title: "Успешно!", message: "Сейчас произойдет вход в сеть!")
+                validationAlert(title: "Успешно!", message: "Добро пожаловать в PureMind!")
                 presenter.performRegistration(nickname: nicknameField.text!, email: emailField.text!, password: passwordField.text!)
             }
             else{
@@ -188,7 +188,7 @@ extension RegistrationViewController: RegistrationViewProtocol{
     }
     
     func registerSuccess(){
-        performSegue(withIdentifier: "themesSegue", sender: nil)
+        performSegue(withIdentifier: "skipSegue", sender: nil)
     }
     
     func registerAlert(text: String){

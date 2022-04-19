@@ -173,8 +173,14 @@ class NetworkService{
                return
            }
         do {
-            let serverResponse = try JSONDecoder().decode([CoursesInfo].self, from: data)
+            var serverResponse = try JSONDecoder().decode([CoursesInfo].self, from: data)
             DispatchQueue.main.async {
+                
+                let course1 = serverResponse.remove(at: 0)
+                serverResponse.append(course1)
+                let course2 = serverResponse.remove(at: 6)
+                serverResponse.append(course2)
+                
                 completion(.success(serverResponse))
             }
         }

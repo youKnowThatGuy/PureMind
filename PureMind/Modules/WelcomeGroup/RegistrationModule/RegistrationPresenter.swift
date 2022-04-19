@@ -96,6 +96,10 @@ class RegistrationPresenter: RegistrationPresenterProtocol{
             guard let vc = segue.destination as? ThemesViewController
             else {fatalError("invalid data passed")}
             vc.presenter = ThemesPresenter(view: vc)
+        
+        case "skipSegue":
+            guard segue.destination is MainTabBarController
+            else {fatalError("invalid data passed")}
             
         default:
             break

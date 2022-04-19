@@ -31,7 +31,7 @@ class TextPictureExcerciseViewController: UIViewController {
     var titleText: String?
     var excerciseName: String?
     var excerciseDescription: String?
-    var imageId: String?
+    var imageId = ""
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
             imageView.image = UIImage(named: "background3")
@@ -54,7 +54,7 @@ class TextPictureExcerciseViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        imageView.isHidden = true
+        //imageView.isHidden = true
         audioPlayer?.pause()
         playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
         isPlaying = false
@@ -62,7 +62,7 @@ class TextPictureExcerciseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        imageView.isHidden = false
+        //imageView.isHidden = false
     }
     
     func setupView(){
@@ -96,7 +96,7 @@ class TextPictureExcerciseViewController: UIViewController {
             excerciseImage.image = UIImage(named: "noImage")
         }
         else{
-            NetworkService.shared.loadImage(from: imageId!) {[weak self] (result) in
+            NetworkService.shared.loadImage(from: imageId) {[weak self] (result) in
                 guard let image = result
                 else {self?.excerciseImage.image = UIImage(named: "noImage")
                     return

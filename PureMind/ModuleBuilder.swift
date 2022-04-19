@@ -22,8 +22,11 @@ class ModuleBuilder: AssemblyBuilderProtocol{
         return navC
     }
     
-    func createLessonModule(data: LessonInfo, index: Int) -> UIViewController{
+    func createLessonModule(data: LessonInfo, index: Int, previousReflexCount: Int, courseId: String) -> UIViewController{
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LessonsVC") as LessonsTableViewController
+        vc.previousReflexCount = previousReflexCount
+        vc.courseId = courseId
+        vc.vcIndex = index
         vc.presenter = LessonsTablePresenter(view: vc, data: data)
         vc.title = "Урок №\(index + 1)"
         let navC = UINavigationController(rootViewController: vc)
@@ -74,6 +77,14 @@ class ModuleBuilder: AssemblyBuilderProtocol{
         profileVC.presenter = ProfilePresenter(view: profileVC)
         let navC = UINavigationController(rootViewController: profileVC)
         return navC
+    }
+    
+    func createCustomTestModule(vcIndex: Int, testIndex: Int) -> UIViewController{
+        let cust = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "CustomTestVC") as CustomTestsViewController
+        cust.vcIndex = vcIndex
+        cust.testIndex = testIndex
+        cust.presenter = CustomTestsPresenter(view: cust, questionIndex: vcIndex, testIndex: testIndex)
+        return cust
     }
     
     func createMoodModuleOne(mood: String, vcIndex: Int) -> UIViewController{
@@ -142,7 +153,7 @@ class ModuleBuilder: AssemblyBuilderProtocol{
                 vc.vcIndex = Int(token.number)! - 1
                 vc.titleText = title
                 vc.excerciseName = practicName
-                vc.excerciseDescription = token.description
+                vc.excerciseDescription = "Пожалуста, заполните данные пропуски: "
                 controllers.append(vc)
                 
             case "yes_no":
@@ -168,7 +179,7 @@ class ModuleBuilder: AssemblyBuilderProtocol{
                 vc.excerciseName = practicName
                 vc.excerciseDescription = token.description
                 //
-                vc.imageId = token.image
+                vc.imageId = token.image ?? ""
                 //
                 controllers.append(vc)
                 

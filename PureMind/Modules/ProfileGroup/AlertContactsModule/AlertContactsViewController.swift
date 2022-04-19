@@ -45,6 +45,17 @@ class AlertContactsViewController: UIViewController, SFSafariViewControllerDeleg
         internetButtonShell.layer.cornerRadius = 15
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier{
+        case "safetyPlanSegue":
+            guard let vc = segue.destination as? SafePlanViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = SafePlanPresenter(view: vc)
+        default:
+            break
+        }
+    }
+    
     @objc func handleGesture(){
         navigationController?.popViewController(animated: true)
     }
@@ -55,6 +66,7 @@ class AlertContactsViewController: UIViewController, SFSafariViewControllerDeleg
     }
     
     @IBAction func planButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "safetyPlanSegue", sender: nil)
     }
     
     @IBAction func callButtonPressed(_ sender: Any) {

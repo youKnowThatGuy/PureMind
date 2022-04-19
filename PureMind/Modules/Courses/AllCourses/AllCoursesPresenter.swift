@@ -83,7 +83,7 @@ class AllCoursesPresenter: AllCoursesPresenterProtocol{
     }
     
     func getDescriptionText(index: Int) -> String {
-        return courses[index].description
+        return courses[index].description ?? " "
     }
     
     func countData() -> Int {

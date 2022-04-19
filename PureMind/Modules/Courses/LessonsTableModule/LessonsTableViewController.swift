@@ -16,13 +16,32 @@ protocol LessonsTableViewProtocol: UIViewController{
 class LessonsTableViewController: UIViewController, SFSafariViewControllerDelegate {
     
     var presenter: LessonsTablePresenterProtocol!
-
+    var courseId = ""
+    var vcIndex: Int!
+    var lockImageView: UIImageView!
+    var lockLabel: UILabel!
+    var previousReflexCount: Int!
+    
     @IBOutlet weak var elementsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         elementsTableView.delegate = self
         elementsTableView.dataSource = self
         navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if previousReflexCount != 0{
+            CachingService.shared.checkLessonCompletion(id: courseId, lessonId: vcIndex, reflexCount: previousReflexCount) {[weak self] (flag) in
+                if flag! == true{
+                    self?.hideShowLessonTable(hidden: false)
+                }
+                else{
+                    self?.hideShowLessonTable(hidden: true)
+                }
+        }
+        }
     }
     
     func openSafari(link: String){
@@ -41,6 +60,23 @@ class LessonsTableViewController: UIViewController, SFSafariViewControllerDelega
         alert.addAction(okButton)
         present(alert, animated: true, completion: nil)
     }
+    
+    func hideShowLessonTable(hidden: Bool){
+        lockImageView = UIImageView(frame: CGRect(x: 150, y: 200, width: 70, height: 70))
+        lockImageView.image = UIImage(systemName: "lock")
+        lockImageView.tintColor = UIColor(red: 211, green: 228, blue: 160)
+        lockLabel = UILabel(frame: CGRect(x: 20, y: 300, width: 300, height: 100))
+        lockLabel.text = "Выполните все рефликсивные вопросы в предыдущем уроке, чтобы открыть этот"
+        lockLabel.font = UIFont(name: "Montserrat-SemiBold", size: 16)
+        lockLabel.numberOfLines = 0
+        lockLabel.textColor = grayTextColor
+        view.addSubview(lockLabel)
+        view.addSubview(lockImageView)
+        lockLabel.isHidden = !hidden
+        lockImageView.isHidden = !hidden
+        elementsTableView.isHidden = hidden
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         presenter.prepare(for: segue, sender: sender)
@@ -65,7 +101,7 @@ extension LessonsTableViewController: UITableViewDelegate, UITableViewDataSource
         case 0:
             openSafari(link: presenter.getVideoLink(index: indexPath.row))
         case 1, 2:
-            performSegue(withIdentifier: "showReflexQuestion", sender: indexPath)
+            performSegue(withIdentifier: "showReflexQuestion", sender: LessonsTableInfo(courseId: courseId, vcIndex: indexPath, lessonIndex: vcIndex))
         default:
             print("Book showcase")
         }

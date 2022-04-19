@@ -25,7 +25,7 @@ class CourseTabBarViewController: UIViewController {
         firstViewController.lessonChosen = lessonChosen
         let secondViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "CourseInfoVC") as CourseInfoViewController
         secondViewController.titleText = name
-        secondViewController.courseDescriptionText = courseDescription
+        secondViewController.courseDescriptionText = courseDescription ?? "Описание к курсу отсутсвтует"
              pagingViewController = PagingViewController(viewControllers: [
               firstViewController,
               secondViewController

@@ -54,7 +54,7 @@ class TextExcerciseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        imageView.isHidden = false
+        //imageView.isHidden = false
     }
     
     @objc func tapDone(sender: Any) {
@@ -62,7 +62,7 @@ class TextExcerciseViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        imageView.isHidden = true
+        //imageView.isHidden = true
         audioPlayer?.pause()
         playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
         isPlaying = false
@@ -161,7 +161,7 @@ class TextExcerciseViewController: UIViewController {
             }
             else{
                 audioPlayer?.play()
-                playButtonShell.setBackgroundImage(UIImage(systemName: "pause"), for: .normal)
+                playButtonShell.setBackgroundImage(UIImage(named: "pauseButton"), for: .normal)
                 isPlaying = true
             }
         

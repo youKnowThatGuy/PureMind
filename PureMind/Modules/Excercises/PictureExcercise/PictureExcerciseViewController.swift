@@ -47,11 +47,11 @@ class PictureExcerciseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        imageView.isHidden = false
+        //imageView.isHidden = false
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        imageView.isHidden = true
+        //imageView.isHidden = true
         audioPlayer?.pause()
         playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
         isPlaying = false

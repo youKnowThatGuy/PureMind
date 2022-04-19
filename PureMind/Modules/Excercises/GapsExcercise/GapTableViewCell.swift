@@ -23,6 +23,8 @@ class GapTableViewCell: UITableViewCell, UITextFieldDelegate {
         bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 300, height: 1.0)
         bottomLine.backgroundColor = UIColor(red: 238, green: 245, blue: 255).cgColor
         answerField.borderStyle = UITextField.BorderStyle.none
+        textPartLabel.textColor = grayTextColor
+        answerField.textColor = grayTextColor
         answerField.layer.addSublayer(bottomLine)
     }
  

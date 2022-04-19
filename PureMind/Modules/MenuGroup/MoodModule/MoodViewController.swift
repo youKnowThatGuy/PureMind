@@ -28,7 +28,7 @@ class MoodViewController: UIViewController, ChartViewDelegate {
         super.viewDidLoad()
         prepareViews()
         presenter.getData()
-        //prepareChart()
+        presenter.loadPracticData()
     }
     
     
@@ -100,7 +100,7 @@ class MoodViewController: UIViewController, ChartViewDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        presenter.prepare(for: segue, sender: nil)
+        presenter.prepare(for: segue, sender: sender)
     }
 
 }
@@ -115,6 +115,15 @@ extension MoodViewController: MoodViewProtocol{
 }
 
 extension MoodViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row == collectionView.numberOfItems(inSection: 0) - 1{
+            performSegue(withIdentifier: "moodAllExcSegue", sender: nil)
+        }
+        else{
+        performSegue(withIdentifier: "moodExcSegue", sender: indexPath.row)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         presenter.practicsCount()
     }

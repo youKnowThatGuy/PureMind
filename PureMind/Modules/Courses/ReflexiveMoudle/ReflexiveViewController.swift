@@ -15,6 +15,9 @@ class ReflexiveViewController: UIViewController {
     @IBOutlet weak var questionTextView: UITextView!
     var titleText = ""
     var descText = ""
+    var vcIndex: Int!
+    var lessonIndex: Int!
+    var courseId = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,8 +44,8 @@ class ReflexiveViewController: UIViewController {
         questionTextView.layer.cornerRadius = 10
     }
     
-    func alert(){
-        let alert = UIAlertController(title: "Успешно!", message: "", preferredStyle: .alert)
+    func alert(message: String){
+        let alert = UIAlertController(title: message, message: "", preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
         alert.addAction(okButton)
@@ -55,7 +58,15 @@ class ReflexiveViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
-        alert()
+        if questionTextView.hasText == true{
+            alert(message: "Ваш ответ записан!")
+            if courseId != ""{
+                CachingService.shared.cacheReflexAnswer(id: courseId, relfexId: vcIndex, lessonId: lessonIndex)
+            }
+            
+        }
+        else{
+           alert(message: "Вы не заполнили вопрос.")
+        }
     }
-    
 }

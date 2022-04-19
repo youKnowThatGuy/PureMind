@@ -27,7 +27,7 @@ class SecondQuestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        answerTextField.addDoneButton(title: "Done", target: self, selector: #selector(tapDone(sender:)))
+        answerTextField.addDoneButton(title: "Готово", target: self, selector: #selector(tapDone(sender:)))
         self.view.backgroundColor = UIColor(red: 254, green: 235, blue: 138)
         checkIndex()
         prepareViews()

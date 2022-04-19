@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import YandexMobileMetrica
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -26,6 +27,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
         }
         else{
+            let configuration = YMMYandexMetricaConfiguration.init(apiKey: "cf14588a-3b7f-4f19-9978-79ee67b61f5c")
+            YMMYandexMetrica.activate(with: configuration!)
+            let params : [AnyHashable : Any] = ["didEnterApp": "True"]
+            YMMYandexMetrica.reportEvent("EVENT", parameters: params, onFailure: { (error) in
+                print("REPORT ERROR: %@", error.localizedDescription)
+            })
             CachingService.shared.getInfo {[weak self] (result) in
                 NetworkService.shared.logIN(login: result!.login, password: result!.password) { result in
                     switch result{

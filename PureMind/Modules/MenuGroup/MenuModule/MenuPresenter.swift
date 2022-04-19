@@ -20,7 +20,6 @@ class MenuPresenter: MenuPresenterProtocol{
     
     weak var view: MenuViewProtocol?
     
-    var currWeek = "Неделя 1"
     var coursePurchased = true
     var practics = [String]()
     var excerciseCounts = [Int]()
@@ -56,7 +55,7 @@ class MenuPresenter: MenuPresenterProtocol{
                         for token in tokens {
                             self?.courses.append(token.name)
                             self?.coursesId.append(token.id)
-                            self?.coursesDesc.append(token.description)
+                            self?.coursesDesc.append(token.description ?? " ")
                         }
                         self?.courses.append("Все курсы")
                         self?.practics.append("Все темы")
@@ -167,7 +166,7 @@ class MenuPresenter: MenuPresenterProtocol{
         cell.backgroundView!.addSubview(imageView)
         cell.courseNameLabel.text = courses[index]
         cell.layer.cornerRadius = 12
-        cell.parentView = view
+        //cell.parentView = view
     }
     
     func preparePracticCell(cell: PracticViewCell, index: Int) {
@@ -183,14 +182,14 @@ class MenuPresenter: MenuPresenterProtocol{
         }
         cell.practicLabel.text = practics[index]
         cell.backgroundColor = color
-        if index == coursesCount() - 1{
+        if index == practicsCount() - 1{
             cell.excerciseCount.text = ""
         }
         else{
             cell.excerciseCount.text = "\(excerciseCounts[index]) техник\(conv(n: excerciseCounts[index]))"
         }
         cell.layer.cornerRadius = 14
-        cell.parentView = view
+        //cell.parentView = view
     }
     
     
