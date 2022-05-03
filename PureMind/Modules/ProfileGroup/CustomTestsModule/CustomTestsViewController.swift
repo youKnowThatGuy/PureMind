@@ -28,8 +28,15 @@ class CustomTestsViewController: UIViewController {
         super.viewDidLoad()
         prepareLabels()
         view.backgroundColor = perfectMood
-        presenter.loadTest(questionIndex: vcIndex)
+        presenter.loadTest()
         prepareCollectionView()
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .right
+        self.view.addGestureRecognizer(swipeLeft)
+    }
+    
+    @objc func handleGesture(){
+        navigationController?.popViewController(animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,7 +100,11 @@ extension CustomTestsViewController: UICollectionViewDelegate, UICollectionViewD
             }
             
             else{
-                performSegue(withIdentifier: "resultsVC", sender: nil)
+                let scores = presenter.calculateScore(index: indexPath)
+                for i in 0..<scores.count{
+                    self.totalScore[i] = self.totalScore[i] + scores[i]
+                }
+                performSegue(withIdentifier: "showCustomResultsSegue", sender: self.totalScore)
             }
         
     }

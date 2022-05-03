@@ -14,15 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let configuration = YMMYandexMetricaConfiguration.init(apiKey: "cf14588a-3b7f-4f19-9978-79ee67b61f5c")
+        YMMYandexMetrica.activate(with: configuration!)
         return true
     }
 
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        let configuration = YMMYandexMetricaConfiguration.init(apiKey: "cf14588a-3b7f-4f19-9978-79ee67b61f5c")
-        YMMYandexMetrica.activate(with: configuration!)
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
     

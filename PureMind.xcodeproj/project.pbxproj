@@ -148,6 +148,9 @@
 		69EE7FD02809B1E700B7FB0B /* psy_questions_list_6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 69EE7FC72809B1E700B7FB0B /* psy_questions_list_6.csv */; };
 		69EE7FD12809B1E700B7FB0B /* psy_questions_list_7.csv in Resources */ = {isa = PBXBuildFile; fileRef = 69EE7FC82809B1E700B7FB0B /* psy_questions_list_7.csv */; };
 		69EE7FD42809B7A900B7FB0B /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 69EE7FD32809B7A900B7FB0B /* SwiftCSV */; };
+		69EE7FD7280F1E9400B7FB0B /* CustomResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EE7FD6280F1E9400B7FB0B /* CustomResultsViewController.swift */; };
+		69EE7FD9280F1F4600B7FB0B /* CustomResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EE7FD8280F1F4600B7FB0B /* CustomResultsPresenter.swift */; };
+		69EE7FDB280F274A00B7FB0B /* ExpTitleScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EE7FDA280F274A00B7FB0B /* ExpTitleScoreCell.swift */; };
 		69F6AB9327AFD2F900D4A5D4 /* CourseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6AB9227AFD2F900D4A5D4 /* CourseTabBarViewController.swift */; };
 		69F6AB9827AFD30E00D4A5D4 /* SecondaryTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6AB9727AFD30E00D4A5D4 /* SecondaryTabBarViewController.swift */; };
 		69F6AB9E27AFD39700D4A5D4 /* CourseInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F6AB9D27AFD39700D4A5D4 /* CourseInfoViewController.swift */; };
@@ -331,6 +334,9 @@
 		69EE7FC62809B1E700B7FB0B /* psy_questions_list_5.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = psy_questions_list_5.csv; sourceTree = "<group>"; };
 		69EE7FC72809B1E700B7FB0B /* psy_questions_list_6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = psy_questions_list_6.csv; sourceTree = "<group>"; };
 		69EE7FC82809B1E700B7FB0B /* psy_questions_list_7.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = psy_questions_list_7.csv; sourceTree = "<group>"; };
+		69EE7FD6280F1E9400B7FB0B /* CustomResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResultsViewController.swift; sourceTree = "<group>"; };
+		69EE7FD8280F1F4600B7FB0B /* CustomResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResultsPresenter.swift; sourceTree = "<group>"; };
+		69EE7FDA280F274A00B7FB0B /* ExpTitleScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpTitleScoreCell.swift; sourceTree = "<group>"; };
 		69F6AB9227AFD2F900D4A5D4 /* CourseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTabBarViewController.swift; sourceTree = "<group>"; };
 		69F6AB9727AFD30E00D4A5D4 /* SecondaryTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryTabBarViewController.swift; sourceTree = "<group>"; };
 		69F6AB9D27AFD39700D4A5D4 /* CourseInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoViewController.swift; sourceTree = "<group>"; };
@@ -527,7 +533,6 @@
 			children = (
 				69EE7FBF2809B12700B7FB0B /* CSV_files_texts */,
 				69EE7FA82809AC2700B7FB0B /* CSV_files_questions */,
-				69BC7220274FE78400774A0F /* Services */,
 				69A1C6BE26B1658F00216B2C /* Extensions */,
 				698D751E2694AAD900C66C11 /* ModuleBuilder.swift */,
 				698D751C2694AA4500C66C11 /* Model */,
@@ -865,13 +870,6 @@
 			path = PortraitModule;
 			sourceTree = "<group>";
 		};
-		69BC7220274FE78400774A0F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		69BDBF7C279376540029575C /* Courses */ = {
 			isa = PBXGroup;
 			children = (
@@ -929,6 +927,7 @@
 		69C79D8126CC16E4008B024A /* ProfileGroup */ = {
 			isa = PBXGroup;
 			children = (
+				69EE7FD5280F1E6D00B7FB0B /* СustomResultsModule */,
 				695172032804BBB200E11F7F /* CustomTestsModule */,
 				69F7781C27C9218C003A1F56 /* SafePlanModule */,
 				69BB2AF727AAAF990048C747 /* PortraitModule */,
@@ -1004,6 +1003,16 @@
 				69EE7FC32809B1E700B7FB0B /* psy_questions_list_9.csv */,
 			);
 			path = CSV_files_texts;
+			sourceTree = "<group>";
+		};
+		69EE7FD5280F1E6D00B7FB0B /* СustomResultsModule */ = {
+			isa = PBXGroup;
+			children = (
+				69EE7FD6280F1E9400B7FB0B /* CustomResultsViewController.swift */,
+				69EE7FD8280F1F4600B7FB0B /* CustomResultsPresenter.swift */,
+				69EE7FDA280F274A00B7FB0B /* ExpTitleScoreCell.swift */,
+			);
+			path = "СustomResultsModule";
 			sourceTree = "<group>";
 		};
 		69F6AB9027AFD2A300D4A5D4 /* CourseTabBarModule */ = {
@@ -1378,6 +1387,7 @@
 				69F7782927C92204003A1F56 /* SafePlanPresenter.swift in Sources */,
 				69A1C6F526B48DE600216B2C /* TherapistChoiceViewController.swift in Sources */,
 				69BB2B0127AAB0AF0048C747 /* PortraitPresenter.swift in Sources */,
+				69EE7FDB280F274A00B7FB0B /* ExpTitleScoreCell.swift in Sources */,
 				69009F4927172AAC00D18BEA /* GapTableViewCell.swift in Sources */,
 				69C79D5726CBC2B3008B024A /* SecondQuestionsViewController.swift in Sources */,
 				69357BB52698658C00831004 /* NetworkService.swift in Sources */,
@@ -1406,6 +1416,7 @@
 				69A1C6C026B165A100216B2C /* UIColorExtensions.swift in Sources */,
 				69CC6BA6279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift in Sources */,
 				69C3279E27837B5F00F1394E /* ExpPracticViewCell.swift in Sources */,
+				69EE7FD7280F1E9400B7FB0B /* CustomResultsViewController.swift in Sources */,
 				69A1C6EA26B3FA7700216B2C /* ThemesPresenter.swift in Sources */,
 				69B3AEA326BC22BD00BA8F89 /* CourseViewCell.swift in Sources */,
 				69BDBF7F2793767E0029575C /* ExpCourseViewCell.swift in Sources */,
@@ -1418,6 +1429,7 @@
 				69BB2AF027AAA6120048C747 /* AlertContactsViewController.swift in Sources */,
 				69A1C6FD26B48E0800216B2C /* TherapistChoicePresenter.swift in Sources */,
 				69F7780F27C551B5003A1F56 /* UITextViewExtensions.swift in Sources */,
+				69EE7FD9280F1F4600B7FB0B /* CustomResultsPresenter.swift in Sources */,
 				69C327AB278389E700F1394E /* ExcercisesViewCell.swift in Sources */,
 				69009F442717295B00D18BEA /* GapsExcercisePresenter.swift in Sources */,
 				695172072804BEE000E11F7F /* CustomTestsPresenter.swift in Sources */,

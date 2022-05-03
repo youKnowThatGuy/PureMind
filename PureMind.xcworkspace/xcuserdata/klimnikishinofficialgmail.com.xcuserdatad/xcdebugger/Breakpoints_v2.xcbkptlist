@@ -2324,7 +2324,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "46783C21-9A9C-4698-A510-EE29133BEF14"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
@@ -2340,7 +2340,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "87094EF7-4BC0-4B73-B1D1-53CB067E7C6E"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/View/RegistrationViewController.swift"
@@ -2356,7 +2356,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0171A6C9-8B12-4F6A-81F9-F5C6D83D60E0"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
@@ -2366,38 +2366,6 @@
             endingLineNumber = "59"
             landmarkName = "performRegistration(nickname:email:password:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0171A6C9-8B12-4F6A-81F9-F5C6D83D60E0 - bf26e2a43894617"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PureMind.RegistrationPresenter.performRegistration(nickname: Swift.String, email: Swift.String, password: Swift.String) -&gt; ()"
-                  moduleName = "PureMind"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "65">
-               </Location>
-               <Location
-                  uuid = "0171A6C9-8B12-4F6A-81F9-F5C6D83D60E0 - c685ccf7f727ea97"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.String, PureMind.SessionError&gt;) -&gt; () in PureMind.RegistrationPresenter.performRegistration(nickname: Swift.String, email: Swift.String, password: Swift.String) -&gt; ()"
-                  moduleName = "PureMind"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/klimnikishinofficialgmail.com/Documents/SwiftProjects/PureMind/PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "283">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2452,7 +2420,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6060A5CA-BB52-43B3-91F0-126CDC895505"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
@@ -2468,7 +2436,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B3523630-D38B-42F4-8CA8-EC677581D40C"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/ServiceLayer/NetworkService.swift"
@@ -2484,7 +2452,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "ACE82954-A0E3-4D99-8162-16F69B9D3664"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/ServiceLayer/NetworkService.swift"
@@ -2500,7 +2468,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "948EDD27-DE68-4A2A-823F-702AFBC260DA"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/ServiceLayer/NetworkService.swift"
@@ -3250,9 +3218,9 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "loadTest(questionIndex:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "loadTest()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3282,9 +3250,9 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "loadTest(questionIndex:)"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "loadTest()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3298,8 +3266,8 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "loadQuestion(questionTitle:questionDesc:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3314,8 +3282,8 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3330,8 +3298,8 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3346,8 +3314,8 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3362,8 +3330,8 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3378,9 +3346,9 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "loadTest(questionIndex:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "loadTest()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -3426,8 +3394,8 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "calculateScore(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3442,8 +3410,8 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "calculateScore(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3458,25 +3426,9 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "loadTest(questionIndex:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "947F43CC-BCE7-450B-897E-438BC554EE4D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "loadTest(questionIndex:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "loadTest()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -3490,9 +3442,121 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "loadTest(questionIndex:)"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "loadTest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D8BD441-9735-4F01-A5A1-11A46B0595B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "loadTest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F51A290-735C-4DEA-8080-D90870AE1408"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadTest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C1332F9-6F79-4825-AE19-5FB15EBCC91B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "calculateScore(index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D4AD5E2-F1D7-4E6F-8A01-1AE24C0E7897"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9ED85D1-28FD-43FD-8D21-4EE73748ABE0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/LoginModule/LoginPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "performLogin(email:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D97E70B7-C9BC-4C94-9787-D530B9BD9B72"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/LoginModule/LoginPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "performLogin(email:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D003320D-7FEB-401B-92AC-F64F99E0EA83"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/RegistrationPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "performRegistration(nickname:email:password:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
