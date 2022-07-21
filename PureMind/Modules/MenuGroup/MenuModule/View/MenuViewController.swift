@@ -131,6 +131,7 @@ class MenuViewController: UIViewController {
     
     func prepareButtons(){
         chatButtonView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(moveToChatScreen)))
+        holderNameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(moveToNotificationsScreen)))
         moodView1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(moodButton1)))
         moodView2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(moodButton2)))
         moodView3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(moodButton3)))
@@ -140,6 +141,10 @@ class MenuViewController: UIViewController {
     
     @objc func moveToChatScreen() {
         performSegue(withIdentifier: "chatSegue", sender: nil)
+    }
+    
+    @objc func moveToNotificationsScreen(){
+        performSegue(withIdentifier: "showDiarySegue", sender: nil)
     }
     
     func prepareCollectionViews(){

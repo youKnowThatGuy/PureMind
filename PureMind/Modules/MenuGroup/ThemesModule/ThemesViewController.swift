@@ -33,6 +33,7 @@ class ThemesViewController: UIViewController {
     }
     
     func prepareViews(){
+        imageView.isUserInteractionEnabled = true
         view.insertSubview(imageView, at: 0)
                 NSLayoutConstraint.activate([
                     imageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -80,12 +81,7 @@ extension ThemesViewController: ThemesViewProtocol{
 
 extension ThemesViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = themesCollectionView.dequeueReusableCell(withReuseIdentifier: ThemeViewCell.identifier, for: indexPath) as? ThemeViewCell
-        else {fatalError("Invalid Cell kind")}
-        cell.themeNotChosen = !cell.themeNotChosen
-        cell.backgroundColor = toxicYellowSelected
-        presenter.manageTheme(index: indexPath.row)
-        
+        print("Selected Cell: \(indexPath.row)")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -130,6 +130,17 @@ class MenuPresenter: MenuPresenterProtocol{
             else {fatalError("invalid data passed")}
             vc.presenter = AllCoursesPresenter(view: vc)
             
+        case "notificationsSegue":
+            guard let vc = segue.destination as? NotificationsChoiceViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = NotificationsChoicePresenter(view: vc)
+         
+        case "showDiarySegue":
+            guard let vc = segue.destination as? DiaryStagesViewController
+            else {fatalError("invalid data passed")}
+            vc.presenter = DiaryStagesPresenter(view: vc)
+        
+            
         default:
             break
         }

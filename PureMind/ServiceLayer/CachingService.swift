@@ -233,6 +233,57 @@ class CachingService{
         }
     }
     
+    func cacheDiaryData(_ dataForjson: DiaryNote?, currDate: Date, completion: ((Bool)-> Void)? = nil){
+        dateFormatter.dateFormat = "dd-MMMM-YYYY"
+        let stringDate = dateFormatter.string(from: currDate)
+        DispatchQueue.global(qos: .utility).async { [self] in
+            guard let data = dataForjson else{
+                completion?(false)
+                return
+            }
+          let jsonUrl = getDiaryNotesDirectory().appendingPathComponent("\(stringDate)note.json")
+            do{
+                let codedData = try JSONEncoder().encode(data.self)
+                try codedData.write(to: jsonUrl)
+                completion?(true)
+            }
+            catch {
+                print(error)
+                completion?(false)
+            }
+        }
+    }
+    
+    func getDiaryNote(from path: String)-> DiaryNote?{
+        if let data = fileManager.contents(atPath: path){
+            do {
+                let mood = try JSONDecoder().decode(DiaryNote.self, from: data)
+                return mood
+            }
+            catch{
+                return nil
+            }
+        }
+        return nil
+    }
+    
+    func getAllDiaryNotes(completion: @escaping ([DiaryNote])-> Void){
+        DispatchQueue.global().async { [self] in
+            
+        var notes = [DiaryNote]()
+        let notePaths = getCachedDiaryPaths()
+        for path in notePaths{
+            if let data = getDiaryNote(from: path){
+                notes.append(data)
+            }
+        }
+            notes.sort(by: {$1.date > $0.date})
+            DispatchQueue.main.async {
+            completion(notes)
+            }
+        }
+    }
+    
     func checkMoodInfo(currDate: Date)-> Bool{
         dateFormatter.dateFormat = "dd-MMMM-YYYY"
         let stringDate = dateFormatter.string(from: currDate)
@@ -250,6 +301,16 @@ class CachingService{
         do{
             let paths = try fileManager.contentsOfDirectory(atPath: getMoodDataDirectory().path)
             return paths.map{getMoodDataDirectory().appendingPathComponent($0).path}
+        }
+        catch{
+            return []
+        }
+    }
+    
+    private func getCachedDiaryPaths()-> [String]{
+        do{
+            let paths = try fileManager.contentsOfDirectory(atPath: getDiaryNotesDirectory().path)
+            return paths.map{getDiaryNotesDirectory().appendingPathComponent($0).path}
         }
         catch{
             return []
@@ -277,6 +338,15 @@ class CachingService{
     
     private func getMoodDataDirectory()-> URL{
         let url = getServicesDirectory().appendingPathComponent("MoodData")
+        
+        if !fileManager.fileExists(atPath: url.path){
+            try! fileManager.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
+        }
+        return url
+    }
+    
+    private func getDiaryNotesDirectory()-> URL{
+        let url = getServicesDirectory().appendingPathComponent("DiaryNotes")
         
         if !fileManager.fileExists(atPath: url.path){
             try! fileManager.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)

@@ -78,6 +78,10 @@
 		69AD34CB26ED559700CB7581 /* TherapistPriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34CA26ED559700CB7581 /* TherapistPriceViewController.swift */; };
 		69AD34D326ED55C100CB7581 /* TherapistPricePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34D226ED55C100CB7581 /* TherapistPricePresenter.swift */; };
 		69AD34D826ED5C3100CB7581 /* TariffViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD34D726ED5C3100CB7581 /* TariffViewCell.swift */; };
+		69B1253B28891C8C00CA2EB2 /* MultipleChoiceDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1253A28891C8C00CA2EB2 /* MultipleChoiceDiaryViewController.swift */; };
+		69B1253D28891CB500CA2EB2 /* MultipleChoiceDiaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1253C28891CB500CA2EB2 /* MultipleChoiceDiaryPresenter.swift */; };
+		69B1254028893CAE00CA2EB2 /* DiaryThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1253F28893CAE00CA2EB2 /* DiaryThemeViewController.swift */; };
+		69B1254328897A2C00CA2EB2 /* DiaryTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1254228897A2C00CA2EB2 /* DiaryTextViewController.swift */; };
 		69B1F5312704D73500BEC38F /* ChatButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */; };
 		69B3AE8026BC14A200BA8F89 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */; };
 		69B3AE8B26BC165000BA8F89 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */; };
@@ -129,6 +133,17 @@
 		69CC6BA6279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC6BA5279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift */; };
 		69CC6BAE279B36290051013E /* AnswerChoiceExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC6BAD279B36290051013E /* AnswerChoiceExcercisePresenter.swift */; };
 		69CC6BB3279B67210051013E /* ExcerciseAnswerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC6BB2279B67210051013E /* ExcerciseAnswerViewCell.swift */; };
+		69ED7AC6287187F2003EEBA1 /* NotificationsChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7AC5287187F2003EEBA1 /* NotificationsChoiceViewController.swift */; };
+		69ED7AC828718800003EEBA1 /* NotificationsChoicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7AC728718800003EEBA1 /* NotificationsChoicePresenter.swift */; };
+		69ED7ACA28719E0B003EEBA1 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7AC928719E0B003EEBA1 /* OptionCollectionViewCell.swift */; };
+		69ED7ACD287C449E003EEBA1 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7ACC287C449E003EEBA1 /* DiaryViewController.swift */; };
+		69ED7ACF287C458E003EEBA1 /* DiaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7ACE287C458E003EEBA1 /* DiaryPresenter.swift */; };
+		69ED7AD1287C4A45003EEBA1 /* DiaryNoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7AD0287C4A45003EEBA1 /* DiaryNoteCollectionViewCell.swift */; };
+		69ED7AD4287C4E8F003EEBA1 /* DiaryNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7AD3287C4E8E003EEBA1 /* DiaryNoteViewController.swift */; };
+		69ED7AD8287C53DA003EEBA1 /* DiaryNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7AD7287C53DA003EEBA1 /* DiaryNote.swift */; };
+		69ED7ADC28880FAC003EEBA1 /* DiaryStagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7ADB28880FAC003EEBA1 /* DiaryStagesViewController.swift */; };
+		69ED7ADE28880FE9003EEBA1 /* DiaryStagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7ADD28880FE9003EEBA1 /* DiaryStagesPresenter.swift */; };
+		69ED7AE1288828A8003EEBA1 /* EverydayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ED7AE0288828A7003EEBA1 /* EverydayNoteViewController.swift */; };
 		69EE7FB62809B10C00B7FB0B /* psy_questions_table_6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 69EE7FAD2809B10B00B7FB0B /* psy_questions_table_6.csv */; };
 		69EE7FB72809B10C00B7FB0B /* psy_questions_table_5.csv in Resources */ = {isa = PBXBuildFile; fileRef = 69EE7FAE2809B10C00B7FB0B /* psy_questions_table_5.csv */; };
 		69EE7FB82809B10C00B7FB0B /* psy_questions_table_4.csv in Resources */ = {isa = PBXBuildFile; fileRef = 69EE7FAF2809B10C00B7FB0B /* psy_questions_table_4.csv */; };
@@ -265,6 +280,10 @@
 		69AD34CA26ED559700CB7581 /* TherapistPriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistPriceViewController.swift; sourceTree = "<group>"; };
 		69AD34D226ED55C100CB7581 /* TherapistPricePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistPricePresenter.swift; sourceTree = "<group>"; };
 		69AD34D726ED5C3100CB7581 /* TariffViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TariffViewCell.swift; sourceTree = "<group>"; };
+		69B1253A28891C8C00CA2EB2 /* MultipleChoiceDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceDiaryViewController.swift; sourceTree = "<group>"; };
+		69B1253C28891CB500CA2EB2 /* MultipleChoiceDiaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceDiaryPresenter.swift; sourceTree = "<group>"; };
+		69B1253F28893CAE00CA2EB2 /* DiaryThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryThemeViewController.swift; sourceTree = "<group>"; };
+		69B1254228897A2C00CA2EB2 /* DiaryTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTextViewController.swift; sourceTree = "<group>"; };
 		69B1F5302704D73500BEC38F /* ChatButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButtonViewCell.swift; sourceTree = "<group>"; };
 		69B3AE7F26BC14A200BA8F89 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		69B3AE8A26BC165000BA8F89 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -316,6 +335,17 @@
 		69CC6BA5279B34ED0051013E /* AnswerChoiceExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChoiceExcerciseViewController.swift; sourceTree = "<group>"; };
 		69CC6BAD279B36290051013E /* AnswerChoiceExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerChoiceExcercisePresenter.swift; sourceTree = "<group>"; };
 		69CC6BB2279B67210051013E /* ExcerciseAnswerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseAnswerViewCell.swift; sourceTree = "<group>"; };
+		69ED7AC5287187F2003EEBA1 /* NotificationsChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsChoiceViewController.swift; sourceTree = "<group>"; };
+		69ED7AC728718800003EEBA1 /* NotificationsChoicePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsChoicePresenter.swift; sourceTree = "<group>"; };
+		69ED7AC928719E0B003EEBA1 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		69ED7ACC287C449E003EEBA1 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		69ED7ACE287C458E003EEBA1 /* DiaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPresenter.swift; sourceTree = "<group>"; };
+		69ED7AD0287C4A45003EEBA1 /* DiaryNoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryNoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		69ED7AD3287C4E8E003EEBA1 /* DiaryNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryNoteViewController.swift; sourceTree = "<group>"; };
+		69ED7AD7287C53DA003EEBA1 /* DiaryNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryNote.swift; sourceTree = "<group>"; };
+		69ED7ADB28880FAC003EEBA1 /* DiaryStagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryStagesViewController.swift; sourceTree = "<group>"; };
+		69ED7ADD28880FE9003EEBA1 /* DiaryStagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryStagesPresenter.swift; sourceTree = "<group>"; };
+		69ED7AE0288828A7003EEBA1 /* EverydayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverydayNoteViewController.swift; sourceTree = "<group>"; };
 		69EE7FAD2809B10B00B7FB0B /* psy_questions_table_6.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = psy_questions_table_6.csv; sourceTree = "<group>"; };
 		69EE7FAE2809B10C00B7FB0B /* psy_questions_table_5.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = psy_questions_table_5.csv; sourceTree = "<group>"; };
 		69EE7FAF2809B10C00B7FB0B /* psy_questions_table_4.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = psy_questions_table_4.csv; sourceTree = "<group>"; };
@@ -612,6 +642,7 @@
 				69BDBF92279384950029575C /* CoursesInfo.swift */,
 				69BB2AC3279E0D860048C747 /* MoodInfo.swift */,
 				69F7783C27C93C03003A1F56 /* SafePlanInfo.swift */,
+				69ED7AD7287C53DA003EEBA1 /* DiaryNote.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -619,6 +650,7 @@
 		698D751D2694AA4D00C66C11 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				69ED7AD9288807B2003EEBA1 /* DiaryGroup */,
 				69BDBF7C279376540029575C /* Courses */,
 				69009EDF27160B4700D18BEA /* Excercises */,
 				69C79D8126CC16E4008B024A /* ProfileGroup */,
@@ -766,6 +798,31 @@
 			path = TherapistPriceModule;
 			sourceTree = "<group>";
 		};
+		69B1253928891C6C00CA2EB2 /* MultipleChoiceDiaryModule */ = {
+			isa = PBXGroup;
+			children = (
+				69B1253A28891C8C00CA2EB2 /* MultipleChoiceDiaryViewController.swift */,
+				69B1253C28891CB500CA2EB2 /* MultipleChoiceDiaryPresenter.swift */,
+			);
+			path = MultipleChoiceDiaryModule;
+			sourceTree = "<group>";
+		};
+		69B1253E28893C9300CA2EB2 /* DiaryThemeModule */ = {
+			isa = PBXGroup;
+			children = (
+				69B1253F28893CAE00CA2EB2 /* DiaryThemeViewController.swift */,
+			);
+			path = DiaryThemeModule;
+			sourceTree = "<group>";
+		};
+		69B1254128897A1700CA2EB2 /* DiaryTextModule */ = {
+			isa = PBXGroup;
+			children = (
+				69B1254228897A2C00CA2EB2 /* DiaryTextViewController.swift */,
+			);
+			path = DiaryTextModule;
+			sourceTree = "<group>";
+		};
 		69B3AE8426BC154E00BA8F89 /* MenuModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -778,6 +835,7 @@
 		69B3AE8526BC155A00BA8F89 /* MenuGroup */ = {
 			isa = PBXGroup;
 			children = (
+				69ED7AC4287187A5003EEBA1 /* NotificationsChoiceModule */,
 				69AD34C926ED556F00CB7581 /* TherapistPriceModule */,
 				69C79D6326CBF3CF008B024A /* MoodModule */,
 				69C79D5526CBC28F008B024A /* SecondQuestionsModule */,
@@ -971,6 +1029,65 @@
 				69CC6BB2279B67210051013E /* ExcerciseAnswerViewCell.swift */,
 			);
 			path = AnswerChoiceExcercise;
+			sourceTree = "<group>";
+		};
+		69ED7AC4287187A5003EEBA1 /* NotificationsChoiceModule */ = {
+			isa = PBXGroup;
+			children = (
+				69ED7AC5287187F2003EEBA1 /* NotificationsChoiceViewController.swift */,
+				69ED7AC728718800003EEBA1 /* NotificationsChoicePresenter.swift */,
+				69ED7AC928719E0B003EEBA1 /* OptionCollectionViewCell.swift */,
+			);
+			path = NotificationsChoiceModule;
+			sourceTree = "<group>";
+		};
+		69ED7ACB287C41DC003EEBA1 /* DiaryModule */ = {
+			isa = PBXGroup;
+			children = (
+				69ED7ACC287C449E003EEBA1 /* DiaryViewController.swift */,
+				69ED7ACE287C458E003EEBA1 /* DiaryPresenter.swift */,
+				69ED7AD0287C4A45003EEBA1 /* DiaryNoteCollectionViewCell.swift */,
+			);
+			path = DiaryModule;
+			sourceTree = "<group>";
+		};
+		69ED7AD2287C4E72003EEBA1 /* DiaryNoteModule */ = {
+			isa = PBXGroup;
+			children = (
+				69ED7AD3287C4E8E003EEBA1 /* DiaryNoteViewController.swift */,
+			);
+			path = DiaryNoteModule;
+			sourceTree = "<group>";
+		};
+		69ED7AD9288807B2003EEBA1 /* DiaryGroup */ = {
+			isa = PBXGroup;
+			children = (
+				69B1254128897A1700CA2EB2 /* DiaryTextModule */,
+				69B1253E28893C9300CA2EB2 /* DiaryThemeModule */,
+				69B1253928891C6C00CA2EB2 /* MultipleChoiceDiaryModule */,
+				69ED7ADF28882882003EEBA1 /* EverydayNoteModule */,
+				69ED7AD2287C4E72003EEBA1 /* DiaryNoteModule */,
+				69ED7ACB287C41DC003EEBA1 /* DiaryModule */,
+				69ED7ADA28880F8C003EEBA1 /* DiaryStagesModule */,
+			);
+			path = DiaryGroup;
+			sourceTree = "<group>";
+		};
+		69ED7ADA28880F8C003EEBA1 /* DiaryStagesModule */ = {
+			isa = PBXGroup;
+			children = (
+				69ED7ADB28880FAC003EEBA1 /* DiaryStagesViewController.swift */,
+				69ED7ADD28880FE9003EEBA1 /* DiaryStagesPresenter.swift */,
+			);
+			path = DiaryStagesModule;
+			sourceTree = "<group>";
+		};
+		69ED7ADF28882882003EEBA1 /* EverydayNoteModule */ = {
+			isa = PBXGroup;
+			children = (
+				69ED7AE0288828A7003EEBA1 /* EverydayNoteViewController.swift */,
+			);
+			path = EverydayNoteModule;
 			sourceTree = "<group>";
 		};
 		69EE7FA82809AC2700B7FB0B /* CSV_files_questions */ = {
@@ -1373,10 +1490,14 @@
 				69C79D3526CABC13008B024A /* FirstQuestionsViewController.swift in Sources */,
 				69A1C70326B49B3900216B2C /* TherapistSubViewController.swift in Sources */,
 				69BDBF892793806B0029575C /* AllCoursesViewController.swift in Sources */,
+				69ED7ACA28719E0B003EEBA1 /* OptionCollectionViewCell.swift in Sources */,
 				69856A632736B3CE0081A14C /* MenuCell.swift in Sources */,
 				69CC6BAE279B36290051013E /* AnswerChoiceExcercisePresenter.swift in Sources */,
+				69ED7AC828718800003EEBA1 /* NotificationsChoicePresenter.swift in Sources */,
 				698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */,
 				69C79D4C26CAC974008B024A /* CollectionViewTitle.swift in Sources */,
+				69ED7ADC28880FAC003EEBA1 /* DiaryStagesViewController.swift in Sources */,
+				69ED7AE1288828A8003EEBA1 /* EverydayNoteViewController.swift in Sources */,
 				69F7782F27C92695003A1F56 /* ExpTitlePlanCell.swift in Sources */,
 				69856A4D2736621C0081A14C /* UIView+Snapshot.swift in Sources */,
 				69F6AB9327AFD2F900D4A5D4 /* CourseTabBarViewController.swift in Sources */,
@@ -1384,18 +1505,23 @@
 				69F6ABB327AFDEE200D4A5D4 /* LessonElementTableViewCell.swift in Sources */,
 				69ABE4152699D6A3001FBB4E /* LoginPresenter.swift in Sources */,
 				69856A58273663980081A14C /* ReactionViewController.swift in Sources */,
+				69ED7ACD287C449E003EEBA1 /* DiaryViewController.swift in Sources */,
+				69B1254328897A2C00CA2EB2 /* DiaryTextViewController.swift in Sources */,
 				69F7782927C92204003A1F56 /* SafePlanPresenter.swift in Sources */,
 				69A1C6F526B48DE600216B2C /* TherapistChoiceViewController.swift in Sources */,
 				69BB2B0127AAB0AF0048C747 /* PortraitPresenter.swift in Sources */,
 				69EE7FDB280F274A00B7FB0B /* ExpTitleScoreCell.swift in Sources */,
+				69ED7AD8287C53DA003EEBA1 /* DiaryNote.swift in Sources */,
 				69009F4927172AAC00D18BEA /* GapTableViewCell.swift in Sources */,
 				69C79D5726CBC2B3008B024A /* SecondQuestionsViewController.swift in Sources */,
 				69357BB52698658C00831004 /* NetworkService.swift in Sources */,
+				69ED7ACF287C458E003EEBA1 /* DiaryPresenter.swift in Sources */,
 				69009F36271721FB00D18BEA /* InsertImageExcercisePresenter.swift in Sources */,
 				69BB2AE727AA77330048C747 /* ContactsViewController.swift in Sources */,
 				69BDBF8427937A8E0029575C /* SingleCourseViewCell.swift in Sources */,
 				69BDBF93279384950029575C /* CoursesInfo.swift in Sources */,
 				69C79D5126CBA221008B024A /* QuestionsNavigationController.swift in Sources */,
+				69B1253D28891CB500CA2EB2 /* MultipleChoiceDiaryPresenter.swift in Sources */,
 				69357BC82698661A00831004 /* RegistrationPresenter.swift in Sources */,
 				69F6ABBB27AFDFC400D4A5D4 /* LessonsTablePresenter.swift in Sources */,
 				69CC6B95279B2B740051013E /* NoPasswordPresenter.swift in Sources */,
@@ -1404,6 +1530,7 @@
 				69ABE44B269C56C1001FBB4E /* PoliciesFullViewController.swift in Sources */,
 				69CA8C76278360BF00549176 /* AllExcercisesViewController.swift in Sources */,
 				69C79D4226CAC112008B024A /* AnswerViewCell.swift in Sources */,
+				69ED7AC6287187F2003EEBA1 /* NotificationsChoiceViewController.swift in Sources */,
 				69C79D7D26CC1060008B024A /* DateValueFormatter.swift in Sources */,
 				69BB2AF927AAAFBF0048C747 /* PortraitViewController.swift in Sources */,
 				698D74E32694A9AC00C66C11 /* AppDelegate.swift in Sources */,
@@ -1441,6 +1568,7 @@
 				69009ECE270F92DE00D18BEA /* ExcerciseChoicePresenter.swift in Sources */,
 				69C327B027838C7E00F1394E /* ExcerciseViewCell.swift in Sources */,
 				69ABE40726987919001FBB4E /* CheckBox.swift in Sources */,
+				69ED7AD4287C4E8F003EEBA1 /* DiaryNoteViewController.swift in Sources */,
 				69BDBF8E2793807F0029575C /* AllCoursesPresenter.swift in Sources */,
 				69ABE42F269B2972001FBB4E /* PoliciesShortPresenter.swift in Sources */,
 				69009EDB270F96CF00D18BEA /* PracticsViewCell.swift in Sources */,
@@ -1456,6 +1584,7 @@
 				69BB2AC4279E0D860048C747 /* MoodInfo.swift in Sources */,
 				69357BBA269865A000831004 /* CachingService.swift in Sources */,
 				69856A6D2736B4860081A14C /* ButtonCollectionViewCell.swift in Sources */,
+				69B1253B28891C8C00CA2EB2 /* MultipleChoiceDiaryViewController.swift in Sources */,
 				69009F152716EB9E00D18BEA /* YesNoExcerciseViewController.swift in Sources */,
 				69F7783D27C93C03003A1F56 /* SafePlanInfo.swift in Sources */,
 				69BC723B27502B6100774A0F /* ServerResponse.swift in Sources */,
@@ -1472,6 +1601,7 @@
 				69009F2E2717208700D18BEA /* InsertImageExcerciseViewController.swift in Sources */,
 				698D751F2694AAD900C66C11 /* ModuleBuilder.swift in Sources */,
 				69ABE41A269AFBF1001FBB4E /* StringExtensions.swift in Sources */,
+				69B1254028893CAE00CA2EB2 /* DiaryThemeViewController.swift in Sources */,
 				69A1C6EF26B43F3F00216B2C /* ThemeViewCell.swift in Sources */,
 				69CC6B9D279B2B7F0051013E /* NoPasswordViewController.swift in Sources */,
 				69BC724527502EA100774A0F /* UserInfo.swift in Sources */,
@@ -1479,10 +1609,12 @@
 				69ABE40D2699D695001FBB4E /* LoginViewController.swift in Sources */,
 				69B3AE9626BC214100BA8F89 /* PracticViewCell.swift in Sources */,
 				698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */,
+				69ED7AD1287C4A45003EEBA1 /* DiaryNoteCollectionViewCell.swift in Sources */,
 				69009EC8270F92A100D18BEA /* ExcerciseChoiceViewController.swift in Sources */,
 				69009EE227160B9000D18BEA /* TextExcerciseViewController.swift in Sources */,
 				69C79D9326CC241A008B024A /* ProfileViewCell.swift in Sources */,
 				69B3AEC826BC7CD900BA8F89 /* ChatPresenter.swift in Sources */,
+				69ED7ADE28880FE9003EEBA1 /* DiaryStagesPresenter.swift in Sources */,
 				69ABE45E269C8512001FBB4E /* ExpTitleRightCell.swift in Sources */,
 				69AD34D326ED55C100CB7581 /* TherapistPricePresenter.swift in Sources */,
 			);
@@ -1671,7 +1803,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = strangeGuy.PureMind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1696,7 +1828,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = strangeGuy.PureMind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

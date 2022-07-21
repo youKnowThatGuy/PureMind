@@ -87,6 +87,13 @@ class ModuleBuilder: AssemblyBuilderProtocol{
         return cust
     }
     
+    func createMultipleChoiceDiary(vcIndex: Int) -> UIViewController{
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MultipleDiaryVC") as MultipleChoiceDiaryViewController
+        vc.vcIndex = vcIndex
+        vc.presenter = MultipleChoiceDiaryPresenter(view: vc, vcIndex: vcIndex)
+        return vc
+    }
+    
     func createMoodModuleOne(mood: String, vcIndex: Int) -> UIViewController{
         let moodOneVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "FirstQuestionVC") as FirstQuestionsViewController
         moodOneVC.vcIndex = vcIndex
