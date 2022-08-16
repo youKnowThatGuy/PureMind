@@ -19,3 +19,35 @@ extension UITextView {
         self.inputAccessoryView = toolBar//5
     }
 }
+
+extension Date {
+    func get(_ components: Calendar.Component..., calendar: Calendar = Calendar.current) -> DateComponents {
+        return calendar.dateComponents(Set(components), from: self)
+    }
+
+    func get(_ component: Calendar.Component, calendar: Calendar = Calendar.current) -> Int {
+        return calendar.component(component, from: self)
+    }
+}
+
+extension UIToolbar {
+
+func ToolbarPiker(mySelect : Selector) -> UIToolbar {
+
+    let toolBar = UIToolbar()
+
+    toolBar.barStyle = UIBarStyle.default
+    toolBar.isTranslucent = true
+    toolBar.tintColor = UIColor.black
+    toolBar.sizeToFit()
+
+    let doneButton = UIBarButtonItem(title: "Готово", style: UIBarButtonItem.Style.plain, target: self, action: mySelect)
+    let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+
+    toolBar.setItems([ spaceButton, doneButton], animated: false)
+    toolBar.isUserInteractionEnabled = true
+
+    return toolBar
+}
+
+}

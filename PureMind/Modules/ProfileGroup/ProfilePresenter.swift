@@ -16,8 +16,8 @@ protocol ProfilePresenterProtocol{
 class ProfilePresenter: ProfilePresenterProtocol{
     weak var view: ProfileViewProtocol?
     
-    var imagesNames = ["portraitImage", "helpImage", "contactsImage", "policyImage", "aboutUsImage", "shareImage", "exitImage"]
-    var optionsNames = ["Психологический портрет", "Ресурсы чрезвычайной помощи", "Контакты", "Политика конфиденциальности", "О нас", "Поделиться", "Выйти"]
+    var imagesNames = ["portraitImage", "helpImage", "contactsImage", "policyImage", "aboutUsImage", "shareImage", "exitImage", "cancelButton2"]
+    var optionsNames = ["Психологический портрет", "Ресурсы чрезвычайной помощи", "Контакты", "Политика конфиденциальности", "О нас", "Поделиться", "Выйти", "Удалить аккаунт"]
     
     required init(view: ProfileViewProtocol) {
         self.view = view

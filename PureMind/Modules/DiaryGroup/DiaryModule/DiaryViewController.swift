@@ -38,7 +38,7 @@ class DiaryViewController: UIViewController {
         presenter.getData()
         tabBarItem.isEnabled = true
     }
-    
+        
     func setupView(){
         imageView.isUserInteractionEnabled = true
         view.insertSubview(imageView, at: 0)

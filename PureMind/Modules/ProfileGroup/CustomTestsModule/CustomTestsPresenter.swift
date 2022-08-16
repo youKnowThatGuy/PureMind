@@ -33,7 +33,7 @@ class CustomTestsPresenter: CustomTestsPresenterProtocol{
     
     required init(view: CustomTestsViewProtocol, questionIndex: Int, testIndex: Int) {
         self.view = view
-        self.testIndex = testIndex - 8
+        self.testIndex = testIndex
         self.questionIndex = questionIndex
         self.currAnswers = answers[self.testIndex]
     }

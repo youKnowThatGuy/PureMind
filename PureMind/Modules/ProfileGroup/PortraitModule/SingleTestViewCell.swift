@@ -29,7 +29,7 @@ class SingleTestViewCell: UITableViewCell {
     }
     
     @IBAction func linkButtonPressed(_ sender: Any) {
-        if testIndex > 7{
+        if testIndex < 7{
             parentVc?.performSegue(withIdentifier: "customTestSegue", sender: testIndex)
         }
         else{

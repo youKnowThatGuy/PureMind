@@ -643,6 +643,38 @@ class NetworkService{
             }
         }.resume()
     }
+    
+    func deleteAccount(completion: @escaping (Bool?) -> Void){
+        var urlComps = baseUrlComponent
+        urlComps.path = "/api/auth/deleteaccount"
+        
+        guard let url = urlComps.url else {
+            DispatchQueue.main.async {
+                completion(nil)
+            }
+            return
+        }
+        
+        var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+        
+        let text = apiKey.replacingOccurrences(of: "\"", with: "")
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue(text, forHTTPHeaderField: "Token")
+        
+        URLSession.shared.dataTask(with: request) { (data, _, _) in
+            DispatchQueue.main.async {
+                if data != nil{
+                    completion(true)
+                }
+                else{
+                    completion(nil)
+                }
+            }
+        }.resume()
+    }
 
     
 }

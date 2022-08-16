@@ -58,6 +58,9 @@ class DiaryTextViewController: UIViewController {
         timePicker.layer.borderColor = CGColor.init(red: 0, green: 0, blue: 0, alpha: 1)
         timePicker.layer.cornerRadius = 15
         
+        let toolBar = UIToolbar().ToolbarPiker(mySelect: #selector(dismissPicker))
+        timePicker.inputAccessoryView = toolBar
+        
         let time = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "hh::MM"
@@ -68,6 +71,10 @@ class DiaryTextViewController: UIViewController {
         timePick.frame.size = CGSize(width: 0, height: 250)
         timePick.addTarget(self, action: #selector(timePickerValueChanged(sender:)) , for: UIControl.Event.valueChanged)
         timePicker.inputView = timePick
+    }
+    
+    @objc func dismissPicker() {
+        view.endEditing(true)
     }
     
     @objc func timePickerValueChanged(sender: UIDatePicker){
@@ -191,6 +198,42 @@ class DiaryTextViewController: UIViewController {
             case "Прекрасно! А теперь запиши конкрет-ное время, когда ты это сделаешь. Здесь тебе нужно быть максимально точным в отношении сроков.":
                 vc.mainText = "Отлично! Ты определился с завтрашним первостепенным делом - так что можешь позволить себе перестать думать об этом сейчас, отдохнуть и полностью расслабиться, ведь это все только завтра!"
                 vc.buttonText = "Готово"
+                let content = UNMutableNotificationContent()
+                content.title = "PureMind app"
+                content.body = "Время для выполнения своей установки!"
+                let identifier = UUID().uuidString
+
+
+                    //Receive notification after 5 sec
+                    //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+                    
+                    //Receive with date
+                let string = timePicker.text
+                let components = string?.components(separatedBy: ":")
+                let hour = Int(components![0])
+                let minute = Int(components![1])
+                var dayComponent    = DateComponents()
+                dayComponent.day    = 1 // For removing one day (yesterday): -1
+                let theCalendar     = Calendar.current
+                let nextDate        = theCalendar.date(byAdding: dayComponent, to: Date())
+                    var dateInfo = DateComponents()
+                dateInfo.day = nextDate?.get(.day)
+                    dateInfo.hour = hour //Put your hour
+                    dateInfo.minute = minute //Put your minutes
+                    
+                    //specify if repeats or no
+                    let trigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: false)
+                    
+                    let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+                    let center = UNUserNotificationCenter.current()
+                    print(identifier)
+                    center.add(request) { (error) in
+                        if let error = error {
+                            print("Error \(error.localizedDescription)")
+                        }else{
+                            print("send!!")
+                        }
+                    }
                 
             case "Отлично! Ты определился с завтрашним первостепенным делом - так что можешь позволить себе перестать думать об этом сейчас, отдохнуть и полностью расслабиться, ведь это все только завтра!":
                 vc.mainText = "Что ты с нетерпением ждешь сегодня?Это может быть что-то очень простое, но приятное, как чашка кофе, а также большое жизненное событие!"

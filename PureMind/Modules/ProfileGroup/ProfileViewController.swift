@@ -54,8 +54,8 @@ class ProfileViewController: UIViewController {
         navigationController?.pushViewController(ModuleBuilder().createWelcomeModuleReturnee(), animated: true)
     }
     
-    func alert(){
-        let alert = UIAlertController(title: "Внимание", message: "Вы уверены, что хотите выйти из учетной записи?", preferredStyle: .alert)
+    func alert(text: String){
+        let alert = UIAlertController(title: "Внимание", message: text, preferredStyle: .alert)
         
         let noButton = UIAlertAction(title: "Нет", style: .cancel, handler: nil)
         let okButton = UIAlertAction(title: "Да", style: .default){_ in
@@ -63,8 +63,14 @@ class ProfileViewController: UIViewController {
                 CachingService.shared.deleteUserInfo()
                 self?.itsRewindTime()
             }
-            
         }
+        
+        if text == "Вы уверены, что хотите удалить учетную запись? Ваши данные будут безвозвратно потеряны"{
+            NetworkService.shared.deleteAccount {(result) in
+                print("ACCOUNT WAS DELETED")
+            }
+        }
+        
         alert.addAction(okButton)
         alert.addAction(noButton)
         
@@ -101,7 +107,9 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource{
         case 5:
             performSegue(withIdentifier: "showShareSegue", sender: nil)
         case 6:
-           alert()
+           alert(text: "Вы уверены, что хотите выйти из учетной записи?")
+        case 7:
+            alert(text: "Вы уверены, что хотите удалить учетную запись? Ваши данные будут безвозвратно потеряны")
         default:
             break
         }

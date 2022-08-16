@@ -742,13 +742,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N24-Pa-tc0">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N24-Pa-tc0">
                                                     <rect key="frame" x="115" y="14" width="273" height="20"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zwq-47-McC">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zwq-47-McC">
                                                     <rect key="frame" x="20" y="13.5" width="28" height="21"/>
                                                     <color key="tintColor" systemColor="labelColor"/>
                                                     <constraints>
@@ -1672,7 +1672,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvg-BX-ZB7">
-                                <rect key="frame" x="0.0" y="206" width="414" height="636"/>
+                                <rect key="frame" x="0.0" y="190" width="414" height="652"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Что такое puremind?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJE-La-kEg">
                                         <rect key="frame" x="30" y="31" width="231" height="20"/>
@@ -1731,7 +1731,7 @@ Pure Mind - свобода сознания от навязанных устан
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
-                                    <constraint firstItem="H8f-II-ksg" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.303599" constant="-14.947320000000019" id="1le-WF-evJ"/>
+                                    <constraint firstItem="H8f-II-ksg" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.303599" constant="-19.946548000000007" id="1le-WF-evJ"/>
                                     <constraint firstItem="Ka4-V5-5vN" firstAttribute="trailing" secondItem="PkB-xG-nWh" secondAttribute="trailing" id="5h4-WC-1CG"/>
                                     <constraint firstItem="06f-vm-wgY" firstAttribute="leading" secondItem="mRF-s4-Tfb" secondAttribute="leading" id="9Wr-c4-uE3"/>
                                     <constraint firstItem="H8f-II-ksg" firstAttribute="trailing" secondItem="Ka4-V5-5vN" secondAttribute="trailing" id="9vR-HW-n6h"/>
@@ -1747,15 +1747,15 @@ Pure Mind - свобода сознания от навязанных устан
                                     <constraint firstItem="PkB-xG-nWh" firstAttribute="top" secondItem="WJE-La-kEg" secondAttribute="bottom" constant="8" id="dC6-cM-Q6X"/>
                                     <constraint firstItem="mRF-s4-Tfb" firstAttribute="trailing" secondItem="WJE-La-kEg" secondAttribute="trailing" constant="-35" id="hzw-4Z-jqO"/>
                                     <constraint firstItem="PkB-xG-nWh" firstAttribute="leading" secondItem="WJE-La-kEg" secondAttribute="leading" id="pZc-8F-dMQ"/>
-                                    <constraint firstItem="Ka4-V5-5vN" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.13615" constant="9.4180000000000064" id="rnt-ur-yvQ"/>
+                                    <constraint firstItem="Ka4-V5-5vN" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.13615" constant="7.2302000000000106" id="rnt-ur-yvQ"/>
                                     <constraint firstItem="WJE-La-kEg" firstAttribute="top" secondItem="Wvg-BX-ZB7" secondAttribute="top" constant="31" id="w0X-ma-uXw"/>
-                                    <constraint firstItem="PkB-xG-nWh" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.123631" constant="-6.0690799999999996" id="wub-cl-AEy"/>
+                                    <constraint firstItem="PkB-xG-nWh" firstAttribute="height" secondItem="Wvg-BX-ZB7" secondAttribute="height" multiplier="0.123631" constant="-8.1074119999999965" id="wub-cl-AEy"/>
                                     <constraint firstItem="06f-vm-wgY" firstAttribute="top" secondItem="Ka4-V5-5vN" secondAttribute="bottom" constant="8" id="xQ7-3X-ZzI"/>
                                     <constraint firstItem="WJE-La-kEg" firstAttribute="width" secondItem="Wvg-BX-ZB7" secondAttribute="width" multiplier="0.47343" constant="34.999979999999994" id="zGY-qi-E2G"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О нас" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-h4-DRB">
-                                <rect key="frame" x="20" y="163" width="374" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О нас" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-h4-DRB">
+                                <rect key="frame" x="20" y="155" width="374" height="27"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1768,9 +1768,9 @@ Pure Mind - свобода сознания от навязанных устан
                             <constraint firstItem="Wvg-BX-ZB7" firstAttribute="leading" secondItem="jOe-Yk-Thr" secondAttribute="leading" id="6Gz-V4-NUD"/>
                             <constraint firstItem="Zfz-7Q-gS0" firstAttribute="leading" secondItem="jOe-Yk-Thr" secondAttribute="leading" constant="20" id="6V6-EE-Z9a"/>
                             <constraint firstItem="fV1-h4-DRB" firstAttribute="leading" secondItem="jOe-Yk-Thr" secondAttribute="leading" constant="20" id="6y4-ag-efE"/>
-                            <constraint firstItem="fV1-h4-DRB" firstAttribute="top" secondItem="jOe-Yk-Thr" secondAttribute="top" constant="119" id="8Hj-At-PJS"/>
+                            <constraint firstItem="fV1-h4-DRB" firstAttribute="top" secondItem="jOe-Yk-Thr" secondAttribute="top" constant="111" id="8Hj-At-PJS"/>
                             <constraint firstAttribute="bottom" secondItem="Wvg-BX-ZB7" secondAttribute="bottom" id="Ure-xr-XYq"/>
-                            <constraint firstItem="Wvg-BX-ZB7" firstAttribute="top" secondItem="fV1-h4-DRB" secondAttribute="bottom" constant="16" id="ldg-0Z-iMM"/>
+                            <constraint firstItem="Wvg-BX-ZB7" firstAttribute="top" secondItem="fV1-h4-DRB" secondAttribute="bottom" constant="8" id="ldg-0Z-iMM"/>
                             <constraint firstItem="Zfz-7Q-gS0" firstAttribute="top" secondItem="jOe-Yk-Thr" secondAttribute="top" constant="49" id="okx-L0-sFA"/>
                             <constraint firstItem="Wvg-BX-ZB7" firstAttribute="trailing" secondItem="jOe-Yk-Thr" secondAttribute="trailing" id="q34-0x-KMd"/>
                         </constraints>
@@ -2712,13 +2712,13 @@ Pure Mind - свобода сознания от навязанных устан
                                                                     <rect key="frame" x="0.0" y="0.0" width="93" height="94"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тема №1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqA-4I-PSn">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тема №1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqA-4I-PSn">
                                                                             <rect key="frame" x="4" y="19" width="85" height="58"/>
                                                                             <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
                                                                             <color key="textColor" name="collectionViewBackground"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-IP-zdo">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-IP-zdo">
                                                                             <rect key="frame" x="4" y="70" width="76" height="15"/>
                                                                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="8"/>
                                                                             <color key="textColor" name="collectionViewBackground"/>
@@ -3996,7 +3996,7 @@ Pure Mind - свобода сознания от навязанных устан
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDj-cH-X48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16441" y="310"/>
+            <point key="canvasLocation" x="16438" y="274"/>
         </scene>
         <!--Questions Navigation Controller-->
         <scene sceneID="EL7-6X-81d">
@@ -6122,10 +6122,10 @@ Pure Mind - свобода сознания от навязанных устан
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypc-oM-VBF">
                                 <rect key="frame" x="45" y="365" width="324" height="113"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какой бы я хотел свою жизнь?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYd-p7-NSl">
-                                        <rect key="frame" x="22.5" y="36.5" width="279" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какой бы я хотел свою жизнь?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYd-p7-NSl">
+                                        <rect key="frame" x="22.5" y="25.5" width="279" height="62"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="cIy-fb-Upn"/>
+                                            <constraint firstAttribute="height" constant="62" id="cIy-fb-Upn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -6412,12 +6412,13 @@ Pure Mind - свобода сознания от навязанных устан
                         <constraints>
                             <constraint firstItem="qlk-TX-TwL" firstAttribute="top" secondItem="5b3-Wq-m10" secondAttribute="top" constant="113" id="2dd-3t-U9h"/>
                             <constraint firstItem="dLO-00-Lv4" firstAttribute="leading" secondItem="5b3-Wq-m10" secondAttribute="leading" constant="20" id="5TL-AS-mFY"/>
+                            <constraint firstItem="G6a-EK-anZ" firstAttribute="top" secondItem="tRa-Ly-g3y" secondAttribute="bottom" constant="116" id="KhE-AM-2Wz"/>
                             <constraint firstItem="Jic-p7-fbh" firstAttribute="top" secondItem="qlk-TX-TwL" secondAttribute="bottom" constant="61" id="Kst-4Z-uRs"/>
                             <constraint firstItem="tRa-Ly-g3y" firstAttribute="top" secondItem="Jic-p7-fbh" secondAttribute="bottom" constant="42" id="LCh-fw-i0Y"/>
                             <constraint firstItem="tRa-Ly-g3y" firstAttribute="leading" secondItem="5b3-Wq-m10" secondAttribute="leading" constant="52" id="NIG-fk-YDY"/>
                             <constraint firstItem="G6a-EK-anZ" firstAttribute="width" secondItem="kpy-YO-avE" secondAttribute="width" multiplier="0.731884" id="RYq-oW-4eu"/>
                             <constraint firstItem="Jic-p7-fbh" firstAttribute="centerX" secondItem="kpy-YO-avE" secondAttribute="centerX" id="WdS-Yt-3V2"/>
-                            <constraint firstItem="5b3-Wq-m10" firstAttribute="bottom" secondItem="G6a-EK-anZ" secondAttribute="bottom" constant="169" id="XiH-fh-H8C"/>
+                            <constraint firstItem="5b3-Wq-m10" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="G6a-EK-anZ" secondAttribute="bottom" constant="169" id="XiH-fh-H8C"/>
                             <constraint firstItem="qlk-TX-TwL" firstAttribute="centerX" secondItem="kpy-YO-avE" secondAttribute="centerX" id="Z0H-0v-5XQ"/>
                             <constraint firstItem="Jic-p7-fbh" firstAttribute="height" secondItem="kpy-YO-avE" secondAttribute="height" multiplier="0.199525" id="i2I-so-dvp"/>
                             <constraint firstItem="dLO-00-Lv4" firstAttribute="top" secondItem="5b3-Wq-m10" secondAttribute="top" constant="40" id="pn5-4k-gpk"/>
@@ -6798,7 +6799,7 @@ Pure Mind - свобода сознания от навязанных устан
         <segue reference="Fhb-eS-2pl"/>
         <segue reference="FZS-Ch-gc9"/>
         <segue reference="bto-3I-Yth"/>
-        <segue reference="xKt-LR-bYu"/>
+        <segue reference="x0N-pa-W0L"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Component 2" width="291" height="216"/>

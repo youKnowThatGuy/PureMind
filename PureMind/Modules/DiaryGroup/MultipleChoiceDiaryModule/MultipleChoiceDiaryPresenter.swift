@@ -26,7 +26,7 @@ class MultipleChoiceDiaryPresenter: MultipleChoiceDiaryPresenterProtocol{
     var selectedAnswers = [String]()
     var currIndex: Int!
     var titleQuestions = ["Привет! Как проходит твой день?", "Что ты чувствуешь в данный момент?", "Что тебя сегодня заряжает/радует?"]
-    var answerData = [["Ужасно", "Плохо", "Обычно", "Хорошо", "Отлично"], ["грусть", "счастье", "гордость", "благодарность", "спокойствие", "возбужденность", "внимательность", "усталость", "стресс", "сонливость", "восхищение"], ["Ужасно", "Плохо", "Обычно", "Хорошо", "Отлично"]]
+    var answerData = [["Ужасно", "Плохо", "Обычно", "Хорошо", "Отлично"], ["грусть", "счастье", "гордость", "благодарность", "спокойствие", "возбужденность", "внимательность", "усталость", "стресс", "сонливость", "восхищение"], []]
     
     required init(view: MultipleChoiceDiaryViewProtocol, vcIndex: Int) {
         self.view = view
@@ -87,6 +87,8 @@ class MultipleChoiceDiaryPresenter: MultipleChoiceDiaryPresenterProtocol{
             if index.row > answerData[currIndex].count - 1{
                 cell.textLabel.text = "+"
                 cell.backgroundColor = .white
+                cell.layer.borderColor = lightYellowColor.cgColor
+                cell.layer.borderWidth = 1
             }
             else{
                 cell.backgroundColor = UIColor(red: 255, green: 244, blue: 204)

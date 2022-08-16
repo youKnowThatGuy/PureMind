@@ -63,7 +63,7 @@ class DiaryNoteViewController: UIViewController {
             let info = DiaryNote(theme: self.theme, text: noteTextView.text , date: Int(Date().timeIntervalSince1970))
             CachingService.shared.cacheDiaryData(info, currDate: Date())
             let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
-            self.navigationController!.popToViewController(viewControllers[viewControllers.count - 6], animated: true)
+            self.navigationController!.popToViewController(viewControllers[viewControllers.count - 7], animated: true)
         }
         case "Перед сном 1.0":
             switch descText{
