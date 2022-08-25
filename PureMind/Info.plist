@@ -27,6 +27,9 @@
 		<string>Montserrat-Medium.ttf</string>
 		<string>Montserrat-ExtraBold.ttf</string>
 		<string>Montserrat-Bold.ttf</string>
+		<string>Jost-Medium.ttf</string>
+		<string>Jost-Regular.ttf</string>
+		<string></string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

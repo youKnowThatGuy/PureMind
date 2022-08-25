@@ -15,11 +15,14 @@ class ShareViewController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var inviteButtonShell: UIButton!
+    @IBOutlet weak var topView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeLeft.direction = .right
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background12")!)
         self.view.addGestureRecognizer(swipeLeft)
         prepareViews()
     }
@@ -29,13 +32,14 @@ class ShareViewController: UIViewController, SFSafariViewControllerDelegate {
     }
     
     func prepareViews(){
-        titleLabel.textColor = grayTextColor
-        descriptionLabel.textColor = textFieldColor
-        inviteButtonShell.layer.borderWidth = 1
-        inviteButtonShell.layer.borderColor = lightYellowColor.cgColor
-        inviteButtonShell.layer.cornerRadius = 15
-        inviteButtonShell.tintColor = lightYellowColor
-        inviteButtonShell.backgroundColor = UIColor(red: 255, green: 217, blue: 151).withAlphaComponent(0.24)
+        topView.backgroundColor = .white
+        topView.layer.cornerRadius = 20
+        titleLabel.textColor = newButtonLabelColor
+        descriptionLabel.textColor = newButtonLabelColor
+        inviteButtonShell.setTitleColor(.white, for: .normal)
+        inviteButtonShell.layer.cornerRadius = 20
+        inviteButtonShell.backgroundColor = newButtonLabelColor
+        
     }
     
     func openSafari(link: String){
@@ -48,7 +52,7 @@ class ShareViewController: UIViewController, SFSafariViewControllerDelegate {
     }
     
     @IBAction func inviteButtonPressed(_ sender: Any) {
-        let objectsToShare = URL(string: "https://testflight.apple.com/join/jGs5va9F")!
+        let objectsToShare = URL(string: "https://apps.apple.com/ru/app/puremind-app/id1608188398")!
         let sharedObjects = [objectsToShare as AnyObject]
         let activityViewController = UIActivityViewController(activityItems : sharedObjects, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view

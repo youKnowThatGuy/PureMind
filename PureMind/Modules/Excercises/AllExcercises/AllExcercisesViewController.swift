@@ -17,14 +17,16 @@ import ExpyTableView
 class AllExcercisesViewController: UIViewController {
     var presenter: AllExcercisePresenterProtocol!
     
-    @IBOutlet weak var descriptionTitle: UILabel!
+    @IBOutlet weak var titleLbael: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var backButtonShell: UIButton!
     @IBOutlet weak var practicsTableView: ExpyTableView!
+    @IBOutlet weak var topView: UIView!
+    
     var backHidden = false
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background5")
+            imageView.image = UIImage(named: "background14")
             imageView.contentMode = .scaleAspectFill
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
@@ -65,8 +67,12 @@ class AllExcercisesViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
-        descriptionLabel.textColor = grayTextColor
-        descriptionTitle.textColor = grayTextColor
+        descriptionLabel.textColor = newButtonLabelColor
+        titleLbael.textColor = newButtonLabelColor
+        topView.layer.cornerRadius = 20
+        topView.backgroundColor = UIColor(patternImage: UIImage(named: "background14")!)
+        topView.layer.borderColor = newButtonLabelColor.cgColor
+        topView.layer.borderWidth = 1
         prepareTableView()
     }
     
@@ -123,6 +129,7 @@ extension AllExcercisesViewController: ExpyTableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
+        /*
         let verticalPadding: CGFloat = 8
 
         let maskLayer = CALayer()
@@ -130,6 +137,7 @@ extension AllExcercisesViewController: ExpyTableViewDataSource {
         maskLayer.backgroundColor = UIColor.black.cgColor
         maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
         cell.layer.mask = maskLayer
+         */
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -16,7 +16,7 @@ protocol ProfilePresenterProtocol{
 class ProfilePresenter: ProfilePresenterProtocol{
     weak var view: ProfileViewProtocol?
     
-    var imagesNames = ["portraitImage", "helpImage", "contactsImage", "policyImage", "aboutUsImage", "shareImage", "exitImage", "cancelButton2"]
+    var imagesNames = ["tabBar5", "helpImage", "contactsImage", "policyImage", "aboutUsImage", "shareImage", "exitImage", "cancelButton2"]
     var optionsNames = ["Психологический портрет", "Ресурсы чрезвычайной помощи", "Контакты", "Политика конфиденциальности", "О нас", "Поделиться", "Выйти", "Удалить аккаунт"]
     
     required init(view: ProfileViewProtocol) {
@@ -48,6 +48,7 @@ class ProfilePresenter: ProfilePresenterProtocol{
         cell.optionImageView.image = UIImage(named: imagesNames[index])
         cell.optionTitleLabel.text = optionsNames[index]
         cell.optionTitleLabel.textColor = grayTextColor
+        cell.layer.cornerRadius = 28
     }
     
 }

@@ -27,6 +27,9 @@ let normalMood = UIColor(red: 254, green: 235, blue: 138)
 let badMood = UIColor(red: 252, green: 177, blue: 120)
 let awfulMood = UIColor(red: 249, green: 117, blue: 96)
 
+let newButtonLabelColor = UIColor(red: 76, green: 89, blue: 135)
+let lightTextColor = UIColor(red: 164, green: 175, blue: 225)
+
 
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {
@@ -44,4 +47,25 @@ extension UIColor {
            blue: rgb & 0xFF
        )
    }
+    
+    func add(overlay: UIColor) -> UIColor {
+           var bgR: CGFloat = 0
+           var bgG: CGFloat = 0
+           var bgB: CGFloat = 0
+           var bgA: CGFloat = 0
+           
+           var fgR: CGFloat = 0
+           var fgG: CGFloat = 0
+           var fgB: CGFloat = 0
+           var fgA: CGFloat = 0
+           
+           self.getRed(&bgR, green: &bgG, blue: &bgB, alpha: &bgA)
+           overlay.getRed(&fgR, green: &fgG, blue: &fgB, alpha: &fgA)
+           
+           let r = fgA * fgR + (1 - fgA) * bgR
+           let g = fgA * fgG + (1 - fgA) * bgG
+           let b = fgA * fgB + (1 - fgA) * bgB
+           
+           return UIColor(red: r, green: g, blue: b, alpha: 1.0)
+       }
 }

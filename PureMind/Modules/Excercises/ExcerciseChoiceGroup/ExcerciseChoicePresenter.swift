@@ -72,6 +72,12 @@ class ExcerciseChoicePresenter: ExcerciseChoicePresenterProtocol{
     
     func prepareCell(cell:  SingleExcerciseViewCell, index: Int) {
         cell.titleLabel.text = currExcercises[index]
+        cell.titleLabel.textColor = newButtonLabelColor
+        cell.backgroundColor = .clear
+        cell.layer.cornerRadius = 20
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = newButtonLabelColor.cgColor
+        
     }
     
 }

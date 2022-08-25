@@ -18,6 +18,7 @@ class MoodViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var practicsCollectionView: UICollectionView!
     
+    @IBOutlet weak var practicesView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var practicesLabel: UILabel!
     
@@ -34,10 +35,12 @@ class MoodViewController: UIViewController, ChartViewDelegate {
     
     
     func prepareViews(){
+        practicesView.backgroundColor = UIColor(patternImage: UIImage(named: "background14")!)
+        practicesView.layer.cornerRadius = 20
         practicsCollectionView.delegate = self
         practicsCollectionView.dataSource = self
-        titleLabel.textColor = grayTextColor
-        practicesLabel.textColor = grayTextColor
+        titleLabel.textColor = newButtonLabelColor
+        practicesLabel.textColor = newButtonLabelColor
     }
     
     func prepareChart(){
@@ -56,8 +59,8 @@ class MoodViewController: UIViewController, ChartViewDelegate {
         chart.layer.cornerRadius = 15
         let xAxis = chart.xAxis
         xAxis.labelPosition = .bottomInside
-        xAxis.labelFont = UIFont(name: "Montserrat-Regular", size: 10)!
-                xAxis.labelTextColor = lightBlueColor
+        xAxis.labelFont = UIFont(name: "Jost-Regular", size: 10)!
+                xAxis.labelTextColor = newButtonLabelColor
                 xAxis.centerAxisLabelsEnabled = true
                 xAxis.granularity = 3600
                 xAxis.valueFormatter = DateValueFormatter()
@@ -67,14 +70,14 @@ class MoodViewController: UIViewController, ChartViewDelegate {
                 
         let leftAxis = chart.leftAxis
         leftAxis.labelPosition = .insideChart
-        leftAxis.labelFont = UIFont(name: "Montserrat-Regular", size: 10)!
+        leftAxis.labelFont = UIFont(name: "Jost-Regular", size: 10)!
         leftAxis.drawGridLinesEnabled = false
         leftAxis.granularityEnabled = true
         leftAxis.axisMinimum = 0
         leftAxis.axisMaximum = 5
         leftAxis.yOffset = -9
         leftAxis.drawAxisLineEnabled = true
-        leftAxis.labelTextColor = lightBlueColor
+        leftAxis.labelTextColor = newButtonLabelColor
         leftAxis.axisLineColor = blueBackgorundColor
         chart.rightAxis.enabled = false
         //chart.legend.form = .line

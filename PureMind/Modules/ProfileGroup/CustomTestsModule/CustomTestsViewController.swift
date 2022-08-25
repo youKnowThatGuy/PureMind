@@ -27,7 +27,7 @@ class CustomTestsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareLabels()
-        view.backgroundColor = perfectMood
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background12")!)
         presenter.loadTest()
         prepareCollectionView()
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
@@ -45,8 +45,8 @@ class CustomTestsViewController: UIViewController {
     }
     
     func prepareLabels(){
-        questionTitleLabel.textColor = .white
-        questionDescLabel.textColor = .white
+        questionTitleLabel.textColor = newButtonLabelColor
+        questionDescLabel.textColor = newButtonLabelColor
         backButtonShell.tintColor = titleYellow
     }
     

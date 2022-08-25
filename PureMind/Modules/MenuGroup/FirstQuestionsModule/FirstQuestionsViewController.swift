@@ -22,6 +22,8 @@ class FirstQuestionsViewController: UIViewController {
     @IBOutlet weak var questionTitleLabel: UILabel!
     @IBOutlet weak var questionDescLabel: UILabel!
     @IBOutlet weak var answersCollectionView: UICollectionView!
+    
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var backButtonShell: UIButton!
     var moodColor = UIColor(red: 0, green: 0, blue: 0)
     var totalScore = 0
@@ -40,14 +42,14 @@ class FirstQuestionsViewController: UIViewController {
     }
     
     func prepareLabels(){
-        moodTitleLabel.textColor = .white
-        questionTitleLabel.textColor = .white
-        questionDescLabel.textColor = .white
-        backButtonShell.tintColor = titleYellow
+        topView.layer.cornerRadius = 20
+        moodTitleLabel.textColor = newButtonLabelColor
+        questionTitleLabel.textColor = newButtonLabelColor
+        questionDescLabel.textColor = newButtonLabelColor
+        backButtonShell.tintColor = newButtonLabelColor
     }
     
     func checkVCindex(){
-        backButtonShell.layer.cornerRadius = 15
         if vcIndex > 0{
             backButtonShell.isHidden = false
         }
@@ -100,7 +102,7 @@ extension FirstQuestionsViewController: FirstQuestionsViewProtocol{
     
     func setBackgroundColor(color: UIColor){
         self.moodColor = color
-        self.view.backgroundColor = moodColor
+        self.topView.backgroundColor = moodColor
     }
     
     func updateUI() {

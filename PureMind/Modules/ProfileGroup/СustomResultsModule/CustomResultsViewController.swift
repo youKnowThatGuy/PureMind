@@ -22,7 +22,7 @@ class CustomResultsViewController: UIViewController {
     
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background9")
+            imageView.image = UIImage(named: "background12")
             imageView.contentMode = .scaleAspectFill
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
@@ -42,7 +42,7 @@ class CustomResultsViewController: UIViewController {
     }
     
     func prepareViews(){
-        titleLabel.textColor = grayTextColor
+        titleLabel.textColor = newButtonLabelColor
         view.insertSubview(imageView, at: 0)
                 NSLayoutConstraint.activate([
                     imageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -52,7 +52,7 @@ class CustomResultsViewController: UIViewController {
                 ])
         resultsTableView.delegate = self
         resultsTableView.dataSource = self
-        resultsTableView.backgroundColor = UIColor(red: 238, green: 245, blue: 255)
+        resultsTableView.backgroundColor = .clear
         resultsTableView.expandingAnimation = .fade
         resultsTableView.collapsingAnimation = .fade
     }
@@ -82,6 +82,8 @@ extension CustomResultsViewController: ExpyTableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExpTitleScoreCell.identifier) as! ExpTitleScoreCell
         cell.titleLabel.text = presenter.getTitleText(index: section)
         cell.scoreLabel.text = "\(presenter.getScore(index: section))"
+        cell.titleLabel.textColor = newButtonLabelColor
+        cell.scoreLabel.textColor = newButtonLabelColor
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell

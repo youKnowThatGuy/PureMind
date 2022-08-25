@@ -22,18 +22,20 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var forgotPasswordLabel: UILabel!
+    @IBOutlet weak var loginView: UIView!
     
     @IBOutlet weak var assistButtonOutlet: UIButton!
     @IBOutlet weak var backButtonOutlet: UIButton!
     @IBOutlet weak var loginButtonOutlet: UIButton!
     @IBOutlet weak var loginGoogleButtonOutlet: UIButton!
-    var imageView: UIImageView = {
-            let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background")
-            imageView.contentMode = .scaleAspectFill
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-            return imageView
-        }()
+    lazy var gradient: CAGradientLayer = {
+        let gradient = CAGradientLayer()
+        gradient.type = .axial
+        gradient.colors = [UIColor(red: 239, green: 243, blue: 255),
+        UIColor(red: 255, green: 252, blue: 250)]
+        gradient.locations = [0, 0.25, 1]
+        return gradient
+    }()
     var passwordHidden = true
     var presenter: LoginPresenterProtocol!
     
@@ -47,28 +49,22 @@ class LoginViewController: UIViewController {
         prepareTextFields()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        imageView.isHidden = true
-    }
-    
     @objc func handleGesture(){
         navigationController?.popViewController(animated: true)
     }
     
     func transformTextField(myTextField: UITextField){
         let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 300, height: 1.0)
-        bottomLine.backgroundColor = blueBackgorundColor.cgColor
+        bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 265, height: 1.0)
+        bottomLine.backgroundColor = lightTextColor.cgColor
         myTextField.borderStyle = UITextField.BorderStyle.none
         myTextField.layer.addSublayer(bottomLine)
     }
     
     func prepareButtons(){
-        backButtonOutlet.tintColor = lightYellowColor
         assistButtonOutlet.setTitleColor(policiesButtonColor, for: .normal)
-        //loginButtonOutlet.setTitleColor(lightYellowColor, for: .normal)
         
-        loginButtonOutlet.backgroundColor = lightYellowColor
+        loginButtonOutlet.backgroundColor = newButtonLabelColor
         loginButtonOutlet.layer.cornerRadius = 15
         
         loginGoogleButtonOutlet.layer.cornerRadius = 15
@@ -80,27 +76,27 @@ class LoginViewController: UIViewController {
     }
     
     func prepareViews(){
+        loginView.layer.cornerRadius = 28
+        loginView.backgroundColor = .white
+        loginView.layer.borderWidth = 1
+        loginView.layer.borderColor = UIColor(red: 178, green: 186, blue: 230).cgColor
+        
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
-        view.insertSubview(imageView, at: 0)
-                NSLayoutConstraint.activate([
-                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-                ])
-        titleLabel.textColor = grayTextColor
-        emailLabel.textColor = grayTextColor
-        passwordLabel.textColor = grayTextColor
-        forgotPasswordLabel.textColor = textFieldColor
+        gradient.frame = view.bounds
+        view.layer.addSublayer(gradient)
+        titleLabel.textColor = newButtonLabelColor
+        emailLabel.textColor = newButtonLabelColor
+        passwordLabel.textColor = newButtonLabelColor
+        forgotPasswordLabel.textColor = newButtonLabelColor
     }
     
     func prepareTextFields(){
         emailTextField.delegate = self
-        emailTextField.textColor = textFieldColor
+        emailTextField.textColor = lightTextColor
         transformTextField(myTextField: emailTextField)
         passwordTextField.delegate = self
-        passwordTextField.textColor = textFieldColor
+        passwordTextField.textColor = lightTextColor
         transformTextField(myTextField: passwordTextField)
         
     }

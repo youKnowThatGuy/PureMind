@@ -16,33 +16,40 @@ class AlertContactsViewController: UIViewController, SFSafariViewControllerDeleg
     @IBOutlet weak var planButtonShell: UIButton!
     @IBOutlet weak var callButtonShell: UIButton!
     @IBOutlet weak var internetButtonShell: UIButton!
+    @IBOutlet weak var topView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeLeft.direction = .right
         self.view.addGestureRecognizer(swipeLeft)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background12")!)
         prepareViews()
     }
     
     func prepareViews(){
-        titleLabel.textColor = grayTextColor
-        descriptionLabel.textColor = textFieldColor
-        planButtonShell.tintColor = titleBlueColor
+        topView.backgroundColor = .white
+        topView.layer.cornerRadius = 20
+        titleLabel.textColor = newButtonLabelColor
+        descriptionLabel.textColor = newButtonLabelColor
+        planButtonShell.tintColor = newButtonLabelColor
         planButtonShell.layer.borderWidth = 1
-        planButtonShell.layer.borderColor = titleBlueColor.cgColor
-        planButtonShell.backgroundColor = titleBlueColor.withAlphaComponent(0.24)
-        planButtonShell.layer.cornerRadius = 15
-        callButtonShell.tintColor = titleBlueColor
+        planButtonShell.layer.borderColor = newButtonLabelColor.cgColor
+        planButtonShell.backgroundColor = .white
+        planButtonShell.layer.cornerRadius = 25
+        planButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
+        callButtonShell.tintColor = newButtonLabelColor
         callButtonShell.layer.borderWidth = 1
-        callButtonShell.layer.borderColor = titleBlueColor.cgColor
-        callButtonShell.backgroundColor = titleBlueColor.withAlphaComponent(0.24)
-        callButtonShell.layer.cornerRadius = 15
-        internetButtonShell.tintColor = titleBlueColor
+        callButtonShell.layer.borderColor = newButtonLabelColor.cgColor
+        callButtonShell.backgroundColor = .white
+        callButtonShell.layer.cornerRadius = 25
+        callButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
+        internetButtonShell.tintColor = newButtonLabelColor
         internetButtonShell.layer.borderWidth = 1
-        internetButtonShell.layer.borderColor = titleBlueColor.cgColor
-        internetButtonShell.backgroundColor = titleBlueColor.withAlphaComponent(0.24)
-        internetButtonShell.layer.cornerRadius = 15
+        internetButtonShell.layer.borderColor = newButtonLabelColor.cgColor
+        internetButtonShell.backgroundColor = .white
+        internetButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
+        internetButtonShell.layer.cornerRadius = 25
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -16,24 +16,28 @@ protocol PortraitViewProtocol: UIViewController{
 class PortraitViewController: UIViewController, SFSafariViewControllerDelegate{
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
     var presenter: PortraitPresenterProtocol!
     
     @IBOutlet weak var testsTableView: ExpyTableView!
+    @IBOutlet weak var topView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeLeft.direction = .right
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background12")!)
         self.view.addGestureRecognizer(swipeLeft)
         prepareViews()
     }
     
     func prepareViews(){
+        topView.backgroundColor = .white
+        topView.layer.cornerRadius = 20
         testsTableView.separatorStyle = .none
         testsTableView.delegate = self
         testsTableView.dataSource = self
-        titleLabel.textColor = grayTextColor
-        descriptionLabel.textColor = textFieldColor
+        titleLabel.textColor = newButtonLabelColor
+        
     }
     
     @objc func handleGesture(){
@@ -82,13 +86,13 @@ extension PortraitViewController: ExpyTableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
-        let verticalPadding: CGFloat = 8
+       // let verticalPadding: CGFloat = 8
 
-        let maskLayer = CALayer()
-        maskLayer.cornerRadius = 10
-        maskLayer.backgroundColor = UIColor.black.cgColor
-        maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
-        cell.layer.mask = maskLayer
+//        let maskLayer = CALayer()
+  //      maskLayer.cornerRadius = 10
+    //    maskLayer.backgroundColor = UIColor.black.cgColor
+      //  maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
+        //cell.layer.mask = maskLayer
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -97,6 +101,7 @@ extension PortraitViewController: ExpyTableViewDataSource {
         cell.layoutMargins = UIEdgeInsets.zero
         cell.testIndex = indexPath.section
         cell.hideSeparator()
+        cell.layer.cornerRadius = 25
         cell.parentVc = self
         return cell
     }
@@ -108,6 +113,7 @@ extension PortraitViewController: ExpyTableViewDataSource {
     func tableView(_ tableView: ExpyTableView, expandableCellForSection section: Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExpPortraitViewCell.identifier) as! ExpPortraitViewCell
         cell.titleLabel.text = presenter.getTitleText(index: section)
+        cell.layer.cornerRadius = 25
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell

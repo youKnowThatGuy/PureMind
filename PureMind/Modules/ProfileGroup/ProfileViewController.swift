@@ -16,9 +16,10 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var personLabel: UILabel!
     @IBOutlet weak var optionsTableView: UITableView!
+    @IBOutlet weak var topView: UIView!
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background8")
+            imageView.image = UIImage(named: "background12")
             imageView.contentMode = .scaleAspectFill
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
@@ -44,6 +45,9 @@ class ProfileViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
+        personLabel.textColor = newButtonLabelColor
+        topView.backgroundColor = .white
+        topView.layer.cornerRadius = 20
         optionsTableView.delegate = self
         optionsTableView.dataSource = self
         optionsTableView.tableFooterView = UIView()

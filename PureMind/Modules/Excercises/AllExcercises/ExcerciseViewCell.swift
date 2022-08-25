@@ -16,7 +16,10 @@ class ExcerciseViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        excerciseNameLabel.textColor = grayTextColor
+        excerciseNameLabel.textColor = newButtonLabelColor
+        self.backgroundColor = .clear
+        self.layer.borderColor = newButtonLabelColor.cgColor
+        self.layer.borderWidth = 1
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

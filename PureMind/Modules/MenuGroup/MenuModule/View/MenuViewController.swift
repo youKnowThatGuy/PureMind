@@ -20,10 +20,11 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var chatButtonView: UIView!
     @IBOutlet weak var practicsCollectionView: UICollectionView!
     @IBOutlet weak var coursesCollectionView: UICollectionView!
-    @IBOutlet weak var practicsTitleButtonShell: UIButton!
     @IBOutlet weak var moodTitleLabel: UILabel!
-    @IBOutlet weak var moodQuestionLabel: UILabel!
     @IBOutlet weak var moodView: UIView!
+    @IBOutlet weak var moodTrackerView: UIView!
+    @IBOutlet weak var coursesView: UIView!
+    @IBOutlet weak var practicsView: UIView!
     @IBOutlet weak var moodLabel1: UILabel!
     @IBOutlet weak var moodLabel2: UILabel!
     @IBOutlet weak var moodLabel3: UILabel!
@@ -35,6 +36,9 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var moodView4: UIView!
     @IBOutlet weak var moodView5: UIView!
     @IBOutlet weak var coursesTitleLabel: UILabel!
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var chatButtonLabel: UILabel!
+    @IBOutlet weak var secondMainView: UIView!
     
     
     
@@ -44,6 +48,7 @@ class MenuViewController: UIViewController {
         prepareButtons()
         prepareDesign()
         presenter.loadData()
+        secondMainView.backgroundColor = UIColor(patternImage: UIImage(named: "background12")!)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -52,20 +57,21 @@ class MenuViewController: UIViewController {
     }
     
     func prepareDesign(){
-        holderNameLabel.backgroundColor = lightYellowColor
+        topView.backgroundColor = .white
+        topView.layer.cornerRadius = 20
+        
+        holderNameLabel.backgroundColor = .white
+        holderNameLabel.layer.borderWidth = 1
+        holderNameLabel.layer.borderColor = newButtonLabelColor.cgColor
         holderNameLabel.layer.masksToBounds = true
         holderNameLabel.layer.cornerRadius = 20
-        coursesTitleLabel.textColor = grayTextColor
-        chatButtonView.backgroundColor = lightYellowColor
+        holderNameLabel.textColor = newButtonLabelColor
+        chatButtonLabel.textColor = newButtonLabelColor
+        coursesTitleLabel.textColor = newButtonLabelColor
+        chatButtonView.backgroundColor = UIColor(patternImage: UIImage(named: "background13")!)
         chatButtonView.layer.cornerRadius = 20
-        practicsTitleLabel.textColor = grayTextColor
-        moodTitleLabel.textColor = grayTextColor
-        moodQuestionLabel.textColor = grayTextColor
-        practicsTitleButtonShell.setTitleColor(lightYellowColor, for: .normal)
-        practicsTitleButtonShell.layer.cornerRadius = 10
-        practicsTitleButtonShell.layer.borderColor = lightYellowColor.cgColor
-        practicsTitleButtonShell.layer.borderWidth = 1
-        practicsTitleButtonShell.layer.masksToBounds = true
+        practicsTitleLabel.textColor = newButtonLabelColor
+        moodTitleLabel.textColor = newButtonLabelColor
             /*
         intervalButtonShell.setTitleColor(lightYellowColor, for: .normal)
         intervalButtonShell.layer.cornerRadius = 10
@@ -74,16 +80,20 @@ class MenuViewController: UIViewController {
         intervalButtonShell.layer.masksToBounds = true
         planTitleLabel.textColor = grayTextColor
  */
-        moodView.layer.cornerRadius = 12
-        moodView.layer.borderColor = lightBlueColor.cgColor
-        moodLabel1.textColor = UIColor(red: 144, green: 191, blue: 255)
-        moodLabel2.textColor = UIColor(red: 199, green: 225, blue: 179)
-        moodLabel3.textColor = UIColor(red: 252, green: 212, blue: 0)
-        moodLabel4.textColor = UIColor(red: 252, green: 177, blue: 120)
-        moodLabel5.textColor = UIColor(red: 249, green: 117, blue: 96)
-        moodView.layer.cornerRadius = 12
-        moodView.layer.borderColor = lightBlueColor.cgColor
-        moodView.layer.borderWidth = 2
+        coursesView.backgroundColor = .white
+        coursesView.layer.cornerRadius = 28
+        coursesView.backgroundColor = UIColor(patternImage: UIImage(named: "background15")!)
+        practicsView.backgroundColor = UIColor(patternImage: UIImage(named: "background14")!)
+        practicsView.layer.cornerRadius = 28
+        moodTrackerView.backgroundColor = .white
+        moodTrackerView.layer.cornerRadius = 28
+        moodTrackerView.layer.borderWidth = 1
+        moodTrackerView.layer.borderColor = newButtonLabelColor.cgColor
+        moodLabel1.textColor = newButtonLabelColor
+        moodLabel2.textColor = newButtonLabelColor
+        moodLabel3.textColor = newButtonLabelColor
+        moodLabel4.textColor = newButtonLabelColor
+        moodLabel5.textColor = newButtonLabelColor
         
     }
     

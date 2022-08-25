@@ -18,8 +18,8 @@ protocol DescriptionPresenterProtocol{
 class DescriptionPresenter: DescriptionPresenterProtocol{
     
     weak var view: DescriptionViewProtocol?
-    var textArray = ["Используйте терапевтический чат, чтобы восстановить свое состояние в моменте: при панической атаке, приступе тревоги или в других сложных ситуациях.", "Здесь мы собрали сотни проверенных упражнений по переживанию и проработке эмоций. Улучшите свое состояние, выбрав подходящую категорию: гнев, застенчивость, тревога и т.д.", "Нет возможности посещать психолога, но чувствуете потребность в психотерапии? Наши курсы могут стать отличной альтернативой. Лекции от психологов, домашние задания с обратной связью, постановка целей и отслеживание прогресса - все это ждет Вас на нашей платформе.", "Измените образ мышления с помощью дневников, разработанных специалистами. Путем анализа ситуаций и выявления негативных убеждений - вы сможете привлечь в свою жизнь положительные изменения."]
-    var titleArray = ["Терапевтический чат", "Практики", "Курсы", "Дневники"]
+    var textArray = ["Используйте терапевтический чат, чтобы восстановить свое состояние в моменте: при панической атаке, приступе тревоги или в других сложных ситуациях.", "Здесь мы собрали сотни проверенных упражнений по переживанию и проработке эмоций. Улучшите свое состояние, выбрав подходящую категорию: гнев, застенчивость, тревога и т.д.", "Нет возможности посещать психолога, но чувствуете потребность в психотерапии? Наши курсы могут стать отличной альтернативой. Лекции от психологов, домашние задания с обратной связью, постановка целей и отслеживание прогресса - все это ждет Вас на нашей платформе."]
+    var titleArray = ["Терапевтический чат", "Практики", "Курсы"]
     
     required init(view: DescriptionViewProtocol) {
         self.view = view
@@ -31,12 +31,13 @@ class DescriptionPresenter: DescriptionPresenterProtocol{
     
     func prepareCell(cell: CardViewCell, index: Int) {
         cell.titleLabel.text = titleArray[index]
-        cell.titleLabel.textColor = grayTextColor
-        cell.cardImage.image = UIImage(named: "illustration\(index + 1)")
+        cell.titleLabel.textColor = newButtonLabelColor
+        cell.cardImage.image = UIImage(named: "mindie\(index + 1)")
         cell.mainTextLabel.text = textArray[index]
-        cell.mainTextLabel.textColor = grayTextColor
-        
-        cell.backgroundColor = .white
+        cell.mainTextLabel.textColor = newButtonLabelColor
+        cell.layer.borderColor = newButtonLabelColor.cgColor
+        cell.layer.borderWidth = 1
+        cell.backgroundColor = UIColor(patternImage: UIImage(named: "background\(index + 13)")!)
         cell.contentView.layer.cornerRadius = 30
         cell.layer.cornerRadius = 30
     }

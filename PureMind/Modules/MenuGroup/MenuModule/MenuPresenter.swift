@@ -67,7 +67,8 @@ class MenuPresenter: MenuPresenterProtocol{
                 }
                 
             case .failure(_):
-                fatalError("Data didnt load")
+                print("great!")
+                //fatalError("Data didnt load")
                 
             }
         }
@@ -181,6 +182,7 @@ class MenuPresenter: MenuPresenterProtocol{
     }
     
     func preparePracticCell(cell: PracticViewCell, index: Int) {
+        /*
         var color = UIColor(red: 254, green: 227, blue: 180)
         if (index + 1) % 3 == 0 {
             color = UIColor(red: 255, green: 228, blue: 197)
@@ -191,16 +193,21 @@ class MenuPresenter: MenuPresenterProtocol{
         else if (index + 1) % 2 == 0 && (index + 1) % 3 != 0{
             color = UIColor(red: 251, green: 210, blue: 174)
         }
+         */
         cell.practicLabel.text = practics[index]
-        cell.backgroundColor = color
+        cell.practicLabel.textColor = newButtonLabelColor
+        cell.excerciseCount.textColor = newButtonLabelColor
+        //cell.backgroundColor = color
+        cell.backgroundColor = .clear
         if index == practicsCount() - 1{
             cell.excerciseCount.text = ""
         }
         else{
             cell.excerciseCount.text = "\(excerciseCounts[index]) техник\(conv(n: excerciseCounts[index]))"
         }
-        cell.layer.cornerRadius = 14
-        //cell.parentView = view
+        cell.layer.cornerRadius = 20
+        cell.layer.borderColor = newButtonLabelColor.cgColor
+        cell.layer.borderWidth = 1
     }
     
     

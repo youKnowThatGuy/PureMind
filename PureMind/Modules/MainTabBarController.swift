@@ -13,11 +13,11 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.tintColor = lightBlueColor
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 10)!], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 10)!], for: .selected)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for:.selected)
+        tabBar.tintColor = newButtonLabelColor
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Jost-Medium", size: 10)!], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Jost-Medium", size: 10)!], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: newButtonLabelColor], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: newButtonLabelColor], for:.selected)
         
         let menuVC = mod.createMenuModule()
         let item1 = UITabBarItem()
@@ -25,13 +25,13 @@ class MainTabBarController: UITabBarController {
         item1.image = UIImage(named: "tabBar1")
         menuVC.tabBarItem = item1
         
-        /*
-        let therapistVC = mod.createTherapistModule()
+        
+        let diaryVC = mod.createDiarymodule()
         let item2 = UITabBarItem()
-        item2.title = "Терапевт"
+        item2.title = "Дневник"
         item2.image = UIImage(named: "tabBar2")
-        therapistVC.tabBarItem = item2
- */
+        diaryVC.tabBarItem = item2
+ 
         
         let coursesVC = mod.createCoursesModule()
         let item3 = UITabBarItem()
@@ -51,7 +51,7 @@ class MainTabBarController: UITabBarController {
         item5.image = UIImage(named: "tabBar5")
         profileVC.tabBarItem = item5
         
-        self.viewControllers = [menuVC, coursesVC, practicsVC, profileVC]
+        self.viewControllers = [menuVC, diaryVC, coursesVC, practicsVC, profileVC]
         
     }
     

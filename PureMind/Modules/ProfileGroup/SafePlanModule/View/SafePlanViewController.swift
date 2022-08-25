@@ -15,12 +15,16 @@ protocol SafePlanViewProtocol: UIViewController{
 class SafePlanViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var plansTableView: ExpyTableView!
+    @IBOutlet weak var topView: UIView!
     var presenter: SafePlanPresenterProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareViews()
         presenter.loadData()
+        topView.backgroundColor = .white
+        topView.layer.cornerRadius = 20
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background12")!)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -32,10 +36,11 @@ class SafePlanViewController: UIViewController {
     func prepareViews(){
         //let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         //view.addGestureRecognizer(tap)
-        titleLabel.textColor = grayTextColor
+        titleLabel.textColor = newButtonLabelColor
         plansTableView.delegate = self
         plansTableView.dataSource = self
         plansTableView.separatorStyle = .none
+        plansTableView.backgroundColor = .clear
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
@@ -62,17 +67,6 @@ extension SafePlanViewController: ExpyTableViewDataSource {
     
     func tableView(_ tableView: ExpyTableView, canExpandSection section: Int) -> Bool {
         return true
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
-    {
-        let verticalPadding: CGFloat = 8
-
-        let maskLayer = CALayer()
-        maskLayer.cornerRadius = 10    //if you want round edges
-        maskLayer.backgroundColor = UIColor.black.cgColor
-        maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
-        cell.layer.mask = maskLayer
     }
     
     func tableView(_ tableView: ExpyTableView, expandableCellForSection section: Int) -> UITableViewCell {

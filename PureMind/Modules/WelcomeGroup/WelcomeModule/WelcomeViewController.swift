@@ -17,13 +17,23 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
     
     @IBOutlet weak var buttonOutlet: UIButton!
+    lazy var gradient: CAGradientLayer = {
+        let gradient = CAGradientLayer()
+        gradient.type = .axial
+        gradient.colors = [UIColor(red: 239, green: 243, blue: 255),
+        UIColor(red: 255, green: 252, blue: 250)]
+        gradient.locations = [0, 0.25, 1]
+        return gradient
+    }()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.textColor = darkGrayTextColor
-        buttonOutlet.tintColor = lightYellowColor
-        textLabel.textColor = grayTextColor
+        titleLabel.textColor = newButtonLabelColor
+        buttonOutlet.tintColor = newButtonLabelColor
+        textLabel.textColor = newButtonLabelColor
+        gradient.frame = view.bounds
+        view.layer.addSublayer(gradient)
     }
     
     override func viewWillAppear(_ animated: Bool) {

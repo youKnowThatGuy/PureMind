@@ -17,12 +17,14 @@ class ContactsViewController: UIViewController, SFSafariViewControllerDelegate, 
     @IBOutlet weak var instagramButtonShell: UIButton!
     @IBOutlet weak var telegramButtonShell: UIButton!
     @IBOutlet weak var callbackButtonShell: UIButton!
+    @IBOutlet weak var topView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeLeft.direction = .right
         self.view.addGestureRecognizer(swipeLeft)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background12")!)
         prepareViews()
     }
     
@@ -35,19 +37,19 @@ class ContactsViewController: UIViewController, SFSafariViewControllerDelegate, 
     }
     
     func prepareViews(){
-        titleLabel.textColor = grayTextColor
+        topView.layer.cornerRadius = 20
+        topView.backgroundColor = .white
+        titleLabel.textColor = newButtonLabelColor
         contactsView.layer.borderColor = lightBlueColor.cgColor
         contactsView.layer.borderWidth = 1
         contactsView.layer.cornerRadius = 15
-        contactsView.backgroundColor = lightBlueColor.withAlphaComponent(0.24)
+        contactsView.backgroundColor = .white
         instagramButtonShell.contentHorizontalAlignment = .left
         //instagramButtonShell.addBottomBorderWithColor(color: UIColor(red: 144, green: 191, blue: 255), width: 1)
-        instagramButtonShell.tintColor = UIColor(red: 198, green: 222, blue: 255)
-        telegramButtonShell.contentHorizontalAlignment = .left
-        //telegramButtonShell.addBottomBorderWithColor(color: UIColor(red: 144, green: 191, blue: 255), width: 1)
-        telegramButtonShell.tintColor = UIColor(red: 198, green: 222, blue: 255)
+        instagramButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
+        telegramButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
         callbackButtonShell.contentHorizontalAlignment = .left
-        callbackButtonShell.tintColor = UIColor(red: 198, green: 222, blue: 255)
+        callbackButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
     }
     
     func configureMailComposer() -> MFMailComposeViewController{

@@ -113,15 +113,18 @@ class CustomTestsPresenter: CustomTestsPresenterProtocol{
     }
     
     func prepareCell(cell: AnswerViewCell, index: IndexPath) {
-        cell.textLabel.textColor = grayTextColor
-        cell.layer.borderColor = grayButtonColor.cgColor
+        cell.textLabel.textColor = newButtonLabelColor
+        cell.layer.borderColor = newButtonLabelColor.cgColor
         cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 25
             let check = selectedCells.firstIndex(of: index)
             if check == nil{
                 cell.backgroundColor = .white
+                cell.textLabel.textColor = newButtonLabelColor
             }
             else{
-                cell.backgroundColor = lightYellowColor
+                cell.backgroundColor = newButtonLabelColor
+                cell.textLabel.textColor = .white
             }
             cell.textLabel.text = answers[testIndex][index.row]
         

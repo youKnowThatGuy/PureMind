@@ -25,6 +25,7 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var googleButtonOutlet: UIButton!
     @IBOutlet weak var backButtonOutlet: UIButton!
     
+    @IBOutlet weak var registrationView: UIView!
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -32,15 +33,16 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var policyLabel: UILabel!
     @IBOutlet weak var loginLabel: UILabel!
-    var imageView: UIImageView = {
-            let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background")
-            imageView.contentMode = .scaleAspectFill
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-            return imageView
-        }()
     
-    
+    lazy var gradient: CAGradientLayer = {
+        let gradient = CAGradientLayer()
+        gradient.type = .axial
+        gradient.colors = [UIColor(red: 239, green: 243, blue: 255),
+        UIColor(red: 255, green: 252, blue: 250)]
+        gradient.locations = [0, 0.25, 1]
+        return gradient
+    }()
+
     var presenter: RegistrationPresenterProtocol!
     var passwordHidden = true
     
@@ -51,33 +53,52 @@ class RegistrationViewController: UIViewController {
         swipeLeft.direction = .right
         self.view.addGestureRecognizer(swipeLeft)
         view.addGestureRecognizer(tap)
-        view.insertSubview(imageView, at: 0)
-                NSLayoutConstraint.activate([
-                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-                ])
+        gradient.frame = view.bounds
+        view.layer.addSublayer(gradient)
         prepareButtons()
         prepareTextFields()
         prepareLabels()
+        _ = Timer.scheduledTimer(
+          timeInterval: 0.5, target: self, selector: #selector(verifyCheckBox),
+          userInfo: nil, repeats: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        imageView.isHidden = true
+        //imageView.isHidden = true
     }
     
     @objc func handleGesture(){
         navigationController?.popViewController(animated: true)
     }
     
+    @objc func verifyCheckBox(){
+        if checkBox.isChecked == true && nicknameField.text != "" && passwordField.text != "" && emailField.text != "" {
+            registrationButtonOutlet.backgroundColor = newButtonLabelColor
+            registrationButtonOutlet.setTitleColor(.white, for: .normal)
+        }
+        else{
+            registrationButtonOutlet.backgroundColor = .white
+            registrationButtonOutlet.layer.cornerRadius = 15
+            registrationButtonOutlet.layer.borderColor = UIColor(red: 255, green: 252, blue: 250).cgColor
+            registrationButtonOutlet.setTitleColor(lightTextColor, for: .normal)
+        }
+    }
+    
     func prepareButtons(){
+        registrationView.layer.cornerRadius = 28
+        registrationView.backgroundColor = .white
+        registrationView.layer.borderWidth = 1
+        registrationView.layer.borderColor = UIColor(red: 178, green: 186, blue: 230).cgColor
+        
         backButtonOutlet.tintColor = lightYellowColor
         policiesButtonOutlet.setTitleColor(policiesButtonColor, for: .normal)
-        loginButtonOutlet.setTitleColor(lightYellowColor, for: .normal)
+        loginButtonOutlet.setTitleColor(newButtonLabelColor, for: .normal)
         
-        registrationButtonOutlet.backgroundColor = lightYellowColor
+        registrationButtonOutlet.backgroundColor = .white
         registrationButtonOutlet.layer.cornerRadius = 15
+        registrationButtonOutlet.layer.borderWidth = 1
+        registrationButtonOutlet.layer.borderColor = UIColor(red: 255, green: 252, blue: 250).cgColor
+        registrationButtonOutlet.setTitleColor(lightTextColor, for: .normal)
         
         googleButtonOutlet.layer.cornerRadius = 15
         googleButtonOutlet.backgroundColor = .clear
@@ -88,30 +109,30 @@ class RegistrationViewController: UIViewController {
     
     func transformTextField(myTextField: UITextField){
         let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 300, height: 1.0)
-        bottomLine.backgroundColor = blueBackgorundColor.cgColor
+        bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 265, height: 1.0)
+        bottomLine.backgroundColor = lightTextColor.cgColor
         myTextField.borderStyle = UITextField.BorderStyle.none
         myTextField.layer.addSublayer(bottomLine)
     }
     
     func prepareLabels(){
-        titleLabel.textColor = grayTextColor
-        nameLabel.textColor = grayTextColor
-        emailLabel.textColor = grayTextColor
-        passwordLabel.textColor = grayTextColor
-        policyLabel.textColor = grayTextColor
-        loginLabel.textColor = textFieldColor
+        titleLabel.textColor = newButtonLabelColor
+        nameLabel.textColor = newButtonLabelColor
+        emailLabel.textColor = newButtonLabelColor
+        passwordLabel.textColor = newButtonLabelColor
+        policyLabel.textColor = newButtonLabelColor
+        loginLabel.textColor = newButtonLabelColor
     }
     
     func prepareTextFields(){
         nicknameField.delegate = self
-        nicknameField.textColor = textFieldColor
+        nicknameField.textColor = lightTextColor
         transformTextField(myTextField: nicknameField)
         emailField.delegate = self
-        emailField.textColor = textFieldColor
+        emailField.textColor = lightTextColor
         transformTextField(myTextField: emailField)
         passwordField.delegate = self
-        passwordField.textColor = textFieldColor
+        passwordField.textColor = lightTextColor
         transformTextField(myTextField: passwordField)
         
     }

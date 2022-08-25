@@ -36,15 +36,14 @@ class NoPasswordViewController: UIViewController {
     
     func transformTextField(myTextField: UITextField){
         let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 300, height: 1.0)
-        bottomLine.backgroundColor = blueBackgorundColor.cgColor
+        bottomLine.frame = CGRect(x: 0.0, y: 25 - 1, width: 265, height: 1.0)
+        bottomLine.backgroundColor = lightTextColor.cgColor
         myTextField.borderStyle = UITextField.BorderStyle.none
         myTextField.layer.addSublayer(bottomLine)
     }
     
     func prepareButtons(){
-        backButtonOutlet.tintColor = lightYellowColor
-        loginButtonOutlet.backgroundColor = lightYellowColor
+        loginButtonOutlet.backgroundColor = newButtonLabelColor
         loginButtonOutlet.layer.cornerRadius = 15
     }
     
@@ -55,7 +54,7 @@ class NoPasswordViewController: UIViewController {
     
     func prepareTextFields(){
         emailTextField.delegate = self
-        emailTextField.textColor = textFieldColor
+        emailTextField.textColor = lightTextColor
         transformTextField(myTextField: emailTextField)
         
     }

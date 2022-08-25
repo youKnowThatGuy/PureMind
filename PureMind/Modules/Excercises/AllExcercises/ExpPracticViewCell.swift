@@ -18,10 +18,12 @@ class ExpPracticViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         if stageCell == false{
-            self.backgroundColor = UIColor(red: 253, green: 247, blue: 221)
-            titleLabel.textColor = UIColor(red: 251, green: 210, blue: 174)
-            titleLabel.layer.addBorder(edge: UIRectEdge.bottom, color: UIColor(red: 251, green: 210, blue: 174), thickness: 1)
-            leftColorView.backgroundColor =  UIColor(red: 251, green: 210, blue: 174)
+            self.backgroundColor = .clear
+            titleLabel.textColor = newButtonLabelColor
+            //titleLabel.layer.addBorder(edge: UIRectEdge.bottom, color: UIColor(red: 251, green: 210, blue: 174), thickness: 1)
+            leftColorView.backgroundColor =  .clear
+            self.layer.borderColor = newButtonLabelColor.cgColor
+            self.layer.borderWidth = 1
         }
         else{
             self.backgroundColor = UIColor(red: 254, green: 250, blue: 234)

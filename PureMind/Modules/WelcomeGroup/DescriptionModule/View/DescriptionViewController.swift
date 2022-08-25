@@ -34,14 +34,14 @@ class DescriptionViewController: UIViewController {
     }
     
     func setupIndicator(){
-        scrollIndicator.pageIndicatorTintColor = UIColor(red: 254, green: 227, blue: 180)
-        scrollIndicator.currentPageIndicatorTintColor = lightYellowColor
+        scrollIndicator.pageIndicatorTintColor = .white
+        scrollIndicator.currentPageIndicatorTintColor = newButtonLabelColor
     }
     
     func setupCardView(){
         cardView.delegate = self
         cardView.dataSource = self
-        cardView.backgroundColor = blueBackgorundColor
+        cardView.backgroundColor = .none
         cardView.collectionViewLayout = customLayout()
     }
     
@@ -88,6 +88,7 @@ extension DescriptionViewController: UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         scrollIndicator.currentPage = indexPath.row
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background\(indexPath.row + 13)")!)
     }
     
 }

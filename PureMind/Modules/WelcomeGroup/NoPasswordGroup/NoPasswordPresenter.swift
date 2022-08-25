@@ -9,7 +9,7 @@ import UIKit
 
 protocol NoPasswordPresenterProtocol{
     init(view: NoPasswordViewProtocol)
-    func infoValidation(email: String) -> String
+    func infoValidation(email: String?) -> String
     func performRestore(email: String)
 }
 
@@ -22,15 +22,15 @@ class NoPasswordPresenter: NoPasswordPresenterProtocol{
         self.view = view
     }
     
-    func infoValidation(email: String) -> String {
-        if email == "" {
+    func infoValidation(email: String?) -> String {
+        if email == "" || email == nil  {
             return "Вы не заполнили все поля"
         }
-        let clearEmail = stringClear(str: email)
+        let clearEmail = stringClear(str: email!)
         if clearEmail.latinCharactersOnly == false {
             return "Адрес почты должен быть на латинице»"
         }
-        if email.contains("@") == false || email.contains(".") == false {
+        if email!.contains("@") == false || email!.contains(".") == false {
             return "Некорректный формат почты"
         }
         return "pass"

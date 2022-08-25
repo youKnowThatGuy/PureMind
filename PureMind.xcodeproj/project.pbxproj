@@ -25,6 +25,8 @@
 		69009F3C2717294700D18BEA /* GapsExcerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F3B2717294700D18BEA /* GapsExcerciseViewController.swift */; };
 		69009F442717295B00D18BEA /* GapsExcercisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F432717295B00D18BEA /* GapsExcercisePresenter.swift */; };
 		69009F4927172AAC00D18BEA /* GapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009F4827172AAC00D18BEA /* GapTableViewCell.swift */; };
+		69065A4728ACE0FA008B960C /* Jost-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69065A4528ACE0F3008B960C /* Jost-Medium.ttf */; };
+		69065A4828ACE0FD008B960C /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69065A4628ACE0F7008B960C /* Jost-Regular.ttf */; };
 		69357BB52698658C00831004 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BB42698658C00831004 /* NetworkService.swift */; };
 		69357BBA269865A000831004 /* CachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BB9269865A000831004 /* CachingService.swift */; };
 		69357BC02698660700831004 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69357BBF2698660700831004 /* RegistrationViewController.swift */; };
@@ -49,6 +51,7 @@
 		698D75432695E2F600C66C11 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D75422695E2F600C66C11 /* DescriptionViewController.swift */; };
 		698D754B2695E32C00C66C11 /* DescriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D754A2695E32C00C66C11 /* DescriptionPresenter.swift */; };
 		698D75502695F0A500C66C11 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D754F2695F0A500C66C11 /* CardViewCell.swift */; };
+		6994891428ABD6DF0076B3A7 /* jost in Resources */ = {isa = PBXBuildFile; fileRef = 6994891328ABD6DF0076B3A7 /* jost */; };
 		69A1C6B726B161BF00216B2C /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6B626B161BF00216B2C /* Montserrat */; };
 		69A1C6C026B165A100216B2C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C6BF26B165A100216B2C /* UIColorExtensions.swift */; };
 		69A1C6C526B1695600216B2C /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A1C6C426B1695400216B2C /* Montserrat-Bold.ttf */; };
@@ -221,6 +224,8 @@
 		69009F3B2717294700D18BEA /* GapsExcerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapsExcerciseViewController.swift; sourceTree = "<group>"; };
 		69009F432717295B00D18BEA /* GapsExcercisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapsExcercisePresenter.swift; sourceTree = "<group>"; };
 		69009F4827172AAC00D18BEA /* GapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapTableViewCell.swift; sourceTree = "<group>"; };
+		69065A4528ACE0F3008B960C /* Jost-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Medium.ttf"; sourceTree = "<group>"; };
+		69065A4628ACE0F7008B960C /* Jost-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Regular.ttf"; sourceTree = "<group>"; };
 		69357BB42698658C00831004 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		69357BB9269865A000831004 /* CachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingService.swift; sourceTree = "<group>"; };
 		69357BBF2698660700831004 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +256,7 @@
 		698D75422695E2F600C66C11 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		698D754A2695E32C00C66C11 /* DescriptionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionPresenter.swift; sourceTree = "<group>"; };
 		698D754F2695F0A500C66C11 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		6994891328ABD6DF0076B3A7 /* jost */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jost; sourceTree = "<group>"; };
 		69A1C6B626B161BF00216B2C /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
 		69A1C6BF26B165A100216B2C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		69A1C6C426B1695400216B2C /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -575,6 +581,9 @@
 				69A1C6C426B1695400216B2C /* Montserrat-Bold.ttf */,
 				69A1C6C926B1698800216B2C /* Montserrat-ExtraBold.ttf */,
 				69009EF92716385400D18BEA /* Montserrat-Regular.ttf */,
+				69065A4528ACE0F3008B960C /* Jost-Medium.ttf */,
+				69065A4628ACE0F7008B960C /* Jost-Regular.ttf */,
+				6994891328ABD6DF0076B3A7 /* jost */,
 				69A1C6B626B161BF00216B2C /* Montserrat */,
 				69ABE448269C566A001FBB4E /* Storyboards */,
 				698D751D2694AA4D00C66C11 /* Modules */,
@@ -1327,6 +1336,7 @@
 				69EE7FB72809B10C00B7FB0B /* psy_questions_table_5.csv in Resources */,
 				69A1C6C526B1695600216B2C /* Montserrat-Bold.ttf in Resources */,
 				69EE7FBB2809B10C00B7FB0B /* psy_questions_table_3.csv in Resources */,
+				69065A4728ACE0FA008B960C /* Jost-Medium.ttf in Resources */,
 				69856A682736B3DC0081A14C /* MenuCell.xib in Resources */,
 				69EE7FBC2809B10C00B7FB0B /* psy_questions_table_2.csv in Resources */,
 				69EE7FCF2809B1E700B7FB0B /* psy_questions_list_5.csv in Resources */,
@@ -1335,6 +1345,7 @@
 				69EE7FD02809B1E700B7FB0B /* psy_questions_list_6.csv in Resources */,
 				69EE7FD12809B1E700B7FB0B /* psy_questions_list_7.csv in Resources */,
 				69EE7FBE2809B10C00B7FB0B /* psy_questions_table_7.csv in Resources */,
+				6994891428ABD6DF0076B3A7 /* jost in Resources */,
 				69EE7FCC2809B1E700B7FB0B /* psy_questions_list_9.csv in Resources */,
 				69A1C6CA26B1698B00216B2C /* Montserrat-ExtraBold.ttf in Resources */,
 				69EE7FCB2809B1E700B7FB0B /* psy_questions_list_3.csv in Resources */,
@@ -1345,6 +1356,7 @@
 				69A1C6CF26B169D000216B2C /* Montserrat-Medium.ttf in Resources */,
 				69EE7FB82809B10C00B7FB0B /* psy_questions_table_4.csv in Resources */,
 				69EE7FB92809B10C00B7FB0B /* psy_questions_table_9.csv in Resources */,
+				69065A4828ACE0FD008B960C /* Jost-Regular.ttf in Resources */,
 				69EE7FBD2809B10C00B7FB0B /* psy_questions_table_1.csv in Resources */,
 				69EE7FC92809B1E700B7FB0B /* psy_questions_list_4.csv in Resources */,
 				69A1C6B726B161BF00216B2C /* Montserrat in Resources */,

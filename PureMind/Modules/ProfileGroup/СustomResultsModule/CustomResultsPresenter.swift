@@ -47,5 +47,6 @@ class CustomResultsPresenter: CustomResultsPresenterProtocol{
     func prepareCell(cell: ShortPolicyViewCell, index: Int) {
         let title = headers[index]
         cell.descriptionLabel.text = headersDesc[title] ?? ""
+        cell.descriptionLabel.textColor = newButtonLabelColor
     }
 }

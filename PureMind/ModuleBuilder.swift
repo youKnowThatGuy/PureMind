@@ -45,6 +45,13 @@ class ModuleBuilder: AssemblyBuilderProtocol{
         return navC
     }
     
+    func createDiarymodule() -> UIViewController {
+        let diaryVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "DiaryVC") as DiaryStagesViewController
+        diaryVC.presenter = DiaryStagesPresenter(view: diaryVC)
+        let navVC = UINavigationController(rootViewController: diaryVC)
+        return navVC
+    }
+    
     func createTabModule() ->UIViewController{
         let menuVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MainTabBar") as MainTabBarController
         return menuVC

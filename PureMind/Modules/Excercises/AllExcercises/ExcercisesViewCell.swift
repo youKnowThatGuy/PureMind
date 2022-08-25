@@ -22,7 +22,8 @@ class ExcercisesViewCell: UITableViewCell {
         excercisesTableView.separatorStyle = .none
         self.layer.cornerRadius = 15
         self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor(red: 251, green: 210, blue: 174).cgColor
+        self.layer.borderColor = newButtonLabelColor.cgColor
+        self.backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -38,8 +39,8 @@ extension ExcercisesViewCell: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExcerciseViewCell.identifier) as! ExcerciseViewCell
         cell.excerciseNameLabel.text = excercises[indexPath.row].name
-        cell.backgroundImageView?.image = UIImage(named: "Rectangle 60")
-        cell.emblemView.image = UIImage(named: "тик")
+        cell.excerciseNameLabel.textColor = newButtonLabelColor
+        cell.emblemView.image = UIImage(named: "tabBar4")
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell

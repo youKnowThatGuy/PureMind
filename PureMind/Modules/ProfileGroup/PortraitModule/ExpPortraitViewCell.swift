@@ -15,11 +15,10 @@ class ExpPortraitViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = titleBlueColor.withAlphaComponent(0.24)
-        self.layer.borderColor = titleBlueColor.cgColor
+        self.layer.borderColor = newButtonLabelColor.cgColor
         self.layer.borderWidth = 1
-        titleLabel.textColor = titleBlueColor
-        self.layer.cornerRadius = 15
+        titleLabel.textColor = newButtonLabelColor
+        self.layer.cornerRadius = 25
         contentView.layer.masksToBounds = true
     }
     

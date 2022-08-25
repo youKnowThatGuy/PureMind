@@ -18,14 +18,17 @@ class SafePlanTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.layer.borderColor = UIColor(red: 144, green: 191, blue: 255).cgColor
+        self.layer.borderColor = newButtonLabelColor.cgColor
         self.layer.borderWidth = 1
-        layer.cornerRadius = 15
-        contentView.layer.cornerRadius = 15
-        planTextView.backgroundColor = titleBlueColor.withAlphaComponent(0.45)
-        planTextView.layer.cornerRadius = 15
-        saveButtonShell.backgroundColor = lightYellowColor
-        saveButtonShell.layer.cornerRadius = 15
+        layer.cornerRadius = 20
+        contentView.layer.cornerRadius = 20
+        planTextView.backgroundColor = titleBlueColor.withAlphaComponent(0.85)
+        planTextView.layer.cornerRadius = 20
+        saveButtonShell.backgroundColor = .white
+        saveButtonShell.layer.cornerRadius = 20
+        saveButtonShell.layer.borderColor = newButtonLabelColor.cgColor
+        saveButtonShell.layer.borderWidth = 1
+        saveButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
         planTextView.addDoneButton(title: "Готово", target: self, selector: #selector(tapDone(sender:)))
     }
     

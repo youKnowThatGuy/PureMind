@@ -22,13 +22,12 @@ class SecondQuestionsViewController: UIViewController {
     @IBOutlet weak var questionTitleLabel: UILabel!
     @IBOutlet weak var continueButtonShell: UIButton!
     @IBOutlet weak var answerTextField: UITextView!
-    @IBOutlet weak var backButtonShell: UIButton!
+    @IBOutlet weak var topView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         answerTextField.addDoneButton(title: "Готово", target: self, selector: #selector(tapDone(sender:)))
-        self.view.backgroundColor = UIColor(red: 254, green: 235, blue: 138)
         checkIndex()
         prepareViews()
         updateUI(mood: presenter.currMood!)
@@ -42,15 +41,15 @@ class SecondQuestionsViewController: UIViewController {
     func prepareViews(){
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
-        moodTitleLabel.textColor = .white
-        questionTitleLabel.textColor = .white
-        backButtonShell.tintColor = .white
+        topView.layer.cornerRadius = 20
+        moodTitleLabel.textColor = newButtonLabelColor
+        questionTitleLabel.textColor = newButtonLabelColor
         answerTextField.backgroundColor = .white
-        answerTextField.layer.borderWidth = 0
-        answerTextField.layer.borderColor = UIColor(red: 255, green: 255, blue: 255).cgColor
+        answerTextField.layer.borderWidth = 1
+        answerTextField.layer.borderColor = newButtonLabelColor.cgColor
         answerTextField.layer.cornerRadius = 20
-        continueButtonShell.backgroundColor = lightYellowColor
-        continueButtonShell.layer.cornerRadius = 15
+        continueButtonShell.layer.cornerRadius = 20
+        continueButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
     }
     
     func checkIndex(){
@@ -101,15 +100,20 @@ extension SecondQuestionsViewController: SecondQuestionsViewProtocol{
         moodTitleLabel.text = mood
         switch mood {
         case "Отлично":
-            self.view.backgroundColor = perfectMood
+            self.topView.backgroundColor = perfectMood
+            continueButtonShell.backgroundColor = perfectMood
         case "Хорошо":
-            self.view.backgroundColor = goodMood
+            self.topView.backgroundColor = goodMood
+            continueButtonShell.backgroundColor = goodMood
         case "Нормально":
-            self.view.backgroundColor = normalMood
+            self.topView.backgroundColor = normalMood
+            continueButtonShell.backgroundColor = normalMood
         case "Плохо":
-            self.view.backgroundColor = badMood
+            self.topView.backgroundColor = badMood
+            continueButtonShell.backgroundColor = badMood
         case "Ужасно":
-            self.view.backgroundColor = awfulMood
+            self.topView.backgroundColor = awfulMood
+            continueButtonShell.backgroundColor = awfulMood
         default:
             self.view.backgroundColor = .white
         }

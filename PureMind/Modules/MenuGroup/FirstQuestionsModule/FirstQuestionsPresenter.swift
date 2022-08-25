@@ -25,6 +25,7 @@ protocol FirstQuestionsPresenterProtocol{
 class FirstQuestionsPresenter: FirstQuestionsPresenterProtocol{
     weak var view: FirstQuestionsViewProtocol?
     var currMood: String?
+    var currMoodColor: UIColor?
     var selectedCells = [IndexPath]()
     var selectedAnswers = [String]()
     var phonyData = [["Гордость", "Спокойствие", "Уверенность", "Радость", "Счастье", "Возбуждение", "Благодарность", "Мотивация", "Вдохновение", "Облегчение", "Безопасность", "Печаль", "Злость", "Скука", "Стыд", "Разочарование", "Одиночество", "Вина", "Усталость", "Тревога"]]
@@ -65,14 +66,19 @@ class FirstQuestionsPresenter: FirstQuestionsPresenterProtocol{
         switch currMood {
         case "Отлично":
             view?.setBackgroundColor(color: perfectMood)
+            currMoodColor = perfectMood
         case "Хорошо":
             view?.setBackgroundColor(color: goodMood)
+            currMoodColor = goodMood
         case "Нормально":
             view?.setBackgroundColor(color: normalMood)
+            currMoodColor = normalMood
         case "Плохо":
             view?.setBackgroundColor(color: badMood)
+            currMoodColor = badMood
         case "Ужасно":
             view?.setBackgroundColor(color: awfulMood)
+            currMoodColor = awfulMood
         default:
             view?.setBackgroundColor(color: .white)
         }
@@ -125,9 +131,10 @@ class FirstQuestionsPresenter: FirstQuestionsPresenterProtocol{
     }
     
     func prepareCell(cell: AnswerViewCell, index: IndexPath) {
-        cell.textLabel.textColor = grayTextColor
-        cell.layer.borderColor = grayButtonColor.cgColor
+        cell.textLabel.textColor = newButtonLabelColor
+        cell.layer.borderColor = newButtonLabelColor.cgColor
         cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 20
         if index.row > phonyData[index.section].count - 1{
             cell.textLabel.text = "+"
         }
@@ -137,7 +144,7 @@ class FirstQuestionsPresenter: FirstQuestionsPresenterProtocol{
                 cell.backgroundColor = .white
             }
             else{
-                cell.backgroundColor = lightYellowColor
+                cell.backgroundColor = currMoodColor
             }
             cell.textLabel.text = phonyData[index.section][index.row]
         }

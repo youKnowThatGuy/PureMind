@@ -11,24 +11,29 @@ import ExpyTableView
 class ExpTitlePlanCell: UITableViewCell, ExpyTableViewHeaderCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var planLabel: UILabel!
-    @IBOutlet weak var noteImageView: UIImageView!
+    @IBOutlet weak var modifyLabel: UILabel!
     
     static let identifier = "ExpTitlePlanCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.textColor = titleBlueColor
-        planLabel.textColor = textFieldColor
-        self.backgroundColor = titleBlueColor.withAlphaComponent(0.24)
-        layer.cornerRadius = 15
-        contentView.layer.cornerRadius = 15
+        self.backgroundColor = .white
+        self.layer.borderColor = newButtonLabelColor.cgColor
+        self.layer.borderWidth = 1
+        modifyLabel.textColor = .white
+        modifyLabel.backgroundColor = newButtonLabelColor
+        modifyLabel.layer.cornerRadius = 20
+        titleLabel.textColor = newButtonLabelColor
+        planLabel.textColor = newButtonLabelColor
+        layer.cornerRadius = 20
+        contentView.layer.cornerRadius = 20
     }
     
     func changeState(_ state: ExpyState, cellReuseStatus cellReuse: Bool) {
         switch state {
         case .willExpand:
             print("WILL EXPAND")
-            noteImageView.isHidden = true
+            modifyLabel.isHidden = true
             hideSeparator()
                 
         case .willCollapse:
@@ -39,7 +44,7 @@ class ExpTitlePlanCell: UITableViewCell, ExpyTableViewHeaderCell {
                 
         case .didCollapse:
             showSeparator()
-            noteImageView.isHidden = false
+            modifyLabel.isHidden = false
             print("DID COLLAPSE")
         }
     }

@@ -126,8 +126,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "manageCustomAnswer(answer:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "manageCustomAnswer(answer:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,8 +206,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1338,8 +1338,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1354,8 +1354,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1370,8 +1370,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1386,8 +1386,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "manageAnswer(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1402,8 +1402,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1412,22 +1412,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9E0409FC-E5A6-4727-A080-306A4F280C14"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "prepareCell(cell:index:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AAD0B595-C047-45EC-9315-CB21653C33E6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1443,6 +1427,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "AAD0B595-C047-45EC-9315-CB21653C33E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "prepareCell(cell:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "A7B16795-2DE1-4072-BDCD-02F5260F8186"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1450,8 +1450,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1578,8 +1578,8 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/MenuPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "prepareCourseCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1594,8 +1594,8 @@
             filePath = "PureMind/Modules/Excercises/AllExcercises/ExcercisesViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1610,8 +1610,8 @@
             filePath = "PureMind/Modules/Excercises/AllExcercises/ExcercisesViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1770,8 +1770,8 @@
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1786,8 +1786,8 @@
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1802,8 +1802,8 @@
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2106,8 +2106,8 @@
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2218,8 +2218,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "cacheCurrMood(moodScore:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2234,8 +2234,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "calculateScore(index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2250,8 +2250,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2266,8 +2266,8 @@
             filePath = "PureMind/Modules/MenuGroup/FirstQuestionsModule/FirstQuestionsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2282,8 +2282,8 @@
             filePath = "PureMind/Modules/MenuGroup/MoodModule/MoodPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "getData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2298,8 +2298,8 @@
             filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/View/RegistrationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "registerSuccess()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2330,8 +2330,8 @@
             filePath = "PureMind/Modules/WelcomeGroup/RegistrationModule/View/RegistrationViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "registerButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2474,8 +2474,8 @@
             filePath = "PureMind/Modules/WelcomeGroup/LoginModule/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "loginButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2490,8 +2490,8 @@
             filePath = "PureMind/Modules/ProfileGroup/ShareModule/ShareViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "prepareViews()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2602,8 +2602,8 @@
             filePath = "PureMind/Modules/ProfileGroup/ContactsModule/ContactsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "callbackButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2835,8 +2835,8 @@
             filePath = "PureMind/Modules/MenuGroup/MoodModule/MoodViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2851,8 +2851,8 @@
             filePath = "PureMind/Modules/MenuGroup/MoodModule/MoodViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2867,8 +2867,8 @@
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2883,8 +2883,8 @@
             filePath = "PureMind/ModuleBuilder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
             landmarkName = "createAnyPractic(info:title:practicName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3084,7 +3084,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6EBC1A84-63DE-434A-93A3-FC0AB0E9ADA2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/ServiceLayer/NetworkService.swift"
@@ -3100,7 +3100,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B8396092-F538-4155-93C3-8C88CA02C051"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/ServiceLayer/NetworkService.swift"
@@ -3298,8 +3298,8 @@
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "prepareCell(cell:index:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3436,7 +3436,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4D8BD441-9735-4F01-A5A1-11A46B0595B7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/ProfileGroup/CustomTestsModule/CustomTestsPresenter.swift"
@@ -3554,8 +3554,8 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/View/MenuViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "moveToNotificationsScreen()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3570,8 +3570,8 @@
             filePath = "PureMind/Modules/MenuGroup/MenuModule/View/MenuViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "prepareButtons()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3602,8 +3602,8 @@
             filePath = "PureMind/Modules/Excercises/AllExcercises/ExpPracticViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
