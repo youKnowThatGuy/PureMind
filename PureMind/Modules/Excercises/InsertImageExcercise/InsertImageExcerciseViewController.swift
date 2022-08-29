@@ -15,17 +15,17 @@ protocol InsertImageExcerciseViewProtocol: UIViewController{
 
 class InsertImageExcerciseViewController: UIViewController {
     
-    @IBOutlet weak var backButtonShell: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backwardsButtonShell: UIButton!
     @IBOutlet weak var playButtonShell: UIButton!
-    
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var forwardButtonShell: UIButton!
     @IBOutlet weak var scrollIndicator: UIPageControl!
     @IBOutlet weak var excerciseNameLabel: UILabel!
     @IBOutlet weak var excerciseDescriptionLabel: UITextView!
     @IBOutlet weak var insertButtonShell: UIButton!
-    @IBOutlet weak var insertedImageView: UIImageView!
+    @IBOutlet weak var insertedImageConfirmationLabel: UILabel!
+    @IBOutlet weak var insertedImageConfirmationImage: UIImageView!
     
     var presenter: InsertImageExcercisePresenterProtocol!
     var isPlaying = false
@@ -40,7 +40,7 @@ class InsertImageExcerciseViewController: UIViewController {
     var insertedImage: UIImage?
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background3")
+            imageView.image = UIImage(named: "background12")
             imageView.contentMode = .scaleAspectFill
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
@@ -73,17 +73,21 @@ class InsertImageExcerciseViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
-        insertButtonShell.setTitleColor(lightYellowColor, for: .normal)
-        insertButtonShell.layer.borderColor = lightYellowColor.cgColor
+        topView.backgroundColor = UIColor(patternImage: UIImage(named: "background14")!)
+        topView.layer.cornerRadius = 20
+        insertButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
+        insertButtonShell.layer.borderColor = newButtonLabelColor.cgColor
         insertButtonShell.layer.borderWidth = 2
-        insertButtonShell.layer.cornerRadius = 15
-        backButtonShell.tintColor = lightYellowColor
-        titleLabel.textColor = titleYellow
-        backButtonShell.tintColor = titleYellow
-        excerciseNameLabel.textColor = grayTextColor
+        insertButtonShell.layer.cornerRadius = 20
+        titleLabel.textColor = newButtonLabelColor
+        excerciseNameLabel.textColor = newButtonLabelColor
         titleLabel.text = titleText
         excerciseNameLabel.text = excerciseName
         excerciseDescriptionLabel.text = excerciseDescription
+        insertedImageConfirmationLabel.layer.cornerRadius = 15
+        insertedImageConfirmationLabel.layer.borderColor = grayTextColor.withAlphaComponent(0.46).cgColor
+        insertedImageConfirmationLabel.layer.borderWidth = 1
+        insertedImageConfirmationLabel.textColor = grayTextColor.withAlphaComponent(0.46)
     }
     
     func setupScrollIndicator(){
@@ -93,7 +97,8 @@ class InsertImageExcerciseViewController: UIViewController {
     }
     
     func updateImageView(){
-        insertedImageView.image = insertedImage
+        insertedImageConfirmationLabel.isHidden = false
+        insertedImageConfirmationImage.isHidden = false
     }
     
     func setupPlayer(audioData: Data?){
@@ -109,7 +114,6 @@ class InsertImageExcerciseViewController: UIViewController {
             catch{
                 alert()
                 playButtonShell.isUserInteractionEnabled = false
-                backButtonShell.isUserInteractionEnabled = false
                 forwardButtonShell.isUserInteractionEnabled = false
                 backwardsButtonShell.isUserInteractionEnabled = false
             }
@@ -117,7 +121,6 @@ class InsertImageExcerciseViewController: UIViewController {
         else {
             alert()
             playButtonShell.isUserInteractionEnabled = false
-            backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
             backwardsButtonShell.isUserInteractionEnabled = false
         }
@@ -184,7 +187,6 @@ extension InsertImageExcerciseViewController: InsertImageExcerciseViewProtocol{
     func failedToLoad(){
         alert()
         playButtonShell.isUserInteractionEnabled = false
-        backButtonShell.isUserInteractionEnabled = false
         forwardButtonShell.isUserInteractionEnabled = false
         backwardsButtonShell.isUserInteractionEnabled = false
     }
@@ -196,10 +198,9 @@ extension InsertImageExcerciseViewController: UIImagePickerControllerDelegate, U
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
         present(imagePicker, animated: true){[weak self] in
-            self?.insertButtonShell.backgroundColor = lightYellowColor
-            self?.insertButtonShell.setTitleColor(.white, for: .normal)
-            self?.insertButtonShell.setTitle("Продолжить", for: .normal)
-            self?.uploadImg.isHidden = true
+            self?.insertButtonShell.backgroundColor = .clear
+            self?.insertButtonShell.setTitle("перезагрузить", for: .normal)
+            self?.uploadImg.isHidden = false
         }
     }
     

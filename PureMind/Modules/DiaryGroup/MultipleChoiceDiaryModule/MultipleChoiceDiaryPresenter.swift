@@ -80,23 +80,23 @@ class MultipleChoiceDiaryPresenter: MultipleChoiceDiaryPresenterProtocol{
     }
     
     func prepareCell(cell: AnswerViewCell, index: IndexPath) {
-        cell.textLabel.textColor = grayTextColor
-        cell.layer.cornerRadius = 10
+        cell.textLabel.textColor = newButtonLabelColor
+        cell.layer.cornerRadius = 20
         let check = selectedCells.firstIndex(of: index)
         if check == nil{
             if index.row > answerData[currIndex].count - 1{
                 cell.textLabel.text = "+"
-                cell.backgroundColor = .white
+                cell.backgroundColor = UIColor(red: 248, green: 232, blue: 187)
                 cell.layer.borderColor = lightYellowColor.cgColor
                 cell.layer.borderWidth = 1
             }
             else{
-                cell.backgroundColor = UIColor(red: 255, green: 244, blue: 204)
+                cell.backgroundColor = UIColor(red: 248, green: 232, blue: 187)
                 cell.textLabel.text = answerData[currIndex][index.row]
             }
         }
         else{
-            cell.backgroundColor = UIColor(red: 255, green: 239, blue: 184)
+            cell.backgroundColor = UIColor(red: 248, green: 232, blue: 187)
             cell.textLabel.text = answerData[currIndex][index.row]
         }
     }

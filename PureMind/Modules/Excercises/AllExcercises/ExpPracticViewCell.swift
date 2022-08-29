@@ -21,7 +21,6 @@ class ExpPracticViewCell: UITableViewCell {
             self.backgroundColor = .clear
             titleLabel.textColor = newButtonLabelColor
             //titleLabel.layer.addBorder(edge: UIRectEdge.bottom, color: UIColor(red: 251, green: 210, blue: 174), thickness: 1)
-            leftColorView.backgroundColor =  .clear
             self.layer.borderColor = newButtonLabelColor.cgColor
             self.layer.borderWidth = 1
         }

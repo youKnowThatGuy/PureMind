@@ -12,6 +12,7 @@ class DiaryTextViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var saveButtonShell: UIButton!
+    @IBOutlet weak var topView: UIView!
     
     var titleText: String!
     var mainText: String!
@@ -19,34 +20,21 @@ class DiaryTextViewController: UIViewController {
     var hideTimePicker = true
     @IBOutlet weak var timePicker: UITextView!
     
-    var imageView: UIImageView = {
-            let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background10")
-            imageView.contentMode = .scaleAspectFill
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-            return imageView
-        }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareViews()
     }
     
     func prepareViews(){
-        view.insertSubview(imageView, at: 0)
-                NSLayoutConstraint.activate([
-                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-                ])
-        titleLabel.textColor = .white
-        textLabel.textColor = .white
+        topView.backgroundColor = UIColor(red: 248, green: 232, blue: 187)
+        topView.layer.cornerRadius = 20
+        titleLabel.textColor = newButtonLabelColor
+        textLabel.textColor = newButtonLabelColor
         titleLabel.text = titleText
         textLabel.text = mainText
         saveButtonShell.setTitleColor(.white, for: .normal)
-        saveButtonShell.layer.backgroundColor = lightYellowColor.cgColor
-        saveButtonShell.layer.cornerRadius = 15
+        saveButtonShell.layer.backgroundColor = newButtonLabelColor.cgColor
+        saveButtonShell.layer.cornerRadius = 20
         saveButtonShell.setTitle(buttonText, for: .normal)
         tuneTimePicker()
     }

@@ -17,6 +17,7 @@ protocol AllCoursesViewProtocol: UIViewController{
 class AllCoursesViewController: UIViewController {
     var presenter: AllCoursesPresenterProtocol!
     
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var descriptionTitle: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var backButtonShell: UIButton!
@@ -24,7 +25,7 @@ class AllCoursesViewController: UIViewController {
     var backHidden = false
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background7")
+            imageView.image = UIImage(named: "background15")
             imageView.contentMode = .scaleAspectFill
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
@@ -65,8 +66,12 @@ class AllCoursesViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
-        descriptionLabel.textColor = grayTextColor
-        descriptionTitle.textColor = grayTextColor
+        topView.backgroundColor = UIColor(patternImage: UIImage(named: "background15")!)
+        topView.layer.cornerRadius = 20
+        topView.layer.borderWidth = 1
+        topView.layer.borderColor = newButtonLabelColor.cgColor
+        descriptionLabel.textColor = newButtonLabelColor
+        descriptionTitle.textColor = newButtonLabelColor
         prepareTableView()
     }
     
@@ -123,6 +128,7 @@ extension AllCoursesViewController: ExpyTableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
+        /*
         let verticalPadding: CGFloat = 8
 
         let maskLayer = CALayer()
@@ -130,6 +136,7 @@ extension AllCoursesViewController: ExpyTableViewDataSource {
         maskLayer.backgroundColor = UIColor.black.cgColor
         maskLayer.frame = CGRect(x: cell.bounds.origin.x, y: cell.bounds.origin.y, width: cell.bounds.width, height: cell.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
         cell.layer.mask = maskLayer
+         */
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -147,7 +154,8 @@ extension AllCoursesViewController: ExpyTableViewDataSource {
     func tableView(_ tableView: ExpyTableView, expandableCellForSection section: Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExpCourseViewCell.identifier) as! ExpCourseViewCell
         cell.titleLabel.text = presenter.getTitleText(index: section)
-        cell.descriptionLabel.text = presenter.getDescriptionText(index: section)
+        //cell.descriptionLabel.text = presenter.getDescriptionText(index: section)
+        cell.titleLabel.textColor = newButtonLabelColor
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell

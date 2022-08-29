@@ -41,8 +41,6 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeLeft.direction = .right
         self.view.addGestureRecognizer(swipeLeft)
-        //view.addSubview(buttonTableView)
-        //setupButtonCollectionView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -64,6 +62,7 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         messagesCollectionView.messagesDisplayDelegate = self
         messagesCollectionView.contentInset.top = 90
         messagesCollectionView.contentInset.bottom = 100
+        messagesCollectionView.backgroundColor = UIColor(patternImage: UIImage(named: "background13")!)
         
         let layout = messagesCollectionView.collectionViewLayout as? MessagesCollectionViewFlowLayout
         layout?.setMessageIncomingMessagePadding(UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 80))
@@ -74,15 +73,14 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         messageInputBar.delegate = self
         messageInputBar.inputTextView.placeholder = "Напишите сообщение..."
         messageInputBar.inputTextView.placeholderTextColor = grayTextColor
-        messageInputBar.inputTextView.font = UIFont(name: "Montserrat-Regular", size: 16)
-        messageInputBar.inputTextView.textColor = grayTextColor
-        messageInputBar.middleContentView?.backgroundColor = .white
-        messageInputBar.inputTextView.placeholderTextColor = grayTextColor
-        messageInputBar.rightStackView.backgroundColor = lightYellowColor
+        messageInputBar.inputTextView.font = UIFont(name: "Jost-Regular", size: 16)
+        messageInputBar.inputTextView.textColor = newButtonLabelColor
+        messageInputBar.middleContentView?.backgroundColor = .clear
+        messageInputBar.rightStackView.backgroundColor = .clear
         messageInputBar.sendButton.setTitle("", for: .normal)
         messageInputBar.sendButton.setImage(UIImage(named: "send_button"), for: .normal)
-        messageInputBar.backgroundView.backgroundColor = lightYellowColor
-        messageInputBar.backgroundView.layer.cornerRadius = 15
+        messageInputBar.backgroundView.backgroundColor = .clear
+        messageInputBar.backgroundView.layer.cornerRadius = 20
     }
 
     
@@ -128,11 +126,21 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         topView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true //right
         topView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true //left
         
-        let backButton = UIButton(frame: CGRect(x: 20, y: 8.5, width: 35, height: 35))
+        let backButton = UIButton(frame: CGRect(x: 20, y: 8.5, width: 25, height: 25))
         backButton.setTitle("", for: .normal)
-        backButton.setBackgroundImage(UIImage(named: "backButtonYellow"), for: .normal)
+        backButton.setBackgroundImage(UIImage(named: "newBackButton"), for: .normal)
         backButton.addTarget(self, action: #selector(backButtonPressed), for: .touchUpInside)
         topView.addSubview(backButton)
+        
+        let imageView = UIImageView(frame: CGRect(x: 89, y: 3, width: 42, height: 42))
+        let image = UIImage(named: "mindie_smol")!
+        imageView.layer.cornerRadius = imageView.frame.size.width / 2
+        imageView.layer.borderColor = newButtonLabelColor.cgColor
+        imageView.layer.borderWidth = 1
+        imageView.layer.masksToBounds = false
+        imageView.image = image
+        imageView.clipsToBounds = true
+        topView.addSubview(imageView)
         
         let therapistButton = UIButton(frame: CGRect(x: 109, y: 13, width: 161, height: 29))
         therapistButton.setTitle("Добавить терапевта", for: .normal)
@@ -150,10 +158,10 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         historyButton.addTarget(self, action: #selector(chatHistoryPressed), for: .touchUpInside)
         //topView.addSubview(historyButton)
         
-        let openButtonViewButton = UIButton(frame: CGRect(x: 330, y: 683, width: 50, height: 50))
+        let openButtonViewButton = UIButton(frame: CGRect(x: 330, y: 653, width: 30, height: 30))
         openButtonViewButton.setBackgroundImage(UIImage(systemName: "message.circle"), for: .normal)
         openButtonViewButton.addTarget(self, action: #selector(openReactionVC), for: .touchUpInside)
-        openButtonViewButton.tintColor = lightYellowColor
+        openButtonViewButton.tintColor = newButtonLabelColor
         view.addSubview(openButtonViewButton)
         openButtonViewButton.translatesAutoresizingMaskIntoConstraints = false
         openButtonViewButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -81).isActive = true
@@ -176,13 +184,19 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
     }
     
     func textColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
-        return isFromCurrentSender(message: message) ? .white : grayTextColor
+        return isFromCurrentSender(message: message) ? newButtonLabelColor : .white
         }
     
     
     func backgroundColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
-            return isFromCurrentSender(message: message) ? lightYellowColor : UIColor(red: 233, green: 241, blue: 254)
+        return isFromCurrentSender(message: message) ? .white : newButtonLabelColor
         }
+    
+    func messageStyle(for message: MessageType, at indexPath: IndexPath, in  messagesCollectionView: MessagesCollectionView) -> MessageStyle {
+        let corner: MessageStyle.TailCorner = isFromCurrentSender(message: message) ? .bottomRight : .bottomLeft
+        let borderColor:UIColor = isFromCurrentSender(message: message) ? .clear: newButtonLabelColor
+        return .bubbleTailOutline(borderColor, corner, .curved)
+    }
     
     func scrollDown(){
     DispatchQueue.main.async {

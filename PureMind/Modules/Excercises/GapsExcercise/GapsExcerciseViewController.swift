@@ -15,11 +15,10 @@ protocol GapsExcerciseViewProtocol: UIViewController{
 
 class GapsExcerciseViewController: UIViewController {
     
-    @IBOutlet weak var backButtonShell: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backwardsButtonShell: UIButton!
     @IBOutlet weak var playButtonShell: UIButton!
-    
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var forwardButtonShell: UIButton!
     @IBOutlet weak var scrollIndicator: UIPageControl!
     @IBOutlet weak var excerciseNameLabel: UILabel!
@@ -36,7 +35,7 @@ class GapsExcerciseViewController: UIViewController {
     var excerciseDescription: String?
     var imageView: UIImageView = {
             let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background4")
+            imageView.image = UIImage(named: "background12")
             imageView.contentMode = .scaleAspectFill
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
@@ -56,7 +55,6 @@ class GapsExcerciseViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        //imageView.isHidden = true
         audioPlayer?.pause()
         playButtonShell.setBackgroundImage(UIImage(named: "playButton"), for: .normal)
         isPlaying = false
@@ -75,12 +73,14 @@ class GapsExcerciseViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
+        topView.backgroundColor = UIColor(patternImage: UIImage(named: "background14")!)
+        topView.layer.cornerRadius = 20
         titleLabel.text = titleText
-        titleLabel.textColor = .white
+        titleLabel.textColor = newButtonLabelColor
         excerciseNameLabel.text = excerciseName
-        excerciseNameLabel.textColor = grayTextColor
+        excerciseNameLabel.textColor = newButtonLabelColor
         excerciseDescriptionLabel.text = excerciseDescription
-        excerciseDescriptionLabel.textColor = grayTextColor
+        excerciseDescriptionLabel.textColor = newButtonLabelColor
     }
     
     func setupScrollIndicator(){
@@ -102,7 +102,6 @@ class GapsExcerciseViewController: UIViewController {
             catch{
                 alert(title: "Ошибка", text: "Не удалось загрузить аудио")
                 playButtonShell.isUserInteractionEnabled = false
-                backButtonShell.isUserInteractionEnabled = false
                 forwardButtonShell.isUserInteractionEnabled = false
                 backwardsButtonShell.isUserInteractionEnabled = false
             }
@@ -110,7 +109,6 @@ class GapsExcerciseViewController: UIViewController {
         else {
             alert(title: "Ошибка", text: "Не удалось загрузить аудио")
             playButtonShell.isUserInteractionEnabled = false
-            backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
             backwardsButtonShell.isUserInteractionEnabled = false
         }
@@ -174,7 +172,6 @@ extension GapsExcerciseViewController: GapsExcerciseViewProtocol{
         alert(title: "Спасибо!", text: text)
         if text != "Успешно!"{
             playButtonShell.isUserInteractionEnabled = false
-            backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
             backwardsButtonShell.isUserInteractionEnabled = false
         }

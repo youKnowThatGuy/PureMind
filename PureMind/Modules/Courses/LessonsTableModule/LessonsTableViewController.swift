@@ -55,7 +55,7 @@ class LessonsTableViewController: UIViewController, SFSafariViewControllerDelega
     }
     
     func alert(){
-        let alert = UIAlertController(title: "Внимание", message: "Похоже, для данного урока отсутствует видео лекция", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Внимание", message: "Похоже, для данного урока отсутствует видео-лекция", preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Oк", style: .cancel, handler: nil)
         alert.addAction(okButton)
         present(alert, animated: true, completion: nil)
@@ -64,12 +64,12 @@ class LessonsTableViewController: UIViewController, SFSafariViewControllerDelega
     func hideShowLessonTable(hidden: Bool){
         lockImageView = UIImageView(frame: CGRect(x: 150, y: 200, width: 70, height: 70))
         lockImageView.image = UIImage(systemName: "lock")
-        lockImageView.tintColor = UIColor(red: 211, green: 228, blue: 160)
+        lockImageView.tintColor = newButtonLabelColor
         lockLabel = UILabel(frame: CGRect(x: 20, y: 300, width: 300, height: 100))
         lockLabel.text = "Выполните все рефликсивные вопросы в предыдущем уроке, чтобы открыть этот"
-        lockLabel.font = UIFont(name: "Montserrat-SemiBold", size: 16)
+        lockLabel.font = UIFont(name: "Jost-Medium", size: 16)
         lockLabel.numberOfLines = 0
-        lockLabel.textColor = grayTextColor
+        lockLabel.textColor = newButtonLabelColor
         view.addSubview(lockLabel)
         view.addSubview(lockImageView)
         lockLabel.isHidden = !hidden
@@ -117,8 +117,8 @@ extension LessonsTableViewController: UITableViewDelegate, UITableViewDataSource
         let label = UILabel()
         label.frame = CGRect.init(x: 5, y: 5, width: headerView.frame.width-10, height: headerView.frame.height-10)
         label.text = presenter.getTitleText(index: section)
-        label.font = UIFont(name: "Montserrat-SemiBold", size: 16)
-        label.textColor = grayTextColor
+        label.font = UIFont(name: "Jost-Medium", size: 18)
+        label.textColor = newButtonLabelColor
             
         headerView.addSubview(label)
             
@@ -126,7 +126,8 @@ extension LessonsTableViewController: UITableViewDelegate, UITableViewDataSource
         }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 15))
+        let footerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width + 20, height: 15))
+        footerView.layer.cornerRadius = 15
         footerView.backgroundColor = UIColor(red: 245, green: 245, blue: 245)
         return footerView
     }

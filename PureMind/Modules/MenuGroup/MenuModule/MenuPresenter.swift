@@ -170,14 +170,19 @@ class MenuPresenter: MenuPresenterProtocol{
         else if (index + 1) % 3 == 0 && (index + 1) % 2 != 0 {
             int = 3
         }
-        
+        /*
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
         let image = UIImage(named: "cell_back\(int)")
         imageView.image = image
         cell.backgroundView = UIView()
         cell.backgroundView!.addSubview(imageView)
+         */
+        cell.backgroundColor = .clear
+        cell.layer.borderColor = newButtonLabelColor.cgColor
+        cell.layer.borderWidth = 1
         cell.courseNameLabel.text = courses[index]
-        cell.layer.cornerRadius = 12
+        cell.layer.cornerRadius = 20
+        cell.courseNameLabel.textColor = newButtonLabelColor
         //cell.parentView = view
     }
     

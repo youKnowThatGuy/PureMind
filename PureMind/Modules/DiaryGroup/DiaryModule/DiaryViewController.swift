@@ -15,17 +15,10 @@ class DiaryViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var notesCollectionView: UICollectionView!
     @IBOutlet weak var fadingLabel: UILabel!
-    
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var addButtonShell: UIButton!
     var presenter: DiaryPresenterProtocol!
     
-    var imageView: UIImageView = {
-            let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background3")
-            imageView.contentMode = .scaleAspectFill
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-            return imageView
-        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,18 +33,12 @@ class DiaryViewController: UIViewController {
     }
         
     func setupView(){
-        imageView.isUserInteractionEnabled = true
-        view.insertSubview(imageView, at: 0)
-                NSLayoutConstraint.activate([
-                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-                ])
+        topView.backgroundColor = UIColor(red: 248, green: 232, blue: 187)
+        topView.layer.cornerRadius = 20
         fadingLabel.textColor = grayTextColor
-        titleLabel.textColor = .white
+        titleLabel.textColor = newButtonLabelColor
         addButtonShell.layer.cornerRadius = 10
-        addButtonShell.backgroundColor = lightYellowColor
+        addButtonShell.backgroundColor = newButtonLabelColor
         notesCollectionView.delegate = self
         notesCollectionView.dataSource = self
         self.tabBarItem.isEnabled = false

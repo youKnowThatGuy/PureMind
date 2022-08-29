@@ -16,10 +16,10 @@ protocol AnswerChoiceExcerciseViewProtocol: UIViewController{
 
 class AnswerChoiceExcerciseViewController: UIViewController {
     
-    @IBOutlet weak var backButtonShell: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backwardsButtonShell: UIButton!
     @IBOutlet weak var playButtonShell: UIButton!
+    @IBOutlet weak var topView: UIView!
     
     @IBOutlet weak var forwardButtonShell: UIButton!
     @IBOutlet weak var scrollIndicator: UIPageControl!
@@ -76,13 +76,14 @@ class AnswerChoiceExcerciseViewController: UIViewController {
                     imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                     imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
                 ])
-        backButtonShell.tintColor = lightBlueColor
+        topView.backgroundColor = UIColor(patternImage: UIImage(named: "background14")!)
+        topView.layer.cornerRadius = 20
         titleLabel.text = titleText
-        titleLabel.textColor = .white
+        titleLabel.textColor = newButtonLabelColor
         excerciseNameLabel.text = excerciseName
-        excerciseNameLabel.textColor = grayTextColor
+        excerciseNameLabel.textColor = newButtonLabelColor
         excerciseDescriptionLabel.text = excerciseDescription
-        excerciseDescriptionLabel.textColor = grayTextColor
+        excerciseDescriptionLabel.textColor = newButtonLabelColor
     }
     
     func setupScrollIndicator(){
@@ -104,7 +105,6 @@ class AnswerChoiceExcerciseViewController: UIViewController {
             catch{
                 alert(text: "Не удалось загрузить аудио")
                 playButtonShell.isUserInteractionEnabled = false
-                backButtonShell.isUserInteractionEnabled = false
                 forwardButtonShell.isUserInteractionEnabled = false
                 backwardsButtonShell.isUserInteractionEnabled = false
             }
@@ -112,7 +112,6 @@ class AnswerChoiceExcerciseViewController: UIViewController {
         else {
             alert(text: "Не удалось загрузить аудио")
             playButtonShell.isUserInteractionEnabled = false
-            backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
             backwardsButtonShell.isUserInteractionEnabled = false
         }
@@ -174,7 +173,6 @@ extension AnswerChoiceExcerciseViewController: AnswerChoiceExcerciseViewProtocol
         alert(text: text)
         if text != "Успешно!"{
             playButtonShell.isUserInteractionEnabled = false
-            backButtonShell.isUserInteractionEnabled = false
             forwardButtonShell.isUserInteractionEnabled = false
             backwardsButtonShell.isUserInteractionEnabled = false
         }

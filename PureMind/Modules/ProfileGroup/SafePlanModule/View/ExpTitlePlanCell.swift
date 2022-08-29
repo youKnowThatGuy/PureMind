@@ -22,7 +22,8 @@ class ExpTitlePlanCell: UITableViewCell, ExpyTableViewHeaderCell {
         self.layer.borderWidth = 1
         modifyLabel.textColor = .white
         modifyLabel.backgroundColor = newButtonLabelColor
-        modifyLabel.layer.cornerRadius = 20
+        modifyLabel.layer.masksToBounds = true
+        modifyLabel.layer.cornerRadius = 15
         titleLabel.textColor = newButtonLabelColor
         planLabel.textColor = newButtonLabelColor
         layer.cornerRadius = 20

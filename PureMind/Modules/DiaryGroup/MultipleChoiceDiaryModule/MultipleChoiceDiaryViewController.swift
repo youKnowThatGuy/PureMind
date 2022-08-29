@@ -17,15 +17,8 @@ class MultipleChoiceDiaryViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var answersCollectionView: UICollectionView!
+    @IBOutlet weak var topVIew: UIView!
     @IBOutlet weak var saveButtonShell: UIButton!
-    
-    var imageView: UIImageView = {
-            let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background3")
-            imageView.contentMode = .scaleAspectFill
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-            return imageView
-        }()
     
     var presenter: MultipleChoiceDiaryPresenterProtocol!
     var vcIndex = 0
@@ -43,18 +36,13 @@ class MultipleChoiceDiaryViewController: UIViewController {
     }
     
     func prepareViews(){
-        view.insertSubview(imageView, at: 0)
-                NSLayoutConstraint.activate([
-                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-                ])
-        titleLabel.textColor = .white
-        descLabel.textColor = .white
+        topVIew.backgroundColor = UIColor(red: 248, green: 232, blue: 187)
+        topVIew.layer.cornerRadius = 20
+        titleLabel.textColor = newButtonLabelColor
+        descLabel.textColor = newButtonLabelColor
         saveButtonShell.setTitleColor(.white, for: .normal)
-        saveButtonShell.layer.backgroundColor = lightYellowColor.cgColor
-        saveButtonShell.layer.cornerRadius = 15
+        saveButtonShell.layer.backgroundColor = newButtonLabelColor.cgColor
+        saveButtonShell.layer.cornerRadius = 20
     }
     
     func checkVCindex(){

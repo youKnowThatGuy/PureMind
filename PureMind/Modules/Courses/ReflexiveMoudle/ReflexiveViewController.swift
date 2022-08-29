@@ -9,6 +9,7 @@ import UIKit
 
 class ReflexiveViewController: UIViewController {
 
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var discriptionLabel: UITextView!
     @IBOutlet weak var saveButtonShell: UIButton!
@@ -30,18 +31,20 @@ class ReflexiveViewController: UIViewController {
     }
     
     func prepareViews(){
-        titleLabel.textColor = UIColor(red: 211, green: 228, blue: 160)
+        topView.backgroundColor = UIColor(patternImage: UIImage(named: "background15")!)
+        topView.layer.cornerRadius = 20
+        titleLabel.textColor = newButtonLabelColor
         titleLabel.text = titleText
-        discriptionLabel.textColor = grayTextColor
+        discriptionLabel.textColor = newButtonLabelColor
         discriptionLabel.text = descText
         saveButtonShell.setTitleColor(.white, for: .normal)
-        saveButtonShell.layer.backgroundColor = lightYellowColor.cgColor
-        saveButtonShell.layer.cornerRadius = 15
-        questionTextView.textColor = grayTextColor
+        saveButtonShell.layer.backgroundColor = newButtonLabelColor.cgColor
+        saveButtonShell.layer.cornerRadius = 20
+        questionTextView.textColor = newButtonLabelColor
         questionTextView.backgroundColor = .white
-        questionTextView.layer.borderWidth = 2
-        questionTextView.layer.borderColor = UIColor(red: 211, green: 228, blue: 160).cgColor
-        questionTextView.layer.cornerRadius = 10
+        questionTextView.layer.borderWidth = 1
+        questionTextView.layer.borderColor = newButtonLabelColor.cgColor
+        questionTextView.layer.cornerRadius = 20
     }
     
     func alert(message: String){

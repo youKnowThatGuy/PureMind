@@ -15,14 +15,9 @@ class DiaryStagesViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var stagesTableView: UITableView!
+    @IBOutlet weak var topView: UIView!
+    
     var presenter: DiaryStagesPresenterProtocol!
-    var imageView: UIImageView = {
-            let imageView = UIImageView(frame: .zero)
-            imageView.image = UIImage(named: "background10")
-            imageView.contentMode = .scaleAspectFill
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-            return imageView
-        }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,21 +25,19 @@ class DiaryStagesViewController: UIViewController {
     }
     
     func prepareViews(){
-        view.insertSubview(imageView, at: 0)
-                NSLayoutConstraint.activate([
-                    imageView.topAnchor.constraint(equalTo: view.topAnchor),
-                    imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                    imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                    imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-                ])
+        self.navigationController?.isNavigationBarHidden = true
+        topView.backgroundColor = .clear
+        topView.layer.borderColor = newButtonLabelColor.cgColor
+        topView.layer.borderWidth = 2
+        topView.layer.cornerRadius = 20
         
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeLeft.direction = .right
         self.view.addGestureRecognizer(swipeLeft)
         stagesTableView.delegate = self
         stagesTableView.dataSource = self
-        stagesTableView.backgroundColor = UIColor.clear
-        titleLabel.textColor = .white
+        stagesTableView.backgroundColor = .clear
+        titleLabel.textColor = newButtonLabelColor
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -97,10 +90,44 @@ extension DiaryStagesViewController: UITableViewDataSource, UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: ExpPracticViewCell.identifier) as! ExpPracticViewCell
         cell.titleLabel.text = presenter.getTitleText(index: indexPath.row)
         cell.stageCell = true
-        cell.backgroundColor = UIColor(red: 254, green: 250, blue: 234)
-        cell.titleLabel.textColor = UIColor(red: 254, green: 146, blue: 62)
-        cell.titleLabel.layer.addBorder(edge: UIRectEdge.bottom, color: UIColor(red: 251, green: 210, blue: 174), thickness: 1)
-        cell.leftColorView.backgroundColor =  lightYellowColor
+        var backgroundName = ""
+        
+        switch indexPath.row{
+        case 0:
+            backgroundName = "diary4"
+        case 1:
+            backgroundName = "diary4"
+        case 2:
+            backgroundName = "diary3"
+        case 3:
+            backgroundName = "diary1"
+        case 4:
+            backgroundName = "diary1"
+        case 5:
+            backgroundName = "diary1"
+        case 6:
+            backgroundName = "diary2"
+        default:
+            break
+        }
+        
+        let imageView: UIImageView = {
+                let imageView = UIImageView(frame: .zero)
+                imageView.image = UIImage(named: backgroundName)
+                imageView.contentMode = .scaleAspectFill
+                imageView.translatesAutoresizingMaskIntoConstraints = false
+                return imageView
+            }()
+        
+        cell.insertSubview(imageView, at: 0)
+                NSLayoutConstraint.activate([
+                    imageView.topAnchor.constraint(equalTo: cell.topAnchor, constant: -10),
+                    imageView.leadingAnchor.constraint(equalTo: cell.leadingAnchor, constant: -30),
+                    imageView.trailingAnchor.constraint(equalTo: cell.trailingAnchor, constant: 30),
+                    imageView.bottomAnchor.constraint(equalTo: cell.bottomAnchor, constant: 20)
+                ])
+        //cell.backgroundColor = UIColor(patternImage: UIImage(named: backgroundName)!)
+        cell.titleLabel.textColor = newButtonLabelColor
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell

@@ -63,12 +63,12 @@ class AnswerChoiceExcercisePresenter: AnswerChoiceExcercisePresenterProtocol{
     }
     
     func prepareCell(cell: ExcerciseAnswerViewCell, index: Int){
-        cell.textView.textColor = grayTextColor
-        cell.layer.borderColor = lightBlueColor.cgColor
+        cell.textView.textColor = newButtonLabelColor
+        cell.layer.borderColor = newButtonLabelColor.cgColor
         cell.layer.borderWidth = 2
-        cell.choiceButtonShell.setTitleColor(.white, for: .normal)
-        cell.choiceButtonShell.layer.backgroundColor = lightBlueColor.cgColor
-        cell.choiceButtonShell.layer.cornerRadius = 15
+        cell.choiceButtonShell.setTitleColor(newButtonLabelColor, for: .normal)
+        cell.choiceButtonShell.layer.backgroundColor = newButtonLabelColor.cgColor
+        cell.choiceButtonShell.layer.cornerRadius = 20
         cell.index = index
         cell.parentPresenter = self
         cell.textView.text = data[index].text

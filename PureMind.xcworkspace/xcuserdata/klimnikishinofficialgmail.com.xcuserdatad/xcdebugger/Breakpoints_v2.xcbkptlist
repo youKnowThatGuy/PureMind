@@ -859,8 +859,8 @@
             filePath = "PureMind/Modules/Excercises/GapsExcercise/GapsExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -891,8 +891,8 @@
             filePath = "PureMind/Modules/Excercises/GapsExcercise/GapsExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2138,8 +2138,8 @@
             filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2154,8 +2154,8 @@
             filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2170,8 +2170,8 @@
             filePath = "PureMind/Modules/Excercises/AnswerChoiceExcercise/AnswerChoiceExcerciseViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2813,7 +2813,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BC10CF13-60E1-4BD5-88BE-7ED4BACAD6F8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/MenuGroup/ChatModule/ChatPresenter.swift"
@@ -3602,8 +3602,8 @@
             filePath = "PureMind/Modules/Excercises/AllExcercises/ExpPracticViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3634,8 +3634,8 @@
             filePath = "PureMind/Modules/DiaryGroup/EverydayNoteModule/EverydayNoteViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "prepareViews()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3650,8 +3650,8 @@
             filePath = "PureMind/Modules/DiaryGroup/EverydayNoteModule/EverydayNoteViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "prepareViews()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3666,8 +3666,8 @@
             filePath = "PureMind/Modules/DiaryGroup/DiaryModule/DiaryViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "setupView()"
             landmarkType = "7">
          </BreakpointContent>
@@ -3682,8 +3682,8 @@
             filePath = "PureMind/Modules/DiaryGroup/MultipleChoiceDiaryModule/MultipleChoiceDiaryViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "saveButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3698,8 +3698,8 @@
             filePath = "PureMind/Modules/DiaryGroup/MultipleChoiceDiaryModule/MultipleChoiceDiaryViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "saveButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3746,8 +3746,8 @@
             filePath = "PureMind/Modules/DiaryGroup/DiaryTextModule/DiaryTextViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "saveButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -3756,14 +3756,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "42625AF6-9945-4B70-8DE8-9005E70691FA"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PureMind/Modules/DiaryGroup/DiaryModule/DiaryViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>

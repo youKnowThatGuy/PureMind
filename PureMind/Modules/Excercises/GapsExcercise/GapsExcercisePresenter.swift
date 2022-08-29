@@ -100,6 +100,7 @@ class GapsExcercisePresenter: GapsExcercisePresenterProtocol{
         cell.parentPresenter = self
         cell.index = index
         cell.answerField.text = answers[index]
+        cell.textPartLabel.textColor = newButtonLabelColor
         switch currCode {
         case "01", "12":
             cell.textPartLabel.text = currGapsText[index]

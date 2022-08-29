@@ -67,11 +67,11 @@ class SecondaryTabBarViewController: UIViewController {
         pagingViewController.view.translatesAutoresizingMaskIntoConstraints = false
         //pagingViewController.menuInsets = UIEdgeInsets.init(top: 10, left: 0, bottom: -10, right: 0)
         //pagingViewController.menuItemSize = .sizeToFit(minWidth: 50, height: 95)
-        pagingViewController.font = UIFont(name: "Montserrat-Regular", size: 11)!
-        pagingViewController.selectedFont = UIFont(name: "Montserrat-Semibold", size: 11)!
-        pagingViewController.textColor = grayTextColor
-        pagingViewController.indicatorColor = UIColor(red: 211, green: 228, blue: 160)
-        pagingViewController.selectedBackgroundColor = UIColor(red: 211, green: 228, blue: 160)
+        pagingViewController.font = UIFont(name: "Jost-Medium", size: 13)!
+        pagingViewController.selectedFont = UIFont(name: "Jost-Medium", size: 13)!
+        pagingViewController.textColor = newButtonLabelColor
+        pagingViewController.indicatorColor = newButtonLabelColor
+        pagingViewController.selectedBackgroundColor = newButtonLabelColor
         pagingViewController.selectedTextColor = .white
         NSLayoutConstraint.activate([
           pagingViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),

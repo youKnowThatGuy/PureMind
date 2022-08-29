@@ -59,13 +59,13 @@ class LessonsTablePresenter: LessonsTablePresenterProtocol{
     }
 
     func prepareCell(cell: LessonElementTableViewCell, index: IndexPath) {
-        cell.elementLabel.textColor = grayTextColor
+        cell.elementLabel.textColor = newButtonLabelColor
         switch index.section {
         case 0:
             cell.elementLabel.text = "Видео-лекция"
             cell.elementIcon.image = UIImage(named: "lessonVideo")
         case 1:
-            cell.elementLabel.text = "Рефлексивный вопрос №\(index.row + 1)"
+            cell.elementLabel.text = "Рефлексивный вопрос \(index.row + 1)"
             cell.elementIcon.image = UIImage(named: "lessonQuestion")
         case 2:
             cell.elementLabel.text = data!.practices[index.row].name

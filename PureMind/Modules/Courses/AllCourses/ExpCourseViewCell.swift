@@ -10,19 +10,16 @@ import ExpyTableView
 
 class ExpCourseViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var leftColorView: UIView!
-    @IBOutlet weak var descriptionLabel: UITextView!
     
     static let identifier = "courseTitleCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor(red: 253, green: 247, blue: 221)
-        titleLabel.textColor = UIColor(red: 211, green: 228, blue: 160)
-        titleLabel.layer.addBorder(edge: UIRectEdge.bottom, color: UIColor(red: 211, green: 228, blue: 160), thickness: 1)
-        leftColorView.backgroundColor =  UIColor(red: 211, green: 228, blue: 160)
-        descriptionLabel.textColor = grayTextColor
-        self.layer.cornerRadius = 15
+        self.backgroundColor = .clear
+        self.layer.borderColor = newButtonLabelColor.cgColor
+        self.layer.borderWidth = 1
+        titleLabel.textColor = newButtonLabelColor
+        self.layer.cornerRadius = 20
         contentView.layer.masksToBounds = true
         contentView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }

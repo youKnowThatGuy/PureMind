@@ -21,9 +21,9 @@ class SingleCourseViewCell: UITableViewCell {
         lessonsTableView.delegate = self
         lessonsTableView.dataSource = self
         lessonsTableView.separatorStyle = .none
-        self.layer.cornerRadius = 15
+        self.layer.cornerRadius = 20
         self.layer.borderWidth = 1
-        self.layer.borderColor = UIColor(red: 253, green: 247, blue: 221).cgColor
+        self.layer.borderColor = newButtonLabelColor.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -39,8 +39,8 @@ extension SingleCourseViewCell: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ExcerciseViewCell.identifier) as! ExcerciseViewCell
         cell.excerciseNameLabel.text = lessons[indexPath.row].name
-        cell.backgroundImageView.image = UIImage(named: "Rectangle 61")
-        cell.emblemView.image = UIImage(named: "тик2")
+        cell.excerciseNameLabel.textColor = newButtonLabelColor
+        cell.emblemView.image = UIImage(named: "lessonVideo")
         cell.layoutMargins = UIEdgeInsets.zero
         cell.showSeparator()
         return cell

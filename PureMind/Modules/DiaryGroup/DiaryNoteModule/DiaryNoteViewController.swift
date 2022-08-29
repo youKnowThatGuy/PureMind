@@ -9,9 +9,10 @@ import UIKit
 
 class DiaryNoteViewController: UIViewController {
 
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var noteTextView: UITextView!
-    @IBOutlet weak var titlelABEL: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var saveButtonShell: UIButton!
     var theme: String!
     var titleText = "Дневник"
@@ -24,19 +25,21 @@ class DiaryNoteViewController: UIViewController {
     }
     
     func preparView(){
-        titlelABEL.text = titleText
+        topView.backgroundColor = UIColor(red: 248, green: 232, blue: 187)
+        topView.layer.cornerRadius = 20
+        titleLabel.text = titleText
         descLabel.text = descText
-        self.view.backgroundColor = UIColor(red: 249, green: 225, blue: 183)
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
-        titlelABEL.textColor = .white
+        titleLabel.textColor = newButtonLabelColor
+        descLabel.textColor = newButtonLabelColor
         noteTextView.backgroundColor = UIColor(red: 254, green: 250, blue: 234)
         //noteTextView.layer.borderWidth = 1
         noteTextView.layer.borderColor = CGColor.init(red: 0, green: 0, blue: 0, alpha: 1)
-        noteTextView.layer.cornerRadius = 10
+        noteTextView.layer.cornerRadius = 20
         saveButtonShell.setTitleColor(.white, for: .normal)
-        saveButtonShell.layer.backgroundColor = lightYellowColor.cgColor
-        saveButtonShell.layer.cornerRadius = 15
+        saveButtonShell.layer.backgroundColor = newButtonLabelColor.cgColor
+        saveButtonShell.layer.cornerRadius = 20
         saveButtonShell.setTitle(buttonText, for: .normal)
     }
 

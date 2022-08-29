@@ -15,18 +15,18 @@ class ButtonCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         label.textColor = .white
-        self.backgroundColor = UIColor(red: 144, green: 191, blue: 255)
+        self.backgroundColor = newButtonLabelColor
         self.layer.cornerRadius = 20
     }
     
     func selectedView(){
-        self.backgroundColor = lightYellowColor
-        label.textColor = .white
+        self.backgroundColor = UIColor(patternImage: UIImage(named: "background13")!)
+        label.textColor = newButtonLabelColor
     }
     
     func unselectedView(){
-        self.backgroundColor = UIColor(red: 233, green: 241, blue: 254)
-        label.textColor = grayTextColor
+        self.backgroundColor = newButtonLabelColor
+        label.textColor = .white
     }
     
 }

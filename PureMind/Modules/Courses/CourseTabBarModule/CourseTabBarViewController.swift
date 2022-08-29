@@ -36,26 +36,26 @@ class CourseTabBarViewController: UIViewController {
         pagingViewController.view.translatesAutoresizingMaskIntoConstraints = false
         pagingViewController.menuInsets = UIEdgeInsets.init(top: 90, left: 0, bottom: -10, right: 0)
         pagingViewController.menuItemSize = .sizeToFit(minWidth: 50, height: 55)
-        pagingViewController.font = UIFont(name: "Montserrat-Bold", size: 11)!
-        pagingViewController.selectedFont = UIFont(name: "Montserrat-Bold", size: 11)!
-        pagingViewController.textColor = UIColor(red: 237, green: 237, blue: 237)
-        pagingViewController.indicatorColor = .white
-        pagingViewController.menuBackgroundColor = UIColor(red: 211, green: 228, blue: 160)
-        pagingViewController.selectedBackgroundColor = UIColor(red: 211, green: 228, blue: 160)
+        pagingViewController.font = UIFont(name: "Jost-Medium", size: 15)!
+        pagingViewController.selectedFont = UIFont(name: "Jost-Medium", size: 15)!
+        pagingViewController.textColor = newButtonLabelColor
+        pagingViewController.indicatorColor = newButtonLabelColor
+        pagingViewController.menuBackgroundColor = UIColor(patternImage: UIImage(named: "background15")!)
+        pagingViewController.selectedBackgroundColor = .clear
         pagingViewController.selectedTextColor = .white
         
-        let backButton = UIButton(frame: CGRect(x: 20, y: 50, width: 35, height: 35))
+        let backButton = UIButton(frame: CGRect(x: 20, y: 50, width: 25, height: 25))
         backButton.setTitle("", for: .normal)
-        backButton.setBackgroundImage(UIImage(named: "backButton"), for: .normal)
+        backButton.setBackgroundImage(UIImage(named: "newBackButton"), for: .normal)
         backButton.addTarget(self, action: #selector(backButtonPressed), for: .touchUpInside)
         pagingViewController.view.addSubview(backButton)
         
         let label = UILabel()
-        label.frame = CGRect.init(x: 100, y: 55, width: 320, height: 45)
+        label.frame = CGRect.init(x: 80, y: 39, width: 320, height: 45)
         label.numberOfLines = 0
         label.text = name
-        label.font = UIFont(name: "Montserrat-Bold", size: 18)
-        label.textColor = .white
+        label.font = UIFont(name: "Jost-Medium", size: 20)
+        label.textColor = newButtonLabelColor
         pagingViewController.view.addSubview(label)
 
         NSLayoutConstraint.activate([

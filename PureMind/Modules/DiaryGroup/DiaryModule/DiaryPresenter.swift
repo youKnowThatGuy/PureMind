@@ -44,12 +44,11 @@ class DiaryPresenter: DiaryPresenterProtocol{
         cell.dateLabel.text = stringDate
         cell.textLabel.text = note.text
         cell.titleLabel.text = note.theme
-        cell.backgroundColor = UIColor(red: 253, green: 247, blue: 221)
-        cell.dateLabel.textColor = lightYellowColor
-        cell.textLabel.textColor = grayTextColor
-        cell.titleLabel.textColor = UIColor(red: 254, green: 146, blue: 62)
-        //cell.themeNameLabel.text = "Тема №\(index + 1)"
-        cell.layer.cornerRadius = 15
+        cell.backgroundColor = UIColor(red: 248, green: 232, blue: 187)
+        cell.dateLabel.textColor = grayTextColor.withAlphaComponent(0.46)
+        cell.textLabel.textColor = newButtonLabelColor
+        cell.titleLabel.textColor = newButtonLabelColor
+        cell.layer.cornerRadius = 20
     }
     
     func notesCount() -> Int {
